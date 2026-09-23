@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" rx="120" fill="#E7F6F4"/>
+  <circle cx="120" cy="120" r="90" fill="#D2EFEA"/>
+  <!-- Head & Hair -->
+  <circle cx="120" cy="85" r="32" fill="#FFE2C8"/>
+  <path d="M88 82C88 65 102 52 120 52C138 52 152 65 152 82C152 87 148 91 148 91C142 81 133 76 120 76C107 76 98 81 92 91C92 91 88 87 88 82Z" fill="#2C3E50"/>
+  <!-- Eyes closed gently, serene -->
+  <path d="M106 88C108 91 112 91 114 88" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M126 88C128 91 132 91 134 88" stroke="#2C3E50" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Soft smile -->
+  <path d="M115 101C118 104 122 104 125 101" stroke="#E57373" stroke-width="2" stroke-linecap="round"/>
+  <!-- Torso & Shoulders -->
+  <path d="M82 170C82 135 100 125 120 125C140 125 158 135 158 170" fill="#008C8C"/>
+  <!-- Protective hands / supportive warmth -->
+  <path d="M68 185C68 145 92 145 105 155C118 165 122 185 122 185" stroke="#C8A96B" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M172 185C172 145 148 145 135 155C122 165 118 185 118 185" stroke="#C8A96B" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <!-- Heart emblem -->
+  <path d="M120 144C120 144 113 138 109 142C105 146 109 152 120 158C131 152 135 146 131 142C127 138 120 144 120 144Z" fill="#FAF8F4"/>
+</svg>

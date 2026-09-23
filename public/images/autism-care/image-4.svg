@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" rx="120" fill="#E9F2FB"/>
+  <circle cx="120" cy="120" r="90" fill="#D4E5F7"/>
+  <!-- Stylized DNA & Metabolic Spark -->
+  <path d="M85 65C105 75 135 75 155 65M85 100C105 90 135 90 155 100M85 135C105 145 135 145 155 135M85 170C105 160 135 160 155 170" stroke="#3E7CB1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M90 60C110 85 110 115 90 140C70 165 70 195 90 220" stroke="#008C8C" stroke-width="4" stroke-linecap="round"/>
+  <path d="M150 60C130 85 130 115 150 140C170 165 170 195 150 220" stroke="#C8A96B" stroke-width="4" stroke-linecap="round"/>
+  <!-- Central Energy / Mitochondrial Node -->
+  <circle cx="120" cy="118" r="20" fill="#0A1F44"/>
+  <circle cx="120" cy="118" r="14" fill="#3E7CB1"/>
+  <polygon points="120,108 124,116 132,118 124,120 120,128 116,120 108,118 116,116" fill="#FAF8F4"/>
+</svg>

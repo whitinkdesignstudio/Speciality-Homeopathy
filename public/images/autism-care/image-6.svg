@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <rect width="200" height="240" fill="none"/>
+  <!-- Stylized brain / white matter neuro pathways -->
+  <path d="M60 110C50 90 65 65 95 65C100 65 105 66 110 68C115 55 135 55 145 68C160 70 170 85 165 105C175 120 170 145 150 155C140 165 115 168 100 160C85 168 65 160 55 145C45 130 50 118 60 110Z" fill="rgba(186,224,243,0.18)" stroke="#BAE0F3" stroke-width="3"/>
+  <!-- Neural pathways branching out -->
+  <path d="M100 90C110 110 125 115 140 125M100 120C85 130 75 140 68 150M115 105C125 95 135 90 145 85" stroke="#C8A96B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Synaptic glow nodes -->
+  <circle cx="100" cy="90" r="5" fill="#008C8C"/>
+  <circle cx="140" cy="125" r="5" fill="#C8A96B"/>
+  <circle cx="68" cy="150" r="5" fill="#BAE0F3"/>
+  <circle cx="145" cy="85" r="5" fill="#FAF8F4"/>
+</svg>

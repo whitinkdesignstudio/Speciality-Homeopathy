@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="20" fill="#E7F6F4"/>
+  <!-- Night sky disk -->
+  <circle cx="80" cy="80" r="54" fill="#0A1F44"/>
+  <!-- Gentle smiling crescent moon -->
+  <path d="M92 48C70 52 62 72 65 92C68 108 82 118 98 116C75 125 50 102 52 78C54 58 72 45 92 48Z" fill="#C8A96B"/>
+  <!-- Sleeping star cluster -->
+  <circle cx="105" cy="65" r="3" fill="#FAF8F4"/>
+  <circle cx="118" cy="82" r="2.5" fill="#FAF8F4"/>
+  <circle cx="102" cy="98" r="3" fill="#FAF8F4"/>
+  <!-- Soft cloud cushion -->
+  <path d="M50 118C50 108 62 102 72 108C78 102 92 104 96 112C102 110 112 115 110 124C108 128 55 128 50 118Z" fill="rgba(186,224,243,0.3)"/>
+</svg>

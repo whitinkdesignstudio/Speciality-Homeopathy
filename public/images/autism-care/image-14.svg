@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none">
+  <rect width="480" height="320" rx="28" fill="#F5FAF9"/>
+  <circle cx="240" cy="160" r="130" fill="#E7F6F4"/>
+  <!-- Parent 1 (left) -->
+  <circle cx="170" cy="110" r="28" fill="#FFE0BD"/>
+  <path d="M142 105C142 85 155 75 170 75C185 75 198 85 198 105C194 98 182 92 170 92C158 92 146 98 142 105Z" fill="#2C3E50"/>
+  <path d="M135 185C135 150 152 142 170 142C188 142 205 150 205 185V240H135V185Z" fill="#008C8C"/>
+  <!-- Parent 2 (right) -->
+  <circle cx="310" cy="110" r="28" fill="#FFE0BD"/>
+  <path d="M282 105C282 85 295 75 310 75C325 75 338 85 338 105C334 98 322 92 310 92C298 92 286 98 282 105Z" fill="#4E342E"/>
+  <path d="M275 185C275 150 292 142 310 142C328 142 345 150 345 185V240H275V185Z" fill="#0A1F44"/>
+  <!-- Child in center (joyful) -->
+  <circle cx="240" cy="145" r="22" fill="#FFE0BD"/>
+  <path d="M218 140C218 125 228 118 240 118C252 118 262 125 262 140C258 135 248 130 240 130C232 130 222 135 218 140Z" fill="#8D6E63"/>
+  <circle cx="233" cy="145" r="2" fill="#2C3E50"/>
+  <circle cx="247" cy="145" r="2" fill="#2C3E50"/>
+  <path d="M236 153C238 156 242 156 244 153" stroke="#E57373" stroke-width="2" stroke-linecap="round"/>
+  <path d="M215 205C215 175 225 170 240 170C255 170 265 175 265 205V240H215V205Z" fill="#C8A96B"/>
+  <!-- Connected holding hands -->
+  <path d="M190 170C205 178 215 185 225 188M290 170C275 178 265 185 255 188" stroke="#FFE0BD" stroke-width="6" stroke-linecap="round"/>
+  <!-- Loving Heart above family -->
+  <path d="M240 85C240 85 232 72 222 78C212 84 218 98 240 112C262 98 268 84 258 78C248 72 240 85 240 85Z" fill="#C8A96B"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <rect width="200" height="240" fill="none"/>
+  <!-- Oxygen/Vitality circles expanding -->
+  <circle cx="100" cy="110" r="50" fill="rgba(0,140,140,0.15)" stroke="#008C8C" stroke-width="2"/>
+  <circle cx="100" cy="110" r="32" fill="rgba(186,224,243,0.25)" stroke="#BAE0F3" stroke-width="2.5"/>
+  <circle cx="100" cy="110" r="16" fill="#C8A96B"/>
+  <!-- Healing wave rays -->
+  <path d="M100 45V55M100 165V175M45 110H55M165 110H175M60 70L68 78M140 150L148 158M60 150L68 142M140 70L132 78" stroke="#FAF8F4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M85 110C85 100 95 100 100 100C105 100 115 100 115 110C115 120 100 125 100 125C100 125 85 120 85 110Z" fill="#FAF8F4"/>
+</svg>

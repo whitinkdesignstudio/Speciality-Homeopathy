@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="20" fill="#E9F2FB"/>
+  <!-- Caring hands cradling heart -->
+  <circle cx="80" cy="80" r="55" fill="#F5F9FD"/>
+  <path d="M48 85C48 65 65 65 72 75C80 85 80 105 80 105M112 85C112 65 95 65 88 75C80 85 80 105 80 105" stroke="#3E7CB1" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Soft healing heart in center -->
+  <path d="M80 62C80 62 72 52 65 57C58 62 62 72 80 85C98 72 102 62 95 57C88 52 80 62 80 62Z" fill="#C8A96B"/>
+  <circle cx="80" cy="118" r="8" fill="#008C8C"/>
+  <!-- Protective gentle bar -->
+  <path d="M40 128C60 122 100 122 120 128" stroke="#3E7CB1" stroke-width="3" stroke-linecap="round"/>
+</svg>

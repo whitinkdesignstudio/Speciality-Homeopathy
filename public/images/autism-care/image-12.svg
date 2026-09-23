@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="20" fill="#FBF2E4"/>
+  <!-- Transition from storm clouds to rainbow & sun -->
+  <path d="M35 75C30 65 42 50 58 52C62 42 78 40 85 50C92 45 105 48 108 58C118 60 122 72 115 80C110 88 45 88 35 75Z" fill="#BAE0F3"/>
+  <!-- Sunlight breaking through -->
+  <circle cx="115" cy="50" r="18" fill="#C8A96B"/>
+  <!-- Calming blue waves beneath -->
+  <path d="M30 105C45 98 60 110 75 105C90 100 105 110 130 105" stroke="#008C8C" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M40 120C55 115 70 124 85 120C100 116 115 124 125 120" stroke="#3E7CB1" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
