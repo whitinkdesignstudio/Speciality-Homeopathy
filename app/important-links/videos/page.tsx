@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Video Library — Autism & Child Neurology | Speciality Homeopathy",
-  description: "Watch informative clinical video sessions and parent guidance by Dr. Ketan Patel on Autism Spectrum Disorder, ADHD, Diet & Nutrition, and Child Neurology.",
+  title: 'Homeopathy Treatment Videos | Speciality Homeopathy',
+  description: 'Watch educational videos on homeopathic treatment for autism, cerebral palsy, ADHD, and more from the specialists at Speciality Homeopathy, Ahmedabad.',
+  keywords: 'autism homeopathy video, Dr. Ketan Patel video, homeopathy education videos, child neurology treatment videos',
 };
 
 const pageStyles = `
@@ -382,7 +383,7 @@ export default function VideosPage() {
       <section className="videos-cta">
         <h2>Share Your Story or Seek Support</h2>
         <p>Book a consultation with Dr. Ketan Patel and take the first step.</p>
-        <Link href="/contact" className="btn-consult">
+        <Link href="/contactus" className="btn-consult">
           Book a Consultation Today
         </Link>
       </section>

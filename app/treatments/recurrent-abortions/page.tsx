@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Recurrent Abortions — Speciality Homeopathy",
-  description: "",
+  title: 'Recurrent Miscarriage Homeopathy | Speciality Homeopathy',
+  description: 'Homeopathic support for recurrent abortions caused by chromosomal abnormalities or placental insufficiency — compassionate, holistic care for women at Speciality Homeopathy.',
+  keywords: 'recurrent miscarriage homeopathy, recurrent abortion homeopathic treatment, spontaneous miscarriage homeopathy, placental insufficiency homeopathy, pregnancy loss natural treatment',
 };
 
 const pageStyles = `:root{
@@ -819,18 +820,6 @@ export default function Page() {
 {/*  ============================================================  */}
 {/*  FOOTER  */}
 {/*  ============================================================  */}
-
-
-<div className="floating-btns">
-  <a href="#" className="fab fab-whatsapp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.86 9.86 0 0 0 4.62 1.15h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
-    WhatsApp
-  </a>
-  <a href="#" className="fab fab-upload">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
-    Upload Reports
-  </a>
-</div>
     </>
   );
 }

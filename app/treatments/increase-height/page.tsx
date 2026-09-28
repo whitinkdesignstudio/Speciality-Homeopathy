@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Increase Height Treatment | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Individualised, hormone-free homeopathic support for height growth in children — causes of short stature and our supportive approach. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  title: 'Increase Height Naturally | Speciality Homeopathy',
+  description: 'Learn about short stature and height growth in children, including possible causes and supportive care with Dr. Ketan Patel, Ahmedabad.',
+  keywords: 'increase height homeopathy, height growth homeopathic treatment, natural height increase India, growth deficiency homeopathy, iodine deficiency child growth',
 };
 
 const pageStyles = `:root{
@@ -382,22 +383,6 @@ export default function Page() {
             style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
         </div>
       </section>
-
-      {/* STICKY ACTIONS */}
-      <div className="sticky-actions">
-        <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z" />
-          </svg>
-          <span>WhatsApp</span>
-        </a>
-        <Link className="fab fab-up" href="/contact" aria-label="Upload reports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-            <path d="M12 16V4M7 9l5-5 5 5M5 20h14" />
-          </svg>
-          <span>Upload Reports</span>
-        </Link>
-      </div>
     </>
   );
 }

@@ -3,8 +3,11 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Clinical Case Studies Archive | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Explore our comprehensive clinical case studies archive across Autism, Developmental Delays, ADHD, Dyslexia, Cerebral Palsy, Down Syndrome, PANS/PANDAS, and Rare Genetic Conditions.",
+  title: 'Autism Homeopathy Case Studies | Speciality Homeopathy',
+  description:
+    'Read documented autism improvement stories and case studies from Speciality Homeopathy. Results vary from child to child; consult our doctor.',
+  keywords:
+    'autism homeopathy case studies, autism improvement stories, case studies homeopathy',
 };
 
 const pageStyles = `
@@ -612,13 +615,9 @@ export default function CaseStudiesPage() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="wrap">
-          <div className="breadcrumb">
-            <Link href="/">Home</Link> / <Link href="/important-links">Important Links</Link> / <span>Clinical Case Studies</span>
-          </div>
-          <span className="eyebrow">Documented Clinical Observations</span>
-          <h1>Clinical Case Studies</h1>
+          <h1>Autism Improvement Stories &amp; Clinical Case Studies</h1>
           <p className="lead">
-            Explore our clinical case studies archive across Autism, Neurodevelopmental Delays, ADHD, Dyslexia, and Rare Genetic Conditions.
+            Explore documented clinical case studies and autism improvement stories across autism spectrum conditions, speech delays, and developmental progress. Results vary from child to child. Consult our doctor for an individual assessment.
           </p>
         </div>
       </section>
@@ -663,7 +662,7 @@ export default function CaseStudiesPage() {
         <h2>Have questions about a specific case presentation?</h2>
         <p>Our clinical team is available to review your child's developmental reports and discuss tailored homeopathic care.</p>
         <div className="cta-row">
-          <Link href="/contact" className="btn-white">
+          <Link href="/contactus" className="btn-white">
             Book Consultation
           </Link>
           <a href="https://wa.me/918320131612" target="_blank" rel="noopener noreferrer" className="btn-white">

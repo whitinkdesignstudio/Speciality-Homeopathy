@@ -42,9 +42,73 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      // Direct page matches to domain
+      { source: '/aboutus', destination: '/about-us', permanent: true },
+      { source: '/contactus', destination: '/contact', permanent: true },
+      { source: '/researchcenter', destination: '/research-center', permanent: true },
+      { source: '/our-doctors', destination: '/our-experts', permanent: true },
+
+      // Doctor profile page redirects (old → new canonical)
+      { source: '/our-experts/dr-ketan-patel', destination: '/dr-ketan-patel-speciality-homeopathy', permanent: true },
+      { source: '/our-experts/drkamalpatel', destination: '/dr-kamal-patel-speciality-homeopathy', permanent: true },
+      { source: '/our-experts/drbhaktibatavia', destination: '/dr-bhakti-batavia-speciality-homeopathy', permanent: true },
+
+      // Flattened important links to domain URLs
+      { source: '/important-links/autism-history', destination: '/autismhistory', permanent: true },
+      { source: '/autism-history', destination: '/autismhistory', permanent: true },
+      { source: '/important-links/case-studies', destination: '/casestudies', permanent: true },
+      { source: '/case-studies', destination: '/casestudies', permanent: true },
+      { source: '/important-links/medical-tips', destination: '/medicaltips', permanent: true },
+      { source: '/medical-tips', destination: '/medicaltips', permanent: true },
+      { source: '/important-links/gallery', destination: '/gallery', permanent: true },
+      { source: '/important-links/print-media', destination: '/print-media', permanent: true },
+      { source: '/printmedia', destination: '/print-media', permanent: true },
+      { source: '/important-links/videos', destination: '/videos', permanent: true },
+
+      // Treatment page redirects (old /treatments/X → new canonical URLs)
+      { source: '/treatments/autism-care', destination: '/autism', permanent: true },
+      { source: '/treatments/child-neurological-disorders', destination: '/child-neurological-disorders-homeopathy-treatment-dysmorphism-genetic-chromosomal-abnormalities', permanent: true },
+      { source: '/treatments/downs-syndrome', destination: '/downs-syndrome', permanent: true },
+      { source: '/treatments/adhd-add', destination: '/adhd-add-and-child-focusing-disorder', permanent: true },
+      { source: '/treatments/cerebral-palsy', destination: '/cerebral-palsy', permanent: true },
+      { source: '/treatments/child-behavioral-disorder', destination: '/pans-pandas-and-communicative-disorder-in-children', permanent: true },
+      { source: '/treatments/dyslexia', destination: '/dyslexia-learning-disability-learning-difficulties-slow-learners', permanent: true },
+      { source: '/treatments/mental-retardation', destination: '/mental-retardation', permanent: true },
+      { source: '/treatments/asthmaallergy', destination: '/asthma-allergy', permanent: true },
+      { source: '/treatments/asthma-allergy', destination: '/asthma-allergy', permanent: true },
+      { source: '/treatments/atopic-dermatitis', destination: '/atopic-dermatitis-chronic-eczema', permanent: true },
+      { source: '/treatments/femaleinfertility', destination: '/female-infertility', permanent: true },
+      { source: '/treatments/female-infertility', destination: '/female-infertility', permanent: true },
+      { source: '/treatments/male-infertility', destination: '/male-infertility', permanent: true },
+      { source: '/treatments/oligospermia', destination: '/oligospermia', permanent: true },
+      { source: '/treatments/recurrentabortions', destination: '/recurrent-abortions', permanent: true },
+      { source: '/treatments/recurrent-abortions', destination: '/recurrent-abortions', permanent: true },
+      { source: '/treatments/hairfalling', destination: '/hair-falling', permanent: true },
+      { source: '/treatments/hair-falling', destination: '/hair-falling', permanent: true },
+      { source: '/treatments/increaseheight', destination: '/increase-height', permanent: true },
+      { source: '/treatments/increase-height', destination: '/increase-height', permanent: true },
+      { source: '/treatments/mdr-tuberculosis', destination: '/mdr-tuberculosis', permanent: true },
+      { source: '/treatments/prolapsed-vertebral-disc', destination: '/prolapsed-vertebral-disc', permanent: true },
+      { source: '/treatments/developmental-delays', destination: '/developmental-delays', permanent: true },
+      { source: '/treatments/developmentaldelays', destination: '/developmental-delays', permanent: true },
+      { source: '/treatments/intellectual-disability', destination: '/intellectual-disability', permanent: true },
+      { source: '/treatments/intellectualdisability', destination: '/intellectual-disability', permanent: true },
+
+      // Root shortcuts to canonical URLs
+      { source: '/femaleinfertility', destination: '/female-infertility', permanent: true },
+      { source: '/hairfalling', destination: '/hair-falling', permanent: true },
+      { source: '/recurrentabortions', destination: '/recurrent-abortions', permanent: true },
+      { source: '/intellectualdisability', destination: '/intellectual-disability', permanent: true },
+      { source: '/increaseheight', destination: '/increase-height', permanent: true },
+      { source: '/asthmaallergy', destination: '/asthma-allergy', permanent: true },
+      { source: '/developmentaldelays', destination: '/developmental-delays', permanent: true },
+    ];
+  },
   async rewrites() {
     return [
-      // Map care-areas subroutes if needed
+      // Map care-areas subroutes
       { source: '/care-areas/adhd-add', destination: '/adhd-add' },
       { source: '/care-areas/asthma-allergy', destination: '/asthma-allergy' },
       { source: '/care-areas/atopic-dermatitis', destination: '/atopic-dermatitis' },
@@ -66,27 +130,13 @@ const nextConfig = {
       { source: '/care-areas/prolapsed-vertebral-disc', destination: '/prolapsed-vertebral-disc' },
       { source: '/care-areas/recurrent-abortions', destination: '/recurrent-abortions' },
 
-      // Map treatments subroutes
-      { source: '/treatments/autism-care', destination: '/autism-care' },
-      { source: '/treatments/adhd-add', destination: '/adhd-add' },
-      { source: '/treatments/asthma-allergy', destination: '/asthma-allergy' },
-      { source: '/treatments/atopic-dermatitis', destination: '/atopic-dermatitis' },
-      { source: '/treatments/cerebral-palsy', destination: '/cerebral-palsy' },
-      { source: '/treatments/child-behavioral-disorder', destination: '/child-behavioral-disorder' },
-      { source: '/treatments/child-neurological-disorders', destination: '/child-neurological-disorders' },
-      { source: '/treatments/developmental-delays', destination: '/developmental-delays' },
-      { source: '/treatments/downs-syndrome', destination: '/downs-syndrome' },
-      { source: '/treatments/dyslexia', destination: '/dyslexia' },
-      { source: '/treatments/female-infertility', destination: '/female-infertility' },
-      { source: '/treatments/hair-falling', destination: '/hair-falling' },
-      { source: '/treatments/increase-height', destination: '/increase-height' },
-      { source: '/treatments/intellectual-disability', destination: '/intellectual-disability' },
-      { source: '/treatments/male-infertility', destination: '/male-infertility' },
-      { source: '/treatments/mdr-tuberculosis', destination: '/mdr-tuberculosis' },
-      { source: '/treatments/mental-retardation', destination: '/mental-retardation' },
-      { source: '/treatments/oligospermia', destination: '/oligospermia' },
-      { source: '/treatments/prolapsed-vertebral-disc', destination: '/prolapsed-vertebral-disc' },
-      { source: '/treatments/recurrent-abortions', destination: '/recurrent-abortions' },
+      // New canonical URLs → existing page content (for renamed slugs)
+      { source: '/autism', destination: '/autism-care' },
+      { source: '/adhd-add-and-child-focusing-disorder', destination: '/adhd-add' },
+      { source: '/child-neurological-disorders-homeopathy-treatment-dysmorphism-genetic-chromosomal-abnormalities', destination: '/child-neurological-disorders' },
+      { source: '/pans-pandas-and-communicative-disorder-in-children', destination: '/child-behavioral-disorder' },
+      { source: '/dyslexia-learning-disability-learning-difficulties-slow-learners', destination: '/dyslexia' },
+      { source: '/atopic-dermatitis-chronic-eczema', destination: '/atopic-dermatitis' },
     ];
   },
 };

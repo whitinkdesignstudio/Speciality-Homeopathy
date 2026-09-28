@@ -2,9 +2,11 @@ import type { Metadata } from 'next';
 import DrKetanPatelClient from './DrKetanPatelClient';
 
 export const metadata: Metadata = {
-  title: 'Dr. Ketan Patel — Founder & Chief Homeopathic Physician | Speciality Homeopathy',
+  title: 'Dr. Ketan Patel | Autism Doctor in Ahmedabad',
   description:
-    'Dr. Ketan Patel, BHMS, BCJP, MD with 34+ years of clinical experience in pediatric homeopathy, autism spectrum, exome sequencing analysis, and rare genetic conditions.',
+    'Dr. Ketan Patel (BHMS, MD) has practised homeopathy since 1992, focusing on autism and child neurological conditions. ONGC panel doctor & AHML member.',
+  keywords:
+    'autism doctor, child autism specialist, autism specialist in Ahmedabad, Dr. Ketan Patel homeopathy',
 };
 
 export default function DrKetanPatelPage() {

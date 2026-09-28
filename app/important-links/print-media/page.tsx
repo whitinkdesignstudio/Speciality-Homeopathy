@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "In the Media — Press Coverage | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Speciality Homeopathy, Autism, and Dr. Ketan Patel as featured in print media across India and internationally.",
+  title: 'Press Coverage & Media Features | Speciality Homeopathy',
+  description: 'Read Speciality Homeopathy’s press coverage in Sandesh, Gujarat Samachar, DNA, Chitralekha and South Asia Mail on autism and homeopathy treatment in India.',
+  keywords: 'homeopathy press coverage India, autism treatment media coverage, Gujarat homeopathy news, Sandesh homeopathy article, Indian media homeopathy',
 };
 
 const pageStyles = `
@@ -368,7 +369,7 @@ export default function PrintMediaPage() {
       <section className="media-cta">
         <h2>Share Your Story or Seek Support</h2>
         <p>Book a consultation with Dr. Ketan Patel and take the first step.</p>
-        <Link href="/contact" className="btn-consult">
+        <Link href="/contactus" className="btn-consult">
           Book a Consultation Today
         </Link>
       </section>

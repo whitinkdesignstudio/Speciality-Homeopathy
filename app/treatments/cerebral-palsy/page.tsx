@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Cerebral Palsy Treatment | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Understanding Cerebral Palsy — types, causes and common symptoms — with gentle, supportive homeopathic care alongside your child's medical and therapy team. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  title: 'Cerebral Palsy Homeopathy Treatment | Speciality Homeopathy',
+  description: 'Learn about Cerebral Palsy, including its types, causes and symptoms, with supportive homeopathic care alongside your child’s medical and therapy team.',
+  keywords: 'cerebral palsy homeopathy treatment, spastic cerebral palsy homeopathy, hypotonia homeopathic treatment, hypoxic encephalopathy homeopathy, birth injury neuro treatment',
 };
 
 const pageStyles = `:root{
@@ -429,7 +430,7 @@ export default function Page() {
             <h2 className="reveal d1">Supporting your child's development, one step at a time.</h2>
             <p className="reveal d1">Book a consultation or share your child's reports securely. We'll assess carefully, be honest about how we can help, and work in step with your child's existing medical and therapy team.</p>
             <div className="cta-row reveal d2">
-              <a className="btn btn-primary" href="/contact">
+              <a className="btn btn-primary" href="/contactus">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="4" width="18" height="18" rx="3" />
                   <path d="M3 9h18M8 2v4M16 2v4" />
@@ -472,22 +473,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      {/* STICKY ACTIONS */}
-      <div className="sticky-actions">
-        <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z" />
-          </svg>
-          <span>WhatsApp</span>
-        </a>
-        <a className="fab fab-up" href="/contact" aria-label="Upload reports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-            <path d="M12 16V4M7 9l5-5 5 5M5 20h14" />
-          </svg>
-          <span>Upload Reports</span>
-        </a>
-      </div>
     </>
   );
 }

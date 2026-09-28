@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Oligospermia — Low Sperm Count &amp; Motility Treatment | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Understanding oligospermia (low sperm count) and male infertility — associated conditions, treatment focus and supportive homeopathic care. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  title: "Oligospermia – Low Sperm Count & Motility Care | Speciality Homeopathy",
+  description: "Learn about oligospermia, low sperm count, male infertility and associated conditions, with supportive care from Dr. Ketan Patel, Vastrapur, Ahmedabad.",
 };
 
 const pageStyles = `:root{
@@ -32,32 +32,7 @@ const pageStyles = `:root{
   header{position:fixed;top:0;left:0;right:0;z-index:90;transition:padding .4s var(--ease);padding:14px 0}
   @keyframes navShine{0%{transform:translateX(-160%) skewX(-22deg);opacity:0}6%{opacity:1}38%{transform:translateX(260%) skewX(-22deg);opacity:0}100%{transform:translateX(260%) skewX(-22deg);opacity:0}}
   header .wrap.nav{position:relative;overflow:hidden;background:rgba(252,250,247,.88);backdrop-filter:blur(22px) saturate(1.4) brightness(1.04);-webkit-backdrop-filter:blur(22px) saturate(1.4) brightness(1.04);border:1.5px solid rgba(255,255,255,.95);border-radius:999px;padding:10px 16px 10px 12px;box-shadow:0 4px 24px -8px rgba(10,31,68,.10),0 1.5px 0 rgba(255,255,255,.98) inset,0 -1px 0 rgba(10,31,68,.04) inset;transition:background .4s,box-shadow .4s}
-  header .wrap.nav::before{content:"";position:absolute;inset:0;border-radius:999px;background:linear-gradient(108deg,transparent 28%,rgba(255,255,255,.75) 50%,transparent 72%);transform:translateX(-160%) skewX(-22deg);animation:navShine 6s ease-in-out infinite;pointer-events:none;z-index:0}
-  header .wrap.nav::after{content:"";position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,1) 45%,rgba(255,255,255,1) 55%,transparent);border-radius:999px;pointer-events:none;z-index:1}
-  header.solid .wrap.nav{background:rgba(250,248,244,.95);box-shadow:0 8px 32px -10px rgba(10,31,68,.13),0 1.5px 0 rgba(255,255,255,.98) inset}
-  .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;position:relative;z-index:2}
-  .brand{display:flex;align-items:center;gap:11px}
-  .brand-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(150deg,var(--teal),var(--blue));display:grid;place-items:center;box-shadow:var(--shadow-sm);flex:0 0 auto}
-  .brand-mark svg{width:20px;height:20px}
-  .brand-name{font-family:'Poppins',sans-serif;font-weight:600;font-size:.92rem;color:var(--blue);line-height:1.05}
-  .brand-name small{display:block;font-family:'Open Sans',sans-serif;font-weight:600;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-top:2px}
-  .navlinks{display:flex;gap:13px;list-style:none;white-space:nowrap}
-  .navlinks a{font-size:.72rem;font-weight:500;color:rgba(10,31,68,.78);transition:color .3s;position:relative;padding:4px 0}
-  .navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--teal);transition:width .3s var(--ease)}
-  .navlinks a:hover{color:var(--teal)}
-  .navlinks a:hover::after{width:100%}
-  .has-dropdown{position:relative}
-  .dropdown-toggle{display:inline-flex;align-items:center;gap:5px;cursor:pointer}
-  .dropdown-toggle svg{width:9px;height:9px;transition:transform .3s var(--ease)}
-  .has-dropdown.open .dropdown-toggle svg{transform:rotate(180deg)}
-  .dropdown-menu{list-style:none;position:fixed;min-width:190px;background:rgba(252,250,247,.98);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1.5px solid rgba(255,255,255,.95);border-radius:14px;box-shadow:var(--shadow);padding:8px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s var(--ease),visibility .25s;z-index:9999}
-  .dropdown-menu.open{opacity:1;visibility:visible;pointer-events:auto}
-  .dropdown-menu li a{display:block;font-size:.8rem;font-weight:500;color:var(--blue);padding:9px 14px;border-radius:9px;transition:background .25s,color .25s}
-  .dropdown-menu li a::after{display:none}
-  .dropdown-menu li a:hover{background:var(--teal-10);color:var(--teal)}
-  @media(max-width:880px){.dropdown-toggle svg{display:none}.dropdown-menu{left:16px !important;right:16px !important;width:auto;min-width:0}}
-  .menu-toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
-  .menu-toggle span{width:22px;height:2px;background:var(--blue);transition:.3s;border-radius:2px}
+  /* page hero */
 
   .page-hero{position:relative;background:radial-gradient(120% 120% at 84% 0%,#d4eef9 0%,#BAE0F3 48%,#9ed0eb 100%);color:var(--blue);padding:64px 0 74px;overflow:hidden}
   .page-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(70% 55% at 74% 46%,rgba(255,255,255,.22),rgba(186,224,243,.15) 100%);pointer-events:none}
@@ -310,8 +285,8 @@ export default function Page() {
   <div className="hero2-deco d-b"></div>
   <div className="hero2-grid">
     <div className="hero2-copy">
-      <h1 className="reveal d1">Oligospermia — Low Sperm Count &amp; Motility Support</h1>
-      <p className="lead reveal d2">Low sperm count and motility can affect fertility. Our supportive homeopathic care aims to help improve your chances naturally — always alongside proper fertility evaluation.</p>
+      <h1 className="reveal d1">Oligospermia Low Sperm Count &amp; Motility Support</h1>
+      <p className="lead reveal d2">Low sperm count and motility can affect fertility. Our supportive homeopathic care aims to help improve your chances naturally  always alongside proper fertility evaluation.</p>
       <div className="hero2-stats reveal d3">
         <div className="hero2-stat">
           <div className="hs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3a4 4 0 0 0-4 4c0 3 4 6 4 6h8s4-3 4-6a4 4 0 0 0-7-2.6A4 4 0 0 0 8 3Z"/><path d="M8 13v3a4 4 0 0 0 8 0v-3"/></svg></div>
@@ -323,7 +298,7 @@ export default function Page() {
         </div>
         <div className="hero2-stat">
           <div className="hs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-          <span className="stat-num">7–9</span><span className="lbl">Months, typical course*</span>
+          <span className="stat-num">79</span><span className="lbl">Months, typical course*</span>
         </div>
       </div>
     </div>
@@ -348,7 +323,7 @@ export default function Page() {
     <div className="glance2-grid">
       <div className="glance2-card reveal d1">
         <img src="/images/oligospermia/image-2.jpg" alt="Normal sperm count illustration" loading="lazy" decoding="async" />
-        <div className="glance2-body"><h4>Normal Sperm Count</h4><p>20–120 million sperm per millilitre of semen.</p></div>
+        <div className="glance2-body"><h4>Normal Sperm Count</h4><p>20â€“120 million sperm per millilitre of semen.</p></div>
       </div>
       <div className="glance2-card reveal d2">
         <img src="/images/oligospermia/image-3.jpg" alt="Oligospermia illustration" loading="lazy" decoding="async" />
@@ -377,7 +352,8 @@ export default function Page() {
         <p className="lead" style={({"marginTop":"14px"} as React.CSSProperties)}>Oligospermia is a condition where the sperm count is lower than normal. It can affect fertility but with proper evaluation and guidance, better outcomes are possible.</p>
       </div>
       <div className="understand-media reveal d1">
-        <img src="/images/oligospermia/image-6.jpg" alt="Sperm approaching egg — illustration of fertilisation" loading="lazy" decoding="async" />
+        <img src="/images/oligospermia/image-6.jpg" alt="Sperm approaching egg 
+         illustration of fertilisation" loading="lazy" decoding="async" />
       </div>
     </div>
     <div className="list-card conditions-card reveal d1" style={({"position":"relative"} as React.CSSProperties)}>
@@ -423,7 +399,7 @@ export default function Page() {
         <div className="aims-mini-txt">
           <div className="mi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
           <h5>Treatment Duration</h5>
-          <p>Treatment generally takes <mark>7–9 months</mark>, with improvements expected during this period.*</p>
+          <p>Treatment generally takes <mark>7â€“9 months</mark>, with improvements expected during this period.*</p>
         </div>
         <div className="aims-mini-media"><img src="/images/oligospermia/image-8.jpg" alt="Calendar showing 7 to 9 months treatment duration" loading="lazy" decoding="async" /></div>
       </div>
@@ -431,7 +407,7 @@ export default function Page() {
         <div className="aims-mini-txt">
           <div className="mi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <h5>Male Fertility &amp; Conception</h5>
-          <p>Addresses key male factors — which can contribute to <mark>~30% of infertility cases</mark>.*</p>
+          <p>Addresses key male factors  which can contribute to <mark>~30% of infertility cases</mark>.*</p>
         </div>
         <div className="aims-mini-media"><img src="/images/oligospermia/image-9.jpg" alt="Couple reviewing a fertility report together" loading="lazy" decoding="async" /></div>
       </div>
@@ -463,7 +439,8 @@ export default function Page() {
 
     <div className="callout warn reveal d1" style={({"marginTop":"26px"} as React.CSSProperties)}>
       <h4>*About these figures</h4>
-      Treatment duration, effectiveness and the figures above reflect the clinic's own stated experience and claims, organised here without adding new medical claims. They are not established by high-quality scientific evidence — please discuss your individual case with a urologist or fertility specialist.
+      Treatment duration, effectiveness and the figures above reflect the clinic's own stated experience and claims, organised here without adding new medical claims. They are not established by high-quality scientific evidence 
+       please discuss your individual case with a urologist or fertility specialist.
     </div>
   </div>
 </section>
@@ -515,7 +492,7 @@ export default function Page() {
   <div className="wrap" style={({"maxWidth":"1040px"} as React.CSSProperties)}>
     <div className="sec-head reveal">
       <h2>Individualised, hormone-free support</h2>
-      <p className="lead">Our approach focuses on addressing the root cause and supporting your body's natural potential – without relying on hormones.</p>
+      <p className="lead">Our approach focuses on addressing the root cause and supporting your body's natural potential â€“ without relying on hormones.</p>
     </div>
 
     <div className="approach-card reveal d1">
@@ -529,7 +506,7 @@ export default function Page() {
     <div className="approach-card warn reveal d2">
       <div className="approach-card-body">
         <h4>Important</h4>
-        <p>Male infertility should first be properly evaluated by a urologist or fertility specialist. Homeopathic support is offered alongside — never as a replacement for — that evaluation and any medical treatment already advised.</p>
+        <p>Male infertility should first be properly evaluated by a urologist or fertility specialist. Homeopathic support is offered alongside  never as a replacement for  that evaluation and any medical treatment already advised.</p>
       </div>
       <div className="approach-card-media"><img src="/images/oligospermia/image-12.jpg" alt="Doctor discussing evaluation and treatment with a patient" loading="lazy" decoding="async" /></div>
     </div>
@@ -542,7 +519,7 @@ export default function Page() {
     <h2 className="reveal d1">A calm, honest conversation about your fertility.</h2>
     <p className="reveal d1">Book a consultation or share your semen analysis report securely. We'll listen carefully, be honest about how we can help, and work in step with your urologist or fertility specialist.</p>
     <div className="cta-row reveal d2">
-      <a className="btn btn-primary" href="/contact">Book a Consultation</a>
+      <a className="btn btn-primary" href="/contactus">Book a Consultation</a>
       <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
       <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
     </div>
@@ -553,16 +530,7 @@ export default function Page() {
 
 
 {/*  STICKY  */}
-<div className="sticky-actions">
-  <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z"/></svg>
-    <span>WhatsApp</span>
-  </a>
-  <a className="fab fab-up" href="/contact" aria-label="Upload reports">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg>
-    <span>Upload Reports</span>
-  </a>
-</div>
     </>
   );
 }
+

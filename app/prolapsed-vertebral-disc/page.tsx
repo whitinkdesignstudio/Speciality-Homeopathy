@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Prolapsed Vertebral Disc (PIVD) Treatment | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Individualised, non-surgical homeopathic support for Prolapsed Vertebral Disc (PIVD) — causes, symptoms and our supportive approach. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  title: "Prolapsed Vertebral Disc (PIVD) Care | Speciality Homeopathy",
+  description: "Learn about PIVD, including causes and symptoms, with supportive homeopathic care alongside appropriate medical guidance. Dr. Ketan Patel, Ahmedabad.",
 };
 
 const pageStyles = `:root{
@@ -38,7 +38,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero — 100% full-width banner */
+  /* page hero â€” 100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -51,7 +51,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 — types (photo-top pillar cards) */
+  /* SECTION 1 â€” types (photo-top pillar cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
   .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
   .type-card{position:relative;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 14px 38px -16px rgba(20,50,90,.20);display:flex;flex-direction:column;text-align:center;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
@@ -68,7 +68,7 @@ const pageStyles = `:root{
   .type-body{flex:1;padding:0 30px 34px}
   .type-body p{font-size:.88rem;color:#555;line-height:1.7}
 
-  /* SECTION 2 — neuro conditions (dark frosted cards) */
+  /* SECTION 2 â€” neuro conditions (dark frosted cards) */
   .neuro{background:var(--blue);color:var(--ivory)}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .eyebrow{color:var(--gold)}
@@ -82,7 +82,7 @@ const pageStyles = `:root{
   .neuro-card h4{color:#fff;font-size:1rem;margin-bottom:8px}
   .neuro-card p{font-size:.82rem;color:rgba(220,240,252,.85);line-height:1.6}
 
-  /* SECTION 3 — behaviour (icon list cards) */
+  /* SECTION 3 â€” behaviour (icon list cards) */
   .behaviour{background:#fff}
   .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   .beh-card{display:flex;align-items:center;gap:20px;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--ivory);box-shadow:0 10px 24px -16px rgba(10,31,68,.18);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
@@ -133,7 +133,7 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO — 100% full-width banner */}
+      {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <img src="/images/prolapsed-vertebral-disc/hero-banner.png"
@@ -142,7 +142,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 1 — CAUSES */}
+      {/* SECTION 1 â€” CAUSES */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -218,12 +218,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 — TREATMENT HIGHLIGHTS */}
+      {/* SECTION 2 â€” TREATMENT HIGHLIGHTS */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>What our supportive approach aims for</h2>
-            <p className="lead">Homeopathic treatment aims to reduce pressure on affected nerves while supporting the ligaments and spinal structures — selected according to the patient's symptoms and overall condition.</p>
+            <p className="lead">Homeopathic treatment aims to reduce pressure on affected nerves while supporting the ligaments and spinal structures â€” selected according to the patient's symptoms and overall condition.</p>
           </div>
           <div className="neuro-grid">
             <div className="neuro-card reveal d1">
@@ -301,7 +301,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 — COMMON SYMPTOMS */}
+      {/* SECTION 3 â€” COMMON SYMPTOMS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -378,28 +378,13 @@ export default function Page() {
           <h2 className="reveal d1">Relief that supports your spine's natural recovery.</h2>
           <p className="reveal d1">Book a consultation or share your reports securely. We'll assess your condition carefully and discuss a plan suited to your severity and needs.</p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
             <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
           </div>
         </div>
       </section>
-
-      {/* STICKY ACTIONS */}
-      <div className="sticky-actions">
-        <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z" />
-          </svg>
-          <span>WhatsApp</span>
-        </a>
-        <Link className="fab fab-up" href="/contact" aria-label="Upload reports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-            <path d="M12 16V4M7 9l5-5 5 5M5 20h14" />
-          </svg>
-          <span>Upload Reports</span>
-        </Link>
-      </div>
     </>
   );
 }
+

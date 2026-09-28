@@ -3,14 +3,17 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Care Areas & Treatments | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Explore our full directory of speciality homeopathic treatments covering paediatric neurodevelopmental conditions, respiratory allergies, fertility support, and chronic illness.",
+  title: 'Homeopathy Treatments & Care | Speciality Homeopathy',
+  description:
+    'Explore homeopathic care programs at Speciality Homeopathy: autism, cerebral palsy, ADHD and more, with early intervention support. Consult today.',
+  keywords:
+    'early intervention therapy, homeopathy treatments India, pediatric homeopathy, natural treatment for children',
 };
 
 const treatmentAreas = [
   {
     title: "Autism Care",
-    desc: "Autism is a severe handicapping developmental disorder, which is diagnosed at birth or within the first 1½ to 2½ years of life.",
+    desc: "Supportive homeopathic care for autism spectrum conditions, focusing on individualised comfort, routine, and child wellbeing.",
     image: "/images/treatments/autism-care.jpg",
     slug: "/treatments/autism-care",
   },
@@ -54,13 +57,13 @@ const treatmentAreas = [
     title: "Developmental Delays",
     desc: "Holistic care addressing delayed speech, motor milestones, cognitive development, and sensory processing.",
     image: "/images/developmental-delays/image-1.webp",
-    slug: "/treatments/developmental-delays",
+    slug: "/treatments/developmentaldelays",
   },
   {
     title: "Intellectual Disability",
     desc: "Compassionate constitutional therapy supporting cognitive abilities, adaptive behavior, and daily living skills.",
     image: "/images/intellectual-disability/image-1.webp",
-    slug: "/treatments/intellectual-disability",
+    slug: "/treatments/intellectualdisability",
   },
   {
     title: "Mental Retardation",
@@ -72,7 +75,7 @@ const treatmentAreas = [
     title: "Asthma & Allergies",
     desc: "Strengthening respiratory resilience and reducing hypersensitivity and bronchial spasms naturally.",
     image: "/images/treatments/asthma-allergy.jpg",
-    slug: "/treatments/asthma-allergy",
+    slug: "/treatments/asthmaallergy",
   },
   {
     title: "Atopic Dermatitis & Eczema",
@@ -84,7 +87,7 @@ const treatmentAreas = [
     title: "Female Infertility & PCOS",
     desc: "Constitutional balance for menstrual regularity, ovulation support, PCOS/PCOD, and conception.",
     image: "/images/treatments/female-infertility.jpg",
-    slug: "/treatments/female-infertility",
+    slug: "/treatments/femaleinfertility",
   },
   {
     title: "Male Infertility",
@@ -102,19 +105,19 @@ const treatmentAreas = [
     title: "Recurrent Abortions",
     desc: "Constitutional support for reproductive resilience, uterine lining strength, and full-term pregnancy.",
     image: "/images/recurrent-abortions/image-1.png",
-    slug: "/treatments/recurrent-abortions",
+    slug: "/treatments/recurrentabortions",
   },
   {
     title: "Hair Falling & Baldness",
     desc: "Natural constitutional therapy for hair regrowth, follicle vitality, and chronic scalp shedding.",
     image: "/images/treatments/hair-falling.jpg",
-    slug: "/treatments/hair-falling",
+    slug: "/treatments/hairfalling",
   },
   {
     title: "Increase Height & Growth",
     desc: "Support for pituitary growth axis and bone development during critical growing adolescent years.",
     image: "/images/treatments/increase-height.jpg",
-    slug: "/treatments/increase-height",
+    slug: "/treatments/increaseheight",
   },
   {
     title: "MDR Tuberculosis Care",
@@ -509,7 +512,7 @@ export default function Page() {
             Contact our consultation desk to speak with our doctors and understand the best approach for your health.
           </p>
           <div className="cta-row">
-            <Link className="btn btn-primary" href="/contact">
+            <Link className="btn btn-primary" href="/contactus">
               Book a Consultation
             </Link>
             <a className="btn btn-ghost" href="tel:+919898005354">

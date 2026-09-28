@@ -21,6 +21,18 @@ export default function Header() {
     setLinksOpen(false);
   }, [pathname]);
 
+  // Prevent background scrolling when mobile navigation drawer is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   // Handle scroll shadow with rAF throttle & state-equality guard
   useEffect(() => {
     let ticking = false;
@@ -51,14 +63,43 @@ export default function Header() {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  const isHome = pathname === '/';
-  const isAbout = pathname === '/about-us';
-  const isExperts = pathname.startsWith('/our-doctors') || pathname.startsWith('/our-experts');
-  const isTreatments = pathname === '/treatments' || pathname === '/care-areas';
-  const isResearch = pathname === '/research-center';
-  const isContact = pathname === '/contact';
-  const isMilestone = pathname === '/developmental-delays' || pathname === '/milestonecare';
-  const isImportantLinks = pathname.startsWith('/important-links');
+  // Safely compute the active navigation tab ensuring strict mutual exclusivity
+  const cleanPath = (pathname || '').replace(/\/+$/, '') || '/';
+
+  const isImportantLinks =
+    cleanPath.startsWith('/important-links') ||
+    [
+      '/autismhistory',
+      '/autism-history',
+      '/casestudies',
+      '/case-studies',
+      '/medicaltips',
+      '/medical-tips',
+      '/gallery',
+      '/print-media',
+      '/print-media',
+      '/videos',
+    ].includes(cleanPath);
+
+  const isAbout = cleanPath === '/aboutus' || cleanPath === '/about-us';
+  const isExperts = cleanPath.startsWith('/our-doctors') || cleanPath.startsWith('/our-experts');
+  const isResearch = cleanPath === '/research-center' || cleanPath === '/researchcenter';
+  const isContact = cleanPath === '/contact' || cleanPath === '/contactus';
+  const isTreatments =
+    cleanPath === '/treatments' ||
+    cleanPath.startsWith('/treatments/') ||
+    cleanPath === '/care-areas' ||
+    cleanPath.startsWith('/care-areas/');
+
+  // Strict mutual exclusivity: Home is ONLY active when exactly at root and no other section is active
+  const isHome =
+    cleanPath === '/' &&
+    !isImportantLinks &&
+    !isAbout &&
+    !isExperts &&
+    !isResearch &&
+    !isContact &&
+    !isTreatments;
 
   return (
     <header
@@ -71,7 +112,7 @@ export default function Header() {
         <Link href="/" className="header-brand" aria-label="Speciality Homeopathy Home">
           <Image
             src="/logo.png"
-            alt="Speciality Homeopathy"
+            alt="Speciality Homeopathy - Autism Clinic in Ahmedabad"
             className="header-logo-img"
             width={280}
             height={76}
@@ -85,28 +126,35 @@ export default function Header() {
           <ul className={`navlinks ${mobileOpen ? 'show' : ''}`} id="navlinks">
             {/* 1. Home */}
             <li className="nav-item">
-              <Link href="/" className={`nav-link ${isHome ? 'active' : ''}`}>
+              <Link
+                href="/"
+                className={`nav-link ${isHome ? 'active' : ''}`}
+                onClick={() => setMobileOpen(false)}
+              >
                 Home
               </Link>
             </li>
 
             {/* 2. About Us */}
             <li className="nav-item">
-              <Link href="/about-us" className={`nav-link ${isAbout ? 'active' : ''}`}>
+              <Link
+                href="/aboutus"
+                className={`nav-link ${isAbout ? 'active' : ''}`}
+                onClick={() => setMobileOpen(false)}
+              >
                 About Us
               </Link>
             </li>
 
             {/* 3. Our Experts ⌵ */}
             <li
-              className={`nav-item has-dropdown ${expertsOpen ? 'open' : ''} ${
-                isExperts ? 'child-active' : ''
-              }`}
+              className={`nav-item has-dropdown ${expertsOpen ? 'open' : ''} ${isExperts ? 'child-active' : ''
+                }`}
               onMouseEnter={() => {
-                if (window.innerWidth > 992) setExpertsOpen(true);
+                if (typeof window !== 'undefined' && window.innerWidth > 992) setExpertsOpen(true);
               }}
               onMouseLeave={() => {
-                if (window.innerWidth > 992) setExpertsOpen(false);
+                if (typeof window !== 'undefined' && window.innerWidth > 992) setExpertsOpen(false);
               }}
             >
               <button
@@ -132,22 +180,41 @@ export default function Header() {
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
               </button>
-              <ul className={`dropdown-menu ${expertsOpen ? 'show' : ''}`}>
+              <ul className={`dropdown-menu ${expertsOpen ? 'show open' : ''}`}>
                 <li>
-                  <Link href="/our-experts/dr-ketan-patel">Dr. Ketan Patel</Link>
+                  <Link
+                    href="/dr-ketan-patel-speciality-homeopathy"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    Dr. Ketan Patel
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/our-experts/drkamalpatel">Dr. Kamal Patel</Link>
+                  <Link
+                    href="/dr-kamal-patel-speciality-homeopathy"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    Dr. Kamal Patel
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/our-experts/drbhaktibatavia">Dr. Bhakti Batavia</Link>
+                  <Link
+                    href="/dr-bhakti-batavia-speciality-homeopathy"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    Dr. Bhakti Batavia
+                  </Link>
                 </li>
               </ul>
             </li>
 
             {/* 4. Treatments */}
             <li className="nav-item">
-              <Link href="/treatments" className={`nav-link ${isTreatments ? 'active' : ''}`}>
+              <Link
+                href="/treatments"
+                className={`nav-link ${isTreatments ? 'active' : ''}`}
+                onClick={() => setMobileOpen(false)}
+              >
                 Treatments
               </Link>
             </li>
@@ -157,6 +224,7 @@ export default function Header() {
               <Link
                 href="/research-center"
                 className={`nav-link ${isResearch ? 'active' : ''}`}
+                onClick={() => setMobileOpen(false)}
               >
                 Research Center
               </Link>
@@ -164,31 +232,40 @@ export default function Header() {
 
             {/* 6. Contact Us */}
             <li className="nav-item">
-              <Link href="/contact" className={`nav-link ${isContact ? 'active' : ''}`}>
+              <Link
+                href="/contact"
+                className={`nav-link ${isContact ? 'active' : ''}`}
+                onClick={() => setMobileOpen(false)}
+              >
                 Contact Us
               </Link>
             </li>
 
             {/* 7. MilestoneCare */}
             <li className="nav-item">
-              <Link
-                href="/developmental-delays"
-                className={`nav-link ${isMilestone ? 'active' : ''}`}
+              <a
+                role="link"
+                aria-disabled="true"
+                className="nav-link"
+                style={{
+                  cursor: 'default',
+                  pointerEvents: 'none',
+                  userSelect: 'none',
+                }}
               >
                 MilestoneCare
-              </Link>
+              </a>
             </li>
 
             {/* 8. Important Links ⌵ */}
             <li
-              className={`nav-item has-dropdown ${linksOpen ? 'open' : ''} ${
-                isImportantLinks ? 'child-active' : ''
-              }`}
+              className={`nav-item has-dropdown ${linksOpen ? 'open' : ''} ${isImportantLinks ? 'child-active' : ''
+                }`}
               onMouseEnter={() => {
-                if (window.innerWidth > 992) setLinksOpen(true);
+                if (typeof window !== 'undefined' && window.innerWidth > 992) setLinksOpen(true);
               }}
               onMouseLeave={() => {
-                if (window.innerWidth > 992) setLinksOpen(false);
+                if (typeof window !== 'undefined' && window.innerWidth > 992) setLinksOpen(false);
               }}
             >
               <button
@@ -214,24 +291,36 @@ export default function Header() {
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
               </button>
-              <ul className={`dropdown-menu ${linksOpen ? 'show' : ''}`}>
+              <ul className={`dropdown-menu ${linksOpen ? 'show open' : ''}`}>
                 <li>
-                  <Link href="/important-links/autism-history">Autism History</Link>
+                  <Link href="/autismhistory" onClick={() => setMobileOpen(false)}>
+                    Autism History
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/important-links/case-studies">Case Studies</Link>
+                  <Link href="/casestudies" onClick={() => setMobileOpen(false)}>
+                    Case Studies
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/important-links/medical-tips">Medical Tips</Link>
+                  <Link href="/medicaltips" onClick={() => setMobileOpen(false)}>
+                    Medical Tips
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/important-links/gallery">Gallery</Link>
+                  <Link href="/gallery" onClick={() => setMobileOpen(false)}>
+                    Gallery
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/important-links/print-media">Print Media</Link>
+                  <Link href="/print-media" onClick={() => setMobileOpen(false)}>
+                    Print Media
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/important-links/videos">Videos</Link>
+                  <Link href="/videos" onClick={() => setMobileOpen(false)}>
+                    Videos
+                  </Link>
                 </li>
               </ul>
             </li>

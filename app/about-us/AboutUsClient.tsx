@@ -656,7 +656,7 @@ export default function AboutUsClient() {
             <div className="ab-hero-text">
               <h1>Where careful research meets <em>gentle, honest care.</em></h1>
               <p className="lead">
-                Dr. Ketan Patel and our team support children with autism, ADHD, cerebral palsy and other neurodevelopmental differences through individualised homeopathic care — built on a growing research database, and always offered alongside, never in place of, your child&apos;s medical team.
+                Dr. Ketan Patel and our team, at our autism clinic in Ahmedabad, support children with autism, ADHD, developmental delays, and pediatric neurological conditions — built on clinical research, and always offered alongside your child&apos;s medical team.
               </p>
             </div>
             <div className="ab-orbit-wrap">
@@ -799,7 +799,7 @@ export default function AboutUsClient() {
             <div className="journey-step reveal d2">
               <div className="journey-num">2</div>
               <p>
-                Built from Dr. Ketan Patel&apos;s own records — over 700 Whole Exome and Mitochondrial Sequencing reports, reviewed alongside individualised homeopathic care.
+                Built from Dr. Ketan Patel&apos;s own records — over 700 Whole Exome and Mitochondrial Sequencing reports, reviewed alongside individualised homeopathic care. A genetic test for autism, such as whole exome sequencing for an autistic child, is advised only when a doctor finds it clinically useful — it is not needed for every child.
               </p>
             </div>
             <div className="journey-step reveal d3">

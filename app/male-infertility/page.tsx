@@ -4,7 +4,7 @@ import React from 'react';
 
 export const metadata: Metadata = {
   title: "Male Infertility Treatment | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Individualised, hormone-free homeopathic support for low sperm count, motility and semen quality — male infertility care. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  description: "Learn about male infertility, low sperm count, motility and semen quality, with supportive care from Dr. Ketan Patel, Ahmedabad.",
 };
 
 const pageStyles = `:root{
@@ -38,7 +38,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero — 100% full-width banner */
+  /* page hero â€” 100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -51,7 +51,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 — types (pillar-style white cards) */
+  /* SECTION 1 â€” types (pillar-style white cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
   .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
   .type-card{position:relative;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 14px 38px -16px rgba(20,50,90,.20);display:flex;flex-direction:column;min-height:380px;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
@@ -68,7 +68,7 @@ const pageStyles = `:root{
   .type-img-wrap{position:relative;margin:0 18px 18px;flex:1}
   .type-img-ph{width:100%;height:100%;min-height:180px;border-radius:20px;object-fit:cover}
 
-  /* SECTION 2 — neuro conditions (dark frosted cards) */
+  /* SECTION 2 â€” neuro conditions (dark frosted cards) */
   .neuro{background:var(--blue);color:var(--ivory)}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .eyebrow{color:var(--gold)}
@@ -81,7 +81,7 @@ const pageStyles = `:root{
   .neuro-card h4{color:#fff;font-size:.96rem;margin-bottom:8px}
   .neuro-card p{font-size:.8rem;color:rgba(220,240,252,.85);line-height:1.6}
 
-  /* SECTION 3 — behaviour (icon list cards) */
+  /* SECTION 3 â€” behaviour (icon list cards) */
   .behaviour{background:#fff}
   .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
   .beh-card{display:flex;align-items:center;gap:22px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--ivory);box-shadow:0 10px 24px -16px rgba(10,31,68,.18);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
@@ -133,7 +133,7 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO — 100% full-width banner */}
+      {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <img src="/images/male-infertility/hero-banner.png"
@@ -142,7 +142,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 1 — UNDERSTANDING MALE INFERTILITY */}
+      {/* SECTION 1 â€” UNDERSTANDING MALE INFERTILITY */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -183,7 +183,7 @@ export default function Page() {
                 <h3>Asthenozoospermia</h3>
               </div>
               <div className="type-body">
-                <p>Refers to poor sperm motility — reduced movement ability that can affect fertilisation.</p>
+                <p>Refers to poor sperm motility â€” reduced movement ability that can affect fertilisation.</p>
               </div>
               <div className="type-img-wrap">
                 <img className="type-img-ph"
@@ -218,12 +218,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 — CONDITIONS TREATED */}
+      {/* SECTION 2 â€” CONDITIONS TREATED */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>What our approach addresses</h2>
-            <p className="lead">Treatment focuses on improving sperm production, supporting hormonal balance, and improving overall semen quality — individualised to the patient's condition.</p>
+            <p className="lead">Treatment focuses on improving sperm production, supporting hormonal balance, and improving overall semen quality â€” individualised to the patient's condition.</p>
           </div>
           <div className="neuro-grid">
             <div className="neuro-card reveal d1">
@@ -309,7 +309,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 — TREATMENT HIGHLIGHTS */}
+      {/* SECTION 3 â€” TREATMENT HIGHLIGHTS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -390,28 +390,13 @@ export default function Page() {
           <h2 className="reveal d1">Individualised support for your fertility journey.</h2>
           <p className="reveal d1">Book a consultation or share your semen analysis reports securely. We'll assess your case carefully and build a plan suited to your specific parameters.</p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
             <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
           </div>
         </div>
       </section>
-
-      {/* STICKY ACTIONS */}
-      <div className="sticky-actions">
-        <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z" />
-          </svg>
-          <span>WhatsApp</span>
-        </a>
-        <Link className="fab fab-up" href="/contact" aria-label="Upload reports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-            <path d="M12 16V4M7 9l5-5 5 5M5 20h14" />
-          </svg>
-          <span>Upload Reports</span>
-        </Link>
-      </div>
     </>
   );
 }
+

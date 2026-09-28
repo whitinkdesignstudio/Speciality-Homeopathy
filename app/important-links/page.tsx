@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Important Links & Resources | Speciality Homeopathy",
-  description: "Clinical resources, autism history, published articles, medical tips, case studies, videos, and clinic gallery.",
+  title: 'Patient Resources & Important Links | Speciality Homeopathy',
+  description: 'Access autism intake forms, homeopathy case studies, press coverage, medical tips, and video resources from Speciality Homeopathy — all in one place.',
+  keywords: 'homeopathy patient resources, autism intake form, homeopathy case studies, medical tips homeopathy, Speciality Homeopathy resources',
 };
 
 const pageStyles = `:root{
@@ -38,9 +39,6 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  @media(max-width:880px){.dropdown-toggle svg{display:none}.dropdown-menu{left:16px !important;right:16px !important;width:auto;min-width:0}}
-  .menu-toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
-  .menu-toggle span{width:22px;height:2px;background:var(--blue);transition:.3s;border-radius:2px}
 
   /* page hero */
   .page-hero{position:relative;background:radial-gradient(120% 120% at 84% 0%,#d4eef9 0%,#BAE0F3 48%,#9ed0eb 100%);color:var(--blue);padding:64px 0 74px;overflow:hidden}
@@ -343,7 +341,7 @@ export default function Page() {
                 <div className="type-body">
                   <p>Explore resources, documentation and media regarding Autism History & Perspectives.</p>
                   <div style={{ marginTop: '16px' }}>
-                    <Link href="/important-links/autism-history" className="btn btn-ghost">
+                    <Link href="/autismhistory" className="btn btn-ghost">
                       Open Resource &rarr;
                     </Link>
                   </div>
@@ -356,7 +354,7 @@ export default function Page() {
                 <div className="type-body">
                   <p>Explore resources, documentation and media regarding Clinical Case Studies.</p>
                   <div style={{ marginTop: '16px' }}>
-                    <Link href="/important-links/case-studies" className="btn btn-ghost">
+                    <Link href="/casestudies" className="btn btn-ghost">
                       Open Resource &rarr;
                     </Link>
                   </div>
@@ -369,7 +367,7 @@ export default function Page() {
                 <div className="type-body">
                   <p>Explore resources, documentation and media regarding Medical & Lifestyle Tips.</p>
                   <div style={{ marginTop: '16px' }}>
-                    <Link href="/important-links/medical-tips" className="btn btn-ghost">
+                    <Link href="/medicaltips" className="btn btn-ghost">
                       Open Resource &rarr;
                     </Link>
                   </div>
@@ -382,7 +380,7 @@ export default function Page() {
                 <div className="type-body">
                   <p>Explore resources, documentation and media regarding Clinic Gallery & Activities.</p>
                   <div style={{ marginTop: '16px' }}>
-                    <Link href="/important-links/gallery" className="btn btn-ghost">
+                    <Link href="/gallery" className="btn btn-ghost">
                       Open Resource &rarr;
                     </Link>
                   </div>
@@ -395,7 +393,7 @@ export default function Page() {
                 <div className="type-body">
                   <p>Explore resources, documentation and media regarding Print Media & News Articles.</p>
                   <div style={{ marginTop: '16px' }}>
-                    <Link href="/important-links/print-media" className="btn btn-ghost">
+                    <Link href="/printmedia" className="btn btn-ghost">
                       Open Resource &rarr;
                     </Link>
                   </div>
@@ -408,7 +406,7 @@ export default function Page() {
                 <div className="type-body">
                   <p>Explore resources, documentation and media regarding Clinical & Patient Videos.</p>
                   <div style={{ marginTop: '16px' }}>
-                    <Link href="/important-links/videos" className="btn btn-ghost">
+                    <Link href="/videos" className="btn btn-ghost">
                       Open Resource &rarr;
                     </Link>
                   </div>

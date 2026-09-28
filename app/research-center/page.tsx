@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Research Center | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Syndromic Autism Spectrum Disorder and Rare Genetic Neurology Research Clinic. Explore our research, cured cases, and clinical findings at Speciality Homeopathy, Ahmedabad.",
+  title: 'Homeopathy Research & Case Documentation | Speciality Homeopathy',
+  description: 'Explore Speciality Homeopathy’s research on homeopathic medicines for autism, tuberculosis, and pediatric conditions, led by Dr. Ketan Patel since 1992.',
+  keywords: 'homeopathy research India, case documentation homeopathy, Dr. Ketan Patel research, homeopathic TB treatment research, autism homeopathy case studies',
 };
 
 const pageStyles = `:root{

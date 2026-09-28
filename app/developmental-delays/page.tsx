@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Global Developmental Delays &amp; Motor-Speech Support — Speciality Homeopathy",
-  description: "",
+  title: 'Developmental Delays Support | Speciality Homeopathy',
+  description:
+    'Supportive homeopathic care for children with developmental delays, speech delays, and motor milestones. Consult our specialist in Ahmedabad.',
 };
 
 const pageStyles = `:root{
@@ -110,7 +111,7 @@ const pageStyles = `:root{
     .hero-content h1{font-size:30px;}
   }
 
-  /* ===================== AT A GLANCE (Section 2 — dark) ===================== */
+  /* ===================== AT A GLANCE (Section 2 â€” dark) ===================== */
   .glance-section{padding:100px 24px 90px;background:radial-gradient(ellipse at top, #14294f 0%, var(--navy-dark) 60%);}
   .glance-eyebrow{
     display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;
@@ -251,7 +252,7 @@ export default function Page() {
         <div className="info-icon">
           <svg viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
         </div>
-        <p>Supportive &amp; complementary care — never a replacement for your child's medical team.</p>
+        <p>Supportive &amp; complementary care â€” never a replacement for your child's medical team.</p>
       </div>
     </div>
     <div className="hero-image-wrap">
@@ -343,7 +344,7 @@ export default function Page() {
 </section>
 
 {/*  ============================================================  */}
-{/*  SECTION 4 : CTA — LET'S TALK  */}
+{/*  SECTION 4 : CTA â€” LET'S TALK  */}
 {/*  ============================================================  */}
 <section className="cta-section">
   <div className="cta-panel">
@@ -352,7 +353,7 @@ export default function Page() {
       <div className="cta-underline"></div>
       <p>Book a consultation or share your child's reports securely. We'll listen carefully, be honest about how we can help, and work in step with your child's existing care team.</p>
       <div className="cta-buttons">
-        <Link href="/contact" className="btn btn-blue">
+        <Link href="/contactus" className="btn btn-blue">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           Book a Consultation
         </Link>
@@ -377,16 +378,7 @@ export default function Page() {
 {/*  ============================================================  */}
 
 
-<div className="floating-btns">
-  <a href="#" className="fab fab-whatsapp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.86 9.86 0 0 0 4.62 1.15h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
-    WhatsApp
-  </a>
-  <a href="#" className="fab fab-upload">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
-    Upload Reports
-  </a>
-</div>
     </>
   );
 }
+

@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Intellectual Disability Care & Support | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Understanding Intellectual Disability — possible causes, related conditions and developmental signs — with gentle, supportive homeopathic care alongside your child's medical and therapy team. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  title: "Intellectual Disability Care & Support | Speciality Homeopathy",
+  description: "Learn about intellectual disability, developmental signs and related conditions, with supportive care from Dr. Ketan Patel, Ahmedabad.",
 };
 
 const pageStyles = `:root{
@@ -79,7 +79,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 — POSSIBLE CAUSES */
+  /* SECTION 1 â€” POSSIBLE CAUSES */
   .types{background:#F7F9FB;position:relative;overflow:hidden}
   .types .dotgrid{position:absolute;width:140px;height:100px;background-image:radial-gradient(rgba(10,31,68,.14) 1.4px,transparent 1.4px);background-size:14px 14px;pointer-events:none}
   .types .dotgrid.tl{top:40px;left:0}
@@ -111,7 +111,7 @@ const pageStyles = `:root{
   .types-note p{font-size:.9rem;color:#3d3d3d;margin:0;flex:1}
   .types-note .tn-fly{width:26px;height:26px;color:var(--teal);opacity:.8;flex:0 0 auto}
 
-  /* SECTION 2 — RELATED CONDITIONS */
+  /* SECTION 2 â€” RELATED CONDITIONS */
   .neuro{background:linear-gradient(180deg,#0A1F44 0%,#0c2450 100%);color:var(--ivory);position:relative;overflow:hidden}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .sec-head h2 .hl{background:linear-gradient(120deg,#9cd4ec,#BAE0F3);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -129,7 +129,7 @@ const pageStyles = `:root{
   .neuro-card .hr{width:30px;height:2px;background:linear-gradient(90deg,#5cc8e8,transparent);margin-bottom:12px}
   .neuro-card p{font-size:.82rem;color:rgba(220,232,245,.78);line-height:1.65}
 
-  /* SECTION 3 — SIGNS & DEVELOPMENTAL CONCERNS */
+  /* SECTION 3 â€” SIGNS & DEVELOPMENTAL CONCERNS */
   .behaviour{background:linear-gradient(180deg,#0c2450 0%,#0A1F44 100%);color:var(--ivory)}
   .behaviour .sec-head h2{color:#fff}
   .behaviour .sec-head h2 .hl{color:#4fd8c8}
@@ -205,12 +205,12 @@ export default function Page() {
           </div>
           <div className="hero-text">
             <h1 className="reveal d1">Understanding <span className="accent">Intellectual Disability</span></h1>
-            <p className="lead reveal d2">Possible causes, related conditions and the signs families often notice — with gentle, supportive homeopathic care alongside your child's medical team.</p>
+            <p className="lead reveal d2">Possible causes, related conditions and the signs families often notice â€” with gentle, supportive homeopathic care alongside your child's medical team.</p>
           </div>
         </div>
       </section>
 
-      {/* SECTION 1 — POSSIBLE CAUSES */}
+      {/* SECTION 1 â€” POSSIBLE CAUSES */}
       <section className="sec types">
         <div className="dotgrid tl" aria-hidden="true"></div>
         <div className="dotgrid br" aria-hidden="true"></div>
@@ -222,7 +222,7 @@ export default function Page() {
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>Intellectual Disability can arise from <span className="hl">many factors</span></h2>
-            <p className="lead">Healthy brain development depends on how effectively neural connections form and function. Intellectual Disability may be associated with different genetic, developmental, medical, nutritional or environmental factors — every child's picture is unique.</p>
+            <p className="lead">Healthy brain development depends on how effectively neural connections form and function. Intellectual Disability may be associated with different genetic, developmental, medical, nutritional or environmental factors â€” every child's picture is unique.</p>
           </div>
           <div className="type-grid">
             <div className="type-card reveal d1">
@@ -281,12 +281,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 — RELATED CONDITIONS */}
+      {/* SECTION 2 â€” RELATED CONDITIONS */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>Conditions often seen alongside<br /><span className="hl">Intellectual Disability</span></h2>
-            <p className="lead">Children with additional conditions may require coordinated care from multiple healthcare professionals. Our supportive role is to walk alongside that care — never to replace it.</p>
+            <p className="lead">Children with additional conditions may require coordinated care from multiple healthcare professionals. Our supportive role is to walk alongside that care â€” never to replace it.</p>
           </div>
           <div className="neuro-grid">
             <div className="neuro-card reveal d1">
@@ -346,7 +346,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 — SIGNS & DEVELOPMENTAL CONCERNS */}
+      {/* SECTION 3 â€” SIGNS & DEVELOPMENTAL CONCERNS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -409,7 +409,7 @@ export default function Page() {
           <h2 className="reveal d1">A clearer path for your child's development.</h2>
           <p className="reveal d1">Book a consultation or share your child's reports securely. We'll listen carefully, be honest about how we can help, and work in step with your child's existing care team.</p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
             <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
           </div>
@@ -417,16 +417,7 @@ export default function Page() {
       </section>
 
       {/* STICKY */}
-      <div className="sticky-actions">
-        <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z" /></svg>
-          <span>WhatsApp</span>
-        </a>
-        <Link className="fab fab-up" href="/contact" aria-label="Upload reports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M12 16V4M7 9l5-5 5 5M5 20h14" /></svg>
-          <span>Upload Reports</span>
-        </Link>
-      </div>
     </>
   );
 }
+

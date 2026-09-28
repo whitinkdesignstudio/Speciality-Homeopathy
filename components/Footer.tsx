@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface FooterProps {
   disclaimerText?: string;
@@ -8,7 +9,7 @@ interface FooterProps {
 export default function Footer({ disclaimerText }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const defaultDisclaimer =
-    'Speciality Homeopathy provides homeopathic medicinal care and family guidance for autism, ADHD, cerebral palsy, Down syndrome, genetic, metabolic & mitochondrial disorders or any other child neurological condition. Neurological and genetic conditions are complex and highly individual. Homeopathy offers care aimed at addressing individual symptom patterns and overall well-being. Homeopathy treatment does not claim to cure genetic alterations but controls protein disruptions and channel blockades, results varies from child to child and specific outcomes cannot be guaranteed. For urgent concerns, contact your doctor or emergency services.';
+    'Speciality Homeopathy provides supportive homeopathic care and family guidance for autism, ADHD, cerebral palsy, Down syndrome, and pediatric neurological conditions. Neurological and genetic conditions are complex and highly individual. Homeopathic supportive therapy does not claim to cure genetic alterations. Results vary from child to child. Consult our doctor for an individual assessment. For urgent medical concerns, contact your doctor or emergency services.';
 
   return (
     <footer className="site-footer">
@@ -25,17 +26,16 @@ export default function Footer({ disclaimerText }: FooterProps) {
           {/* Column 1: Brand Logo, Description & Socials */}
           <div className="footer-col-brand">
             <Link href="/" className="footer-brand" aria-label="Speciality Homeopathy Home">
-              <span className="footer-brand-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#00C4D4" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 21s-6-4.35-6-9a6 6 0 0 1 12 0c0 4.65-6 9-6 9Z" />
-                  <circle cx="12" cy="11" r="2.2" />
-                </svg>
-              </span>
-              <span className="footer-brand-name">Speciality Homeopathy</span>
+              <Image
+                src="/logo.png"
+                alt="Speciality Homeopathy - Autism Clinic in Ahmedabad, Gujarat"
+                width={240}
+                height={65}
+                className="footer-logo-img"
+              />
             </Link>
             <p className="footer-brand-desc">
-              Compassionate, individualised supportive homeopathic care for children and families — offered honestly
-              and always alongside your medical team.
+              Speciality Homeopathy is a dedicated autism clinic in Ahmedabad, Gujarat, providing supportive homeopathic care for children and families — offered honestly and always alongside your medical team.
             </p>
             <div className="footer-social-links">
               <a
@@ -76,7 +76,7 @@ export default function Footer({ disclaimerText }: FooterProps) {
                 <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <Link href="/our-doctors">Experts</Link>
+                <Link href="/our-experts">Experts</Link>
               </li>
               <li>
                 <Link href="/treatments">Treatments</Link>

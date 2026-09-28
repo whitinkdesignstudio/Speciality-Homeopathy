@@ -64,11 +64,11 @@ const doctorStyles = `
 
 /* ---- HERO BANNER — light sky blue matching Section 2 ---- */
 .doc-page-container .doc-hero {
-  min-height:72vh;
+  min-height:auto;
   background:#A9D6EE;
   display:flex;
   align-items:flex-end;
-  padding:56px 0 0;
+  padding:24px 0 0;
   position:relative;
   overflow:hidden;
 }
@@ -95,15 +95,16 @@ const doctorStyles = `
 .doc-page-container .doc-hero .wrap{
   display:grid;
   grid-template-columns:1fr 380px;
-  gap:0;
-  align-items:flex-end;
+  gap:24px;
+  align-items:center;
   position:relative;
   z-index:2;
   width:100%;
 }
 
 .doc-page-container .hero-text-block{
-  padding:0 0 64px;
+  padding:24px 0;
+  align-self:center;
 }
 
 .doc-page-container .doc-hero h1{
@@ -120,7 +121,7 @@ const doctorStyles = `
   font-weight:500;
   color:rgba(10,31,68,.75);
   letter-spacing:.06em;
-  margin-bottom:28px;
+  margin-bottom:20px;
 }
 
 .doc-page-container .hero-stats{
@@ -128,7 +129,7 @@ const doctorStyles = `
   gap:36px;
   flex-wrap:wrap;
   border-top:1px solid rgba(10,31,68,.15);
-  padding-top:28px;
+  padding-top:20px;
 }
 
 .doc-page-container .hero-stat .num{
@@ -642,7 +643,7 @@ export default function DrKetanPatelClient() {
             </h2>
             <div className="about-lead reveal d2">
               <p>
-                Dr. Ketan Patel is a respected homeopathic physician with more than 34 years of experience, known for his work in Autism Spectrum Disorder (ASD) and a wide range of pediatric neurological and genetic conditions. Over the years, he has treated more than 12,000 children from across 35 countries, giving families noticeable results where conventional treatments had fallen short.
+                Dr. Ketan Patel is a respected homeopathic physician and autism doctor in Ahmedabad with more than 34 years of experience, known for his work in Autism Spectrum Disorder (ASD) and a wide range of pediatric neurological and genetic conditions. Over the years, he has treated more than 12,000 children from across 35 countries, giving families noticeable results where conventional treatments had fallen short.
               </p>
               <p>
                 Dr. Patel&apos;s approach is unique because of its simplicity and compassion. He prescribes only two or three supplements that are truly needed and introduces therapy only when the child&apos;s brain is ready to benefit. His focus is on first addressing the underlying disorder, guiding parents in their role, and helping children build a natural foundation for intelligence, emotional balance, and social growth.

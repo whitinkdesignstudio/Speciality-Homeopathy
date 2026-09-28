@@ -2,8 +2,11 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Autism History & Neurodevelopmental Conditions | Speciality Homeopathy",
-  description: "Comprehensive guide to profound autism, syndromic autism, mitochondrial & metabolic autism, cerebral palsy, PVL, and HIE.",
+  title: 'Genetic Test & Whole Exome Sequencing for Autism Child',
+  description:
+    'Understand genetic test for autism, whole exome sequencing, and syndromic ASD traits. Supportive homeopathy guidance from specialists in Gujarat.',
+  keywords:
+    'whole exome sequencing for autism child, genetic test for autism, homeopathy autism, autism specialist in Gujarat, syndromic autism',
 };
 
 const pageStyles = `
@@ -200,10 +203,10 @@ export default function AutismHistoryPage() {
             </div>
           </div>
           <div className="sh-content">
-            <span className="sh-eyebrow">Profound Autism</span>
-            <h2>Profound Autism</h2>
+            <span className="sh-eyebrow">Profound Autism Support</span>
+            <h2>Profound Autism &amp; Supportive Homeopathy</h2>
             <p className="sh-desc">
-              Profound autism describes children on the spectrum who need substantial, round-the-clock support in daily life — often alongside minimal or no spoken language and an intellectual disability. Every child's picture looks different, and support is built around what they specifically need.
+              Profound autism describes children needing substantial daily living support. In homeopathy autism care, individualized constitutional remedies are selected to encourage steadier regulation, sensory calmness, and long-term autism child developmental progress.
             </p>
             <ul className="sh-points">
               <li>
@@ -301,10 +304,10 @@ export default function AutismHistoryPage() {
             </div>
           </div>
           <div className="sh-content">
-            <span className="sh-eyebrow">Genetic, Metabolic &amp; Mitochondrial Autism</span>
+            <span className="sh-eyebrow">Diagnostic Workup &amp; Genetics</span>
             <h2>Genetic, Metabolic &amp; Mitochondrial Autism</h2>
             <p className="sh-desc">
-              In some children, autism traits are linked to an underlying genetic mutation, an inborn error of metabolism, or mitochondrial dysfunction — the way cells produce and use energy. This can show up as developmental regression, low muscle tone, or unusual fatigue alongside autism features.
+              In some children, autism traits are linked to an underlying genetic mutation, an inborn error of metabolism, or mitochondrial dysfunction. Conducting a genetic test for autism or whole exome sequencing for an autism child helps identify known variants, guiding our autism specialist in Gujarat to tailor supportive, constitutional care.
             </p>
             <ul className="sh-points">
               <li>

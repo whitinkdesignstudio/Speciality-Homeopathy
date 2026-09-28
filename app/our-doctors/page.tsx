@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Our Doctors & Clinical Experts | Speciality Homeopathy",
-  description: "Meet our experienced team of homeopathic doctors led by Dr. Ketan Patel, Dr. Kamal Patel, and Dr. Bhakti Batavia in Ahmedabad.",
+  title: 'Autism Doctors & Specialists | Speciality Homeopathy',
+  description: 'Meet our experienced autism specialist doctors, Dr. Ketan Patel, Dr. Kamal Patel and Dr. Bhakti Batavia, serving families across India.',
+  keywords: 'autism specialist doctor, autism expert India, autism doctors, Dr. Ketan Patel team, pediatric homeopathy doctors',
 };
 
 const pageStyles = `:root{
@@ -38,9 +39,6 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  @media(max-width:880px){.dropdown-toggle svg{display:none}.dropdown-menu{left:16px !important;right:16px !important;width:auto;min-width:0}}
-  .menu-toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
-  .menu-toggle span{width:22px;height:2px;background:var(--blue);transition:.3s;border-radius:2px}
 
   /* page hero */
   .page-hero{position:relative;background:radial-gradient(120% 120% at 84% 0%,#d4eef9 0%,#BAE0F3 48%,#9ed0eb 100%);color:var(--blue);padding:64px 0 74px;overflow:hidden}
@@ -326,7 +324,7 @@ export default function Page() {
               <Link href="/">Home</Link> / <span>Experts</span>
             </div>
             <span className="eyebrow">Medical Team</span>
-            <h1>Our Doctors &amp; Clinical Specialists</h1>
+            <h1>Our Autism Doctors &amp; Clinical Specialists</h1>
             <p className="lead">
               Meet our team of experienced, dedicated homeopathic physicians committed to clinical excellence, research,
               and patient-centered care.
@@ -383,7 +381,7 @@ export default function Page() {
           <h2 className="reveal d1">Consult with our doctors</h2>
           <p className="reveal d1">In-clinic consultations in Vastrapur, Ahmedabad and secure video consultations available for patients worldwide.</p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
           </div>
         </div>

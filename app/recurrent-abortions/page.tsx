@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Recurrent Abortions — Speciality Homeopathy",
+  title: "Recurrent Abortions â€” Speciality Homeopathy",
   description: "",
 };
 
@@ -360,7 +360,7 @@ const pageStyles = `:root{
   .cond-arc-left{ left:-210px; top:260px; }
   .cond-arc-right{ right:-210px; top:260px; }
 
-  /* baby hammock — dead center, cropped to a clean centered square so it reads
+  /* baby hammock â€” dead center, cropped to a clean centered square so it reads
      like a contained photo rather than a wide stretched banner */
   .center-baby{
     position:absolute;
@@ -567,7 +567,7 @@ export default function Page() {
       </div>
     </div>
     <div className="hero-image-wrap">
-      {/*  PLACEHOLDER: Hero photo — mother holding baby on bed  */}
+      {/*  PLACEHOLDER: Hero photo â€” mother holding baby on bed  */}
 <img src="/images/recurrent-abortions/image-1.png" alt="Mother smiling with baby on bed" style={({"position":"absolute","inset":"0","width":"100%","height":"100%","objectFit":"cover"} as React.CSSProperties)} loading="lazy" decoding="async" />
     </div>
   </div>
@@ -786,7 +786,7 @@ export default function Page() {
 </section>
 
 {/*  ============================================================  */}
-{/*  SECTION 5 : CTA — JOURNEY  */}
+{/*  SECTION 5 : CTA â€” JOURNEY  */}
 {/*  ============================================================  */}
 <section className="cta-section">
   <div className="cta-panel">
@@ -819,18 +819,7 @@ export default function Page() {
 {/*  ============================================================  */}
 {/*  FOOTER  */}
 {/*  ============================================================  */}
-
-
-<div className="floating-btns">
-  <a href="#" className="fab fab-whatsapp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.86 9.86 0 0 0 4.62 1.15h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2z"/></svg>
-    WhatsApp
-  </a>
-  <a href="#" className="fab fab-upload">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
-    Upload Reports
-  </a>
-</div>
     </>
   );
 }
+

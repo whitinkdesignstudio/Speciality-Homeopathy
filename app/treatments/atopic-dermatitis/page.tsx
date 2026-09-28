@@ -3,8 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Atopic Dermatitis (Chronic Eczema) Care | Speciality Homeopathy — Dr. Ketan Patel",
-  description: "Understanding Atopic Dermatitis (chronic eczema) — types, causes and common symptoms — with individualised, supportive homeopathic care alongside your dermatologist. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  title: 'Atopic Dermatitis (Chronic Eczema) Care | Speciality Homeopathy',
+  description: 'Learn about atopic dermatitis, including causes, types and common symptoms, with supportive care alongside your dermatologist. Dr. Ketan Patel, Ahmedabad.',
+  keywords: 'atopic dermatitis homeopathy, chronic eczema homeopathic treatment, eczema natural remedy India, skin allergy homeopathy, steroid-free eczema treatment',
 };
 
 const pageStyles = `:root{
@@ -38,9 +39,6 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  @media(max-width:880px){.dropdown-toggle svg{display:none}.dropdown-menu{left:16px !important;right:16px !important;width:auto;min-width:0}}
-  .menu-toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
-  .menu-toggle span{width:22px;height:2px;background:var(--blue);transition:.3s;border-radius:2px}
 
   /* page hero */
   .page-hero{position:relative;background:radial-gradient(120% 120% at 84% 0%,#d4eef9 0%,#BAE0F3 48%,#9ed0eb 100%);color:var(--blue);padding:64px 0 74px;overflow:hidden}
@@ -334,7 +332,7 @@ export default function Page() {
     <h2 className="reveal d1">Calmer skin, fewer flare-ups, more comfort.</h2>
     <p className="reveal d1">Book a consultation or share your reports securely. We'll assess your skin's pattern carefully and build an individualised plan alongside your dermatologist's ongoing care.</p>
     <div className="cta-row reveal d2">
-      <a className="btn btn-primary" href="/contact">Book a Consultation</a>
+      <a className="btn btn-primary" href="/contactus">Book a Consultation</a>
       <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
       <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
     </div>
@@ -345,16 +343,6 @@ export default function Page() {
 
 
 {/*  STICKY  */}
-<div className="sticky-actions">
-  <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z"/></svg>
-    <span>WhatsApp</span>
-  </a>
-  <a className="fab fab-up" href="/contact" aria-label="Upload reports">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M12 16V4M7 9l5-5 5 5M5 20h14"/></svg>
-    <span>Upload Reports</span>
-  </a>
-</div>
     </>
   );
 }

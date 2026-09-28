@@ -3,9 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Autism (ASD) Care, Remedies & Management | Constitutional & Sequential Homeopathy — Dr. Ketan Patel",
-  description: "Natural, holistic constitutional and sequential homeopathy support for Autism Spectrum Disorder (ASD), Asperger's Syndrome, Intense & Profound Autism, Virtual Autism and PTSD — for autistic boys, girls and young adults. Understanding autism types, genetic/metabolic/mitochondrial conditions and everyday behaviours, alongside your child's medical team. Dr. Ketan Patel Therapy Centre, Vastrapur, Ahmedabad.",
-  keywords: "autism, ASD, autism spectrum disorder, Asperger's syndrome, autistic child, intense autism, profound autism, virtual autism, PTSD, genetic metabolic mitochondrial disorders, constitutional homeopathy, sequential homeopathy, natural holistic autism treatment, autism therapy centre",
+  title: "Autism Homeopathy & ASD Care | Dr. Ketan Patel, Ahmedabad",
+  description: "Supportive homeopathy for autism (ASD) in children, alongside your medical team. Consult our autism specialist doctor in Ahmedabad. Results vary.",
+  keywords: "autism homeopathy, homeopathy autism, holistic autism treatment, early intervention therapy, how to increase speech in autistic child, how to improve focus in autistic child, autistic child not sleeping, child not making eye contact, child not responding to name",
 };
 
 const pageStyles = `
@@ -240,20 +240,20 @@ export default function Page() {
       <section className="page-hero" id="top">
         <div className="wrap">
           <div className="hero-text">
-            <h1 className="reveal d1">Autism Spectrum Disorder (ASD) care — types, related conditions & everyday behaviour.</h1>
+            <h1 className="reveal d1">Autism homeopathy &amp; ASD care — types, related conditions &amp; everyday behaviour.</h1>
             <p className="lead reveal d2">
-              A closer look at how Autism Spectrum Disorder, Asperger's Syndrome, Intense Autism, Profound Autism and Virtual Autism can present, the genetic, metabolic, mitochondrial and neurological conditions often seen alongside them, and the everyday behaviours families navigate — with natural, holistic constitutional and sequential homeopathy support for autistic boys, girls and young adults, alongside your child's medical and therapy team.
+              A closer look at how Autism Spectrum Disorder, Asperger's Syndrome, and developmental differences present — and how constitutional, sequential and supportive homeopathy works alongside your child's medical and early intervention therapy team.
             </p>
             <div className="honesty reveal d2">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M12 8v4M12 16h.01"/>
                 <circle cx="12" cy="12" r="9"/>
               </svg>
-              Supportive & complementary care — never a replacement for your child's medical team.
+              Supportive &amp; complementary care — never a replacement for your child's medical team or pediatric neurologist.
             </div>
             <div className="page-hero-cta reveal d3">
-              <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
-              <Link className="btn btn-ghost" href="/contact">
+              <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+              <Link className="btn btn-ghost" href="/contactus">
                 Upload Reports
                 <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                   <path d="M12 16V4M7 9l5-5 5 5M5 20h14"/>
@@ -269,7 +269,7 @@ export default function Page() {
 
           <div className="hero-visual reveal d2" aria-hidden="true">
             <div className="hv-photo-wrap">
-              <img className="hv-photo" src="/images/autism-care/image-1.png" alt="Child holding colourful puzzle pieces" loading="lazy" decoding="async" />
+              <img className="hv-photo" src="/images/autism-care/image-1.png" alt="Child autism specialist care — child holding colourful puzzle pieces" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function Page() {
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>ASD can present in different ways</h2>
-            <p className="lead">Every child's presentation is unique — from Asperger's Syndrome and mild traits to Intense and Profound Autism. Care is shaped around your child, not a label.</p>
+            <p className="lead">A child not making eye contact or not responding to their name can be an early sign worth a specialist assessment. Every child's presentation is unique — from Asperger's Syndrome and mild traits to Intense and Profound Autism. Care is shaped around your child, not a label.</p>
           </div>
           <div className="type-grid-v2">
             <div className="type-card-v2 tint-teal reveal d1">
@@ -342,7 +342,7 @@ export default function Page() {
               </div>
               <h4>Cerebral Palsy</h4>
               <p>A neurological condition affecting movement, muscle coordination, posture and motor development. Early assessment and personalised support can help.</p>
-              <Link className="neuro-learn" href="/contact">
+              <Link className="neuro-learn" href="/contactus">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -361,7 +361,7 @@ export default function Page() {
               </div>
               <h4>Periventricular Leukomalacia (PVL)</h4>
               <p>A condition affecting the brain's white matter, often linked to motor development and muscle-control challenges. Ongoing monitoring matters.</p>
-              <Link className="neuro-learn" href="/contact">
+              <Link className="neuro-learn" href="/contactus">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -379,7 +379,7 @@ export default function Page() {
               </div>
               <h4>Mild Hypoxic-Ischemic Encephalopathy (HIE)</h4>
               <p>Related to reduced oxygen and blood supply to the brain around birth. Regular developmental assessment and specialist guidance matter here.</p>
-              <Link className="neuro-learn" href="/contact">
+              <Link className="neuro-learn" href="/contactus">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -397,7 +397,7 @@ export default function Page() {
               </div>
               <h4>PTSD (Post-Traumatic Stress)</h4>
               <p>Stress or trauma-related symptoms can sometimes overlap with or intensify autism-related behaviour. A trained specialist's assessment helps tell the two apart and guide the right support.</p>
-              <Link className="neuro-learn" href="/contact">
+              <Link className="neuro-learn" href="/contactus">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -426,9 +426,9 @@ export default function Page() {
                     <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z"/>
                   </svg>
                 </div>
-                <h4>Speech Delays in Child</h4>
+                <h4>Speech &amp; Social Communication</h4>
                 <div className="bv2-rule"></div>
-                <p>Difficulty developing words, understanding language, or communicating needs and emotions. Individual assessment guides suitable communication support and speech-language intervention.</p>
+                <p>Difficulty developing words, understanding language, or communicating needs and emotions. Parents often ask how to increase speech in an autistic child; individual assessment guides suitable communication support and early intervention therapy.</p>
               </div>
             </div>
             <div className="beh-card-v2 tint-gold reveal d2">
@@ -443,7 +443,7 @@ export default function Page() {
                 </div>
                 <h4>Hyperactive / Restless Child</h4>
                 <div className="bv2-rule"></div>
-                <p>Difficulty focusing on one activity, sitting calmly, or maintaining attention. Looking at daily routine, sleep and physical activity helps shape the right support plan.</p>
+                <p>Difficulty focusing on one activity, sitting calmly, or maintaining attention. Looking at daily routine, sleep and physical activity helps shape a plan on how to improve focus in an autistic child.</p>
               </div>
             </div>
             <div className="beh-card-v2 tint-blue reveal d3">
@@ -487,9 +487,9 @@ export default function Page() {
                     <path d="M17 3a6 6 0 1 0 4.5 9.8A8 8 0 1 1 17 3Z"/>
                   </svg>
                 </div>
-                <h4>Sleep Management in Autistic Child</h4>
+                <h4>Sleep Support in Autistic Child</h4>
                 <div className="bv2-rule"></div>
-                <p>Difficulty falling asleep, irregular routine or disturbed sleep. Assessing daily routine and individual needs helps plan suitable strategies.</p>
+                <p>Difficulty falling asleep, irregular routine or disturbed sleep — a common concern when an autistic child is not sleeping. Assessing daily routine and individual needs helps plan suitable strategies.</p>
               </div>
             </div>
           </div>
@@ -509,10 +509,10 @@ export default function Page() {
           <div>
             <h2 className="reveal d1">A calmer, more supported everyday for your child.</h2>
             <p className="reveal d1">
-              At our autism therapy centre, we offer natural, holistic constitutional and sequential homeopathy care for boys, girls and young adults with Autism Spectrum Disorder. Book a consultation or share your child's reports securely — we'll listen carefully, be honest about how we can help, and work in step with your child's existing care team.
+              At our autism clinic in Ahmedabad, we offer holistic autism treatment support through constitutional and sequential homeopathy for boys, girls and young adults with Autism Spectrum Disorder. Book a consultation or share your child's reports securely — we'll listen carefully, be honest about how we can help, and work in step with your child's existing care team.
             </p>
             <div className="cta-v2-row reveal d2">
-              <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
+              <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
               <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
               <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener noreferrer">WhatsApp our team</a>
             </div>
@@ -522,22 +522,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      {/* STICKY ACTIONS */}
-      <div className="sticky-actions">
-        <a className="fab fab-wa" href="https://wa.me/918320131612" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.5-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.6-.1 1.1Z"/>
-          </svg>
-          <span>WhatsApp</span>
-        </a>
-        <Link className="fab fab-up" href="/contact" aria-label="Upload reports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-            <path d="M12 16V4M7 9l5-5 5 5M5 20h14"/>
-          </svg>
-          <span>Upload Reports</span>
-        </Link>
-      </div>
     </>
   );
 }
