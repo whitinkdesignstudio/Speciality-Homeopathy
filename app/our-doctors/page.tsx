@@ -320,10 +320,6 @@ export default function Page() {
       <section className="page-hero" id="top">
         <div className="wrap">
           <div>
-            <div className="breadcrumb">
-              <Link href="/">Home</Link> / <span>Experts</span>
-            </div>
-            <span className="eyebrow">Medical Team</span>
             <h1>Our Autism Doctors &amp; Clinical Specialists</h1>
             <p className="lead">
               Meet our team of experienced, dedicated homeopathic physicians committed to clinical excellence, research,

@@ -315,15 +315,11 @@ export default function Page() {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
-      
-      
+
+
       <section className="page-hero" id="top">
         <div className="wrap">
           <div>
-            <div className="breadcrumb">
-              <Link href="/">Home</Link> / <span>Important Links</span>
-            </div>
-            <span className="eyebrow">Resources &amp; Media</span>
             <h1>Important Links &amp; Clinical Resources</h1>
             <p className="lead">Access educational articles, case documentation, media coverage, and patient resources.</p>
           </div>
@@ -333,90 +329,90 @@ export default function Page() {
       <section className="sec types">
         <div className="wrap">
           <div className="type-grid">
-            
-              <div key="0" className="type-card reveal">
-                <div className="type-top">
-                  <h3>Autism History & Perspectives</h3>
-                </div>
-                <div className="type-body">
-                  <p>Explore resources, documentation and media regarding Autism History & Perspectives.</p>
-                  <div style={{ marginTop: '16px' }}>
-                    <Link href="/autismhistory" className="btn btn-ghost">
-                      Open Resource &rarr;
-                    </Link>
-                  </div>
+
+            <div key="0" className="type-card reveal">
+              <div className="type-top">
+                <h3>Autism History & Perspectives</h3>
+              </div>
+              <div className="type-body">
+                <p>Explore resources, documentation and media regarding Autism History & Perspectives.</p>
+                <div style={{ marginTop: '16px' }}>
+                  <Link href="/autismhistory" className="btn btn-ghost">
+                    Open Resource &rarr;
+                  </Link>
                 </div>
               </div>
-              <div key="1" className="type-card reveal">
-                <div className="type-top">
-                  <h3>Clinical Case Studies</h3>
-                </div>
-                <div className="type-body">
-                  <p>Explore resources, documentation and media regarding Clinical Case Studies.</p>
-                  <div style={{ marginTop: '16px' }}>
-                    <Link href="/casestudies" className="btn btn-ghost">
-                      Open Resource &rarr;
-                    </Link>
-                  </div>
+            </div>
+            <div key="1" className="type-card reveal">
+              <div className="type-top">
+                <h3>Clinical Case Studies</h3>
+              </div>
+              <div className="type-body">
+                <p>Explore resources, documentation and media regarding Clinical Case Studies.</p>
+                <div style={{ marginTop: '16px' }}>
+                  <Link href="/casestudies" className="btn btn-ghost">
+                    Open Resource &rarr;
+                  </Link>
                 </div>
               </div>
-              <div key="2" className="type-card reveal">
-                <div className="type-top">
-                  <h3>Medical & Lifestyle Tips</h3>
-                </div>
-                <div className="type-body">
-                  <p>Explore resources, documentation and media regarding Medical & Lifestyle Tips.</p>
-                  <div style={{ marginTop: '16px' }}>
-                    <Link href="/medicaltips" className="btn btn-ghost">
-                      Open Resource &rarr;
-                    </Link>
-                  </div>
+            </div>
+            <div key="2" className="type-card reveal">
+              <div className="type-top">
+                <h3>Medical & Lifestyle Tips</h3>
+              </div>
+              <div className="type-body">
+                <p>Explore resources, documentation and media regarding Medical & Lifestyle Tips.</p>
+                <div style={{ marginTop: '16px' }}>
+                  <Link href="/medicaltips" className="btn btn-ghost">
+                    Open Resource &rarr;
+                  </Link>
                 </div>
               </div>
-              <div key="3" className="type-card reveal">
-                <div className="type-top">
-                  <h3>Clinic Gallery & Activities</h3>
-                </div>
-                <div className="type-body">
-                  <p>Explore resources, documentation and media regarding Clinic Gallery & Activities.</p>
-                  <div style={{ marginTop: '16px' }}>
-                    <Link href="/gallery" className="btn btn-ghost">
-                      Open Resource &rarr;
-                    </Link>
-                  </div>
+            </div>
+            <div key="3" className="type-card reveal">
+              <div className="type-top">
+                <h3>Clinic Gallery & Activities</h3>
+              </div>
+              <div className="type-body">
+                <p>Explore resources, documentation and media regarding Clinic Gallery & Activities.</p>
+                <div style={{ marginTop: '16px' }}>
+                  <Link href="/gallery" className="btn btn-ghost">
+                    Open Resource &rarr;
+                  </Link>
                 </div>
               </div>
-              <div key="4" className="type-card reveal">
-                <div className="type-top">
-                  <h3>Print Media & News Articles</h3>
-                </div>
-                <div className="type-body">
-                  <p>Explore resources, documentation and media regarding Print Media & News Articles.</p>
-                  <div style={{ marginTop: '16px' }}>
-                    <Link href="/printmedia" className="btn btn-ghost">
-                      Open Resource &rarr;
-                    </Link>
-                  </div>
+            </div>
+            <div key="4" className="type-card reveal">
+              <div className="type-top">
+                <h3>Print Media & News Articles</h3>
+              </div>
+              <div className="type-body">
+                <p>Explore resources, documentation and media regarding Print Media & News Articles.</p>
+                <div style={{ marginTop: '16px' }}>
+                  <Link href="/printmedia" className="btn btn-ghost">
+                    Open Resource &rarr;
+                  </Link>
                 </div>
               </div>
-              <div key="5" className="type-card reveal">
-                <div className="type-top">
-                  <h3>Clinical & Patient Videos</h3>
-                </div>
-                <div className="type-body">
-                  <p>Explore resources, documentation and media regarding Clinical & Patient Videos.</p>
-                  <div style={{ marginTop: '16px' }}>
-                    <Link href="/videos" className="btn btn-ghost">
-                      Open Resource &rarr;
-                    </Link>
-                  </div>
+            </div>
+            <div key="5" className="type-card reveal">
+              <div className="type-top">
+                <h3>Clinical & Patient Videos</h3>
+              </div>
+              <div className="type-body">
+                <p>Explore resources, documentation and media regarding Clinical & Patient Videos.</p>
+                <div style={{ marginTop: '16px' }}>
+                  <Link href="/videos" className="btn btn-ghost">
+                    Open Resource &rarr;
+                  </Link>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </section>
 
-      
+
     </>
   );
 }

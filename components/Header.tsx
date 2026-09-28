@@ -138,7 +138,7 @@ export default function Header() {
             {/* 2. About Us */}
             <li className="nav-item">
               <Link
-                href="/aboutus"
+                href="/about-us"
                 className={`nav-link ${isAbout ? 'active' : ''}`}
                 onClick={() => setMobileOpen(false)}
               >
