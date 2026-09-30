@@ -599,7 +599,7 @@ export default function GalleryPage() {
         <h2>Experience Speciality Homeopathy Care</h2>
         <p>Book a personal consultation for your child with Dr. Ketan Patel and our dedicated clinical team.</p>
         <div className="cta-btns">
-          <Link href="/contactus" className="btn-consult">
+          <Link href="/contact" className="btn-consult">
             Book a Consultation
           </Link>
           <a

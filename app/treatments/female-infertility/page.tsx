@@ -501,7 +501,7 @@ export default function Page() {
           </div>
           <div className="callout reveal d3" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px', flexWrap: 'wrap', background: '#fff', borderLeftColor: 'var(--teal)' }}>
             <span><strong style={{ color: 'var(--blue)' }}>You're not alone.</strong> We're here to support you with care that's personal and compassionate.</span>
-            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
           </div>
           <p className="prose reveal d3" style={{ marginTop: '20px', fontSize: '.82rem', color: '#666' }}>
             Success rate and treatment-effectiveness claims referenced on this page are the clinic's own and are not established by high-quality scientific evidence. Female infertility needs proper evaluation with a gynecologist or fertility specialist — homeopathic support is offered alongside, never as a replacement for, that care.

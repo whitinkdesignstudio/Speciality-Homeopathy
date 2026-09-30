@@ -739,7 +739,7 @@ export default function ADHDADDPage() {
             If your child experiences persistent difficulties with attention, focus, hyperactivity, impulsivity or school performance, a detailed assessment can help identify their individual needs and explore an individualized support plan.
           </p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contactus">
+            <Link className="btn btn-primary" href="/contact">
               Book a Consultation
             </Link>
             <a className="btn btn-ghost" href="tel:+919898005354">

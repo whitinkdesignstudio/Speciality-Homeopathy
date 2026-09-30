@@ -377,7 +377,7 @@ export default function Page() {
           <h2 className="reveal d1">Consult with our doctors</h2>
           <p className="reveal d1">In-clinic consultations in Vastrapur, Ahmedabad and secure video consultations available for patients worldwide.</p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
           </div>
         </div>

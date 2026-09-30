@@ -252,8 +252,8 @@ export default function Page() {
               Supportive &amp; complementary care — never a replacement for your child's medical team or pediatric neurologist.
             </div>
             <div className="page-hero-cta reveal d3">
-              <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
-              <Link className="btn btn-ghost" href="/contactus">
+              <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
+              <Link className="btn btn-ghost" href="/contact">
                 Upload Reports
                 <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                   <path d="M12 16V4M7 9l5-5 5 5M5 20h14"/>
@@ -342,7 +342,7 @@ export default function Page() {
               </div>
               <h4>Cerebral Palsy</h4>
               <p>A neurological condition affecting movement, muscle coordination, posture and motor development. Early assessment and personalised support can help.</p>
-              <Link className="neuro-learn" href="/contactus">
+              <Link className="neuro-learn" href="/contact">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -361,7 +361,7 @@ export default function Page() {
               </div>
               <h4>Periventricular Leukomalacia (PVL)</h4>
               <p>A condition affecting the brain's white matter, often linked to motor development and muscle-control challenges. Ongoing monitoring matters.</p>
-              <Link className="neuro-learn" href="/contactus">
+              <Link className="neuro-learn" href="/contact">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -379,7 +379,7 @@ export default function Page() {
               </div>
               <h4>Mild Hypoxic-Ischemic Encephalopathy (HIE)</h4>
               <p>Related to reduced oxygen and blood supply to the brain around birth. Regular developmental assessment and specialist guidance matter here.</p>
-              <Link className="neuro-learn" href="/contactus">
+              <Link className="neuro-learn" href="/contact">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -397,7 +397,7 @@ export default function Page() {
               </div>
               <h4>PTSD (Post-Traumatic Stress)</h4>
               <p>Stress or trauma-related symptoms can sometimes overlap with or intensify autism-related behaviour. A trained specialist's assessment helps tell the two apart and guide the right support.</p>
-              <Link className="neuro-learn" href="/contactus">
+              <Link className="neuro-learn" href="/contact">
                 Know More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6"/>
@@ -512,7 +512,7 @@ export default function Page() {
               At our autism clinic in Ahmedabad, we offer holistic autism treatment support through constitutional and sequential homeopathy for boys, girls and young adults with Autism Spectrum Disorder. Book a consultation or share your child's reports securely — we'll listen carefully, be honest about how we can help, and work in step with your child's existing care team.
             </p>
             <div className="cta-v2-row reveal d2">
-              <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+              <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
               <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
               <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener noreferrer">WhatsApp our team</a>
             </div>

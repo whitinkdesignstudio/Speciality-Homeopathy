@@ -662,7 +662,7 @@ export default function CaseStudiesPage() {
         <h2>Have questions about a specific case presentation?</h2>
         <p>Our clinical team is available to review your child's developmental reports and discuss tailored homeopathic care.</p>
         <div className="cta-row">
-          <Link href="/contactus" className="btn-white">
+          <Link href="/contact" className="btn-white">
             Book Consultation
           </Link>
           <a href="https://wa.me/918320131612" target="_blank" rel="noopener noreferrer" className="btn-white">

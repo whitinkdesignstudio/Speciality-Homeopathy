@@ -10,7 +10,7 @@ const conditions = [
     id: 1,
     title: 'Autism Spectrum',
     img: 'https://static.wixstatic.com/media/66422a_374dd45a9f1e41f98467dc61529716eb~mv2.png',
-    link: '/treatments/autism-care',
+    link: '/autism-care',
     summary: 'A lifelong neurodevelopmental difference in communication, social interaction and sensory experience.',
     detail: 'Autism is not an illness to be cured — it is part of who a person is. Diagnosis and developmental support belong with qualified specialists. Our role is supportive: comfort, routine, sleep and family wellbeing, alongside that care.'
   },
@@ -18,7 +18,7 @@ const conditions = [
     id: 2,
     title: 'Child Neurological Conditions',
     img: 'https://static.wixstatic.com/media/66422a_b09ca22d233542e6b4c7003eb3729969~mv2.png',
-    link: '/treatments/child-neurological-disorders',
+    link: '/child-neurological-disorders',
     summary: 'A range of conditions affecting how a child’s nervous system develops and functions.',
     detail: 'These conditions are diagnosed and managed by paediatric neurologists and allied specialists. We offer gentle, supportive, family-centred care that complements — never replaces — that medical care.'
   },
@@ -26,7 +26,7 @@ const conditions = [
     id: 3,
     title: 'ADHD & ADD',
     img: 'https://static.wixstatic.com/media/66422a_b09ca22d233542e6b4c7003eb3729969~mv2.png',
-    link: '/treatments/adhd-add',
+    link: '/adhd-add',
     summary: 'Neurodevelopmental conditions affecting attention, activity level and impulse regulation.',
     detail: 'Best assessed and managed by qualified clinicians. Where families seek complementary support for general wellbeing and daily routine, we offer it honestly — never as a replacement for professional assessment or prescribed care.'
   },
@@ -34,7 +34,7 @@ const conditions = [
     id: 4,
     title: 'Cerebral Palsy',
     img: 'https://static.wixstatic.com/media/66422a_08f37d6825ae4a53b7af204543855533~mv2.png',
-    link: '/treatments/cerebral-palsy',
+    link: '/cerebral-palsy',
     summary: 'A group of conditions affecting movement and posture, arising from early brain development.',
     detail: 'Cerebral palsy requires ongoing medical, physiotherapy and occupational-therapy care. Our supportive role focuses on comfort and family wellbeing and never substitutes for that essential care.'
   },
@@ -42,7 +42,7 @@ const conditions = [
     id: 5,
     title: 'Down Syndrome',
     img: 'https://static.wixstatic.com/media/66422a_e778b27795fc439d9d70fead90fdb7bc~mv2.png',
-    link: '/treatments/downs-syndrome',
+    link: '/downs-syndrome',
     summary: 'A genetic condition (trisomy 21) present from birth.',
     detail: 'Down syndrome is genetic and lifelong; it cannot be cured or reversed, and we make no such claim. Families are supported by paediatric and developmental specialists. We offer gentle, supportive care for general wellbeing alongside that team.'
   },
@@ -50,7 +50,7 @@ const conditions = [
     id: 6,
     title: 'Developmental Delay',
     img: 'https://static.wixstatic.com/media/66422a_4503b3e8572146928ad4ffa0867e4672~mv2.png',
-    link: '/treatments/developmentaldelays',
+    link: '/developmental-delays',
     summary: 'When a child reaches developmental milestones later than typically expected.',
     detail: 'Developmental delay deserves timely, professional assessment so the right early support can begin. We walk alongside families, encouraging that early intervention and supporting wellbeing at home.'
   }
@@ -359,7 +359,7 @@ export default function HomePage() {
       <section className="sec credit" id="credit">
         <div className="wrap">
           <div className="credit-grid">
-            <Link href="/our-experts/dr-ketan-patel" className="founder-portrait reveal" aria-label="View Dr. Ketan Patel's profile">
+            <Link prefetch={true} href="/dr-ketan-patel-speciality-homeopathy" className="founder-portrait reveal" aria-label="View Dr. Ketan Patel's profile">
               <img src="https://static.wixstatic.com/media/66422a_2e80f863abef44c4baa603772ca1149c~mv2.png"
                 alt="Dr. Ketan Patel — autism doctor in Ahmedabad" loading="lazy" decoding="async" />
             </Link>
@@ -380,11 +380,11 @@ export default function HomePage() {
                 <div><span>Global</span><small>Autism lectures &amp; schools</small></div>
                 <div><span>Birth–16</span><small>Ages cared for</small></div>
               </div>
-              <Link href="/our-experts/dr-ketan-patel" className="founder-profile-link">
+              <Link prefetch={true} href="/dr-ketan-patel-speciality-homeopathy" className="founder-profile-link">
                 View Dr. Ketan Patel&apos;s profile <ArrowRight aria-hidden="true" size={18} />
               </Link>
               <div className="team-row reveal d2">
-                <Link href="/our-experts/drkamalpatel" className="doc">
+                <Link prefetch={true} href="/dr-kamal-patel-speciality-homeopathy" className="doc">
                   <div className="av">
                     <img src="https://static.wixstatic.com/media/66422a_7f710f2df8d44845a086efb7e1311ba9~mv2.png"
                       alt="Dr. Kamal Patel" loading="lazy" decoding="async" />
@@ -395,7 +395,7 @@ export default function HomePage() {
                     <div className="yr">~20 years</div>
                   </div>
                 </Link>
-                <Link href="/our-experts/drbhaktibatavia" className="doc">
+                <Link prefetch={true} href="/dr-bhakti-batavia-speciality-homeopathy" className="doc">
                   <div className="av">
                     <img src="https://static.wixstatic.com/media/66422a_994a71f1415540d291f87e2b8f8003d7~mv2.png"
                       alt="Dr. Bhakti Batavia" loading="lazy" decoding="async" />
@@ -505,9 +505,7 @@ export default function HomePage() {
           </div>
           <div className="cond-grid" id="condGrid">
             {conditions.map((c, i) => (
-              <Link
-                key={c.id}
-                href={c.link}
+              <Link key={c.id} href={c.link} prefetch={true}
                 className={`cond reveal d${(i % 3) + 1}`}
               >
                 <div className="cimg">

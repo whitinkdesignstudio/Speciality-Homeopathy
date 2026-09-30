@@ -25,7 +25,7 @@ export default function Footer({ disclaimerText }: FooterProps) {
         <div className="footer-grid">
           {/* Column 1: Brand Logo, Description & Socials */}
           <div className="footer-col-brand">
-            <Link href="/" className="footer-brand" aria-label="Speciality Homeopathy Home">
+            <Link prefetch={true} href="/" className="footer-brand" aria-label="Speciality Homeopathy Home">
               <Image
                 src="/logo.png"
                 alt="Speciality Homeopathy - Autism Clinic in Ahmedabad, Gujarat"
@@ -98,31 +98,31 @@ export default function Footer({ disclaimerText }: FooterProps) {
             <h5 className="footer-col-title">EXPLORE</h5>
             <ul className="footer-links-list">
               <li>
-                <Link href="/">Home</Link>
+                <Link prefetch={true} href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about-us">About Us</Link>
+                <Link prefetch={true} href="/about-us">About Us</Link>
               </li>
               <li>
-                <Link href="/what-is-homeopathy">What is Homeopathy?</Link>
+                <Link prefetch={true} href="/what-is-homeopathy">What is Homeopathy?</Link>
               </li>
               <li>
-                <Link href="/our-experts">Our Experts</Link>
+                <Link prefetch={true} href="/our-experts">Our Experts</Link>
               </li>
               <li>
-                <Link href="/treatments">Treatments</Link>
+                <Link prefetch={true} href="/treatments">Treatments</Link>
               </li>
               <li>
-                <Link href="/locations">Clinics &amp; Branches</Link>
+                <Link prefetch={true} href="/locations">Clinics &amp; Branches</Link>
               </li>
               <li>
-                <Link href="/research-center">Research Center</Link>
+                <Link prefetch={true} href="/research-center">Research Center</Link>
               </li>
               <li>
-                <Link href="/inquiry">Consultation Inquiry</Link>
+                <Link prefetch={true} href="/inquiry">Consultation Inquiry</Link>
               </li>
               <li>
-                <Link href="/contact">Contact Us</Link>
+                <Link prefetch={true} href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -132,28 +132,28 @@ export default function Footer({ disclaimerText }: FooterProps) {
             <h5 className="footer-col-title">PATIENT RESOURCES</h5>
             <ul className="footer-links-list">
               <li>
-                <Link href="/how-to-pay-fees">How to Pay Fees</Link>
+                <Link prefetch={true} href="/how-to-pay-fees">How to Pay Fees</Link>
               </li>
               <li>
-                <Link href="/therapy-for-ability">Therapy For Ability (Delhi)</Link>
+                <Link prefetch={true} href="/therapy-for-ability">Therapy For Ability (Delhi)</Link>
               </li>
               <li>
-                <Link href="/medical-registrations">Medical Registrations</Link>
+                <Link prefetch={true} href="/medical-registrations">Medical Registrations</Link>
               </li>
               <li>
-                <Link href="/casestudies">Cured Case Studies</Link>
+                <Link prefetch={true} href="/casestudies">Cured Case Studies</Link>
               </li>
               <li>
-                <Link href="/medicaltips">Medical Tips</Link>
+                <Link prefetch={true} href="/medicaltips">Medical Tips</Link>
               </li>
               <li>
-                <Link href="/print-media">Print Media</Link>
+                <Link prefetch={true} href="/print-media">Print Media</Link>
               </li>
               <li>
-                <Link href="/videos">Videos &amp; Media</Link>
+                <Link prefetch={true} href="/videos">Videos &amp; Media</Link>
               </li>
               <li>
-                <Link href="/important-links">Important Links</Link>
+                <Link prefetch={true} href="/important-links">Important Links</Link>
               </li>
             </ul>
           </div>
@@ -195,9 +195,9 @@ export default function Footer({ disclaimerText }: FooterProps) {
             © {currentYear} Speciality Homeopathy - Dr. Ketan Patel. All rights reserved.
           </p>
           <div className="footer-legal-links">
-            <Link href="/privacy">Privacy Policy</Link>
-            <Link href="/terms">T &amp; C</Link>
-            <Link href="/medical-disclaimer">Medical Disclaimer</Link>
+            <Link prefetch={true} href="/privacy">Privacy Policy</Link>
+            <Link prefetch={true} href="/terms">T &amp; C</Link>
+            <Link prefetch={true} href="/medical-disclaimer">Medical Disclaimer</Link>
           </div>
         </div>
       </div>

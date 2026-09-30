@@ -358,7 +358,7 @@ export default function Page() {
     <h2 className="reveal d1">Supportive care, working alongside your TB specialist.</h2>
     <p className="reveal d1">Book a consultation or share your reports securely. Homeopathy is offered here only as supportive care never as a replacement for your prescribed anti-tuberculosis treatment.</p>
     <div className="cta-row reveal d2">
-      <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+      <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
       <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
       <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
     </div>

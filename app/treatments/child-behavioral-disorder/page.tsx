@@ -360,7 +360,7 @@ export default function ChildBehavioralDisorderPage() {
             Book a consultation or share your child's reports securely. We'll listen carefully, be honest about how we can help, and work in step with your child's existing medical team.
           </p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contactus">
+            <Link className="btn btn-primary" href="/contact">
               Book a Consultation
             </Link>
             <a className="btn btn-ghost" href="tel:+919898005354">

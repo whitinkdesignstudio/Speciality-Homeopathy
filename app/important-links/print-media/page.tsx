@@ -369,7 +369,7 @@ export default function PrintMediaPage() {
       <section className="media-cta">
         <h2>Share Your Story or Seek Support</h2>
         <p>Book a consultation with Dr. Ketan Patel and take the first step.</p>
-        <Link href="/contactus" className="btn-consult">
+        <Link href="/contact" className="btn-consult">
           Book a Consultation Today
         </Link>
       </section>

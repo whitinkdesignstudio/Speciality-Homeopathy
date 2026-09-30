@@ -3,6 +3,7 @@ import { Poppins, Open_Sans } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import TopProgressBar from '@/components/TopProgressBar';
 import SiteInteractions from '@/components/SiteInteractions';
 
 const poppins = Poppins({
@@ -118,6 +119,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <TopProgressBar />
         <Header />
         {children}
         <Footer />

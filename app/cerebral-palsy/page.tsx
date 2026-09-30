@@ -428,7 +428,7 @@ export default function Page() {
             <h2 className="reveal d1">Supporting your child's development, one step at a time.</h2>
             <p className="reveal d1">Book a consultation or share your child's reports securely. We'll assess carefully, be honest about how we can help, and work in step with your child's existing medical and therapy team.</p>
             <div className="cta-row reveal d2">
-              <Link className="btn btn-primary" href="/contactus">
+              <Link className="btn btn-primary" href="/contact">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="4" width="18" height="18" rx="3" />
                   <path d="M3 9h18M8 2v4M16 2v4" />

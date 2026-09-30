@@ -15,121 +15,121 @@ const treatmentAreas = [
     title: "Autism Care",
     desc: "Supportive homeopathic care for autism spectrum conditions, focusing on individualised comfort, routine, and child wellbeing.",
     image: "/images/treatments/autism-care.jpg",
-    slug: "/treatments/autism-care",
+    slug: "/autism-care",
   },
   {
     title: "Child Neurological Disorders",
     desc: "Child Neurological Disorders – expert homoeopathic care targeting the root causes of neurological conditions in children.",
     image: "/images/treatments/child-neurological-disorders.jpg",
-    slug: "/treatments/child-neurological-disorders",
+    slug: "/child-neurological-disorders",
   },
   {
     title: "Down's Syndrome",
     desc: "Down's Syndrome is one of the most common genetic birth defects, associated with intellectual disability.",
     image: "/images/treatments/downs-syndrome.jpg",
-    slug: "/treatments/downs-syndrome",
+    slug: "/downs-syndrome",
   },
   {
     title: "ADHD & ADD",
     desc: "Support for attention deficit, hyperactivity, impulsivity, focus concentration, and executive function in children.",
     image: "/images/treatments/adhd-add.jpg",
-    slug: "/treatments/adhd-add",
+    slug: "/adhd-add",
   },
   {
     title: "Cerebral Palsy",
     desc: "Targeted support for motor control, muscle tone coordination, balance, and developmental milestones.",
     image: "/images/cerebral-palsy/image-1.jpg",
-    slug: "/treatments/cerebral-palsy",
+    slug: "/cerebral-palsy",
   },
   {
     title: "Child Behavioral Disorders",
     desc: "Supportive constitutional care for PANS, PANDAS, emotional regulation, anxiety, and sudden behavioural shifts.",
     image: "/images/treatments/child-behavioral-disorder.jpg",
-    slug: "/treatments/child-behavioral-disorder",
+    slug: "/child-behavioral-disorder",
   },
   {
     title: "Dyslexia & Learning Difficulties",
     desc: "Support for reading challenges, working memory, cognitive processing speed, and academic confidence.",
     image: "/images/treatments/dyslexia.jpg",
-    slug: "/treatments/dyslexia",
+    slug: "/dyslexia",
   },
   {
     title: "Developmental Delays",
     desc: "Holistic care addressing delayed speech, motor milestones, cognitive development, and sensory processing.",
     image: "/images/developmental-delays/image-1.webp",
-    slug: "/treatments/developmentaldelays",
+    slug: "/developmental-delays",
   },
   {
     title: "Intellectual Disability",
     desc: "Compassionate constitutional therapy supporting cognitive abilities, adaptive behavior, and daily living skills.",
     image: "/images/intellectual-disability/image-1.webp",
-    slug: "/treatments/intellectualdisability",
+    slug: "/intellectual-disability",
   },
   {
     title: "Mental Retardation",
     desc: "Compassionate, individualised developmental and cognitive assistance tailored to your child's pace.",
     image: "/images/mental-retardation/image-1.webp",
-    slug: "/treatments/mental-retardation",
+    slug: "/mental-retardation",
   },
   {
     title: "Asthma & Allergies",
     desc: "Strengthening respiratory resilience and reducing hypersensitivity and bronchial spasms naturally.",
     image: "/images/treatments/asthma-allergy.jpg",
-    slug: "/treatments/asthmaallergy",
+    slug: "/asthma-allergy",
   },
   {
     title: "Atopic Dermatitis & Eczema",
     desc: "Gentle, deep-acting constitutional relief for chronic skin inflammation, itching, and dry eczema.",
     image: "/images/atopic-dermatitis/image-1.jpg",
-    slug: "/treatments/atopic-dermatitis",
+    slug: "/atopic-dermatitis",
   },
   {
     title: "Female Infertility & PCOS",
     desc: "Constitutional balance for menstrual regularity, ovulation support, PCOS/PCOD, and conception.",
     image: "/images/treatments/female-infertility.jpg",
-    slug: "/treatments/femaleinfertility",
+    slug: "/female-infertility",
   },
   {
     title: "Male Infertility",
     desc: "Comprehensive support for sperm count, motility, morphology, and constitutional reproductive vitality.",
     image: "/images/oligospermia/image-1.jpg",
-    slug: "/treatments/male-infertility",
+    slug: "/male-infertility",
   },
   {
     title: "Oligospermia Treatment",
     desc: "Targeted natural homeopathic formulations for low sperm count, motility, and semen quality.",
     image: "/images/oligospermia/image-6.jpg",
-    slug: "/treatments/oligospermia",
+    slug: "/oligospermia",
   },
   {
     title: "Recurrent Abortions",
     desc: "Constitutional support for reproductive resilience, uterine lining strength, and full-term pregnancy.",
     image: "/images/recurrent-abortions/image-1.png",
-    slug: "/treatments/recurrentabortions",
+    slug: "/recurrent-abortions",
   },
   {
     title: "Hair Falling & Baldness",
     desc: "Natural constitutional therapy for hair regrowth, follicle vitality, and chronic scalp shedding.",
     image: "/images/treatments/hair-falling.jpg",
-    slug: "/treatments/hairfalling",
+    slug: "/hair-falling",
   },
   {
     title: "Increase Height & Growth",
     desc: "Support for pituitary growth axis and bone development during critical growing adolescent years.",
     image: "/images/treatments/increase-height.jpg",
-    slug: "/treatments/increaseheight",
+    slug: "/increase-height",
   },
   {
     title: "MDR Tuberculosis Care",
     desc: "Supportive complementary care to enhance vitality, immune strength, and reduce medication side effects.",
     image: "/images/mdr-tuberculosis/image-1.webp",
-    slug: "/treatments/mdr-tuberculosis",
+    slug: "/mdr-tuberculosis",
   },
   {
     title: "Prolapsed Vertebral Disc (PVD)",
     desc: "Non-surgical constitutional management for disc herniation, nerve compression, and sciatica relief.",
     image: "/images/treatments/prolapsed-vertebral-disc.jpg",
-    slug: "/treatments/prolapsed-vertebral-disc",
+    slug: "/prolapsed-vertebral-disc",
   },
 ];
 
@@ -487,7 +487,7 @@ export default function Page() {
 
           <div className="treatments-grid">
             {treatmentAreas.map((item, idx) => (
-              <Link key={idx} href={item.slug} className="treatment-card">
+              <Link key={idx} href={item.slug} prefetch={true} className="treatment-card">
                 <div className="card-img-wrap">
                   <img src={item.image}
                     alt={item.title}
@@ -512,7 +512,7 @@ export default function Page() {
             Contact our consultation desk to speak with our doctors and understand the best approach for your health.
           </p>
           <div className="cta-row">
-            <Link className="btn btn-primary" href="/contactus">
+            <Link className="btn btn-primary" href="/contact">
               Book a Consultation
             </Link>
             <a className="btn btn-ghost" href="tel:+919898005354">

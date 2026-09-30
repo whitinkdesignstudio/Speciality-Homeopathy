@@ -91,7 +91,7 @@ export default function Header() {
   const isAbout = cleanPath === '/aboutus' || cleanPath === '/about-us';
   const isExperts = cleanPath.startsWith('/our-doctors') || cleanPath.startsWith('/our-experts') || cleanPath.startsWith('/dr-');
   const isResearch = cleanPath === '/research-center' || cleanPath === '/researchcenter';
-  const isContact = cleanPath === '/contact' || cleanPath === '/contactus';
+  const isContact = cleanPath === '/contact' || cleanPath === "/contact";
   const isLocations = cleanPath === '/locations' || cleanPath.startsWith('/speciality-homeopathy-');
   const isTreatments =
     cleanPath === '/treatments' ||
@@ -118,13 +118,14 @@ export default function Header() {
     >
       <div className="header-container">
         {/* Brand Logo */}
-        <Link href="/" className="header-brand" aria-label="Speciality Homeopathy Home">
+        <Link prefetch={true} href="/" className="header-brand" aria-label="Speciality Homeopathy Home">
           <Image
             src="/logo.png"
-            alt="Speciality Homeopathy - Autism Clinic in Ahmedabad"
+            alt="Speciality Homeopathy"
             className="header-logo-img"
             width={280}
             height={76}
+            style={{ width: 'auto', height: 'auto' }}
             loading="eager"
           />
         </Link>
@@ -134,8 +135,7 @@ export default function Header() {
           <ul className={`navlinks ${mobileOpen ? 'show' : ''}`} id="navlinks">
             {/* 1. Home */}
             <li className="nav-item">
-              <Link
-                href="/"
+              <Link prefetch={true} href="/"
                 className={`nav-link ${isHome ? 'active' : ''}`}
                 onClick={() => setMobileOpen(false)}
               >
@@ -145,8 +145,7 @@ export default function Header() {
 
             {/* 2. About Us */}
             <li className="nav-item">
-              <Link
-                href="/about-us"
+              <Link prefetch={true} href="/about-us"
                 className={`nav-link ${isAbout ? 'active' : ''}`}
                 onClick={() => setMobileOpen(false)}
               >
@@ -190,24 +189,21 @@ export default function Header() {
               </button>
               <ul className={`dropdown-menu ${expertsOpen ? 'show open' : ''}`}>
                 <li>
-                  <Link
-                    href="/dr-ketan-patel-speciality-homeopathy"
+                  <Link prefetch={true} href="/dr-ketan-patel-speciality-homeopathy"
                     onClick={() => setMobileOpen(false)}
                   >
                     Dr. Ketan Patel
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/dr-kamal-patel-speciality-homeopathy"
+                  <Link prefetch={true} href="/dr-kamal-patel-speciality-homeopathy"
                     onClick={() => setMobileOpen(false)}
                   >
                     Dr. Kamal Patel
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/dr-bhakti-batavia-speciality-homeopathy"
+                  <Link prefetch={true} href="/dr-bhakti-batavia-speciality-homeopathy"
                     onClick={() => setMobileOpen(false)}
                   >
                     Dr. Bhakti Batavia
@@ -218,8 +214,7 @@ export default function Header() {
 
             {/* 4. Treatments */}
             <li className="nav-item">
-              <Link
-                href="/treatments"
+              <Link prefetch={true} href="/treatments"
                 className={`nav-link ${isTreatments ? 'active' : ''}`}
                 onClick={() => setMobileOpen(false)}
               >
@@ -229,8 +224,7 @@ export default function Header() {
 
             {/* 5. Research Center */}
             <li className="nav-item">
-              <Link
-                href="/research-center"
+              <Link prefetch={true} href="/research-center"
                 className={`nav-link ${isResearch ? 'active' : ''}`}
                 onClick={() => setMobileOpen(false)}
               >
@@ -240,8 +234,7 @@ export default function Header() {
 
             {/* 6. Contact Us */}
             <li className="nav-item">
-              <Link
-                href="/contact"
+              <Link prefetch={true} href="/contact"
                 className={`nav-link ${isContact ? 'active' : ''}`}
                 onClick={() => setMobileOpen(false)}
               >
@@ -285,52 +278,52 @@ export default function Header() {
               </button>
               <ul className={`dropdown-menu ${clinicsOpen ? 'show open' : ''}`}>
                 <li>
-                  <Link href="/locations" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/locations" onClick={() => setMobileOpen(false)}>
                     All Clinics &amp; Centers
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-mumbai" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-mumbai" onClick={() => setMobileOpen(false)}>
                     Mumbai (Vile Parle)
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-new-delhi" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-new-delhi" onClick={() => setMobileOpen(false)}>
                     New Delhi (Rajouri Garden)
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-kolkata" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-kolkata" onClick={() => setMobileOpen(false)}>
                     Kolkata &amp; East India
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-hyderabad" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-hyderabad" onClick={() => setMobileOpen(false)}>
                     Hyderabad (VOICE Saidabad)
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-secunderabad" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-secunderabad" onClick={() => setMobileOpen(false)}>
                     Secunderabad (MG Road)
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-bangalore" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-bangalore" onClick={() => setMobileOpen(false)}>
                     Bangalore Center
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-chennai" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-chennai" onClick={() => setMobileOpen(false)}>
                     Chennai Center
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-usa" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-usa" onClick={() => setMobileOpen(false)}>
                     USA &amp; Americas Online
                   </Link>
                 </li>
                 <li>
-                  <Link href="/speciality-homeopathy-uk" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/speciality-homeopathy-uk" onClick={() => setMobileOpen(false)}>
                     London UK &amp; Europe Online
                   </Link>
                 </li>
@@ -374,57 +367,57 @@ export default function Header() {
               </button>
               <ul className={`dropdown-menu ${linksOpen ? 'show open' : ''}`}>
                 <li>
-                  <Link href="/what-is-homeopathy" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/what-is-homeopathy" onClick={() => setMobileOpen(false)}>
                     What is Homeopathy?
                   </Link>
                 </li>
                 <li>
-                  <Link href="/inquiry" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/inquiry" onClick={() => setMobileOpen(false)}>
                     Consultation Inquiry
                   </Link>
                 </li>
                 <li>
-                  <Link href="/how-to-pay-fees" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/how-to-pay-fees" onClick={() => setMobileOpen(false)}>
                     How to Pay Fees
                   </Link>
                 </li>
                 <li>
-                  <Link href="/therapy-for-ability" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/therapy-for-ability" onClick={() => setMobileOpen(false)}>
                     Therapy For Ability (Delhi)
                   </Link>
                 </li>
                 <li>
-                  <Link href="/medical-registrations" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/medical-registrations" onClick={() => setMobileOpen(false)}>
                     Medical Registrations
                   </Link>
                 </li>
                 <li>
-                  <Link href="/casestudies" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/casestudies" onClick={() => setMobileOpen(false)}>
                     Case Studies
                   </Link>
                 </li>
                 <li>
-                  <Link href="/medicaltips" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/medicaltips" onClick={() => setMobileOpen(false)}>
                     Medical Tips
                   </Link>
                 </li>
                 <li>
-                  <Link href="/autismhistory" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/autismhistory" onClick={() => setMobileOpen(false)}>
                     Autism History
                   </Link>
                 </li>
                 <li>
-                  <Link href="/gallery" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/gallery" onClick={() => setMobileOpen(false)}>
                     Gallery
                   </Link>
                 </li>
                 <li>
-                  <Link href="/print-media" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/print-media" onClick={() => setMobileOpen(false)}>
                     Print Media
                   </Link>
                 </li>
                 <li>
-                  <Link href="/videos" onClick={() => setMobileOpen(false)}>
+                  <Link prefetch={true} href="/videos" onClick={() => setMobileOpen(false)}>
                     Videos
                   </Link>
                 </li>

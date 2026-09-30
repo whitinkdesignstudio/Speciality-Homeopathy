@@ -521,7 +521,7 @@ export default function Page() {
           <h2>Every child&apos;s developmental journey is unique.</h2>
           <p>A detailed evaluation can help identify individual needs and guide an appropriate care and support plan. Schedule a consultation to discuss your child&apos;s developmental and neurological concerns.</p>
           <div className="cta-row">
-            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
             <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener noreferrer">WhatsApp our team</a>
           </div>

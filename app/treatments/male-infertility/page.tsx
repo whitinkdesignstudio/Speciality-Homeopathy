@@ -390,7 +390,7 @@ export default function Page() {
           <h2 className="reveal d1">Individualised support for your fertility journey.</h2>
           <p className="reveal d1">Book a consultation or share your semen analysis reports securely. We'll assess your case carefully and build a plan suited to your specific parameters.</p>
           <div className="cta-row reveal d2">
-            <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
+            <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
             <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
             <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
           </div>

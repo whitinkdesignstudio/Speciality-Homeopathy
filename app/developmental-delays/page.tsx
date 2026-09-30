@@ -353,7 +353,7 @@ export default function Page() {
       <div className="cta-underline"></div>
       <p>Book a consultation or share your child's reports securely. We'll listen carefully, be honest about how we can help, and work in step with your child's existing care team.</p>
       <div className="cta-buttons">
-        <Link href="/contactus" className="btn btn-blue">
+        <Link href="/contact" className="btn btn-blue">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           Book a Consultation
         </Link>

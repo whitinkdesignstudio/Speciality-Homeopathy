@@ -461,7 +461,7 @@ export default function MedicalTipsPage() {
                   <span className="tip-date">{tip.date}</span>
                   <h3 className="tip-title">{tip.title}</h3>
                   <p className="tip-desc">{tip.desc}</p>
-                  <Link href="/contactus" className="tip-link">
+                  <Link href="/contact" className="tip-link">
                     Read full tip &rarr;
                   </Link>
                 </div>
@@ -475,7 +475,7 @@ export default function MedicalTipsPage() {
       <section className="tips-cta">
         <h2>Share Your Story or Seek Support</h2>
         <p>Book a consultation with Dr. Ketan Patel and take the first step.</p>
-        <Link href="/contactus" className="btn-consult">
+        <Link href="/contact" className="btn-consult">
           Book a Consultation Today
         </Link>
       </section>
