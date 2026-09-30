@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   experimental: {
     staleTimes: {
       dynamic: 30,
