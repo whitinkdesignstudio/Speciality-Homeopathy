@@ -125,7 +125,6 @@ export default function Header() {
             className="header-logo-img"
             width={280}
             height={76}
-            style={{ width: 'auto', height: 'auto' }}
             loading="eager"
           />
         </Link>
