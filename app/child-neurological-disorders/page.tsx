@@ -226,19 +226,19 @@ export default function Page() {
                 <p>Delays that show up across movement, speech or overall growth, identified through detailed developmental assessment.</p>
                 <div className="feature-tags">
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="9" /><path d="M12 8v4l3 2" /></svg>
                     Global Developmental Delay
                   </span>
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z" /></svg>
                     Speech &amp; Language Delays
                   </span>
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M13 5v6l4 2M5 20h14"/><circle cx="12" cy="12" r="9"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M13 5v6l4 2M5 20h14" /><circle cx="12" cy="12" r="9" /></svg>
                     Delayed Motor Milestones
                   </span>
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z" /></svg>
                     Learning Difficulties
                   </span>
                 </div>
@@ -253,23 +253,23 @@ export default function Page() {
                 <p>Conditions affecting brain function, muscle control and movement, presenting differently in every child.</p>
                 <div className="feature-tags">
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v5l-4 8M12 12l4 8M7 13h10"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="5" r="2" /><path d="M12 7v5l-4 8M12 12l4 8M7 13h10" /></svg>
                     Cerebral Palsy
                   </span>
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9.5 2a5 5 0 0 1 5 5c0 2-1 3-1 5a5 5 0 0 1-10 0c0-2 1-3 1-5a5 5 0 0 1 5-5Z" transform="translate(1 1) scale(.9)"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9.5 2a5 5 0 0 1 5 5c0 2-1 3-1 5a5 5 0 0 1-10 0c0-2 1-3 1-5a5 5 0 0 1 5-5Z" transform="translate(1 1) scale(.9)" /></svg>
                     PVL
                   </span>
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7"/><circle cx="12" cy="7" r="2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7" /><circle cx="12" cy="7" r="2" /></svg>
                     Hypoxic-Ischemic Injury
                   </span>
                   <span className="feature-tag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 12h4l2-8 4 16 2-8h6"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 12h4l2-8 4 16 2-8h6" /></svg>
                     Seizure Disorders
                   </span>
                   <span className="feature-tag" style={{ gridColumn: '1/-1' }}>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3"/><circle cx="6" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3" /><circle cx="6" cy="7" r="2" /><circle cx="18" cy="7" r="2" /><circle cx="6" cy="17" r="2" /><circle cx="18" cy="17" r="2" /></svg>
                     Autism Spectrum Disorder
                   </span>
                 </div>
@@ -283,13 +283,13 @@ export default function Page() {
                 <h3>Genetic, Metabolic &amp; Structural Conditions</h3>
                 <p>Underlying genetic, metabolic or structural factors that may be identified through detailed medical evaluation.</p>
                 <div className="feature-tags">
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3c0 3 6 3 6 6s-6 3-6 6 6 3 6 6M15 3c0 3-6 3-6 6s6 3 6 6-6 3-6 6"/></svg>Genetic &amp; Chromosomal</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.2 2.2M16.2 16.2l2.2 2.2M5.6 18.4l2.2-2.2M16.2 7.8l2.2-2.2"/></svg>Metabolic Neuropathies</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="7" y="7" width="10" height="10" rx="3"/><rect x="3" y="3" width="18" height="18" rx="6"/></svg>Mitochondrial Disorders</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="7"/><path d="M12 9v6M12 5v.01"/></svg>Microcephaly</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="10" r="6"/><path d="M12 16v5M9 21h6"/></svg>Hydrocephalus</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 9v.01M15 9v.01M8 15c1.2 1 2.6 1.5 4 1.5s2.8-.5 4-1.5"/></svg>Macrocephaly</span>
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5a5 5 0 0 0 10 0c0-2 1-3 1-5a5 5 0 0 0-5-5Z"/><path d="M9 21h6M10 18h4"/></svg>Neurodegenerative</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3c0 3 6 3 6 6s-6 3-6 6 6 3 6 6M15 3c0 3-6 3-6 6s6 3 6 6-6 3-6 6" /></svg>Genetic &amp; Chromosomal</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3" /><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.2 2.2M16.2 16.2l2.2 2.2M5.6 18.4l2.2-2.2M16.2 7.8l2.2-2.2" /></svg>Metabolic Neuropathies</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="7" y="7" width="10" height="10" rx="3" /><rect x="3" y="3" width="18" height="18" rx="6" /></svg>Mitochondrial Disorders</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="7" /><path d="M12 9v6M12 5v.01" /></svg>Microcephaly</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="10" r="6" /><path d="M12 16v5M9 21h6" /></svg>Hydrocephalus</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="9" /><path d="M9 9v.01M15 9v.01M8 15c1.2 1 2.6 1.5 4 1.5s2.8-.5 4-1.5" /></svg>Macrocephaly</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5a5 5 0 0 0 10 0c0-2 1-3 1-5a5 5 0 0 0-5-5Z" /><path d="M9 21h6M10 18h4" /></svg>Neurodegenerative</span>
                 </div>
               </div>
             </div>
@@ -328,8 +328,8 @@ export default function Page() {
                 <h3>Injury &amp; Oxygen-Related</h3>
                 <p>Factors relating to reduced oxygen supply or physical injury to the developing brain.</p>
                 <div className="feature-tags">
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7"/><circle cx="12" cy="7" r="2"/></svg>Hypoxic brain injury — reduced oxygen supply</span>
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/></svg>Traumatic or mechanical brain injury</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7" /><circle cx="12" cy="7" r="2" /></svg>Hypoxic brain injury — reduced oxygen supply</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z" /></svg>Traumatic or mechanical brain injury</span>
                 </div>
               </div>
             </div>
@@ -341,9 +341,9 @@ export default function Page() {
                 <h3>Infections &amp; Immune Factors</h3>
                 <p>Acquired conditions and external exposures that may affect neurological development.</p>
                 <div className="feature-tags">
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg>Acquired or inherited infections</span>
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>Autoimmune conditions</span>
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/><path d="M12 8v5M12 16v.01"/></svg>Exposure to toxins</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="9" /><path d="M9 12h6M12 9v6" /></svg>Acquired or inherited infections</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" /><circle cx="12" cy="12" r="3" /></svg>Autoimmune conditions</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z" /><path d="M12 8v5M12 16v.01" /></svg>Exposure to toxins</span>
                 </div>
               </div>
             </div>
@@ -355,11 +355,11 @@ export default function Page() {
                 <h3>Genetic &amp; Metabolic Factors</h3>
                 <p>Underlying developmental, genetic or metabolic factors identified through medical evaluation.</p>
                 <div className="feature-tags">
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3c0 3 6 3 6 6s-6 3-6 6 6 3 6 6M15 3c0 3-6 3-6 6s6 3 6 6-6 3-6 6"/></svg>Genetic conditions</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5a5 5 0 0 0 10 0c0-2 1-3 1-5a5 5 0 0 0-5-5Z"/><path d="M9 21h6M10 18h4"/></svg>Neurodegenerative</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="7" y="7" width="10" height="10" rx="3"/><rect x="3" y="3" width="18" height="18" rx="6"/></svg>Mitochondrial dysfunction</span>
-                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>Metabolic disorders</span>
-                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="9" r="7"/><path d="M9 20h6M12 16v4"/></svg>Developmental abnormalities during pregnancy</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3c0 3 6 3 6 6s-6 3-6 6 6 3 6 6M15 3c0 3-6 3-6 6s6 3 6 6-6 3-6 6" /></svg>Genetic conditions</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5a5 5 0 0 0 10 0c0-2 1-3 1-5a5 5 0 0 0-5-5Z" /><path d="M9 21h6M10 18h4" /></svg>Neurodegenerative</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="7" y="7" width="10" height="10" rx="3" /><rect x="3" y="3" width="18" height="18" rx="6" /></svg>Mitochondrial dysfunction</span>
+                  <span className="feature-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3" /><path d="M12 3v3M12 18v3M3 12h3M18 12h3" /></svg>Metabolic disorders</span>
+                  <span className="feature-tag" style={{ gridColumn: '1/-1' }}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="9" r="7" /><path d="M9 20h6M12 16v4" /></svg>Developmental abnormalities during pregnancy</span>
                 </div>
               </div>
             </div>
@@ -376,13 +376,13 @@ export default function Page() {
             <p className="lead">Global Developmental Delay occurs when a child experiences delays in two or more areas of development. Every child develops differently — a detailed assessment helps understand strengths, challenges and individual support requirements.</p>
           </div>
           <div className="domain-grid">
-            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7"/><circle cx="12" cy="7" r="2"/></svg></span><p>Gross &amp; fine motor skills</p></div>
-            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z"/></svg></span><p>Speech &amp; language development</p></div>
-            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="9" cy="8" r="3"/><path d="M2 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1M16 4a3 3 0 0 1 0 6M22 21v-1a5 5 0 0 0-3.5-4.8"/></svg></span><p>Communication abilities</p></div>
-            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z"/></svg></span><p>Learning &amp; cognitive skills</p></div>
-            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3"/><circle cx="6" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg></span><p>Social interaction</p></div>
-            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg></span><p>Behaviour &amp; emotional development</p></div>
-            <div className="domain-card" style={{ gridColumn: 'span 2' }}><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 15h2M14 15h2"/></svg></span><p>Daily living skills</p></div>
+            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7" /><circle cx="12" cy="7" r="2" /></svg></span><p>Gross &amp; fine motor skills</p></div>
+            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z" /></svg></span><p>Speech &amp; language development</p></div>
+            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="9" cy="8" r="3" /><path d="M2 21v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1M16 4a3 3 0 0 1 0 6M22 21v-1a5 5 0 0 0-3.5-4.8" /></svg></span><p>Communication abilities</p></div>
+            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z" /></svg></span><p>Learning &amp; cognitive skills</p></div>
+            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="3" /><circle cx="6" cy="7" r="2" /><circle cx="18" cy="7" r="2" /><circle cx="6" cy="17" r="2" /><circle cx="18" cy="17" r="2" /></svg></span><p>Social interaction</p></div>
+            <div className="domain-card"><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8Z" /></svg></span><p>Behaviour &amp; emotional development</p></div>
+            <div className="domain-card" style={{ gridColumn: 'span 2' }}><span className="dico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18M8 15h2M14 15h2" /></svg></span><p>Daily living skills</p></div>
           </div>
         </div>
       </section>
@@ -398,7 +398,7 @@ export default function Page() {
             <div>
               <h4>
                 <span className="si">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7"/><circle cx="12" cy="7" r="2"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7" /><circle cx="12" cy="7" r="2" /></svg>
                 </span>
                 Motor Delays
               </h4>
@@ -414,7 +414,7 @@ export default function Page() {
             <div>
               <h4>
                 <span className="si">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z" /></svg>
                 </span>
                 Speech &amp; Language Delays
               </h4>
@@ -438,15 +438,15 @@ export default function Page() {
             <p className="lead">Our approach focuses on a detailed understanding of the child&apos;s medical history, developmental progress, neurological concerns and day-to-day challenges. Regular evaluation helps monitor progress and identify changing support needs.</p>
           </div>
           <div className="pill-grid">
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Cognitive development</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Motor abilities</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Speech and language development</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Communication skills</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Learning and understanding</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Behavioural development</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Social interaction</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Daily functioning</span>
-            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Overall quality of life</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Cognitive development</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Motor abilities</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Speech and language development</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Communication skills</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Learning and understanding</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Behavioural development</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Social interaction</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Daily functioning</span>
+            <span className="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Overall quality of life</span>
           </div>
         </div>
       </section>
@@ -459,16 +459,16 @@ export default function Page() {
               <h2>Looking at the whole child, not one symptom</h2>
               <p className="lead">Children with neurological conditions may also experience associated concerns. A comprehensive care approach considers overall development rather than a single symptom.</p>
               <div className="check-grid">
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Muscle stiffness or spasticity</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Reduced muscle tone or flaccidity</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Swallowing difficulties</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Feeding concerns</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Hyperactivity</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Repetitive behaviour</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>Learning difficulties</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Behavioural challenges</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Anxiety or emotional concerns</div>
-                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5"/></svg>Sleep-related difficulties</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Muscle stiffness or spasticity</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Reduced muscle tone or flaccidity</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Swallowing difficulties</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Feeding concerns</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Hyperactivity</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Repetitive behaviour</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" stroke-linecap="round"><path d="M20 6 9 17l-5-5" /></svg>Learning difficulties</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Behavioural challenges</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Anxiety or emotional concerns</div>
+                <div className="check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M20 6 9 17l-5-5" /></svg>Sleep-related difficulties</div>
               </div>
             </div>
             <img className="ph" src="https://static.wixstatic.com/media/66422a_568e2ef84ecd407592d778d54080eb84~mv2.png" alt="Child - associated developmental concerns" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '22px' }} loading="lazy" decoding="async" />
@@ -484,12 +484,12 @@ export default function Page() {
           </div>
           <div className="split-cards">
             <div className="sc-card">
-              <span className="sci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3c0 3 6 3 6 6s-6 3-6 6 6 3 6 6M15 3c0 3-6 3-6 6s6 3 6 6-6 3-6 6"/></svg></span>
+              <span className="sci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 3c0 3 6 3 6 6s-6 3-6 6 6 3 6 6M15 3c0 3-6 3-6 6s6 3 6 6-6 3-6 6" /></svg></span>
               <h4>Detailed Genetic Evaluation</h4>
               <p>Some developmental and neurological conditions may be associated with genetic or chromosomal differences. A detailed evaluation may help understand the underlying condition and guide appropriate care and support.</p>
             </div>
             <div className="sc-card">
-              <span className="sci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
+              <span className="sci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 12l2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg></span>
               <h4>Assessment &amp; Counselling</h4>
               <p>Genetic assessment and counselling may be considered when required — helping families understand developmental concerns, associated conditions and available support options.</p>
             </div>

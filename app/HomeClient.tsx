@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Script from 'next/script';
 import { Apple, ArrowRight, HeartPlus, PersonStanding } from 'lucide-react';
