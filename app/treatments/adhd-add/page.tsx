@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'ADHD & ADD Homeopathy Treatment | Speciality Homeopathy',
+  title: 'ADHD Treatment with Homeopathy for Children & Better Focus',
   description: 'Learn about ADHD and ADD in children, including signs, symptoms, assessment and personalised supportive care with Dr. Ketan Patel, Ahmedabad.',
   keywords: 'ADHD homeopathy treatment, ADD homeopathic treatment, child focusing disorder homeopathy, attention deficit homeopathy, hyperactivity natural treatment children',
 };
@@ -228,7 +229,7 @@ export default function ADHDADDPage() {
       {/* PAGE HERO BANNER */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/adhd-add/hero-banner.png" alt="ADHD &amp; ADD in Children Hero Banner" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/adhd-add/hero-banner.png" alt="ADHD &amp; ADD in Children Hero Banner" />
         </div>
       </section>
 

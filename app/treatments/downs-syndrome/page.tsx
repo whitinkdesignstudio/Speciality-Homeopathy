@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Down’s Syndrome Homeopathy Treatment | Speciality Homeopathy',
+  title: 'Down Syndrome Trisomy 21 Homeopathy Treatment & Child Care',
   description: 'Homeopathic support for Down’s Syndrome including trisomy 21, mosaic, and translocation variants. Speciality Homeopathy provides compassionate, holistic care.',
   keywords: 'Down’s Syndrome homeopathy treatment, trisomy 21 homeopathy, mosaic Down syndrome homeopathy, genetic disorder homeopathic care, Down syndrome natural treatment India',
 };
@@ -322,7 +323,7 @@ export default function Page() {
       {/* PAGE HERO BANNER 1 */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/downs-syndrome/hero-banner-1.png" alt="Down's Syndrome (Trisomy 21) Hero Banner" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/downs-syndrome/hero-banner-1.png" alt="Down's Syndrome (Trisomy 21) Hero Banner" />
         </div>
       </section>
 

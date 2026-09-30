@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Female Infertility, PCOS & PCOD Care | Speciality Homeopathy",
+  title: 'Female Infertility & PCOS Treatment with Homeopathy',
   description: "Learn about female infertility, PCOS, PCOD and common causes, with supportive homeopathic care alongside your gynecologist or fertility specialist.",
 };
 
@@ -200,9 +201,7 @@ export default function Page() {
       {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/female-infertility/hero-banner.png"
-            alt="Female Infertility Treatment Hero Section Banner"
-            style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/female-infertility/hero-banner.png" alt="Female Infertility Treatment Hero Section Banner" />
         </div>
       </section>
 

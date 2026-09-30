@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Developmental Delays Support | Speciality Homeopathy',
+  title: 'Global Developmental Delays Homeopathic Treatment & Care',
   description:
     'Supportive homeopathic care for children with developmental delays, speech delays, and motor milestones. Consult our specialist in Ahmedabad.',
 };

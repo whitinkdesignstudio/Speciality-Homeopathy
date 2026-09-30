@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Dyslexia & Learning Difficulty Support | Speciality Homeopathy — Dr. Ketan Patel",
+  title: 'Dyslexia, Dyscalculia & Learning Difficulties Treatment',
   description: "Learn about dyslexia, reading challenges and learning support strategies with Dr. Ketan Patel, Vastrapur, Ahmedabad.",
 };
 
@@ -164,7 +165,7 @@ export default function DyslexiaPage() {
       {/* PAGE HERO BANNER */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/dyslexia/hero-banner.png" alt="Dyslexia &amp; Learning Difficulty Support Hero Banner" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/dyslexia/hero-banner.png" alt="Dyslexia &amp; Learning Difficulty Support Hero Banner" />
         </div>
       </section>
 

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Asthma & Allergy Homeopathy Treatment | Speciality Homeopathy',
+  title: 'Chronic Asthma & Allergic Bronchitis Homeopathy Treatment',
   description: 'Learn about asthma and allergies, including symptoms, causes, triggers and diagnosis, with supportive care from Dr. Ketan Patel, Ahmedabad.',
   keywords: 'asthma homeopathy treatment, respiratory allergy homeopathic, bronchitis natural treatment, allergic asthma homeopathy, homeopathic breathing relief',
 };
@@ -216,7 +217,7 @@ export default function AsthmaAllergyPage() {
       {/* PAGE HERO BANNER */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/asthma-allergy/hero-banner.png" alt="Asthma &amp; Allergy Treatment Hero Banner" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/asthma-allergy/hero-banner.png" alt="Asthma &amp; Allergy Treatment Hero Banner" />
         </div>
       </section>
 

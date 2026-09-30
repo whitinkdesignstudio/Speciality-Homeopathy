@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Cerebral Palsy Treatment | Speciality Homeopathy — Dr. Ketan Patel",
+  title: 'Cerebral Palsy Spastic Diplegia & Quadriplegia Treatment',
   description: "Learn about Cerebral Palsy, including its types, causes and symptoms, with supportive homeopathic care alongside your child’s medical and therapy team.",
 };
 
@@ -183,9 +184,7 @@ export default function Page() {
       {/* PAGE HERO — 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/cerebral-palsy/hero-banner.png"
-            alt="Cerebral Palsy Treatment Hero Section Banner"
-            style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/cerebral-palsy/hero-banner.png" alt="Cerebral Palsy Treatment Hero Section Banner" />
         </div>
       </section>
 
@@ -429,13 +428,13 @@ export default function Page() {
             <h2 className="reveal d1">Supporting your child's development, one step at a time.</h2>
             <p className="reveal d1">Book a consultation or share your child's reports securely. We'll assess carefully, be honest about how we can help, and work in step with your child's existing medical and therapy team.</p>
             <div className="cta-row reveal d2">
-              <a className="btn btn-primary" href="/contactus">
+              <Link className="btn btn-primary" href="/contactus">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="4" width="18" height="18" rx="3" />
                   <path d="M3 9h18M8 2v4M16 2v4" />
                 </svg>
                 Book a Consultation
-              </a>
+              </Link>
               <a className="btn btn-ghost" href="tel:+919898005354">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2Z" />

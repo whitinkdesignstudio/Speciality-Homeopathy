@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Child Neurological Disorders | Speciality Homeopathy — Dr. Ketan Patel",
+  title: 'Child Neurological Disorders Homeopathy Treatment & Care',
   description: "Dr. Ketan Patel,Ahmedabad,offers supportive care for children with developmental,genetic and neurological conditions,working alongside their medical team.",
 };
 
@@ -204,7 +205,7 @@ export default function Page() {
       {/* PAGE HERO */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/child-neurological-disorders/hero-banner.png" alt="Child Neurological Disorders — Comprehensive care for developmental, genetic & neurological conditions in children" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/child-neurological-disorders/hero-banner.png" alt="Child Neurological Disorders — Comprehensive care for developmental, genetic & neurological conditions in children" />
         </div>
       </section>
 

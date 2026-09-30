@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Recurrent Miscarriage Homeopathy | Speciality Homeopathy',
+  title: 'Recurrent Abortion Prevention & Homeopathy Treatment',
   description: 'Homeopathic support for recurrent abortions caused by chromosomal abnormalities or placental insufficiency — compassionate, holistic care for women at Speciality Homeopathy.',
   keywords: 'recurrent miscarriage homeopathy, recurrent abortion homeopathic treatment, spontaneous miscarriage homeopathy, placental insufficiency homeopathy, pregnancy loss natural treatment',
 };

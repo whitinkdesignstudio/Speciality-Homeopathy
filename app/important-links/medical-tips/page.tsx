@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import MedicalTipsClient from './MedicalTipsClient';
 
 export const metadata: Metadata = {
-  title: 'Autism Care Tips: Speech, Sleep & Focus | Homeopathy',
+  title: 'Medical Tips | Specialist Homeopathy Health & Wellness',
   description:
     'Practical supportive advice on speech delay, sleep restlessness, and diet for children on the autism spectrum, by experienced homeopaths.',
   keywords:

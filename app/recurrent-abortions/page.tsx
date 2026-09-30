@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Recurrent Abortions â€” Speciality Homeopathy",
+  title: 'Recurrent Abortion Prevention & Homeopathy Treatment',
   description: "",
 };
 

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Autism Doctors & Specialists | Speciality Homeopathy',
+  title: 'Our Experts | Top Homeopathic Physicians for Child Neurology',
   description: 'Meet our experienced autism specialist doctors, Dr. Ketan Patel, Dr. Kamal Patel and Dr. Bhakti Batavia, serving families across India.',
   keywords: 'autism specialist doctor, autism expert India, autism doctors, Dr. Ketan Patel team, pediatric homeopathy doctors',
 };

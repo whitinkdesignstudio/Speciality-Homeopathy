@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Genetic Test & Whole Exome Sequencing for Autism Child',
+  title: 'Autism History | Understanding Autism & Its Development',
   description:
     'Understand genetic test for autism, whole exome sequencing, and syndromic ASD traits. Supportive homeopathy guidance from specialists in Gujarat.',
   keywords:

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Autism Homeopathy & ASD Care | Dr. Ketan Patel, Ahmedabad",
+  title: 'Autism Homeopathic Treatment & Biomedical Neuroimmune Care',
   description: "Supportive homeopathy for autism (ASD) in children, alongside your medical team. Consult our autism specialist doctor in Ahmedabad. Results vary.",
   keywords: "autism homeopathy, homeopathy autism, holistic autism treatment, early intervention therapy, how to increase speech in autistic child, how to improve focus in autistic child, autistic child not sleeping, child not making eye contact, child not responding to name",
 };

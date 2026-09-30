@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Intellectual Disability Care & Support | Speciality Homeopathy",
+  title: 'Intellectual Disability Homeopathic Treatment & Support',
   description: "Learn about intellectual disability, developmental signs and related conditions, with supportive care from Dr. Ketan Patel, Ahmedabad.",
 };
 

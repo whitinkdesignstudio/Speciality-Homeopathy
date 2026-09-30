@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import HomeClient from './HomeClient';
 
 export const metadata: Metadata = {
-  title: 'Autism Specialist in Ahmedabad | Speciality Homeopathy',
+  title: 'Autism, Child Neurology & Psychiatry Treatment & Therapy',
   description:
     'Homeopathic autism clinic in Ahmedabad, Gujarat. Individualised, supportive care for children, alongside your medical team. Book a consultation.',
   keywords:

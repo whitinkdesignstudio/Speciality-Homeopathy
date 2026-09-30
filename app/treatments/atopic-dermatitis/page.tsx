@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Atopic Dermatitis (Chronic Eczema) Care | Speciality Homeopathy',
+  title: 'Chronic Atopic Dermatitis Eczema Homeopathy Treatment',
   description: 'Learn about atopic dermatitis, including causes, types and common symptoms, with supportive care alongside your dermatologist. Dr. Ketan Patel, Ahmedabad.',
   keywords: 'atopic dermatitis homeopathy, chronic eczema homeopathic treatment, eczema natural remedy India, skin allergy homeopathy, steroid-free eczema treatment',
 };
@@ -332,7 +332,7 @@ export default function Page() {
     <h2 className="reveal d1">Calmer skin, fewer flare-ups, more comfort.</h2>
     <p className="reveal d1">Book a consultation or share your reports securely. We'll assess your skin's pattern carefully and build an individualised plan alongside your dermatologist's ongoing care.</p>
     <div className="cta-row reveal d2">
-      <a className="btn btn-primary" href="/contactus">Book a Consultation</a>
+      <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
       <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
       <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
     </div>

@@ -9,6 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expertsOpen, setExpertsOpen] = useState(false);
+  const [clinicsOpen, setClinicsOpen] = useState(false);
   const [linksOpen, setLinksOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -18,6 +19,7 @@ export default function Header() {
   useEffect(() => {
     setMobileOpen(false);
     setExpertsOpen(false);
+    setClinicsOpen(false);
     setLinksOpen(false);
   }, [pathname]);
 
@@ -56,6 +58,7 @@ export default function Header() {
     const handleClickOutside = (e: MouseEvent) => {
       if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
         setExpertsOpen(false);
+        setClinicsOpen(false);
         setLinksOpen(false);
       }
     };
@@ -77,14 +80,19 @@ export default function Header() {
       '/medical-tips',
       '/gallery',
       '/print-media',
-      '/print-media',
       '/videos',
+      '/what-is-homeopathy',
+      '/how-to-pay-fees',
+      '/medical-registrations',
+      '/therapy-for-ability',
+      '/inquiry',
     ].includes(cleanPath);
 
   const isAbout = cleanPath === '/aboutus' || cleanPath === '/about-us';
-  const isExperts = cleanPath.startsWith('/our-doctors') || cleanPath.startsWith('/our-experts');
+  const isExperts = cleanPath.startsWith('/our-doctors') || cleanPath.startsWith('/our-experts') || cleanPath.startsWith('/dr-');
   const isResearch = cleanPath === '/research-center' || cleanPath === '/researchcenter';
   const isContact = cleanPath === '/contact' || cleanPath === '/contactus';
+  const isLocations = cleanPath === '/locations' || cleanPath.startsWith('/speciality-homeopathy-');
   const isTreatments =
     cleanPath === '/treatments' ||
     cleanPath.startsWith('/treatments/') ||
@@ -99,6 +107,7 @@ export default function Header() {
     !isExperts &&
     !isResearch &&
     !isContact &&
+    !isLocations &&
     !isTreatments;
 
   return (
@@ -116,8 +125,7 @@ export default function Header() {
             className="header-logo-img"
             width={280}
             height={76}
-            priority
-            fetchPriority="high"
+            loading="eager"
           />
         </Link>
 
@@ -241,20 +249,92 @@ export default function Header() {
               </Link>
             </li>
 
-            {/* 7. MilestoneCare */}
-            <li className="nav-item">
-              <a
-                role="link"
-                aria-disabled="true"
-                className="nav-link"
-                style={{
-                  cursor: 'default',
-                  pointerEvents: 'none',
-                  userSelect: 'none',
+            {/* 7. Clinics & Branches ⌵ */}
+            <li
+              className={`nav-item has-dropdown ${clinicsOpen ? 'open' : ''} ${isLocations ? 'child-active' : ''}`}
+              onMouseEnter={() => {
+                if (typeof window !== 'undefined' && window.innerWidth > 992) setClinicsOpen(true);
+              }}
+              onMouseLeave={() => {
+                if (typeof window !== 'undefined' && window.innerWidth > 992) setClinicsOpen(false);
+              }}
+            >
+              <button
+                type="button"
+                className={`dropdown-toggle ${isLocations ? 'active' : ''}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setClinicsOpen((prev) => !prev);
+                  setExpertsOpen(false);
+                  setLinksOpen(false);
                 }}
+                aria-expanded={clinicsOpen}
               >
-                MilestoneCare
-              </a>
+                <span>Clinics</span>
+                <svg
+                  className="chevron-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <ul className={`dropdown-menu ${clinicsOpen ? 'show open' : ''}`}>
+                <li>
+                  <Link href="/locations" onClick={() => setMobileOpen(false)}>
+                    All Clinics &amp; Centers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-mumbai" onClick={() => setMobileOpen(false)}>
+                    Mumbai (Vile Parle)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-new-delhi" onClick={() => setMobileOpen(false)}>
+                    New Delhi (Rajouri Garden)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-kolkata" onClick={() => setMobileOpen(false)}>
+                    Kolkata &amp; East India
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-hyderabad" onClick={() => setMobileOpen(false)}>
+                    Hyderabad (VOICE Saidabad)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-secunderabad" onClick={() => setMobileOpen(false)}>
+                    Secunderabad (MG Road)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-bangalore" onClick={() => setMobileOpen(false)}>
+                    Bangalore Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-chennai" onClick={() => setMobileOpen(false)}>
+                    Chennai Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-usa" onClick={() => setMobileOpen(false)}>
+                    USA &amp; Americas Online
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/speciality-homeopathy-uk" onClick={() => setMobileOpen(false)}>
+                    London UK &amp; Europe Online
+                  </Link>
+                </li>
+              </ul>
             </li>
 
             {/* 8. Important Links ⌵ */}
@@ -275,6 +355,7 @@ export default function Header() {
                   e.preventDefault();
                   setLinksOpen((prev) => !prev);
                   setExpertsOpen(false);
+                  setClinicsOpen(false);
                 }}
                 aria-expanded={linksOpen}
               >
@@ -293,8 +374,28 @@ export default function Header() {
               </button>
               <ul className={`dropdown-menu ${linksOpen ? 'show open' : ''}`}>
                 <li>
-                  <Link href="/autismhistory" onClick={() => setMobileOpen(false)}>
-                    Autism History
+                  <Link href="/what-is-homeopathy" onClick={() => setMobileOpen(false)}>
+                    What is Homeopathy?
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/inquiry" onClick={() => setMobileOpen(false)}>
+                    Consultation Inquiry
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/how-to-pay-fees" onClick={() => setMobileOpen(false)}>
+                    How to Pay Fees
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/therapy-for-ability" onClick={() => setMobileOpen(false)}>
+                    Therapy For Ability (Delhi)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/medical-registrations" onClick={() => setMobileOpen(false)}>
+                    Medical Registrations
                   </Link>
                 </li>
                 <li>
@@ -305,6 +406,11 @@ export default function Header() {
                 <li>
                   <Link href="/medicaltips" onClick={() => setMobileOpen(false)}>
                     Medical Tips
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/autismhistory" onClick={() => setMobileOpen(false)}>
+                    Autism History
                   </Link>
                 </li>
                 <li>

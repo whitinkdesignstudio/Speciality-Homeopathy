@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AboutUsClient from './AboutUsClient';
 
 export const metadata: Metadata = {
-  title: 'About Our Autism Clinic | Speciality Homeopathy',
+  title: 'About Us | Specialist Homeopathy & Child Neurology Centre',
   description:
     "Meet the team behind our autism clinic in Ahmedabad: research-led, individualised homeopathic care alongside your child's medical team.",
   keywords:

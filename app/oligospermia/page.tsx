@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Oligospermia – Low Sperm Count & Motility Care | Speciality Homeopathy",
+  title: 'Oligospermia Treatment for Low Sperm Count & Motility',
   description: "Learn about oligospermia, low sperm count, male infertility and associated conditions, with supportive care from Dr. Ketan Patel, Vastrapur, Ahmedabad.",
 };
 
@@ -519,7 +519,7 @@ export default function Page() {
     <h2 className="reveal d1">A calm, honest conversation about your fertility.</h2>
     <p className="reveal d1">Book a consultation or share your semen analysis report securely. We'll listen carefully, be honest about how we can help, and work in step with your urologist or fertility specialist.</p>
     <div className="cta-row reveal d2">
-      <a className="btn btn-primary" href="/contactus">Book a Consultation</a>
+      <Link className="btn btn-primary" href="/contactus">Book a Consultation</Link>
       <a className="btn btn-ghost" href="tel:+919898005354">Call +91 98980 05354</a>
       <a className="btn btn-ghost" href="https://wa.me/918320131612" target="_blank" rel="noopener">WhatsApp our team</a>
     </div>

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Prolapsed Vertebral Disc (PIVD) Care | Speciality Homeopathy",
+  title: 'Prolapsed Vertebral Disc & Chronic Backache Homeopathy Treatment',
   description: "Learn about PIVD, including causes and symptoms, with supportive homeopathic care alongside appropriate medical guidance. Dr. Ketan Patel, Ahmedabad.",
 };
 
@@ -136,9 +137,7 @@ export default function Page() {
       {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/prolapsed-vertebral-disc/hero-banner.png"
-            alt="Prolapsed Vertebral Disc (PIVD) Treatment Hero Section Banner"
-            style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/prolapsed-vertebral-disc/hero-banner.png" alt="Prolapsed Vertebral Disc (PIVD) Treatment Hero Section Banner" />
         </div>
       </section>
 

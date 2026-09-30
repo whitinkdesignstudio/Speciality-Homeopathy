@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Male Infertility Treatment | Speciality Homeopathy — Dr. Ketan Patel",
+  title: 'Male Infertility, Low Sperm Count & Motility Treatment',
   description: "Learn about male infertility, low sperm count, motility and semen quality, with supportive care from Dr. Ketan Patel, Ahmedabad.",
 };
 
@@ -136,9 +137,7 @@ export default function Page() {
       {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/male-infertility/hero-banner.png"
-            alt="Male Infertility Treatment Hero Section Banner"
-            style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/male-infertility/hero-banner.png" alt="Male Infertility Treatment Hero Section Banner" />
         </div>
       </section>
 

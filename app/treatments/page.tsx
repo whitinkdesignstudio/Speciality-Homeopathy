@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Homeopathy Treatments & Care | Speciality Homeopathy',
+  title: 'Neurological, Genetic & Metabolic Disorder Homeopathy Care',
   description:
     'Explore homeopathic care programs at Speciality Homeopathy: autism, cerebral palsy, ADHD and more, with early intervention support. Consult today.',
   keywords:

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Homeopathy Treatment Videos | Speciality Homeopathy',
+  title: 'Videos | Specialist Homeopathy Treatment & Patient Care',
   description: 'Watch educational videos on homeopathic treatment for autism, cerebral palsy, ADHD, and more from the specialists at Speciality Homeopathy, Ahmedabad.',
   keywords: 'autism homeopathy video, Dr. Ketan Patel video, homeopathy education videos, child neurology treatment videos',
 };

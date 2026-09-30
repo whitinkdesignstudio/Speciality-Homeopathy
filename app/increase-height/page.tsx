@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Increase Height Treatment | Speciality Homeopathy — Dr. Ketan Patel",
+  title: 'Increase Height Naturally with Safe Homeopathy Treatment',
   description: "Learn about short stature and height growth in children, including possible causes and supportive care with Dr. Ketan Patel, Ahmedabad.",
 };
 
@@ -154,9 +155,7 @@ export default function Page() {
       {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/increase-height/hero-banner.png"
-            alt="Increase Height Treatment Hero Section Banner"
-            style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/increase-height/hero-banner.png" alt="Increase Height Treatment Hero Section Banner" />
         </div>
       </section>
 

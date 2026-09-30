@@ -1,8 +1,7 @@
-'use client';
-
-import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { Apple, ArrowRight, HeartPlus, PersonStanding } from 'lucide-react';
+import ReviewsAutoScroll from '@/components/ReviewsAutoScroll';
 
 const conditions = [
   {
@@ -56,99 +55,6 @@ const conditions = [
 ];
 
 export default function HomePage() {
-  useEffect(() => {
-    // 1. Trigger reveal animations
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add('in');
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
-    );
-
-    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-    document.querySelectorAll('.pillar').forEach((el) => io.observe(el));
-
-    // 2. Auto-loop Elfsight reviews carousel (viewport-throttled for 60fps & zero idle CPU)
-    const speed = 0.6;
-    let paused = false;
-    let isVisible = false;
-    let rafId: number | null = null;
-    let carouselObserver: IntersectionObserver | null = null;
-
-    function startLoop(list: HTMLElement) {
-      if (list.dataset.autoLoopAttached) return;
-      list.dataset.autoLoopAttached = 'true';
-
-      list.scrollLeft = list.scrollWidth - list.clientWidth;
-
-      const onMouseEnter = () => { paused = true; };
-      const onMouseLeave = () => { paused = false; };
-      const onTouchStart = () => { paused = true; };
-      const onTouchEnd = () => { paused = false; };
-
-      list.addEventListener('mouseenter', onMouseEnter);
-      list.addEventListener('mouseleave', onMouseLeave);
-      list.addEventListener('touchstart', onTouchStart, { passive: true });
-      list.addEventListener('touchend', onTouchEnd);
-
-      function tick() {
-        if (!isVisible) {
-          rafId = null;
-          return;
-        }
-        if (!paused) {
-          list.scrollLeft -= speed;
-          if (list.scrollLeft <= 0) {
-            list.scrollLeft = list.scrollWidth - list.clientWidth;
-          }
-        }
-        rafId = requestAnimationFrame(tick);
-      }
-
-      if ('IntersectionObserver' in window) {
-        carouselObserver = new IntersectionObserver(([entry]) => {
-          isVisible = entry.isIntersecting;
-          if (isVisible && !rafId) {
-            rafId = requestAnimationFrame(tick);
-          }
-        }, { threshold: 0.05 });
-        carouselObserver.observe(list);
-      } else {
-        isVisible = true;
-        rafId = requestAnimationFrame(tick);
-      }
-    }
-
-    function findAndStart() {
-      const list = document.querySelector<HTMLElement>(
-        '.elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d .eapps-google-reviews-list'
-      );
-      if (list && list.scrollWidth > list.clientWidth) {
-        startLoop(list);
-        return true;
-      }
-      return false;
-    }
-
-    let attempts = 0;
-    const checkInterval = setInterval(() => {
-      attempts++;
-      if (findAndStart() || attempts > 20) clearInterval(checkInterval);
-    }, 500);
-
-    return () => {
-      io.disconnect();
-      clearInterval(checkInterval);
-      if (carouselObserver) carouselObserver.disconnect();
-      if (rafId) cancelAnimationFrame(rafId);
-    };
-  }, []);
-
   return (
     <>
       {/* Elfsight Script */}
@@ -356,11 +262,7 @@ export default function HomePage() {
               <span className="num"></span>
               <div className="pillar-top">
                 <div className="pico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 3a9 9 0 1 0 9 9" />
-                    <path d="M12 3v9l6 4" />
-                    <path d="M16 3a4 4 0 0 0 4 4" />
-                  </svg>
+                  <Apple aria-hidden="true" strokeWidth={1.8} />
                 </div>
                 <h3>Diet &amp; Nutrition</h3>
               </div>
@@ -378,11 +280,7 @@ export default function HomePage() {
               <span className="num"></span>
               <div className="pillar-top">
                 <div className="pico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="13" cy="4.5" r="2" />
-                    <path d="M9 21l2.5-5 2-2-1-5-3 2-2 3" />
-                    <path d="M13.5 9l3 1.5 3-.5M11.5 14l4 1 1.5 5" />
-                  </svg>
+                  <PersonStanding aria-hidden="true" strokeWidth={1.8} />
                 </div>
                 <h3>Exercise &amp; Play</h3>
               </div>
@@ -400,10 +298,7 @@ export default function HomePage() {
               <span className="num"></span>
               <div className="pillar-top">
                 <div className="pico">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10Z" />
-                    <path d="M9 11h6M12 8v6" />
-                  </svg>
+                  <HeartPlus aria-hidden="true" strokeWidth={1.8} />
                 </div>
                 <h3>Supportive Homeopathy</h3>
               </div>
@@ -462,10 +357,10 @@ export default function HomePage() {
       <section className="sec credit" id="credit">
         <div className="wrap">
           <div className="credit-grid">
-            <div className="founder-portrait reveal">
+            <Link href="/our-experts/dr-ketan-patel" className="founder-portrait reveal" aria-label="View Dr. Ketan Patel's profile">
               <img src="https://static.wixstatic.com/media/66422a_2e80f863abef44c4baa603772ca1149c~mv2.png"
                 alt="Dr. Ketan Patel — autism doctor in Ahmedabad" loading="lazy" decoding="async" />
-            </div>
+            </Link>
             <div>
               <h2 className="reveal d1">Led by Dr. Ketan Patel.</h2>
               <p className="lead reveal d1">
@@ -483,6 +378,9 @@ export default function HomePage() {
                 <div><span>Global</span><small>Autism lectures &amp; schools</small></div>
                 <div><span>Birth–16</span><small>Ages cared for</small></div>
               </div>
+              <Link href="/our-experts/dr-ketan-patel" className="founder-profile-link">
+                View Dr. Ketan Patel&apos;s profile <ArrowRight aria-hidden="true" size={18} />
+              </Link>
               <div className="team-row reveal d2">
                 <Link href="/our-experts/drkamalpatel" className="doc">
                   <div className="av">
@@ -630,6 +528,7 @@ export default function HomePage() {
       <section className="testimonials-sec">
         <div className="wrap">
           <h2 className="review-title">Testimonials &amp; Autism Doctor Reviews</h2>
+          <ReviewsAutoScroll />
           <div className="elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d" data-elfsight-app-lazy></div>
         </div>
       </section>
@@ -736,10 +635,10 @@ const pageStyles = `
     display: grid;
     grid-template-columns: 1fr 1.04fr;
     gap: 46px;
-    align-items: start;
+    align-items: center;
   }
 
-  .hero-text { display: flex; flex-direction: column; }
+  .hero-text { display: flex; flex-direction: column; align-self: center; width: 100%; }
 
   .hero h1 {
     color: #111B78;
@@ -995,7 +894,11 @@ const pageStyles = `
     transform: none !important;
     transition: none !important;
   }
-  .pillar:hover { transform: none !important; box-shadow: 0 14px 38px -16px rgba(20, 50, 90, .20) !important; }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .pillar { transition: transform .28s ease, box-shadow .28s ease !important; }
+    .pillar:hover { transform: translateY(-7px) !important; box-shadow: 0 24px 46px -18px rgba(20, 50, 90, .34) !important; }
+    .pillar:hover .pico { transform: scale(1.08); background: rgba(0, 155, 168, .2); }
+  }
   .pillar .num {
     counter-increment: p;
     position: absolute;
@@ -1015,6 +918,7 @@ const pageStyles = `
     margin: 0 auto 20px;
     background: rgba(0, 155, 168, .12);
     color: #009ba8;
+    transition: transform .28s ease, background-color .28s ease;
   }
   .pillar .pico svg { width: 27px; height: 27px; }
   .pillar .pillar-top h3 { font-size: 1.14rem; margin: 0; color: #0a1f44; text-align: center; font-weight: 700; }
@@ -1045,8 +949,13 @@ const pageStyles = `
   /* ===== CREDIBILITY / CARE TEAM ===== */
   .credit { background: #fff; border-top: 1px solid rgba(10, 31, 68, .10); }
   .credit-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 50px; align-items: center; }
-  .founder-portrait { aspect-ratio: 3/4; border-radius: 20px; overflow: hidden; border: 1px solid #009ba8; box-shadow: 0 24px 60px -30px rgba(10, 31, 68, .34); background: rgba(10, 31, 68, .06); }
-  .founder-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .founder-portrait { aspect-ratio: 3/4; border-radius: 20px; overflow: hidden; border: 1px solid #009ba8; box-shadow: 0 24px 60px -30px rgba(10, 31, 68, .34); background: rgba(10, 31, 68, .06); display: block; }
+  .founder-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .3s ease; }
+  .founder-portrait:hover img { transform: scale(1.025); }
+  .founder-portrait:focus-visible { outline: 3px solid #009ba8; outline-offset: 4px; }
+  .founder-profile-link { margin: 22px 0 0; display: inline-flex; align-items: center; gap: 9px; padding: 12px 18px; border-radius: 8px; background: #009ba8; color: #fff; font-weight: 700; font-size: .9rem; transition: background-color .2s ease, transform .2s ease; }
+  .founder-profile-link:hover { background: #087d89; transform: translateY(-2px); }
+  .founder-profile-link:focus-visible { outline: 3px solid #0a1f44; outline-offset: 3px; }
   .credit h2 { font-size: clamp(1.7rem, 2.8vw, 2.3rem); margin: 12px 0 14px; color: #0a1f44; }
   .cred { display: flex; flex-wrap: wrap; gap: 9px; margin: 16px 0 18px; }
   .cred span { font-family: 'Open Sans', sans-serif; font-size: .72rem; font-weight: 600; background: rgba(10, 31, 68, .06); color: #0a1f44; padding: .42rem .75rem; border-radius: 8px; border: 1px solid rgba(10, 31, 68, .10); }

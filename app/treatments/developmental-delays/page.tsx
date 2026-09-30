@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Developmental Delays Homeopathy Treatment | Speciality Homeopathy',
+  title: 'Global Developmental Delays Homeopathic Treatment & Care',
   description: 'Homeopathic support for delayed motor, speech, and cognitive milestones in children — a safe, natural approach to global developmental delay management.',
   keywords: 'developmental delays homeopathy, global developmental delay homeopathy, delayed speech milestones homeopathy, motor delay treatment natural, cognitive milestone delay child',
 };

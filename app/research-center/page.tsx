@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Homeopathy Research & Case Documentation | Speciality Homeopathy',
+  title: 'Research Center | Specialist Homeopathy Research & Treatment',
   description: 'Explore Speciality Homeopathy’s research on homeopathic medicines for autism, tuberculosis, and pediatric conditions, led by Dr. Ketan Patel since 1992.',
   keywords: 'homeopathy research India, case documentation homeopathy, Dr. Ketan Patel research, homeopathic TB treatment research, autism homeopathy case studies',
 };

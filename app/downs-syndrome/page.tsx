@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Down's Syndrome (Trisomy 21) | Speciality Homeopathy — Dr. Ketan Patel",
+  title: 'Down Syndrome Trisomy 21 Homeopathy Treatment & Child Care',
   description: "Learn about Down syndrome, including its causes, characteristics, diagnosis and developmental support, with guidance from Dr. Ketan Patel, Ahmedabad.",
 };
 
@@ -321,7 +322,7 @@ export default function Page() {
       {/* PAGE HERO BANNER 1 */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/downs-syndrome/hero-banner-1.png" alt="Down's Syndrome (Trisomy 21) Hero Banner" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/downs-syndrome/hero-banner-1.png" alt="Down's Syndrome (Trisomy 21) Hero Banner" />
         </div>
       </section>
 

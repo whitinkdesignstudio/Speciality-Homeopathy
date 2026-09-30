@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Autism Homeopathy Case Studies | Speciality Homeopathy',
+  title: 'Autism & Child Neurology Treatment – Complete Case Studies',
   description:
     'Read documented autism improvement stories and case studies from Speciality Homeopathy. Results vary from child to child; consult our doctor.',
   keywords:

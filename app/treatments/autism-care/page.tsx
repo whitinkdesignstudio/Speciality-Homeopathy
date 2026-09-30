@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Autism Homeopathy Treatment | Holistic Care Ahmedabad",
+  title: 'Autism Homeopathic Treatment & Biomedical Neuroimmune Care',
   description: "Supportive autism homeopathy, early intervention therapy, and holistic treatment for ASD and speech delays in Ahmedabad. Consult our specialist.",
   keywords: "autism homeopathy, holistic autism treatment, early intervention therapy, biomedical treatment, autism brain therapy, detox therapy, autism specialist",
 };

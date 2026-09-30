@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Child Neurological Disorders Homeopathy | Speciality Homeopathy',
+  title: 'Child Neurological Disorders Homeopathy Treatment & Care',
   description: 'Homeopathic treatment for dysmorphism, chromosomal abnormalities, brain-cell degenerative disorders, and hypoxic brain insult in children at Speciality Homeopathy.',
   keywords: 'child neurological disorders homeopathy, chromosomal abnormalities homeopathy, brain cell degeneration homeopathic, dysmorphism treatment India, hypoxic brain insult homeopathy',
 };
@@ -205,7 +206,7 @@ export default function Page() {
       {/* PAGE HERO */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/child-neurological-disorders/hero-banner.png" alt="Child Neurological Disorders — Comprehensive care for developmental, genetic & neurological conditions in children" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/child-neurological-disorders/hero-banner.png" alt="Child Neurological Disorders — Comprehensive care for developmental, genetic & neurological conditions in children" />
         </div>
       </section>
 

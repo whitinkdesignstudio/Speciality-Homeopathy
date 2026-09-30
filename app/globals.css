@@ -466,11 +466,11 @@ img {
   margin-right: 6px;
 }
 
-/* 3-Column Grid */
+/* Footer Grid (4-Column Layout) */
 .site-footer .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1.35fr;
-  gap: 48px;
+  grid-template-columns: 1.25fr 0.9fr 1.05fr 1.15fr;
+  gap: 36px;
   align-items: start;
 }
 

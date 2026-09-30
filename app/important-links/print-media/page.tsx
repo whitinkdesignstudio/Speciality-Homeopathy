@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Press Coverage & Media Features | Speciality Homeopathy',
+  title: 'Print Media | Specialist Homeopathy & Healthcare Centre',
   description: 'Read Speciality Homeopathy’s press coverage in Sandesh, Gujarat Samachar, DNA, Chitralekha and South Asia Mail on autism and homeopathy treatment in India.',
   keywords: 'homeopathy press coverage India, autism treatment media coverage, Gujarat homeopathy news, Sandesh homeopathy article, Indian media homeopathy',
 };

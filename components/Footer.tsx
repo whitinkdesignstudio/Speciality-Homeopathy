@@ -104,16 +104,22 @@ export default function Footer({ disclaimerText }: FooterProps) {
                 <Link href="/about-us">About Us</Link>
               </li>
               <li>
-                <Link href="/our-experts">Experts</Link>
+                <Link href="/what-is-homeopathy">What is Homeopathy?</Link>
+              </li>
+              <li>
+                <Link href="/our-experts">Our Experts</Link>
               </li>
               <li>
                 <Link href="/treatments">Treatments</Link>
               </li>
               <li>
+                <Link href="/locations">Clinics &amp; Branches</Link>
+              </li>
+              <li>
                 <Link href="/research-center">Research Center</Link>
               </li>
               <li>
-                <Link href="/important-links">Important Links</Link>
+                <Link href="/inquiry">Consultation Inquiry</Link>
               </li>
               <li>
                 <Link href="/contact">Contact Us</Link>
@@ -121,9 +127,40 @@ export default function Footer({ disclaimerText }: FooterProps) {
             </ul>
           </div>
 
-          {/* Column 3: Contact Details */}
+          {/* Column 3: Patient Resources & Centers */}
           <div className="footer-col">
-            <h5 className="footer-col-title">CONTACT</h5>
+            <h5 className="footer-col-title">PATIENT RESOURCES</h5>
+            <ul className="footer-links-list">
+              <li>
+                <Link href="/how-to-pay-fees">How to Pay Fees</Link>
+              </li>
+              <li>
+                <Link href="/therapy-for-ability">Therapy For Ability (Delhi)</Link>
+              </li>
+              <li>
+                <Link href="/medical-registrations">Medical Registrations</Link>
+              </li>
+              <li>
+                <Link href="/casestudies">Cured Case Studies</Link>
+              </li>
+              <li>
+                <Link href="/medicaltips">Medical Tips</Link>
+              </li>
+              <li>
+                <Link href="/print-media">Print Media</Link>
+              </li>
+              <li>
+                <Link href="/videos">Videos &amp; Media</Link>
+              </li>
+              <li>
+                <Link href="/important-links">Important Links</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact Details */}
+          <div className="footer-col">
+            <h5 className="footer-col-title">CONTACT HEADQUARTERS</h5>
             <ul className="footer-contact-list">
               <li>
                 <a
@@ -136,6 +173,9 @@ export default function Footer({ disclaimerText }: FooterProps) {
               </li>
               <li>
                 <a href="tel:+919898005354">+91 98980 05354</a>
+              </li>
+              <li>
+                <a href="tel:+917926763575">+91-79-26763575</a>
               </li>
               <li>
                 <a href="mailto:info@specialityhomeopathy.com">info@specialityhomeopathy.com</a>

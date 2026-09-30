@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Patient Resources & Important Links | Speciality Homeopathy',
+  title: 'Important Links | Specialist Homeopathy Resources & Information',
   description: 'Access autism intake forms, homeopathy case studies, press coverage, medical tips, and video resources from Speciality Homeopathy — all in one place.',
   keywords: 'homeopathy patient resources, autism intake form, homeopathy case studies, medical tips homeopathy, Speciality Homeopathy resources',
 };

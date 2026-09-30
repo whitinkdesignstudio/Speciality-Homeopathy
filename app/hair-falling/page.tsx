@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Hair Fall & Alopecia Areata Care | Speciality Homeopathy",
+  title: 'Hair Fall, Baldness & Alopecia Areata Homeopathy Treatment',
   description: "Learn about hair fall, baldness and Alopecia Areata, including causes and supportive care options. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
 };
 
@@ -154,9 +155,7 @@ export default function Page() {
       {/* PAGE HERO â€” 100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/hair-falling/hero-banner.png"
-            alt="Hair Falling &amp; Baldness (Alopecia Areata) Care Hero Section Banner"
-            style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/hair-falling/hero-banner.png" alt="Hair Falling &amp; Baldness (Alopecia Areata) Care Hero Section Banner" />
         </div>
       </section>
 

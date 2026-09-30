@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: "Child Behavioral Disorder Care & Support | Speciality Homeopathy",
+  title: 'Child Behavioral & Hyperactivity Disorder Homeopathy Treatment',
   description: "Learn about child behavioral disorders, PANS, PANDAS and symptoms, with supportive care from Dr. Ketan Patel, Ahmedabad.",
 };
 
@@ -138,8 +139,7 @@ export default function ChildBehavioralDisorderPage() {
       {/* PAGE HERO BANNER */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
-          <img src="/images/child-behavioral-disorder/hero-banner.png"
-            alt="Child Behavioral Disorder Care &amp; Support Hero Banner" loading="lazy" decoding="async" />
+          <HeroBannerImage src="/images/child-behavioral-disorder/hero-banner.png" alt="Child Behavioral Disorder Care &amp; Support Hero Banner" />
         </div>
       </section>
 

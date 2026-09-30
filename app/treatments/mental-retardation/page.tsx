@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Mental Retardation Homeopathy Treatment | Speciality Homeopathy',
+  title: 'Intellectual Disability & Mental Disorder Homeopathy Treatment',
   description: 'Learn about intellectual disability, its possible causes, developmental signs and supportive care with Dr. Ketan Patel, Vastrapur, Ahmedabad.',
   keywords: 'mental retardation homeopathy, cognitive delay homeopathic treatment, intellectual disability homeopathy, neurological cognitive delay treatment, cerebral palsy cognitive delay',
 };

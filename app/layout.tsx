@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import SiteInteractions from '@/components/SiteInteractions';
 
 const poppins = Poppins({
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   style: ['normal', 'italic'],
   variable: '--font-poppins',
@@ -14,14 +14,14 @@ const poppins = Poppins({
 });
 
 const openSans = Open_Sans({
-  weight: ['300', '400', '500', '600', '700', '800'],
+  weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
   variable: '--font-open-sans',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Autism Specialist in Ahmedabad | Speciality Homeopathy',
+  title: 'Autism, Child Neurology & Psychiatry Treatment & Therapy',
   description:
     'Homeopathic autism clinic in Ahmedabad, Gujarat. Individualised, supportive care for children, alongside your medical team. Book a consultation.',
   keywords:
