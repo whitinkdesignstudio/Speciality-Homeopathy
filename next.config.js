@@ -51,6 +51,36 @@ const nextConfig = {
         ],
       },
       {
+        // Public HTML pages only: serve X-Robots-Tag: index, follow
+        // Excludes static files, images, next internal assets, sitemap.xml, robots.txt, and api
+        source: '/((?!api|_next|favicon\\.ico|robots\\.txt|sitemap\\.xml|images|.*\\.[\\w]+).*)',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'index, follow',
+          },
+        ],
+      },
+      {
+        // Protected API and private routes: serve X-Robots-Tag: noindex, nofollow
+        source: '/api/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
+      {
+        source: '/admin/:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex, nofollow',
+          },
+        ],
+      },
+      {
         source: '/_next/static/:path*',
         headers: [
           {

@@ -26,6 +26,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!caseStudy) {
     return {
       title: 'Case Study Not Found | Speciality Homeopathy',
+      robots: {
+        index: false,
+        follow: false,
+        googleBot: {
+          index: false,
+          follow: false,
+        },
+      },
     };
   }
 
@@ -36,6 +44,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${caseStudy.shortTitle} – Documented Autism Case Study | Speciality Homeopathy`,
     description: caseStudy.metaDescription,
     keywords: caseStudy.metaKeywords,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     alternates: {
       canonical: canonicalUrl,
     },

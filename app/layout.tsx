@@ -22,11 +22,23 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://specialityhomeopathy.com'),
   title: 'Autism, Child Neurology & Psychiatry Treatment & Therapy',
   description:
     'Homeopathic autism clinic in Ahmedabad, Gujarat. Individualised, supportive care for children, alongside your medical team. Book a consultation.',
   keywords:
     'autism specialist in Ahmedabad, autism clinic, child autism specialist, autism specialist in Gujarat, diet for autistic child',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
