@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React from 'react';
 import { CASE_STUDIES, getCaseStudyBySlug } from '../../../lib/caseStudiesData';
+import { SITE_URL } from '@/lib/seo/siteConfig';
+import {
+  getWebPageEntity,
+  getArticleEntity,
+  getBreadcrumbListEntity,
+  createPageJsonLd,
+} from '@/lib/seo/schema';
 
 interface PageProps {
   params: {
@@ -753,42 +760,39 @@ export default function CaseStudyDetailPage({ params }: PageProps) {
 
   const otherCases = CASE_STUDIES.filter((c) => c.id !== caseStudy.id);
 
-  // Structured Data (JSON-LD)
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalWebPage',
-    name: caseStudy.title,
-    headline: caseStudy.title,
-    description: caseStudy.metaDescription,
-    url: `https://specialityhomeopathy.com/casestudies/${caseStudy.slug}`,
-    datePublished: caseStudy.dateISO,
-    image: `https://specialityhomeopathy.com${caseStudy.image}`,
-    author: {
-      '@type': 'Person',
-      name: caseStudy.patientProfile.author,
-    },
-    medicalAudience: {
-      '@type': 'MedicalAudience',
-      audienceType: 'Parents and Patients seeking autism homeopathy information',
-    },
-    aspect: 'Medical Case Study & Clinical Outcome',
-    publisher: {
-      '@type': 'MedicalOrganization',
-      name: 'Speciality Homeopathy',
-      url: 'https://specialityhomeopathy.com',
-      founder: {
-        '@type': 'Person',
-        name: 'Dr. Ketan Patel (MD, BHMS)',
-      },
-    },
-  };
+  const canonicalUrl = `${SITE_URL}/casestudies/${caseStudy.slug}`;
+  const breadcrumbItems = [
+    { name: 'Home', url: `${SITE_URL}/` },
+    { name: 'Case Studies', url: `${SITE_URL}/casestudies` },
+    { name: caseStudy.shortTitle, url: canonicalUrl },
+  ];
+
+  // Structured Data (JSON-LD) with consistent Publisher & WebSite linkages
+  const pageJsonLd = createPageJsonLd([
+    getWebPageEntity({
+      canonicalUrl,
+      name: `${caseStudy.shortTitle} – Documented Autism Case Study`,
+      description: caseStudy.metaDescription,
+      pageType: 'MedicalWebPage',
+      breadcrumbId: `${canonicalUrl}#breadcrumb`,
+    }),
+    getArticleEntity({
+      canonicalUrl,
+      headline: caseStudy.title,
+      description: caseStudy.metaDescription,
+      imageUrl: `${SITE_URL}${caseStudy.image}`,
+      datePublished: caseStudy.dateISO,
+      authorName: caseStudy.patientProfile.author,
+    }),
+    getBreadcrumbListEntity(canonicalUrl, breadcrumbItems),
+  ]);
 
   return (
     <div className="case-detail-page">
       <style dangerouslySetInnerHTML={{ __html: detailStyles }} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }}
       />
 
       {/* HERO SECTION */}

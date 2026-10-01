@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import TopProgressBar from '@/components/TopProgressBar';
 import SiteInteractions from '@/components/SiteInteractions';
+import { buildRootLayoutSchema } from '@/lib/seo/schema';
 
 const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
@@ -52,70 +53,7 @@ export const metadata: Metadata = {
   },
 };
 
-const schemaMarkup = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': ['MedicalClinic', 'LocalBusiness'],
-      '@id': 'https://specialityhomeopathy.com/#clinic',
-      name: 'Speciality Homeopathy - Autism Clinic',
-      alternateName: 'Speciality Homeopathy Clinic & Research Centre',
-      url: 'https://specialityhomeopathy.com',
-      logo: 'https://specialityhomeopathy.com/logo.png',
-      image: 'https://specialityhomeopathy.com/logo.png',
-      description:
-        'Homeopathic autism clinic in Ahmedabad, Gujarat, offering individualised, supportive care for children, alongside your medical team.',
-      telephone: '+91 98980 05354',
-      email: 'info@specialityhomeopathy.com',
-      medicalSpecialty: 'Homeopathic',
-      priceRange: '$$',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'A-205/206 Himalaya Arcade, Opp. Lake, Nehru Park, Vastrapur',
-        addressLocality: 'Ahmedabad',
-        addressRegion: 'Gujarat',
-        postalCode: '380015',
-        addressCountry: 'IN',
-      },
-      areaServed: [
-        {
-          '@type': 'City',
-          name: 'Ahmedabad',
-        },
-        {
-          '@type': 'State',
-          name: 'Gujarat',
-        },
-        {
-          '@type': 'Country',
-          name: 'India',
-        },
-      ],
-      founder: {
-        '@id': 'https://specialityhomeopathy.com/#physician',
-      },
-    },
-    {
-      '@type': 'Physician',
-      '@id': 'https://specialityhomeopathy.com/#physician',
-      name: 'Dr. Ketan Patel',
-      jobTitle: 'Autism Specialist Doctor & Homeopathic Physician',
-      medicalSpecialty: 'Homeopathic',
-      worksFor: {
-        '@id': 'https://specialityhomeopathy.com/#clinic',
-      },
-      telephone: '+91 98980 05354',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'A-205/206 Himalaya Arcade, Opp. Lake, Nehru Park, Vastrapur',
-        addressLocality: 'Ahmedabad',
-        addressRegion: 'Gujarat',
-        postalCode: '380015',
-        addressCountry: 'IN',
-      },
-    },
-  ],
-};
+const schemaMarkup = buildRootLayoutSchema();
 
 export default function RootLayout({
   children,
