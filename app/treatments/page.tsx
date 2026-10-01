@@ -3,11 +3,11 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Neurological, Genetic & Metabolic Disorder Homeopathy Care',
+  title: 'Treatments & Clinical Care Areas | Speciality Homeopathy Clinic',
   description:
-    'Explore homeopathic care programs at Speciality Homeopathy: autism, cerebral palsy, ADHD and more, with early intervention support. Consult today.',
+    'Explore specialized homeopathic treatment programs for autism, pediatric neurology, genetic disorders, and chronic conditions by Dr. Ketan Patel.',
   keywords:
-    'early intervention therapy, homeopathy treatments India, pediatric homeopathy, natural treatment for children',
+    'homeopathy treatments, pediatric neurology care, autism care protocol, genetic disorders homeopathy, chronic disease clinic',
 };
 
 const treatmentAreas = [
@@ -130,6 +130,54 @@ const treatmentAreas = [
     desc: "Non-surgical constitutional management for disc herniation, nerve compression, and sciatica relief.",
     image: "/images/treatments/prolapsed-vertebral-disc.jpg",
     slug: "/prolapsed-vertebral-disc",
+  },
+  {
+    title: "PANS and PANDAS",
+    desc: "These conditions cause a rapid onset of OCD and tics. The sudden behavioral changes often closely mimic autism spectrum disorder.",
+    image: "/images/treatments/pans-pandas.jpg",
+    slug: "/child-behavioral-disorder",
+  },
+  {
+    title: "Child Psychiatry Disorders",
+    desc: "ADHD, anxiety disorders, depression, autism spectrum disorder, and behavioral issues like oppositional defiant disorder. Early care helps support healthy growth.",
+    image: "/images/treatments/child-psychiatry-disorders.jpg",
+    slug: "/child-neurological-disorders",
+  },
+  {
+    title: "Lyme Disease",
+    desc: "Lyme disease is a bacterial infection transmitted through the bite of infected ticks. Early warning signs include a distinct 'bullseye' rash and flu-like symptoms.",
+    image: "/images/treatments/lyme-disease.jpg",
+    slug: "/contact",
+  },
+  {
+    title: "Intense Autism (Profound)",
+    desc: "Individuals may require lifelong, high-level support with communication, daily activities, sensory regulation, and safety.",
+    image: "/images/treatments/profound-autism.jpg",
+    slug: "/autism-care",
+  },
+  {
+    title: "PVLM Periventricular HIE",
+    desc: "Brain injury around the ventricles can affect movement, muscle control, coordination, and overall development.",
+    image: "/images/treatments/pvlm-hie.jpg",
+    slug: "/child-neurological-disorders",
+  },
+  {
+    title: "Birth Injuries in Children",
+    desc: "Birth injuries can affect a child’s movement, development, communication, or nervous system function, depending on their type and severity.",
+    image: "/images/treatments/birth-injuries.jpg",
+    slug: "/child-neurological-disorders",
+  },
+  {
+    title: "Anxiety & Mood Disorders",
+    desc: "These conditions can affect a child’s emotions, behavior, sleep, concentration, and ability to cope with everyday situations.",
+    image: "/images/treatments/anxiety-mood-disorders.jpg",
+    slug: "/child-behavioral-disorder",
+  },
+  {
+    title: "Skin Disease",
+    desc: "Skin diseases in children can cause changes in the skin, itching, discomfort, and may affect their daily activities and well-being.",
+    image: "/images/treatments/skin-disease.jpg",
+    slug: "/atopic-dermatitis",
   },
 ];
 
@@ -439,7 +487,7 @@ export default function Page() {
                 Personalised <span>Treatments</span> for Every Condition
               </h1>
               <p className="hero-sub">
-                15 specialised treatment programs rooted in classical homeopathy — gentle, natural and tailored to your needs.
+                Specialised clinical treatment programs rooted in classical homeopathy — gentle, natural and tailored to your child and family&apos;s needs.
               </p>
             </div>
             <div className="hero-visual">

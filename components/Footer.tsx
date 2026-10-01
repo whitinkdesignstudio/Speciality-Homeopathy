@@ -9,7 +9,7 @@ interface FooterProps {
 export default function Footer({ disclaimerText }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const defaultDisclaimer =
-    'Speciality Homeopathy provides supportive homeopathic care and family guidance for autism, ADHD, cerebral palsy, Down syndrome, and pediatric neurological conditions. Neurological and genetic conditions are complex and highly individual. Homeopathic supportive therapy does not claim to cure genetic alterations. Results vary from child to child. Consult our doctor for an individual assessment. For urgent medical concerns, contact your doctor or emergency services.';
+    'Speciality Homeopathy provides homeopathic medicinal care and family guidance for autism, ADHD, cerebral palsy, Down syndrome, genetic, metabolic & mitochondrial disorders or any other child neurological  condition. Neurological and genetic conditions are complex and highly individual. Homeopathy offers care aimed at aimed at addressing individual symptom patterns and overall well-being. Homeopathy treatment does not claim to cure genetic alterations but controls protein disruptions and channel blockades, results varies from child to child and specific outcomes cannot be guaranted  . For urgent concerns, contact your doctor or emergency services.';
 
   return (
     <footer className="site-footer">

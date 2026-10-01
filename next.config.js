@@ -92,8 +92,14 @@ const nextConfig = {
       { source: '/medical-tips', destination: '/medicaltips', permanent: true },
       { source: '/important-links/gallery', destination: '/gallery', permanent: true },
       { source: '/important-links/print-media', destination: '/print-media', permanent: true },
-      { source: '/printmedia', destination: '/print-media', permanent: true },
       { source: '/important-links/videos', destination: '/videos', permanent: true },
+
+      // Legacy WordPress case studies redirects to canonical /casestudies/[slug]
+      { source: '/a-child-of-research-scientist-of-government-of-india-fully-recovered-from-asd-without-any-therapy-cured-cases', destination: '/casestudies/child-of-research-scientist-recovered-from-asd', permanent: true },
+      { source: '/genetic-neuropathy-having-symptoms-of-autistic-complex-disorder-cured-cases', destination: '/casestudies/genetic-neuropathy-autistic-complex-disorder', permanent: true },
+      { source: '/cacna1a', destination: '/casestudies/cacna1a-hyperactive-asd-child', permanent: true },
+      { source: '/letter-from-mother-of-an-asd-child-cured-completely-with-homeopathy', destination: '/casestudies/mother-letter-asd-child-cured-homeopathy', permanent: true },
+      { source: '/reply-from-a-mother-of-congenital-disorder-genetic-syndrome-with-autistic-traits-child', destination: '/casestudies/congenital-disorder-genetic-syndrome-autistic-traits', permanent: true },
 
       // Treatment page redirects (old /treatments/X → new canonical URLs)
       { source: '/treatments/autism-care', destination: '/autism', permanent: true },

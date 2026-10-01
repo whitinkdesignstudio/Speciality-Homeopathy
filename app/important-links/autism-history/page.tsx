@@ -1,1 +1,1 @@
-export { default, metadata } from '../../autism-history/page';
+export { default } from '../../autism-history/page';

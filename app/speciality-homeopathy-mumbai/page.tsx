@@ -357,7 +357,7 @@ export default function MumbaiClinicPage() {
               <h4>Dr. Ketan Patel</h4>
               <span className="doc-role">MD (Homeopathy), BCJP</span>
               <p className="doc-desc">
-                Pioneering clinician with 29+ years experience in pediatric neurology, trained 100+ doctors globally, creator of Hompath research system used in 83 countries.
+                Pioneering clinician with 34+ years experience in pediatric neurology, trained 100+ doctors globally, creator of Hompath research system used in 83 countries.
               </p>
             </div>
 

@@ -265,7 +265,7 @@ export default function NewDelhiClinicPage() {
           <div className="city-hero-content">
             <h1>New Delhi Autism &amp; <span>Pediatric Neurology Clinic</span></h1>
             <p className="hero-sub">
-              Therapy For Ability (TFA), Rajouri Garden — Integrating Dr. Ketan Patel’s 20+ years of homeopathic pediatric neurology with advanced Sensory Integration &amp; Occupational Therapy.
+              Therapy For Ability (TFA), Rajouri Garden — Integrating Dr. Ketan Patel’s 34+ years of homeopathic pediatric neurology with advanced Sensory Integration &amp; Occupational Therapy.
             </p>
           </div>
         </div>

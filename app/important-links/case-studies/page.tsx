@@ -1,13 +1,17 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
+import { CASE_STUDIES } from '../../../lib/caseStudiesData';
 
 export const metadata: Metadata = {
-  title: 'Autism & Child Neurology Treatment – Complete Case Studies',
+  title: 'Autism & Child Neurology Treatment – Documented Cured Case Studies',
   description:
-    'Read documented autism improvement stories and case studies from Speciality Homeopathy. Results vary from child to child; consult our doctor.',
+    'Read documented clinical case studies and autism recovery stories from Speciality Homeopathy. In-depth reports of children diagnosed with ASD, genetic neuropathy, and CACNA1A treated by Dr. Ketan Patel.',
   keywords:
-    'autism homeopathy case studies, autism improvement stories, case studies homeopathy',
+    'autism homeopathy case studies, autism cured cases, autism improvement stories, case studies homeopathy, dr ketan patel case studies',
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/casestudies',
+  },
 };
 
 const pageStyles = `
@@ -15,9 +19,12 @@ const pageStyles = `
     --blue: #0A1F44;
     --navy-bar: #0B2545;
     --teal: #008C8C;
+    --teal-dark: #006666;
+    --teal-light: #E0F2F1;
     --gold: #C8A96B;
     --ivory: #FAF8F4;
     --graphite: #2E2E2E;
+    --muted: #5A6A80;
     --shadow-card: 0 10px 28px -10px rgba(10,31,68,0.12);
     --shadow-hover: 0 18px 40px -12px rgba(10,31,68,0.22);
     --ease: cubic-bezier(.2,.7,.2,1);
@@ -48,37 +55,274 @@ const pageStyles = `
     text-align: center;
   }
   .page-hero .wrap {
-    max-width: 860px;
+    max-width: 900px;
     margin: 0 auto;
   }
   .breadcrumb {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     color: rgba(10,31,68,0.65);
     margin-bottom: 14px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
   }
-  .breadcrumb a { color: var(--teal); font-weight: 600; }
+  .breadcrumb a { color: var(--teal-dark); font-weight: 600; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
   .page-hero .eyebrow {
-    display: inline-block;
-    font-size: 0.72rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76rem;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--teal);
-    margin-bottom: 10px;
+    color: var(--teal-dark);
+    background: rgba(255,255,255,0.7);
+    padding: 4px 14px;
+    border-radius: 999px;
+    margin-bottom: 12px;
   }
   .page-hero h1 {
-    font-size: clamp(2rem, 3.8vw, 2.9rem);
+    font-size: clamp(2rem, 3.6vw, 2.8rem);
     color: var(--blue);
     margin-bottom: 14px;
+    line-height: 1.25;
   }
   .page-hero .lead {
     font-size: 1.05rem;
-    color: rgba(10,31,68,0.8);
-    max-width: 620px;
-    margin: 0 auto;
+    color: rgba(10,31,68,0.85);
+    max-width: 720px;
+    margin: 0 auto 20px;
+    line-height: 1.65;
+  }
+  .hero-badges-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .hero-badge-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: rgba(255,255,255,0.85);
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(10,31,68,0.08);
+  }
+
+  /* ── FEATURED CURED CASES SECTION ── */
+  .featured-section {
+    max-width: 1220px;
+    margin: -32px auto 56px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 5;
+  }
+  .featured-header-card {
+    background: var(--navy-bar);
+    color: #ffffff;
+    border-radius: 20px 20px 0 0;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: 0 10px 30px -10px rgba(11,37,69,0.3);
+  }
+  .featured-header-card h2 {
+    font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .featured-header-card p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.8);
+    margin-top: 4px;
+  }
+  .featured-count-badge {
+    background: var(--teal);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 6px 14px;
+    border-radius: 999px;
+    text-transform: uppercase;
+  }
+
+  .featured-grid-wrap {
+    background: #ffffff;
+    border-radius: 0 0 20px 20px;
+    padding: 32px;
+    box-shadow: 0 16px 36px -12px rgba(10,31,68,0.12);
+    border: 1px solid rgba(10,31,68,0.08);
+    border-top: none;
+  }
+  .featured-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+
+  /* ── FEATURED CASE CARD ── */
+  .cured-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(10,31,68,0.08);
+    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+  .cured-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--teal);
+  }
+  .cured-card-media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e8f4fa, #d0eaf5);
+  }
+  .cured-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease);
+  }
+  .cured-card:hover .cured-card-media img {
+    transform: scale(1.06);
+  }
+  .cured-card-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--blue);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+  .cured-card-verified {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #10B981;
+    color: #ffffff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .cured-card-body {
+    padding: 22px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .cured-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .cured-tag {
+    font-size: 0.7rem;
+    color: var(--teal-dark);
+    background: var(--teal-light);
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  .cured-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.35;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .cured-profile-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid rgba(10,31,68,0.06);
+    font-size: 0.78rem;
+  }
+  .cured-pill-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #4b5563;
+  }
+  .cured-pill-row strong {
+    color: var(--blue);
+    font-size: 0.76rem;
+  }
+  .cured-card-brief {
+    font-size: 0.84rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .cured-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    border-top: 1px solid rgba(10,31,68,0.08);
+  }
+  .cured-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: var(--teal-dark);
+    transition: gap 0.2s, color 0.2s;
+  }
+  .cured-card:hover .cured-cta-btn {
+    color: var(--blue);
+    gap: 10px;
+  }
+  .cured-author {
+    font-size: 0.72rem;
+    color: var(--muted);
   }
 
   /* ── CATEGORY SECTION CONTAINER ── */
@@ -224,16 +468,21 @@ const pageStyles = `
     border-radius: 999px;
     font-weight: 600;
     font-size: 0.85rem;
+    text-decoration: none;
     transition: transform 0.25s, box-shadow 0.25s;
   }
   .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.25); }
 
   @media (max-width: 1024px) {
+    .featured-cards-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .cases-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .cases-wrap { padding: 28px 20px 10px; }
   }
 
   @media (max-width: 640px) {
+    .featured-cards-grid { grid-template-columns: 1fr; gap: 18px; }
+    .featured-grid-wrap { padding: 20px 16px; }
+    .featured-header-card { padding: 20px; }
     .cases-grid { grid-template-columns: 1fr; gap: 18px; }
     .page-hero { padding: 40px 16px 48px; }
     .category-bar { font-size: 1.15rem; padding: 14px 16px; }
@@ -255,36 +504,6 @@ interface CaseCategory {
 }
 
 const caseStudyCategories: CaseCategory[] = [
-  {
-    category: "AUTISM CASES",
-    cases: [
-      {
-        title: "Autism with Multiple Genetic Disorders",
-        desc: "Autism associated with multiple genetic disorders can involve complex genetic changes that may affect development, communication, learning, behavior, and overall functioning.",
-        image: "/images/treatments/autism-care.jpg",
-      },
-      {
-        title: "Autism with Metabolic Disease",
-        desc: "Autism with metabolic disease may involve biochemical or metabolic abnormalities that can influence brain development, energy metabolism, communication, behavior, and overall functioning.",
-        image: "/images/autism-care/beh-3-sensory-girl.png",
-      },
-      {
-        title: "Autism with Mitochondrial Disruption",
-        desc: "Autism with mitochondrial disruption may involve impaired cellular energy production, which can affect brain development, communication, behavior, and overall neurological functioning.",
-        image: "/images/autism-care/beh-2-sleeping-boy.png",
-      },
-      {
-        title: "Intense Autism – Profound Autism Cases",
-        desc: "Profound autism refers to severe autism-related support needs that can significantly affect communication, learning, adaptive skills, behavior, and independent daily functioning.",
-        image: "/images/autism-care/beh-4-hyper-boy.png",
-      },
-      {
-        title: "Autism with Chromosomal Abnormalities",
-        desc: "Autism with chromosomal abnormalities may involve changes in chromosome number or structure that can influence brain development, communication, learning, behavior, and overall development.",
-        image: "/images/autism-care/beh-5-anxious-girl.png",
-      },
-    ],
-  },
   {
     category: "Global Developmental Delays",
     cases: [
@@ -617,12 +836,123 @@ export default function CaseStudiesPage() {
         <div className="wrap">
           <h1>Autism Improvement Stories &amp; Clinical Case Studies</h1>
           <p className="lead">
-            Explore documented clinical case studies and autism improvement stories across autism spectrum conditions, speech delays, and developmental progress. Results vary from child to child. Consult our doctor for an individual assessment.
+            Explore documented clinical case studies and verified autism recovery stories treated with Dr. Ketan Patel's specialized homeopathic protocols. Real parent narratives detailing early detection, milestone breakthroughs, and mainstream school integration.
           </p>
+
+          <div className="hero-badges-row">
+            <div className="hero-badge-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--teal)" strokeWidth="2.2">
+                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span>5 Documented Cured Cases</span>
+            </div>
+            <div className="hero-badge-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--teal)" strokeWidth="2.2">
+                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Over 34+ Years Clinical Focus</span>
+            </div>
+            <div className="hero-badge-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--teal)" strokeWidth="2.2">
+                <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+              <span>Mainstream School Transitions</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CASE CATEGORIES */}
+      {/* FEATURED CURED CLINICAL CASE STUDIES CARDS */}
+      <section className="featured-section" id="cured-cases">
+        <div className="featured-header-card">
+          <div>
+            <h2>
+              <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              Documented Cured Case Studies – Patient Recovery Records
+            </h2>
+            <p>
+              Click any card below to read the complete case study, including pre-treatment symptoms, milestones timeline, parent letters, and clinical commentary.
+            </p>
+          </div>
+          <span className="featured-count-badge">5 Full Case Studies</span>
+        </div>
+
+        <div className="featured-grid-wrap">
+          <div className="featured-cards-grid">
+            {CASE_STUDIES.map((c) => (
+              <Link
+                key={c.id}
+                href={`/casestudies/${c.slug}`}
+                className="cured-card"
+                title={`Read Case Study: ${c.title}`}
+              >
+                <div className="cured-card-media">
+                  <img src={c.image} alt={c.title} loading="lazy" decoding="async" />
+                  <span className="cured-card-badge">{c.badge}</span>
+                  <span className="cured-card-verified">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                      <path d="M5 13l4 4L19 7" />
+                    </svg>
+                    Verified Case
+                  </span>
+                </div>
+
+                <div className="cured-card-body">
+                  <div className="cured-card-meta">
+                    {c.tags.slice(0, 3).map((tag, tIdx) => (
+                      <span key={tIdx} className="cured-tag">
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <h3 className="cured-card-title">{c.title}</h3>
+
+                  <div className="cured-profile-pills">
+                    <div className="cured-pill-row">
+                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                      </svg>
+                      <span>
+                        <strong>Patient:</strong> {c.patientProfile.ageAtStart} • {c.patientProfile.location}
+                      </span>
+                    </div>
+                    <div className="cured-pill-row">
+                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>
+                        <strong>Course:</strong> {c.patientProfile.duration}
+                      </span>
+                    </div>
+                    <div className="cured-pill-row">
+                      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#10B981" strokeWidth="2.5">
+                        <path d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span style={{ color: 'var(--teal-dark)', fontWeight: 600 }}>
+                        {c.patientProfile.schoolStatus}
+                      </span>
+                    </div>
+                  </div>
+
+                  <p className="cured-card-brief">{c.brief}</p>
+
+                  <div className="cured-card-footer">
+                    <span className="cured-author">{c.publishDate}</span>
+                    <span className="cured-cta-btn">
+                      Read Full Case Story &rarr;
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OTHER CLINICAL PRESENTATIONS & CATEGORIES */}
       {caseStudyCategories.map((cat, idx) => (
         <section key={idx} className="case-section">
           <div className="category-bar">

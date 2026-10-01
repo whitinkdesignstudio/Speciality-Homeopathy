@@ -245,7 +245,7 @@ export default function Page() {
       <h1 className="reveal d1">MDR Tuberculosis — individualised supportive care alongside your TB specialist.</h1>
       <p className="lead reveal d2">Multi-Drug Resistant Tuberculosis (MDR-TB) is a form of tuberculosis resistant to the two most commonly used first-line anti-TB medicines, requiring specialised medical care. Our clinic offers individualised homeopathic consultation as supportive and complementary care, always alongside prescribed anti-tuberculosis treatment.</p>
       <div className="page-hero-trust reveal d3">
-        <div><span className="stat-num">20+</span><span className="lbl">Years of practice, Dr. Ketan Patel</span></div>
+        <div><span className="stat-num">34+</span><span className="lbl">Years of practice, Dr. Ketan Patel</span></div>
         <div><span className="stat-num">3</span><span className="lbl">Experienced homeopathic physicians</span></div>
         <div><span className="stat-num">All</span><span className="lbl">Ages, alongside your TB specialist</span></div>
       </div>

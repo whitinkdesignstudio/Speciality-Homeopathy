@@ -347,7 +347,7 @@ export default function PrintMediaPage() {
             <div className="sidebar-card">
               <h3>About Dr. Ketan Patel</h3>
               <p>
-                With over 20 years of experience in supportive homeopathic care for autism and neurodevelopmental conditions, Dr. Ketan Patel has been featured in leading Indian and international publications.
+                With over 34 years of experience in supportive homeopathic care for autism and neurodevelopmental conditions, Dr. Ketan Patel has been featured in leading Indian and international publications.
               </p>
             </div>
 

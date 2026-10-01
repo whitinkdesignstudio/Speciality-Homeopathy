@@ -548,7 +548,7 @@ export default function GalleryPage() {
       <section className="stats-strip">
         <div className="stats-grid">
           <div className="stat-item">
-            <h3>20+ Years</h3>
+            <h3>34+ Years</h3>
             <p>Clinical Experience in Child Neurology</p>
           </div>
           <div className="stat-item">

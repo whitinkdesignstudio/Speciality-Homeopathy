@@ -3,11 +3,11 @@ import React from 'react';
 import MedicalRegistrationsClient from './MedicalRegistrationsClient';
 
 export const metadata: Metadata = {
-  title: 'Medical Registrations & Clinical Collaboration | Speciality Homeopathy',
+  title: 'Medical Registrations & Certifications | Dr. Ketan Patel Clinic',
   description:
-    'Academic and institutional medical registrations with Speciality Homeopathy Research Center. Open collaboration for individual doctors, child neurologists, infertility centers, special schools, and research fellows.',
+    'Verify official medical licenses, board registrations, and credentials of Dr. Ketan Patel and Dr. Kamal Patel at Speciality Homeopathy clinic.',
   keywords:
-    'medical registration homeopathy, clinical collaboration autism, doctor training Dr Ketan Patel, Dan doctors homeopathy, medical institute research affiliation',
+    'medical registrations, Dr Ketan Patel license, Gujarat Homeopathic Council, Central Council of Homeopathy, certified homeopathy doctor',
 };
 
 export default function MedicalRegistrationsPage() {

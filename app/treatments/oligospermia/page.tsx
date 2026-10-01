@@ -291,7 +291,7 @@ export default function Page() {
       <div className="hero2-stats reveal d3">
         <div className="hero2-stat">
           <div className="hs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3a4 4 0 0 0-4 4c0 3 4 6 4 6h8s4-3 4-6a4 4 0 0 0-7-2.6A4 4 0 0 0 8 3Z"/><path d="M8 13v3a4 4 0 0 0 8 0v-3"/></svg></div>
-          <span className="stat-num">20+</span><span className="lbl">Years of practice</span>
+          <span className="stat-num">34+</span><span className="lbl">Years of practice</span>
         </div>
         <div className="hero2-stat">
           <div className="hs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -309,7 +309,7 @@ export default function Page() {
       </div>
       <div className="hero2-badge-float">
         <div className="bf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <div><div className="bf-num">20+ Years</div><div className="bf-lbl">of trusted practice</div></div>
+        <div><div className="bf-num">34+ Years</div><div className="bf-lbl">of trusted practice</div></div>
       </div>
     </div>
   </div>

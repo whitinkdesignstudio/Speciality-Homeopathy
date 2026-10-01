@@ -215,7 +215,7 @@ export default function HomePage() {
               <img src="https://static.wixstatic.com/media/66422a_029855a865c6474196c5adcd155db0bb~mv2.png"
                 alt="Child autism specialist with a child — Speciality Homeopathy, Ahmedabad" loading="lazy" decoding="async" />
               <div className="about-stat-card">
-                <span className="num">20+</span>
+                <span className="num">34+</span>
                 <span className="lbl">Years of dedicated pediatric care</span>
               </div>
             </div>
@@ -314,14 +314,6 @@ export default function HomePage() {
               </div>
             </article>
           </div>
-
-          <p className="pillar-note reveal">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-              <path d="M12 8v4M12 16h.01" />
-              <circle cx="12" cy="12" r="9" />
-            </svg>
-            These foundations support a child&apos;s everyday wellbeing. They do not diagnose, cure, or replace the assessment, therapy and medical care your child receives from qualified specialists.
-          </p>
         </div>
       </section>
 
@@ -366,16 +358,16 @@ export default function HomePage() {
             <div>
               <h2 className="reveal d1">Led by Dr. Ketan Patel.</h2>
               <p className="lead reveal d1">
-                A homeopathic physician with more than two decades focused on children. He lectures internationally on autism and homeopathy and works closely with special-needs schools — bringing that experience into a calm, unhurried, individualised consultation for every family.
+                A homeopathic physician with more than 34 years focused on children. He lectures internationally on autism and homeopathy and works closely with special-needs schools — bringing that experience into a calm, unhurried, individualised consultation for every family.
               </p>
               <div className="cred reveal d2">
                 <span>B.H.M.S.</span>
                 <span>B.C.J.P.</span>
                 <span>M.D.</span>
-                <span>20+ years in practice</span>
+                <span>34+ years in practice</span>
               </div>
               <div className="credit-stats reveal d2">
-                <div><span>20+</span><small>Years in practice</small></div>
+                <div><span>34+</span><small>Years in practice</small></div>
                 <div><span>3</span><small>Homeopathic physicians</small></div>
                 <div><span>Global</span><small>Autism lectures &amp; schools</small></div>
                 <div><span>Birth–16</span><small>Ages cared for</small></div>
@@ -524,13 +516,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS (Elfsight Reviews) */}
-      <section className="testimonials-sec">
+      {/* TESTIMONIALS & REVIEWS ROW */}
+      <section className="testimonials-sec" id="testimonials">
         <div className="wrap">
+          <span className="eyebrow" style={{ display: 'block', textAlign: 'center', marginBottom: '8px' }}>
+            Verified Google Reviews
+          </span>
           <h2 className="review-title">Testimonials &amp; Autism Doctor Reviews</h2>
-          <ReviewsAutoScroll />
-          <div className="elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d" data-elfsight-app-lazy></div>
+          <p className="review-subtitle">
+            Real stories and heartfelt words from families whose lives have been transformed through Dr. Ketan Patel&apos;s homeopathic care.
+          </p>
         </div>
+        <ReviewsAutoScroll />
       </section>
 
       {/* CTA SECTION */}
@@ -926,8 +923,6 @@ const pageStyles = `
   .pillar .wave-divider { position: absolute; top: -29px; left: 0; width: 100%; height: 30px; display: block; line-height: 0; }
   .pillar .wave-divider path { fill: #009ba8; }
   .pillar .pillar-wave p { position: relative; z-index: 2; margin: 0; font-size: .86rem; line-height: 1.65; text-align: center; color: rgba(255, 255, 255, .95); }
-  .pillar-note { margin-top: 30px; font-size: .82rem; color: #009ba8; display: flex; align-items: flex-start; gap: 9px; max-width: 74ch; }
-  .pillar-note svg { width: 17px; height: 17px; flex: 0 0 auto; color: #009ba8; margin-top: 2px; }
 
   /* ===== AUTISM BANNER ===== */
   .autism-banner { padding: 14px 0 60px; background: #ceedf8; }
@@ -1043,44 +1038,32 @@ const pageStyles = `
     transform: translateX(4px);
   }
 
-  /* ===== TESTIMONIALS (Elfsight Reviews) ===== */
+  /* ===== TESTIMONIALS & REVIEWS ROW ===== */
   .testimonials-sec {
-    background: #fff;
-    padding: 60px 0 40px;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 15%, #ffffff 85%, #f8fafc 100%);
+    padding: 80px 0 60px;
+    overflow: hidden;
+    position: relative;
   }
 
   .review-title {
     text-align: center;
-    font-family: 'Montserrat', 'Poppins', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    margin: 0 0 24px;
-    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    font-weight: 700;
+    margin: 0 0 10px;
     color: #0a1f44;
+    line-height: 1.25;
   }
 
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d h2,
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d .eapps-widget-toolbar,
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d [class*="title"],
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d [class*="header"] {
-    display: none !important;
-  }
-
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d .eapps-google-reviews-list {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    gap: 20px;
-    padding-bottom: 10px;
-  }
-
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d .eapps-google-reviews-card {
-    min-width: 320px !important;
-    flex: 0 0 auto !important;
-  }
-
-  .elfsight-app-4d58e6e8-caf2-4778-ab12-87c93e83968d .eapps-google-reviews-list::-webkit-scrollbar {
-    display: none;
+  .review-subtitle {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 28px;
+    color: #64748b;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    font-family: 'Open Sans', system-ui, sans-serif;
   }
 
   /* ===== CTA SECTION ===== */

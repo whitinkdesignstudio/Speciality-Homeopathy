@@ -3,9 +3,45 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Autism Homeopathic Treatment & Biomedical Neuroimmune Care',
-  description: "Supportive autism homeopathy, early intervention therapy, and holistic treatment for ASD and speech delays in Ahmedabad. Consult our specialist.",
-  keywords: "autism homeopathy, holistic autism treatment, early intervention therapy, biomedical treatment, autism brain therapy, detox therapy, autism specialist",
+  title: 'Autism Homeopathy, Treatment & Care in India | Dr. Ketan Patel',
+  description:
+    'Comprehensive homeopathy for autism (ASD) in boys, girls, young children & teenagers. Specialized in pediatric neurology, PANS/PANDAS, child behavioural disorders & minimal therapy in India.',
+  keywords: [
+    'Autism',
+    'Autism Spectrum Disorder (ASD)',
+    'Autistic Child',
+    'Autism in Boys',
+    'Autism in Girls',
+    'Autism in Young Children',
+    'Autism in Teenagers',
+    'Homeopathy for Autism',
+    'Homeopathic Medicine for Autism',
+    'Homeopathic Remedies for Autism',
+    'Autism Management',
+    'Autism Care',
+    'Autism Treatment in India',
+    'India Autism Treatment',
+    'Autism Therapy',
+    'Minimal Therapy for Autism',
+    'PANS',
+    'PANDAS',
+    'Child Behavioural Disorder',
+    'Child Behaviour Disorders',
+    'Neurological Disorders in Children',
+    'Pediatric Neurology',
+    'Pediatric Centre',
+    'Child Rehabilitation Centre',
+    'Rehabilitation for Autism',
+    'PTSD Care',
+    'Lyme Disease',
+    'Neuronal Autoantibodies',
+    'autism homeopathy',
+    'holistic autism treatment',
+    'early intervention therapy',
+    'autistic child not sleeping',
+    'child not making eye contact',
+    'child not responding to name',
+  ].join(', '),
 };
 
 const pageStyles = `
@@ -70,7 +106,7 @@ const pageStyles = `
   .page-hero-trust .stat-num{font-family:'Open Sans',sans-serif;font-weight:700;font-size:1.5rem;color:#0a4a6e;display:block;line-height:1}
   .page-hero-trust .lbl{font-size:.7rem;color:rgba(10,31,68,.7);line-height:1.35;margin-top:5px;max-width:15ch}
 
-  /* hero visual — photo, shown as-is */
+  /* hero visual */
   .hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:360px}
   .hv-photo-wrap{position:relative;width:100%;max-width:400px;border-radius:24px;overflow:hidden;box-shadow:0 26px 50px -20px rgba(10,31,68,.35);border:1px solid rgba(255,255,255,.6)}
   .hv-photo{display:block;width:100%;height:auto}
@@ -82,83 +118,16 @@ const pageStyles = `
   .honesty{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;color:rgba(10,31,68,.88);background:rgba(255,255,255,.45);border:1px solid rgba(10,31,68,.2);padding:.45rem .8rem;border-radius:9px;margin-bottom:26px}
   .honesty svg{width:15px;height:15px;flex:0 0 auto;color:var(--teal)}
   .page-hero-cta{display:flex;gap:12px;flex-wrap:wrap}
-  .breadcrumb{font-size:.76rem;color:rgba(10,31,68,.6);margin-bottom:14px;display:flex;gap:6px;align-items:center}
-  .breadcrumb a{color:rgba(10,31,68,.6);transition:color .25s}
-  .breadcrumb a:hover{color:var(--teal)}
 
   /* sections */
-  .sec{padding:88px 0}
-  .sec-head{max-width:780px;margin:0 auto 46px;text-align:center}
-  .types .sec-head{margin-bottom:84px}
-  .sec-head h2{font-size:clamp(1.5rem,2.6vw,2.15rem);margin:12px 0 14px;white-space:nowrap}
+  .sec{padding:84px 0}
+  .sec-head{max-width:800px;margin:0 auto 46px;text-align:center}
+  .sec-head h2{font-size:clamp(1.5rem,2.6vw,2.15rem);margin:12px 0 14px}
   .sec-head .lead{margin:0 auto;max-width:68ch}
-  @media(max-width:640px){.sec-head h2{white-space:normal}}
   .reveal{opacity:1;transform:none}
 
-  /* SECTION 1 — types (pillar-style white cards) */
+  /* SECTION 1 — types (pastel cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
-  .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
-  .type-card{position:relative;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 14px 38px -16px rgba(20,50,90,.20);display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
-  .type-card:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 22px 52px -16px rgba(20,50,90,.28)}
-  .type-card .num{counter-increment:p;position:absolute;top:20px;right:24px;font-weight:700;font-size:.75rem;letter-spacing:.14em;color:rgba(10,50,100,.28)}
-  .type-card .num::before{content:"0" counter(p)}
-  .type-top{padding:38px 30px 18px;text-align:center}
-  .pico{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;background:var(--teal-10);color:var(--teal);transition:transform .4s var(--ease)}
-  .pico svg{width:27px;height:27px}
-  .type-card:hover .pico{transform:scale(1.08) rotate(-4deg)}
-  .type-top h3{font-size:1.1rem;text-align:center}
-  .type-body{flex:1;padding:0 30px 34px;text-align:center}
-  .type-body p{font-size:.88rem;color:#555;line-height:1.7}
-
-  /* SECTION 2 — neuro conditions (dark frosted cards) */
-  .neuro{background:var(--blue);color:var(--ivory)}
-  .neuro .sec-head h2{color:var(--ivory)}
-  .neuro .eyebrow{color:var(--gold)}
-  .neuro .lead{color:rgba(250,248,244,.8)}
-  .neuro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-  .neuro-card{position:relative;background:rgba(186,224,243,.14);border:1.5px solid rgba(255,255,255,.28);border-radius:20px;padding:28px 22px;backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 8px 32px -10px rgba(10,50,120,.28),0 1.5px 0 rgba(255,255,255,.35) inset;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .4s}
-  .neuro-card:hover{transform:translateY(-7px) scale(1.012);border-color:rgba(255,255,255,.55);box-shadow:0 22px 52px -12px rgba(10,50,120,.4)}
-  .neuro-card .nico{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.12);display:grid;place-items:center;margin-bottom:16px;color:#BAE0F3}
-  .neuro-card .nico svg{width:22px;height:22px}
-  .neuro-card h4{color:#fff;font-size:1rem;margin-bottom:8px}
-  .neuro-card p{font-size:.82rem;color:rgba(220,240,252,.85);line-height:1.6}
-
-  /* SECTION 3 — behaviour (icon list cards) */
-  .behaviour{background:#fff}
-  .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-  .beh-card{display:flex;align-items:flex-start;gap:18px;padding:22px 20px;border:1px solid var(--line);border-radius:16px;background:var(--ivory);box-shadow:0 10px 24px -16px rgba(10,31,68,.18);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
-  .beh-card:hover{transform:translateY(-4px);box-shadow:0 16px 30px -16px rgba(10,31,68,.25)}
-  .beh-icon{width:48px;height:48px;border-radius:14px;background:var(--teal-10);display:grid;place-items:center;flex:0 0 auto;color:var(--teal);transition:transform .35s var(--ease)}
-  .beh-card:hover .beh-icon{transform:scale(1.08) rotate(-3deg)}
-  .beh-icon svg{width:22px;height:22px}
-  .beh-card h4{font-size:1rem;margin-bottom:6px}
-  .beh-card p{font-size:.85rem;color:#666;line-height:1.65;margin:0}
-  .beh-grid .beh-card:last-child{grid-column:1 / -1;max-width:calc(50% - 8px)}
-
-  /* sticky */
-  .sticky-actions{position:fixed;right:16px;bottom:16px;z-index:80;display:flex;flex-direction:column;gap:11px}
-  .fab{display:flex;align-items:center;gap:9px;padding:12px 16px 12px 13px;border-radius:999px;font-family:'Open Sans',sans-serif;font-weight:600;font-size:.8rem;box-shadow:var(--shadow);cursor:pointer;transition:transform .3s var(--ease)}
-  .fab:hover{transform:translateY(-3px) scale(1.02)}
-  .fab svg{width:19px;height:19px;flex:0 0 auto}
-  .fab-wa{background:#25D366;color:#06351a}
-  .fab-up{background:var(--gold);color:var(--blue)}
-
-  @media(max-width:980px){
-    .type-grid{grid-template-columns:1fr}
-    .neuro-grid{grid-template-columns:repeat(2,1fr)}
-  }
-  @media(max-width:680px){
-    .neuro-grid{grid-template-columns:1fr}
-    .beh-grid{grid-template-columns:1fr}
-    .beh-grid .beh-card:last-child{max-width:100%}
-    .sec{padding:60px 0}
-    .page-hero{padding:84px 0 54px}
-    .fab span{display:none}.fab{padding:13px;border-radius:50%}
-  }
-
-  /* ============ REDESIGN — v2 scoped classes ============ */
-
-  /* --- SECTION 1 v2 — peeking-child pastel cards --- */
   .type-grid-v2{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:8px}
   .type-card-v2{position:relative;border-radius:26px;padding:100px 26px 30px;text-align:center;box-shadow:0 16px 40px -20px rgba(10,31,68,.22);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
   .type-card-v2:hover{transform:translateY(-6px);box-shadow:0 24px 54px -18px rgba(10,31,68,.28)}
@@ -176,23 +145,33 @@ const pageStyles = `
   .type-card-v2 .tv2-deco{position:absolute;bottom:16px;right:18px;width:20px;height:20px;opacity:.35}
   @media(max-width:980px){.type-grid-v2{grid-template-columns:1fr;max-width:380px;margin:8px auto 0}}
 
-  /* --- SECTION 2 v2 — dark navy, side-peek illustration cards --- */
+  /* AGE & GENDER SECTION */
+  .age-gender-sec{background:#ffffff}
+  .age-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .age-card{background:#f8fbfe;border:1px solid #ddecfa;border-radius:20px;padding:28px 22px;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .age-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm);border-color:var(--teal)}
+  .age-card h3{font-size:1.05rem;color:var(--blue);margin-bottom:10px}
+  .age-card p{font-size:.86rem;color:#555;line-height:1.65;margin:0}
+
+  /* SECTION 2 — NEUROLOGICAL & IMMUNE (dark navy) */
+  .neuro{background:var(--blue);color:var(--ivory)}
+  .neuro .sec-head h2{color:var(--ivory)}
+  .neuro .lead{color:rgba(250,248,244,.8)}
   .neuro-grid-v2{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  .neuro-card-v2{position:relative;background:rgba(186,224,243,.10);border:1.5px solid rgba(255,255,255,.22);border-radius:18px;padding:20px 14px 16px 136px;backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);box-shadow:0 8px 32px -10px rgba(10,50,120,.28);transition:transform .4s var(--ease),border-color .4s}
+  .neuro-card-v2{position:relative;background:rgba(186,224,243,.10);border:1.5px solid rgba(255,255,255,.22);border-radius:18px;padding:22px 18px;backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);box-shadow:0 8px 32px -10px rgba(10,50,120,.28);transition:transform .4s var(--ease),border-color .4s}
   .neuro-card-v2:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.5)}
-  .neuro-peek{position:absolute;left:0;bottom:0;top:0;width:130px;overflow:hidden;pointer-events:none;border-radius:18px 0 0 18px}
-  .neuro-peek img{height:100%;width:auto;display:block;object-fit:contain;object-position:left center}
-  .neuro-card-v2 .nico-v2{width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.14);display:grid;place-items:center;margin-bottom:10px;color:#BAE0F3}
-  .neuro-card-v2 .nico-v2 svg{width:15px;height:15px}
-  .neuro-card-v2 h4{color:#fff;font-size:.86rem;margin-bottom:5px;line-height:1.3}
-  .neuro-card-v2 p{font-size:.72rem;color:rgba(220,240,252,.82);line-height:1.55;margin-bottom:12px}
-  .neuro-learn{display:inline-flex;align-items:center;gap:5px;font-size:.62rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(200,169,107,.55);border-radius:999px;padding:6px 11px;transition:background .3s,color .3s;white-space:nowrap}
+  .neuro-card-v2 .nico-v2{width:34px;height:34px;border-radius:10px;background:rgba(255,255,255,.14);display:grid;place-items:center;margin-bottom:12px;color:#BAE0F3}
+  .neuro-card-v2 .nico-v2 svg{width:18px;height:18px}
+  .neuro-card-v2 h4{color:#fff;font-size:.95rem;margin-bottom:8px;line-height:1.35}
+  .neuro-card-v2 p{font-size:.82rem;color:rgba(220,240,252,.85);line-height:1.6;margin-bottom:14px}
+  .neuro-learn{display:inline-flex;align-items:center;gap:5px;font-size:.65rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(200,169,107,.55);border-radius:999px;padding:6px 12px;transition:background .3s,color .3s;white-space:nowrap}
   .neuro-learn:hover{background:var(--gold);color:var(--blue)}
   .neuro-learn svg{width:11px;height:11px}
   @media(max-width:980px){.neuro-grid-v2{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:680px){.neuro-grid-v2{grid-template-columns:1fr}}
 
-  /* --- SECTION 3 v2 — illustrated pastel behaviour cards --- */
+  /* SECTION 3 — BEHAVIOUR */
+  .behaviour{background:#fff}
   .beh-grid-v2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
   .beh-card-v2{position:relative;display:flex;gap:18px;align-items:center;padding:24px 22px;border-radius:20px;box-shadow:0 12px 30px -18px rgba(10,31,68,.22);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
   .beh-card-v2:hover{transform:translateY(-5px);box-shadow:0 18px 38px -16px rgba(10,31,68,.28)}
@@ -206,21 +185,35 @@ const pageStyles = `
   .tint-teal .bico-v2{background:var(--teal)}
   .tint-gold .bico-v2{background:var(--gold)}
   .tint-blue .bico-v2{background:#3E7CB1}
-  .beh-card-v2 h4{font-size:.96rem;margin-bottom:6px;padding-right:38px}
+  .beh-card-v2 h4{font-size:.98rem;margin-bottom:6px;padding-right:38px}
   .beh-card-v2 .bv2-rule{width:26px;height:2.5px;border-radius:3px;margin-bottom:10px}
   .tint-teal .bv2-rule{background:var(--teal)}
   .tint-gold .bv2-rule{background:var(--gold)}
   .tint-blue .bv2-rule{background:#3E7CB1}
-  .beh-card-v2 p{font-size:.8rem;color:#555;line-height:1.65;margin:0}
+  .beh-card-v2 p{font-size:.82rem;color:#555;line-height:1.65;margin:0}
   .beh-grid-v2 .beh-card-v2:last-child{grid-column:1 / -1;max-width:calc(50% - 10px)}
   @media(max-width:680px){.beh-grid-v2{grid-template-columns:1fr}.beh-grid-v2 .beh-card-v2:last-child{max-width:100%}}
 
-  /* --- CTA v2 — dark full-bleed with photo + ribbon motif --- */
+  /* MINIMAL THERAPY & CLINICAL HOMEOPATHY SECTION */
+  .therapy-sec{background:linear-gradient(160deg,#f0f8fa 0%,#e4f3f7 100%)}
+  .therapy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .therapy-card{background:#ffffff;border:1px solid #ddecfa;border-radius:22px;padding:32px 24px;box-shadow:0 12px 30px -16px rgba(10,31,68,.12);transition:transform .35s var(--ease)}
+  .therapy-card:hover{transform:translateY(-5px);border-color:var(--teal)}
+  .therapy-card h3{font-size:1.15rem;color:var(--blue);margin-bottom:12px}
+  .therapy-card p{font-size:.88rem;color:#4b6382;line-height:1.7}
+
+  /* KEYWORD HUB / GLOSSARY */
+  .hub-sec{background:#ffffff;border-top:1px solid #e5eff8}
+  .hub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .hub-item{background:#f8fbfe;border:1px solid #ddecfa;border-radius:14px;padding:18px 20px}
+  .hub-item h4{font-size:.92rem;color:var(--blue);margin-bottom:6px}
+  .hub-item p{font-size:.8rem;color:#5a718d;margin:0;line-height:1.55}
+
+  /* CTA */
   .cta-v2{position:relative;background:linear-gradient(120deg,#081733,#0A1F44 55%,#0d2650);color:#fff;padding:0;overflow:hidden}
   .cta-v2-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:88px 0}
-  .cta-v2 .eyebrow{color:var(--teal)}
   .cta-v2 h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.5rem);margin:14px 0 16px}
-  .cta-v2 p{color:rgba(255,255,255,.78);max-width:48ch;margin-bottom:30px;font-size:.98rem}
+  .cta-v2 p{color:rgba(255,255,255,.78);max-width:52ch;margin-bottom:30px;font-size:.98rem;line-height:1.7}
   .cta-v2-row{display:flex;gap:12px;flex-wrap:wrap}
   .cta-v2 .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.28)}
   .cta-v2 .btn-ghost:hover{background:rgba(255,255,255,.18)}
@@ -228,7 +221,19 @@ const pageStyles = `
   .cta-v2-photo img{width:100%;height:100%;object-fit:cover;object-position:bottom center}
   .cta-v2-ribbon{position:absolute;top:-40px;right:-10px;width:340px;height:340px;opacity:.5;pointer-events:none;z-index:1}
   .cta-v2::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 8% 90%,rgba(0,140,140,.14),transparent 70%);pointer-events:none;z-index:1}
-  @media(max-width:980px){.cta-v2-inner{grid-template-columns:1fr;padding:64px 0;text-align:center}.cta-v2-row{justify-content:center}.cta-v2-photo{max-width:420px;margin:0 auto}.cta-v2-ribbon{display:none}}
+  @media(max-width:980px){
+    .age-grid{grid-template-columns:repeat(2,1fr)}
+    .therapy-grid{grid-template-columns:1fr}
+    .cta-v2-inner{grid-template-columns:1fr;padding:64px 0;text-align:center}
+    .cta-v2-row{justify-content:center}
+    .cta-v2-photo{max-width:420px;margin:0 auto}
+    .cta-v2-ribbon{display:none}
+  }
+  @media(max-width:640px){
+    .age-grid{grid-template-columns:1fr}
+    .sec{padding:60px 0}
+    .page-hero{padding:84px 0 54px}
+  }
 `;
 
 export default function Page() {
@@ -240,16 +245,18 @@ export default function Page() {
       <section className="page-hero" id="top">
         <div className="wrap">
           <div className="hero-text">
-            <h1 className="reveal d1">Autism homeopathy care — holistic support, types &amp; everyday developmental progress.</h1>
+            <h1 className="reveal d1">
+              Homeopathy for Autism, Autism Care &amp; ASD Management in India
+            </h1>
             <p className="lead reveal d2">
-              A closer look at how Autism Spectrum Disorder, Asperger's Syndrome, and developmental differences present. We provide early intervention therapy and supportive autism brain therapy through natural, holistic autism treatment, constitutional homeopathy, and complementary biomedical treatment guidance alongside your child's medical and therapy team.
+              A comprehensive clinical approach to Autism Spectrum Disorder (ASD), child behaviour disorders, and neurological conditions in children — offering gentle homeopathic medicine for autism, minimal therapy, and individualized constitutional care alongside your pediatric neurology team.
             </p>
             <div className="honesty reveal d2">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                 <path d="M12 8v4M12 16h.01"/>
                 <circle cx="12" cy="12" r="9"/>
               </svg>
-              Supportive & complementary care — never a replacement for your child's medical team.
+              Supportive &amp; complementary autism care — working collaboratively with your pediatric centre and medical specialists.
             </div>
             <div className="page-hero-cta reveal d3">
               <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
@@ -261,15 +268,15 @@ export default function Page() {
               </Link>
             </div>
             <div className="page-hero-trust reveal d3">
-              <div><span className="stat-num">20+</span><span className="lbl">Years of practice, Dr. Ketan Patel</span></div>
+              <div><span className="stat-num">34+</span><span className="lbl">Years of practice, Dr. Ketan Patel</span></div>
               <div><span className="stat-num">3</span><span className="lbl">Experienced homeopathic physicians</span></div>
-              <div><span className="stat-num">0–16</span><span className="lbl">Ages we care for, birth to 16</span></div>
+              <div><span className="stat-num">0–16</span><span className="lbl">Ages cared for, infancy to adolescence</span></div>
             </div>
           </div>
 
           <div className="hero-visual reveal d2" aria-hidden="true">
             <div className="hv-photo-wrap">
-              <img className="hv-photo" src="/images/autism-care/image-1.png" alt="Child holding colourful puzzle pieces" loading="lazy" decoding="async" />
+              <img className="hv-photo" src="/images/autism-care/image-1.png" alt="Child autism specialist care — child holding colourful puzzle pieces" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -279,8 +286,10 @@ export default function Page() {
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
-            <h2>ASD can present in different ways</h2>
-            <p className="lead">Every child's presentation is unique — from Asperger's Syndrome and mild traits to Intense and Profound Autism. Care is shaped around your child, not a label.</p>
+            <h2>Autism Spectrum Disorder (ASD) Presentations</h2>
+            <p className="lead">
+              Every autistic child presents with a distinct developmental trajectory — from mild sensory differences and Asperger’s traits to Intense and Profound Autism. Autism management begins with understanding the whole child, not applying a generic label.
+            </p>
           </div>
           <div className="type-grid-v2">
             <div className="type-card-v2 tint-teal reveal d1">
@@ -289,7 +298,9 @@ export default function Page() {
               </div>
               <h3>Profound Autism</h3>
               <div className="tv2-rule"></div>
-              <p>Sometimes called Intense Autism, this is where symptoms and behavioural challenges are more pronounced and children may need additional support with communication, social interaction, emotional regulation and daily activities. Care is planned around individual assessment — with attention to intense behaviour, self-injurious behaviour, calming support and sleep-related concerns.</p>
+              <p>
+                Often categorized as Intense Autism, where non-verbal communication, intense behavioural dysregulation, sensory distress, and daily living vulnerabilities are prominent. Our individualized autism care integrates calming homeopathic remedies for autism to support sleep, sensory equilibrium, and emotional stabilization.
+              </p>
               <svg className="tv2-deco" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" strokeWidth="1.6">
                 <path d="M12 21s-6-4.35-6-9a6 6 0 0 1 12 0c0 4.65-6 9-6 9Z"/>
               </svg>
@@ -300,7 +311,9 @@ export default function Page() {
               </div>
               <h3>Syndromic Autism</h3>
               <div className="tv2-rule"></div>
-              <p>Here, autism-related symptoms — sometimes described as Asperger's Syndrome-type or milder Autism Spectrum Disorder traits — appear alongside an associated genetic, neurological or developmental condition. A detailed look at the child's developmental history, medical background, communication abilities and behaviour helps shape care around both the autism and the associated condition.</p>
+              <p>
+                Autistic traits occurring in tandem with documented genetic syndromes (Fragile X, Angelman, Rett, TSC). Detailed pediatric neurology history and constitutional homeopathic remedies help address both cellular metabolic balance and everyday cognitive development.
+              </p>
               <svg className="tv2-deco" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.6">
                 <path d="M6 3l1 3H4l1-3ZM19 15l1 3h-3l1-3Z"/>
                 <path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4"/>
@@ -310,9 +323,11 @@ export default function Page() {
               <div className="type-peek">
                 <img src="/images/autism-care/family-peeking.png" alt="Illustration for Genetic, Metabolic and Mitochondrial Autism" loading="lazy" decoding="async" />
               </div>
-              <h3>Genetic, Metabolic & Mitochondrial Autism</h3>
+              <h3>Genetic, Metabolic &amp; Mitochondrial Autism</h3>
               <div className="tv2-rule"></div>
-              <p>In some children, autism-like symptoms are associated with genetic, metabolic or mitochondrial conditions. These cases call for detailed medical evaluation and specialist assessment. Development, cognition, speech, behaviour and related medical concerns are all considered in building an individualised care approach.</p>
+              <p>
+                Cases characterized by cellular energy deficits, mitochondrial dysfunction, or metabolic dysbiosis. Homeopathic medicine for autism works gently at the constitutional level to support neuroplasticity, digestive harmony, and overall stamina without heavy chemical burden.
+              </p>
               <svg className="tv2-deco" viewBox="0 0 24 24" fill="none" stroke="#3E7CB1" strokeWidth="1.6">
                 <path d="M9 3v4M15 3v4M6 21v-4a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v4M12 11V7"/>
                 <circle cx="12" cy="7" r="2"/>
@@ -322,103 +337,185 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 — NEUROLOGICAL & DEVELOPMENTAL CONDITIONS */}
+      {/* SECTION 2 — AUTISM ACROSS GENDER & AGE GROUPS */}
+      <section className="sec age-gender-sec">
+        <div className="wrap">
+          <div className="sec-head reveal">
+            <h2>Autism in Boys, Girls, Young Children &amp; Teenagers</h2>
+            <p className="lead">
+              Autism spectrum disorder manifests differently across sexes and developmental phases. Understanding these distinct nuances is fundamental to effective autism management:
+            </p>
+          </div>
+          <div className="age-grid">
+            <div className="age-card reveal d1">
+              <h3>Autism in Young Children</h3>
+              <p>
+                Early identification in toddlers and preschoolers: lack of eye contact, speech delay, not responding to name, repetitive play, and sensory defensiveness. Early intervention therapy combined with gentle homeopathic care builds essential developmental milestones.
+              </p>
+            </div>
+            <div className="age-card reveal d2">
+              <h3>Autism in Boys</h3>
+              <p>
+                Historically recognized earlier due to overt motor hyperactivity, outward stimming, intense special interests, and prominent speech delays. Homeopathy for autism helps calm motor restlessness and improve classroom attention.
+              </p>
+            </div>
+            <div className="age-card reveal d3">
+              <h3>Autism in Girls</h3>
+              <p>
+                Frequently underdiagnosed due to social masking, imitation of neurotypical peers, and internalized anxiety or gut distress rather than external defiance. Constitutional remedies address deep emotional overload and sensory exhaustion.
+              </p>
+            </div>
+            <div className="age-card reveal d4">
+              <h3>Autism in Teenagers</h3>
+              <p>
+                Adolescence brings hormonal shifts, increased social complexity, executive function demands, and heightened anxiety. Homeopathic medicine for autism supports mood stability, sleep regulation, and nervous system resilience during teenage transitions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3 — NEUROLOGICAL, IMMUNE & CO-MORBID CONDITIONS */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
-            <h2>Conditions often seen alongside autism care</h2>
-            <p className="lead">Cerebral Palsy, genetic/mitochondrial disorders and PTSD are sometimes seen alongside Autism Spectrum Disorder — diagnosed by specialists, with our care working alongside them.</p>
+            <h2>Neurological Disorders in Children &amp; Neuro-Immune Conditions</h2>
+            <p className="lead">
+              Many children evaluated for Autism Spectrum Disorder experience underlying neuro-inflammatory, immune, or co-occurring neurological challenges:
+            </p>
           </div>
           <div className="neuro-grid-v2">
             <div className="neuro-card-v2 reveal d1">
-              <div className="neuro-peek">
-                <img src="/images/autism-care/neuro-peek-1-purple-girl.png" alt="Illustration for Cerebral Palsy" loading="lazy" decoding="async" />
-              </div>
               <div className="nico-v2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5a5 5 0 0 0 10 0c0-2 1-3 1-5a5 5 0 0 0-5-5Z"/>
                   <path d="M9 21h6M10 18h4"/>
                 </svg>
               </div>
-              <h4>Cerebral Palsy</h4>
-              <p>A neurological condition affecting movement, muscle coordination, posture and motor development. Early assessment and personalised support can help.</p>
+              <h4>Cerebral Palsy &amp; Motor Delays</h4>
+              <p>Affecting coordination, posture, and muscle control. Supportive constitutional homeopathy improves muscle tone, deglutition, and motor progress alongside pediatric neurology care.</p>
               <Link className="neuro-learn" href="/contact">
                 Know More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </Link>
             </div>
+
             <div className="neuro-card-v2 reveal d2">
-              <div className="neuro-peek">
-                <img src="/images/autism-care/neuro-peek-2-red-boy.png" alt="Illustration for Periventricular Leukomalacia" loading="lazy" decoding="async" />
-              </div>
               <div className="nico-v2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="9"/>
                   <path d="M12 7v5l3.5 2"/>
                 </svg>
               </div>
-              <h4>Periventricular Leukomalacia (PVL)</h4>
-              <p>A condition affecting the brain's white matter, often linked to motor development and muscle-control challenges. Ongoing monitoring matters.</p>
+              <h4>PANS &amp; PANDAS</h4>
+              <p>Pediatric Acute-onset Neuropsychiatric Syndrome triggered by post-infectious basal ganglia inflammation, manifesting as overnight severe OCD, motor tics, separation anxiety, and behavioral regressions.</p>
               <Link className="neuro-learn" href="/contact">
                 Know More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </Link>
             </div>
+
             <div className="neuro-card-v2 reveal d3">
-              <div className="neuro-peek">
-                <img src="/images/autism-care/neuro-peek-3-yellow-girl.png" alt="Illustration for Mild Hypoxic-Ischemic Encephalopathy" loading="lazy" decoding="async" />
+              <div className="nico-v2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/>
+                </svg>
               </div>
+              <h4>Neuronal Autoantibodies &amp; Encephalitis</h4>
+              <p>Autoimmune cross-reactivity and circulating anti-neuronal antibodies that irritate central nervous tissue, provoking acute developmental stalls, sleep fragmentation, and sudden sensory meltdowns.</p>
+              <Link className="neuro-learn" href="/contact">
+                Know More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </Link>
+            </div>
+
+            <div className="neuro-card-v2 reveal d4">
+              <div className="nico-v2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/>
+                </svg>
+              </div>
+              <h4>Lyme Disease &amp; Chronic Co-Infections</h4>
+              <p>Tick-borne Borrelia and vector-transmitted infections that cross the blood-brain barrier, triggering chronic neuro-fatigue, brain fog, and behaviors mimicking spectrum disorders.</p>
+              <Link className="neuro-learn" href="/contact">
+                Know More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </Link>
+            </div>
+
+            <div className="neuro-card-v2 reveal d1">
+              <div className="nico-v2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+              </div>
+              <h4>PTSD Care in Autistic Children</h4>
+              <p>Trauma, sensory panic, or distress from intensive medical testing can heighten fight-or-flight nervous system reactivity. Compassionate PTSD care restores deep neurological security.</p>
+              <Link className="neuro-learn" href="/contact">
+                Know More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </Link>
+            </div>
+
+            <div className="neuro-card-v2 reveal d2">
+              <div className="nico-v2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 7v5l3.5 2"/>
+                </svg>
+              </div>
+              <h4>PVL (Periventricular Leukomalacia)</h4>
+              <p>Damage to the brain’s periventricular white matter following premature birth, impacting motor development and sensory coordination requiring systematic developmental observation.</p>
+              <Link className="neuro-learn" href="/contact">
+                Know More
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </Link>
+            </div>
+
+            <div className="neuro-card-v2 reveal d3">
               <div className="nico-v2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/>
                 </svg>
               </div>
               <h4>Mild Hypoxic-Ischemic Encephalopathy (HIE)</h4>
-              <p>Related to reduced oxygen and blood supply to the brain around birth. Regular developmental assessment and specialist guidance matter here.</p>
+              <p>Resulting from perinatal oxygen deprivation. Homeopathy offers supportive care to encourage neuroplastic repair and cognitive stimulation alongside pediatric neurology teams.</p>
               <Link className="neuro-learn" href="/contact">
                 Know More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </Link>
             </div>
-            <div className="neuro-card-v2 reveal d2">
-              <div className="neuro-peek">
-                <img src="/images/autism-care/neuro-peek-4-teal-boy.png" alt="Illustration for PTSD in autistic children" loading="lazy" decoding="async" />
-              </div>
+
+            <div className="neuro-card-v2 reveal d4">
               <div className="nico-v2">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z"/>
+                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
                 </svg>
               </div>
-              <h4>PTSD (Post-Traumatic Stress)</h4>
-              <p>Stress or trauma-related symptoms can sometimes overlap with or intensify autism-related behaviour. A trained specialist's assessment helps tell the two apart and guide the right support.</p>
+              <h4>Child Behavioural Disorder &amp; ADHD</h4>
+              <p>Oppositional defiance, severe attention deficits, impulsivity, and sensory aggression. Non-sedating constitutional homeopathy balances neurotransmitter sensitivity gently.</p>
               <Link className="neuro-learn" href="/contact">
                 Know More
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6"/>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3 — AUTISM BEHAVIOUR */}
+      {/* SECTION 4 — AUTISM BEHAVIOUR & EVERYDAY CHALLENGES */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">
-            <h2>Everyday behaviours families navigate</h2>
-            <p className="lead">From speech delay and hyperactivity to meltdowns and screen-linked "Virtual Autism" traits — supporting boys, girls and young adults with patience and structure.</p>
+            <h2>Child Behaviour Disorders &amp; Everyday Challenges</h2>
+            <p className="lead">
+              From speech delay and hyperactivity to meltdowns and screen-linked "Virtual Autism" traits — supporting autistic children with patience, structure, and targeted constitutional care.
+            </p>
           </div>
           <div className="beh-grid-v2">
             <div className="beh-card-v2 tint-teal reveal d1">
               <div className="beh-peek">
-                <img src="/images/autism-care/beh-4-hyper-boy.png" alt="Illustration for Speech Delays in Child" loading="lazy" decoding="async" />
+                <img src="/images/autism-care/beh-4-hyper-boy.png" alt="Speech & Communication Delays" loading="lazy" decoding="async" />
               </div>
               <div>
                 <div className="bico-v2">
@@ -426,14 +523,15 @@ export default function Page() {
                     <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z"/>
                   </svg>
                 </div>
-                <h4>Speech &amp; Social Communication</h4>
+                <h4>Speech &amp; Social Communication Delays</h4>
                 <div className="bv2-rule"></div>
-                <p>Early signs like a child not making eye contact, a child not responding to name, or delayed speech. Individual assessment guides suitable communication support and early intervention therapy.</p>
+                <p>Difficulty developing words, understanding receptive language, or expressing physical needs. Parents frequently ask how to increase speech in an autistic child; constitutional remedies activate speech clarity alongside early intervention therapy.</p>
               </div>
             </div>
+
             <div className="beh-card-v2 tint-gold reveal d2">
               <div className="beh-peek">
-                <img src="/images/autism-care/beh-5-anxious-girl.png" alt="Illustration for Hyperactive / Restless Child" loading="lazy" decoding="async" />
+                <img src="/images/autism-care/beh-5-anxious-girl.png" alt="Hyperactive & Restless Child" loading="lazy" decoding="async" />
               </div>
               <div>
                 <div className="bico-v2">
@@ -441,14 +539,15 @@ export default function Page() {
                     <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z"/>
                   </svg>
                 </div>
-                <h4>Hyperactive / Restless Child</h4>
+                <h4>Hyperactivity &amp; Restless Attention</h4>
                 <div className="bv2-rule"></div>
-                <p>Difficulty focusing on one activity, sitting calmly, or maintaining attention. Looking at daily routine, sleep and physical activity helps shape the right support plan.</p>
+                <p>Inability to sit calmly, extreme physical restlessness, and difficulty sustaining task focus. Evaluating dietary sensitivities and constitutional balance helps improve focus in an autistic child.</p>
               </div>
             </div>
+
             <div className="beh-card-v2 tint-blue reveal d3">
               <div className="beh-peek">
-                <img src="/images/autism-care/beh-1-crying-boy.png" alt="Illustration for Self-Injuries & Injuries to Others" loading="lazy" decoding="async" />
+                <img src="/images/autism-care/beh-1-crying-boy.png" alt="Self-Injuries & Injuries to Others" loading="lazy" decoding="async" />
               </div>
               <div>
                 <div className="bico-v2">
@@ -457,14 +556,15 @@ export default function Page() {
                     <path d="M10.3 3.9 2.5 17a2 2 0 0 0 1.7 3h15.6a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>
                   </svg>
                 </div>
-                <h4>Self-Injuries & Injuries to Others</h4>
+                <h4>Self-Injuries &amp; Behavioural Distress</h4>
                 <div className="bv2-rule"></div>
-                <p>Some children respond to frustration or emotional distress with behaviour that can hurt themselves or others. Identifying triggers and safe, structured support is important.</p>
+                <p>Distressing responses to sensory overload or non-verbal frustration, such as head-banging or biting. Identifying sensory triggers and calming nervous system hyper-arousal is vital.</p>
               </div>
             </div>
+
             <div className="beh-card-v2 tint-gold reveal d1">
               <div className="beh-peek">
-                <img src="/images/autism-care/beh-2-sleeping-boy.png" alt="Illustration for Meltdown in Autistic Child" loading="lazy" decoding="async" />
+                <img src="/images/autism-care/beh-2-sleeping-boy.png" alt="Meltdowns & Sensory Overload" loading="lazy" decoding="async" />
               </div>
               <div>
                 <div className="bico-v2">
@@ -472,14 +572,15 @@ export default function Page() {
                     <path d="M18 6 6 18M8 6l8 12M6 6l12 12"/>
                   </svg>
                 </div>
-                <h4>Meltdown in Autistic Child</h4>
+                <h4>Meltdowns &amp; Sensory Overload</h4>
                 <div className="bv2-rule"></div>
-                <p>Can follow sensory overload, a change in routine or emotional stress. A calm environment, predictable routines and individualised support help.</p>
+                <p>Triggered by sudden routine changes, loud sounds, or crowd overstimulation. A predictable environment and individualized homeopathic support foster faster emotional recovery.</p>
               </div>
             </div>
+
             <div className="beh-card-v2 tint-teal reveal d2">
               <div className="beh-peek">
-                <img src="/images/autism-care/beh-3-sensory-girl.png" alt="Illustration for Sleep Management in Autistic Child" loading="lazy" decoding="async" />
+                <img src="/images/autism-care/beh-3-sensory-girl.png" alt="Sleep Support in Autistic Child" loading="lazy" decoding="async" />
               </div>
               <div>
                 <div className="bico-v2">
@@ -487,10 +588,88 @@ export default function Page() {
                     <path d="M17 3a6 6 0 1 0 4.5 9.8A8 8 0 1 1 17 3Z"/>
                   </svg>
                 </div>
-                <h4>Sleep Support in Autistic Child</h4>
+                <h4>Sleep Disturbances &amp; Night Waking</h4>
                 <div className="bv2-rule"></div>
-                <p>For parents supporting an autistic child not sleeping, having irregular sleep cycles, or nocturnal waking. Assessing daily routines and constitutional support helps promote calmer rest.</p>
+                <p>Trouble settling to sleep, frequent nocturnal waking, and altered melatonin cycles. Homeopathic remedies gently harmonize circadian rhythm without chemical sedatives.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5 — MINIMAL THERAPY, HOMEOPATHY & REHABILITATION IN INDIA */}
+      <section className="sec therapy-sec">
+        <div className="wrap">
+          <div className="sec-head reveal">
+            <h2>Minimal Therapy for Autism &amp; India Autism Treatment</h2>
+            <p className="lead">
+              Our pediatric centre bridges the best of classical homeopathic science with collaborative child rehabilitation centre networks across India:
+            </p>
+          </div>
+          <div className="therapy-grid">
+            <div className="therapy-card reveal d1">
+              <h3>Minimal Therapy for Autism</h3>
+              <p>
+                Many families report therapy burnout from subjecting a young child to 30–40 hours of weekly clinical appointments. Minimal therapy for autism advocates for calming constitutional homeopathy that balances sensory receptors, allowing natural learning to flourish at home without exhausting the child.
+              </p>
+            </div>
+            <div className="therapy-card reveal d2">
+              <h3>Homeopathic Medicine for Autism</h3>
+              <p>
+                Targeted, non-toxic homeopathic remedies for autism stimulate cellular self-healing, clear miasmatic blocks, and resolve gut-brain inflammation. Prepared under strict pharmacopoeia standards, sweet globules are willingly accepted by children with zero side-effects.
+              </p>
+            </div>
+            <div className="therapy-card reveal d3">
+              <h3>Rehabilitation for Autism in India</h3>
+              <p>
+                As a leading pediatric centre for autism treatment in India, Dr. Ketan Patel works in partnership with your child&apos;s existing occupational therapists, speech therapists, and child rehabilitation centre specialists to ensure coherent, multi-disciplinary developmental gains.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6 — CLINICAL KEYWORDS & TOPICS INDEX */}
+      <section className="sec hub-sec">
+        <div className="wrap">
+          <div className="sec-head reveal">
+            <h2>Clinical Specialties &amp; Autism Care Domains</h2>
+            <p className="lead">
+              Explore key clinical areas and conditions evaluated at our pediatric centre and research facility:
+            </p>
+          </div>
+          <div className="hub-grid">
+            <div className="hub-item">
+              <h4>Autism Spectrum Disorder (ASD)</h4>
+              <p>Neurodevelopmental spectrum support focusing on cognitive flexibility, eye contact, and emotional regulation.</p>
+            </div>
+            <div className="hub-item">
+              <h4>Autism in Boys &amp; Girls</h4>
+              <p>Sex-specific phenotypic analysis addressing overt hyperactivity in boys and subtle social masking in girls.</p>
+            </div>
+            <div className="hub-item">
+              <h4>Autism in Young Children &amp; Teenagers</h4>
+              <p>Age-appropriate interventions from toddler early intervention to adolescent hormonal and sensory transitions.</p>
+            </div>
+            <div className="hub-item">
+              <h4>Homeopathy for Autism in India</h4>
+              <p>India autism treatment protocols developed over 34+ years of clinical documentation by Dr. Ketan Patel.</p>
+            </div>
+            <div className="hub-item">
+              <h4>PANS, PANDAS &amp; Autoantibodies</h4>
+              <p>Targeting acute post-infectious neuro-inflammation, basal ganglia reactivity, and circulating neuronal antibodies.</p>
+            </div>
+            <div className="hub-item">
+              <h4>Neurological Disorders in Children</h4>
+              <p>Pediatric neurology guidance for Cerebral Palsy, HIE, microcephaly, developmental delays, and genetic syndromes.</p>
+            </div>
+            <div className="hub-item">
+              <h4>Child Behavioural Disorders</h4>
+              <p>Holistic behavioral care for emotional outbursts, sensory meltdowns, oppositional defiance, and ADHD hyperactivity.</p>
+            </div>
+            <div className="hub-item">
+              <h4>Rehabilitation for Autism</h4>
+              <p>Synergizing homeopathic remedies with speech therapy, sensory integration, and child rehabilitation centre goals.</p>
             </div>
           </div>
         </div>
@@ -509,7 +688,7 @@ export default function Page() {
           <div>
             <h2 className="reveal d1">A calmer, more supported everyday for your child.</h2>
             <p className="reveal d1">
-              At our clinic, we offer supportive holistic autism treatment through constitutional homeopathy, gentle detox therapy guidance, and early intervention. Results vary from child to child. Consult our doctor for an individual assessment, transparent consultation fees, and collaborative care alongside your medical team.
+              At our pediatric centre in Ahmedabad, we offer holistic autism treatment and autism management through constitutional homeopathic medicine for autism, minimal therapy, and supportive pediatric neurology protocols. Consult Dr. Ketan Patel in person or through telemedicine across India and worldwide.
             </p>
             <div className="cta-v2-row reveal d2">
               <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
@@ -525,4 +704,3 @@ export default function Page() {
     </>
   );
 }
-

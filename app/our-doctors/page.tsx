@@ -339,7 +339,7 @@ export default function Page() {
                 <span className="eyebrow" style={{ display: 'block', marginTop: '6px' }}>Founder &amp; Chief Physician</span>
               </div>
               <div className="type-body">
-                <p>30+ years of dedicated clinical practice in constitutional and sequential homeopathy with international recognition in paediatric neurodevelopmental care.</p>
+                <p>34+ years of dedicated clinical practice in constitutional and sequential homeopathy with international recognition in paediatric neurodevelopmental care.</p>
                 <div style={{ marginTop: '16px' }}><Link href="/our-experts/dr-ketan-patel" className="btn btn-ghost">View Profile &rarr;</Link></div>
               </div>
             </div>

@@ -269,6 +269,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    // Documented Cured Case Studies
+    {
+      url: `${baseUrl}/casestudies/child-of-research-scientist-recovered-from-asd`,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/casestudies/genetic-neuropathy-autistic-complex-disorder`,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/casestudies/cacna1a-hyperactive-asd-child`,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/casestudies/mother-letter-asd-child-cured-homeopathy`,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/casestudies/congenital-disorder-genetic-syndrome-autistic-traits`,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/gallery`,
       changeFrequency: 'monthly',

@@ -4,9 +4,55 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Dyslexia, Dyscalculia & Learning Difficulties Treatment',
+  title: 'Dyslexia, Dyscalculia & Learning Difficulties Treatment ',
   description: 'Learn about dyslexia, reading challenges and learning support strategies with Dr. Ketan Patel, Vastrapur, Ahmedabad.',
-  keywords: 'dyslexia homeopathy treatment, learning disability homeopathic care, slow learner homeopathy, learning difficulties natural treatment, dyslexia natural remedy children',
+  keywords: [
+    'Dyslexia',
+    'Dyscalculia',
+    'Dysgraphia',
+    'Specific Learning Difficulties',
+    'Specific Learning Disorder',
+    'Slow Learner',
+    'Dyslexic Child',
+    'Dyslexia Treatment',
+    'Dyscalculia in Children',
+    'Dysgraphia in Children',
+    'Visual Processing Difficulties',
+    'Poor Academic Performance',
+    'Difficulty in Studies',
+    'Poor Concentration',
+    'Lack of Focus',
+    'Concentration Problems',
+    'Focus Disorder',
+    'Calculation Difficulties',
+    'Mathematics Learning Difficulties',
+    'Weak in Mathematics',
+    'Poor Mathematical Skills',
+    'Writing Difficulties',
+    'Mistakes in Writing',
+    'Reading Difficulties',
+    'Reading Problems',
+    'Mirror Image Writing',
+    'Letter Reversal',
+    'Omitting Words in Sentences',
+    'Difficulty Reading Sentences',
+    'Learning Difficulties in Children',
+    'Child Learning Problems',
+    'Educational Rehabilitation',
+    'Pediatric Learning Disorders',
+    'Dyslexia in Children',
+    'Dyslexia Treatment in India',
+    'Homeopathy for Dyslexia',
+    'Homeopathy for Learning Difficulties',
+    'Homeopathic Treatment for Dyslexia',
+    'Homeopathic Remedies for Dyslexia',
+    'Homeopathy for Dyscalculia',
+    'Homeopathy for Dysgraphia',
+    'Homeopathy for Concentration Problems',
+    'Homeopathy for Poor Focus',
+    'Homeopathy for Slow Learners',
+    'Homeopathic Care for Learning Disorders',
+  ].join(', '),
 };
 
 const pageStyles = `:root{
@@ -31,7 +77,7 @@ const pageStyles = `:root{
   img{max-width:100%;display:block}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
   .eyebrow{font-family:'Open Sans',sans-serif;font-weight:600;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
-  .lead{font-size:1.02rem;color:#555;max-width:60ch}
+  .lead{font-size:1.02rem;color:#555;max-width:62ch}
 
   /* buttons */
   .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Open Sans',sans-serif;font-weight:600;font-size:.78rem;padding:.68rem 1.2rem;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s,background .3s,color .3s;white-space:nowrap}
@@ -45,9 +91,14 @@ const pageStyles = `:root{
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
 
+  /* hero text bar */
+  .hero-intro-bar{background:#ffffff;border-bottom:1px solid #e1edf6;padding:36px 0}
+  .hero-intro-bar h1{font-size:clamp(1.8rem,3vw,2.4rem);margin-bottom:12px;color:var(--blue)}
+  .hero-intro-bar p{font-size:1.02rem;color:#4b6382;max-width:80ch;line-height:1.75;margin:0}
+
   /* sections */
-  .sec{padding:88px 0}
-  .sec-head{max-width:700px;margin:0 auto 46px;text-align:center}
+  .sec{padding:84px 0}
+  .sec-head{max-width:760px;margin:0 auto 46px;text-align:center}
   .sec-head h2{font-size:clamp(1.6rem,2.8vw,2.25rem);margin:12px 0 14px}
   .sec-head .lead{margin:0 auto}
   .reveal{opacity:1;transform:none}
@@ -68,7 +119,7 @@ const pageStyles = `:root{
   .type-deco.tr{top:26px;right:26px;color:#d98fa3}
   .card-cream .type-deco{color:#cfa457}
   .type-body{flex:1;padding:6px 30px 34px;text-align:center;position:relative;z-index:1}
-  .type-body h3{font-size:1.1rem;margin-bottom:14px}
+  .type-body h3{font-size:1.15rem;margin-bottom:12px}
   .type-body p{font-size:.88rem;color:#555;line-height:1.7}
   .type-puzzle{position:absolute;bottom:14px;right:16px;width:52px;height:52px;opacity:.16;z-index:0}
   .card-mint .type-puzzle{color:#3f9c78}
@@ -79,7 +130,6 @@ const pageStyles = `:root{
   .neuro{background:var(--blue);color:var(--ivory);position:relative;overflow:hidden}
   .neuro .wrap{position:relative;z-index:2}
   .neuro .sec-head h2{color:var(--ivory)}
-  .neuro .eyebrow{color:var(--gold)}
   .neuro .lead{color:rgba(250,248,244,.8)}
   .neuro-visual-wrap{position:relative}
   .neuro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;z-index:2}
@@ -87,7 +137,7 @@ const pageStyles = `:root{
   .neuro-card:hover{transform:translateY(-7px) scale(1.012);border-color:rgba(255,255,255,.55);box-shadow:0 22px 52px -12px rgba(10,50,120,.4)}
   .neuro-card .nico{width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.12);display:grid;place-items:center;margin-bottom:16px;color:#BAE0F3}
   .neuro-card .nico svg{width:22px;height:22px}
-  .neuro-card h4{color:#fff;font-size:1rem;margin-bottom:10px}
+  .neuro-card h4{color:#fff;font-size:1.05rem;margin-bottom:10px}
   .nico-rule{width:26px;height:2px;background:var(--teal);border-radius:2px;margin-bottom:12px}
   .neuro-card p{font-size:.82rem;color:rgba(220,240,252,.85);line-height:1.6;flex:1}
   .therapy-row{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16)}
@@ -95,12 +145,8 @@ const pageStyles = `:root{
   .therapy-ico svg{width:17px;height:17px}
   .therapy-row div b{display:block;font-family:'Open Sans',sans-serif;font-size:.72rem;font-weight:700;color:var(--gold);letter-spacing:.02em}
   .therapy-row div span{display:block;font-size:.72rem;color:rgba(220,240,252,.7);margin-top:1px}
-  .neuro-char{position:absolute;top:-60px;width:210px;height:290px;z-index:1;pointer-events:none;filter:drop-shadow(0 16px 24px rgba(0,0,0,.3))}
-  .neuro-char img{width:100%;height:100%;object-fit:contain}
-  .neuro-char-left{left:-70px}
-  .neuro-char-right{right:-70px}
 
-  /* SECTION 3 — behaviour (icon list cards) */
+  /* SECTION 3 — behaviour & learning strategies */
   .behaviour{background:#fff}
   .beh-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px 20px;margin-top:110px}
   .beh-card:nth-child(1){grid-column:1 / 3}
@@ -119,33 +165,39 @@ const pageStyles = `:root{
   .beh-icon-gold{background:rgba(200,169,107,.16);color:var(--gold)}
   .beh-icon-blue{background:rgba(10,150,199,.12);color:#0a4a6e}
   .beh-icon-lav{background:rgba(150,120,200,.14);color:#8a6bc4}
-  .beh-text h4{font-size:1rem;margin-bottom:6px}
+  .beh-text h4{font-size:1.02rem;margin-bottom:6px}
   .beh-text p{font-size:.85rem;color:#666;line-height:1.65;margin:0}
 
+  /* SECTION 4 — HOMEOPATHIC CARE & REHABILITATION */
+  .homeo-care-sec{background:linear-gradient(160deg,#f0f8fa 0%,#e4f3f7 100%)}
+  .homeo-care-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .homeo-care-card{background:#ffffff;border:1px solid #ddecfa;border-radius:22px;padding:32px 24px;box-shadow:0 12px 30px -16px rgba(10,31,68,.12);transition:transform .35s var(--ease)}
+  .homeo-care-card:hover{transform:translateY(-5px);border-color:var(--teal)}
+  .homeo-care-card h3{font-size:1.15rem;color:var(--blue);margin-bottom:12px}
+  .homeo-care-card p{font-size:.88rem;color:#4b6382;line-height:1.7}
+
+  /* SECTION 5 — KEYWORDS & CLINICAL GLOSSARY INDEX */
+  .glossary-sec{background:#ffffff;border-top:1px solid #e2edf6}
+  .glossary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .glossary-box{background:#f8fbfe;border:1px solid #ddecfa;border-radius:14px;padding:20px}
+  .glossary-box h4{font-size:.92rem;color:var(--blue);margin-bottom:8px}
+  .glossary-box p{font-size:.82rem;color:#5a718d;margin:0;line-height:1.55}
+
   /* CTA */
-  .cta{position:relative;background:linear-gradient(145deg,#ceedf8 0%,#BAE0F3 45%,#a8d6ee 100%);color:var(--blue);text-align:center;padding:100px 0;overflow:hidden}
+  .cta{position:relative;background:linear-gradient(145deg,#ceedf8 0%,#BAE0F3 45%,#a8d6ee 100%);color:var(--blue);text-align:center;padding:90px 0;overflow:hidden}
   .cta::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(255,255,255,.32),transparent 75%);pointer-events:none}
   .cta::after{content:"";position:absolute;top:0;left:15%;right:15%;height:1.5px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.9) 40%,rgba(255,255,255,.9) 60%,transparent);pointer-events:none}
-  .cta .wrap{position:relative;z-index:1;max-width:700px}
+  .cta .wrap{position:relative;z-index:1;max-width:720px}
   .cta h2{color:var(--blue);font-size:clamp(1.7rem,3.2vw,2.4rem);margin-bottom:16px}
-  .cta p{color:rgba(10,31,68,.78);max-width:52ch;margin:0 auto 30px;font-size:1rem}
+  .cta p{color:rgba(10,31,68,.78);max-width:54ch;margin:0 auto 30px;font-size:1rem;line-height:1.7}
   .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
   .cta .btn-ghost{background:rgba(255,255,255,.55);color:var(--blue);border-color:rgba(10,31,68,.25);backdrop-filter:blur(8px)}
   .cta .btn-ghost:hover{background:rgba(255,255,255,.75);transform:translateY(-2px)}
-  .cta .eyebrow{color:var(--teal)}
-
-  /* sticky */
-  .sticky-actions{position:fixed;right:16px;bottom:16px;z-index:80;display:flex;flex-direction:column;gap:11px}
-  .fab{display:flex;align-items:center;gap:9px;padding:12px 16px 12px 13px;border-radius:999px;font-family:'Open Sans',sans-serif;font-weight:600;font-size:.8rem;box-shadow:var(--shadow);cursor:pointer;transition:transform .3s var(--ease)}
-  .fab:hover{transform:translateY(-3px) scale(1.02)}
-  .fab svg{width:19px;height:19px;flex:0 0 auto}
-  .fab-wa{background:#25D366;color:#06351a}
-  .fab-up{background:var(--gold);color:var(--blue)}
 
   @media(max-width:980px){
     .type-grid{grid-template-columns:1fr;margin-top:60px}
     .neuro-grid{grid-template-columns:repeat(2,1fr)}
-    .neuro-char{display:none}
+    .homeo-care-grid{grid-template-columns:1fr}
   }
   @media(max-width:680px){
     .neuro-grid{grid-template-columns:1fr}
@@ -153,8 +205,6 @@ const pageStyles = `:root{
     .beh-card{grid-column:1 / -1 !important}
     .beh-char{width:100px;height:112px;top:-92px}
     .sec{padding:60px 0}
-    .page-hero{padding:0}
-    .fab span{display:none}.fab{padding:13px;border-radius:50%}
   }
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}`;
 
@@ -170,19 +220,30 @@ export default function DyslexiaPage() {
         </div>
       </section>
 
-      {/* SECTION 1 — ASSOCIATED LEARNING DIFFICULTIES */}
+      {/* HERO INTRO BAR */}
+      <section className="hero-intro-bar">
+        <div className="wrap">
+          <h1>Dyslexia Treatment, Learning Difficulties &amp; Educational Rehabilitation in India</h1>
+          <p>
+            Compassionate, research-grounded homeopathic treatment for dyslexia, dyscalculia, dysgraphia, and pediatric learning disorders. Helping dyslexic children, slow learners, and students struggling with poor concentration, reading problems, and calculation difficulties unlock their true cognitive potential.
+          </p>
+        </div>
+      </section>
+
+      {/* SECTION 1 — SPECIFIC LEARNING DIFFICULTIES (DYSLEXIA, DYSCALCULIA, DYSGRAPHIA) */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
-            <h2>Dyslexia often doesn't travel alone</h2>
+            <h2>Specific Learning Difficulties &amp; Disorders in Children</h2>
             <p className="lead">
-              Every child's learning profile is unique. Understanding which difficulties show up alongside Dyslexia helps shape a learning plan around your child, not a label.
+              Specific Learning Disorder (SLD) is a neurodevelopmental variation. Understanding which difficulties show up alongside Dyslexia in children helps design an individualized roadmap around your child, not a label.
             </p>
           </div>
           <div className="type-grid">
+            {/* Card 1: Dyscalculia */}
             <div className="type-card card-mint reveal d1">
               <div className="type-char">
-                <img src="https://static.wixstatic.com/media/66422a_ed3ae9597dfe407e97324932750d201a~mv2.png" alt="Child illustration — Dyscalculia" loading="lazy" decoding="async" />
+                <img src="https://static.wixstatic.com/media/66422a_ed3ae9597dfe407e97324932750d201a~mv2.png" alt="Child illustration — Dyscalculia in Children" loading="lazy" decoding="async" />
               </div>
               <div className="type-deco tl" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -190,9 +251,9 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="type-body">
-                <h3>Dyscalculia</h3>
+                <h3>Dyscalculia in Children</h3>
                 <p>
-                  Difficulty understanding numbers and performing mathematical calculations. Children may struggle with number concepts even when their reading skills are relatively stronger.
+                  <strong>Calculation difficulties and mathematics learning difficulties:</strong> Children who are weak in mathematics often struggle with number sequences, basic arithmetic, remembering multiplication tables, and understanding math symbols despite normal intellect. Homeopathy for dyscalculia supports numerical reasoning, working memory, and poor mathematical skills.
                 </p>
               </div>
               <div className="type-puzzle" aria-hidden="true">
@@ -202,9 +263,10 @@ export default function DyslexiaPage() {
               </div>
             </div>
 
+            {/* Card 2: Dysgraphia */}
             <div className="type-card card-pink reveal d2">
               <div className="type-char">
-                <img src="https://static.wixstatic.com/media/66422a_7adaa7f4c9284ad38ead74ef95055684~mv2.png" alt="Child illustration — Dysgraphia" loading="lazy" decoding="async" />
+                <img src="https://static.wixstatic.com/media/66422a_7adaa7f4c9284ad38ead74ef95055684~mv2.png" alt="Child illustration — Dysgraphia in Children" loading="lazy" decoding="async" />
               </div>
               <div className="type-deco tr" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -212,9 +274,9 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="type-body">
-                <h3>Dysgraphia</h3>
+                <h3>Dysgraphia in Children</h3>
                 <p>
-                  Difficulty with handwriting, spelling and written expression. Written work may appear incomplete or inconsistent even when the child understands the material.
+                  <strong>Writing difficulties and mistakes in writing:</strong> Marked by irregular letter sizing, painful pencil grip, mirror image writing, letter reversal (confusing b/d or p/q), and omitting words in sentences. Homeopathy for dysgraphia enhances fine-motor planning, hand-eye visual tracking, and cognitive-spatial writing clarity.
                 </p>
               </div>
               <div className="type-puzzle" aria-hidden="true">
@@ -224,9 +286,10 @@ export default function DyslexiaPage() {
               </div>
             </div>
 
+            {/* Card 3: Dyslexia */}
             <div className="type-card card-cream reveal d3">
               <div className="type-char">
-                <img src="https://static.wixstatic.com/media/66422a_5303be8aa6f442b3a4d06aa24b7641d0~mv2.png" alt="Child illustration — Dyspraxia" loading="lazy" decoding="async" />
+                <img src="https://static.wixstatic.com/media/66422a_5303be8aa6f442b3a4d06aa24b7641d0~mv2.png" alt="Child illustration — Dyslexic Child" loading="lazy" decoding="async" />
               </div>
               <div className="type-deco tl" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="currentColor">
@@ -234,9 +297,9 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="type-body">
-                <h3>Dyspraxia</h3>
+                <h3>Dyslexia &amp; Visual Processing</h3>
                 <p>
-                  Difficulty with motor planning, coordination and certain physical tasks, which can affect handwriting speed and classroom activities alongside reading challenges.
+                  <strong>Reading difficulties and reading problems:</strong> A dyslexic child experiences difficulty reading sentences fluently, visual processing difficulties where letters appear to jump, slow phonological decoding, and frequent letter reversal. Homeopathy for dyslexia stimulates neural integration and reading ease.
                 </p>
               </div>
               <div className="type-puzzle" aria-hidden="true">
@@ -249,13 +312,13 @@ export default function DyslexiaPage() {
         </div>
       </section>
 
-      {/* SECTION 2 — HOW DYSLEXIA CAN SHOW UP */}
+      {/* SECTION 2 — COGNITIVE, CONCENTRATION & STUDY CHALLENGES */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
-            <h2>A brain-based learning difficulty</h2>
+            <h2>Understanding Pediatric Learning Disorders &amp; Academic Stress</h2>
             <p className="lead">
-              Children with dyslexia may have normal intelligence but experience a noticeable gap between learning potential and academic performance — sometimes called an &quot;invisible disability.&quot;
+              Children with specific learning difficulties possess bright intelligence but experience a painful discrepancy between their intellectual ability and poor academic performance — causing significant difficulty in studies.
             </p>
           </div>
           <div className="neuro-visual-wrap">
@@ -266,10 +329,10 @@ export default function DyslexiaPage() {
                     <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a10 10 0 0 1-4-.8L3 20l1-4a7.9 7.9 0 0 1-1-4c0-4.4 4-8 9-8s9 3.6 9 8Z" />
                   </svg>
                 </div>
-                <h4>Reading Challenges</h4>
+                <h4>Reading Problems &amp; Sentence Gaps</h4>
                 <div className="nico-rule"></div>
                 <p>
-                  Difficulty reading words accurately and fluently, slow reading, and difficulty understanding written content or connecting letters with sounds.
+                  Reading difficulties such as skipping lines, omitting words in sentences, difficulty reading sentences aloud, and stumbling over common phonetic sounds. Homeopathic treatment for dyslexia sharpens visual-auditory linkage.
                 </p>
                 <div className="therapy-row">
                   <div className="therapy-ico">
@@ -279,8 +342,8 @@ export default function DyslexiaPage() {
                     </svg>
                   </div>
                   <div>
-                    <b>Therapy Support</b>
-                    <span>Reading Intervention</span>
+                    <b>Reading Intervention</b>
+                    <span>Phonics &amp; Fluency Support</span>
                   </div>
                 </div>
               </div>
@@ -291,10 +354,10 @@ export default function DyslexiaPage() {
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" />
                   </svg>
                 </div>
-                <h4>Spelling &amp; Writing Challenges</h4>
+                <h4>Writing Difficulties &amp; Reversal</h4>
                 <div className="nico-rule"></div>
                 <p>
-                  Frequent spelling mistakes, difficulty writing clearly, and incomplete or inconsistent schoolwork despite adequate effort.
+                  Writing difficulties characterized by letter reversal, mirror image writing, inconsistent margins, and frequent mistakes in writing despite understanding the subject matter thoroughly.
                 </p>
                 <div className="therapy-row">
                   <div className="therapy-ico">
@@ -305,8 +368,8 @@ export default function DyslexiaPage() {
                     </svg>
                   </div>
                   <div>
-                    <b>Therapy Support</b>
-                    <span>Writing &amp; Spelling Support</span>
+                    <b>Writing Support</b>
+                    <span>Fine Motor &amp; Spatial Alignment</span>
                   </div>
                 </div>
               </div>
@@ -318,10 +381,10 @@ export default function DyslexiaPage() {
                     <path d="M12 7v5l3.5 2" />
                   </svg>
                 </div>
-                <h4>Memory &amp; Processing Challenges</h4>
+                <h4>Poor Concentration &amp; Lack of Focus</h4>
                 <div className="nico-rule"></div>
                 <p>
-                  Difficulty remembering letters, words, sequences or instructions, and problems recalling names, colours, numbers or objects.
+                  Concentration problems and focus disorder symptoms where a child is easily distracted, fidgety, and daydreams during lectures. Homeopathy for poor focus and concentration problems naturally settles restlessness.
                 </p>
                 <div className="therapy-row">
                   <div className="therapy-ico">
@@ -331,22 +394,22 @@ export default function DyslexiaPage() {
                     </svg>
                   </div>
                   <div>
-                    <b>Therapy Support</b>
-                    <span>Cognitive Skills Training</span>
+                    <b>Focus Training</b>
+                    <span>Attention &amp; Working Memory</span>
                   </div>
                 </div>
               </div>
 
-              <div className="neuro-card reveal d1">
+              <div className="neuro-card reveal d4">
                 <div className="nico">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8Z" />
                   </svg>
                 </div>
-                <h4>Academic Confidence</h4>
+                <h4>Slow Learner &amp; Study Fatigue</h4>
                 <div className="nico-rule"></div>
                 <p>
-                  Poor academic performance despite adequate intelligence, with reduced confidence or frustration related to schoolwork.
+                  A slow learner absorbs concepts steadily but needs additional repetitions and patience. Homeopathy for slow learners alleviates academic anxiety, boosts mental processing speed, and elevates scholastic confidence.
                 </p>
                 <div className="therapy-row">
                   <div className="therapy-ico">
@@ -357,8 +420,8 @@ export default function DyslexiaPage() {
                     </svg>
                   </div>
                   <div>
-                    <b>Therapy Support</b>
-                    <span>Confidence Building</span>
+                    <b>Study Confidence</b>
+                    <span>Educational Rehabilitation</span>
                   </div>
                 </div>
               </div>
@@ -367,19 +430,19 @@ export default function DyslexiaPage() {
         </div>
       </section>
 
-      {/* SECTION 3 — SUPPORT & MANAGEMENT */}
+      {/* SECTION 3 — BEHAVIOUR & CLASSROOM SUPPORT STRATEGIES */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">
-            <h2>Helping your child build stronger skills</h2>
+            <h2>Resolving Child Learning Problems in the Classroom</h2>
             <p className="lead">
-              Early assessment is important because timely support can reduce learning-related stress and help children build stronger academic skills and confidence.
+              Child learning problems often result from sensory-cognitive mismatch rather than lack of effort. Early identification and structured educational rehabilitation relieve study stress for parents and children alike.
             </p>
           </div>
           <div className="beh-grid">
             <div className="beh-card reveal d1">
               <div className="beh-char">
-                <img src="https://static.wixstatic.com/media/66422a_3cc6ce56b79d45549e55adc5e4959215~mv2.png" alt="Child illustration — reading" loading="lazy" decoding="async" />
+                <img src="https://static.wixstatic.com/media/66422a_3cc6ce56b79d45549e55adc5e4959215~mv2.png" alt="Child illustration — reading support" loading="lazy" decoding="async" />
               </div>
               <div className="beh-icon beh-icon-mint">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -387,8 +450,8 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="beh-text">
-                <h4>Individualized Learning Plan</h4>
-                <p>A learning plan based on the child's specific strengths and challenges, adjusted as the child progresses.</p>
+                <h4>Individualized Educational Plan (IEP)</h4>
+                <p>Tailored interventions honoring the child’s unique learning profile, helping them overcome difficulty in studies at their own natural pace.</p>
               </div>
             </div>
 
@@ -402,14 +465,14 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="beh-text">
-                <h4>Structured, Phonics-Based Reading Support</h4>
-                <p>Structured reading support and phonics-based learning, with regular practice to build fluency and confidence.</p>
+                <h4>Multi-Sensory Phonics &amp; Visual Training</h4>
+                <p>Combining visual, auditory, and kinesthetic learning methods to overcome visual processing difficulties, letter reversal, and reading problems.</p>
               </div>
             </div>
 
             <div className="beh-card reveal d3">
               <div className="beh-char">
-                <img src="https://static.wixstatic.com/media/66422a_2867728357c24fbeb0a231cfa76ceeee~mv2.png" alt="Child illustration — classroom" loading="lazy" decoding="async" />
+                <img src="https://static.wixstatic.com/media/66422a_2867728357c24fbeb0a231cfa76ceeee~mv2.png" alt="Child illustration — classroom accommodations" loading="lazy" decoding="async" />
               </div>
               <div className="beh-icon beh-icon-blue">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -418,8 +481,8 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="beh-text">
-                <h4>Classroom Accommodations</h4>
-                <p>Guidance from qualified education or developmental professionals to support classroom participation.</p>
+                <h4>Classroom Accommodations &amp; Extra Time</h4>
+                <p>Providing extra time during examinations and allowing oral submissions reduces anxiety for children facing calculation difficulties and mistakes in writing.</p>
               </div>
             </div>
 
@@ -434,8 +497,8 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="beh-text">
-                <h4>Early Assessment</h4>
-                <p>Timely identification helps reduce learning-related stress and shapes support around the child's actual needs.</p>
+                <h4>Early Psycho-Educational Assessment</h4>
+                <p>Formal diagnostic evaluation by clinical psychologists and pediatric learning disorder specialists accurately differentiates dyslexia from ADHD or emotional stress.</p>
               </div>
             </div>
 
@@ -449,9 +512,87 @@ export default function DyslexiaPage() {
                 </svg>
               </div>
               <div className="beh-text">
-                <h4>Family &amp; Teacher Involvement</h4>
-                <p>Consistent support from parents, teachers and specialists working together improves academic outcomes.</p>
+                <h4>Parental Encouragement &amp; Positive Reinforcement</h4>
+                <p>Protecting self-esteem is fundamental. Celebrating creative and athletic strengths helps a child with learning difficulties in children thrive despite academic hurdles.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4 — HOMEOPATHIC CARE & TREATMENT IN INDIA */}
+      <section className="sec homeo-care-sec">
+        <div className="wrap">
+          <div className="sec-head reveal">
+            <h2>Homeopathic Treatment for Dyslexia &amp; Learning Difficulties</h2>
+            <p className="lead">
+              How constitutional homeopathy offers a gentle, non-stimulant approach to brain plasticity, memory enhancement, and focus stabilization:
+            </p>
+          </div>
+          <div className="homeo-care-grid">
+            <div className="homeo-care-card reveal d1">
+              <h3>Homeopathy for Dyslexia in India</h3>
+              <p>
+                Dr. Ketan Patel’s clinic specializes in <strong>dyslexia treatment in India</strong>, offering constitutional <strong>homeopathic remedies for dyslexia</strong> that optimize cerebral circulation, reduce visual fatigue, and improve language processing centers.
+              </p>
+            </div>
+            <div className="homeo-care-card reveal d2">
+              <h3>Homeopathy for Concentration &amp; Poor Focus</h3>
+              <p>
+                Targeted <strong>homeopathy for concentration problems</strong> and <strong>homeopathy for poor focus</strong> addresses restless neurotransmitter signaling, allowing students to absorb classroom instructions, sustain task endurance, and overcome focus disorder symptoms naturally.
+              </p>
+            </div>
+            <div className="homeo-care-card reveal d3">
+              <h3>Homeopathy for Slow Learners &amp; Dyscalculia</h3>
+              <p>
+                <strong>Homeopathy for slow learners</strong> and <strong>homeopathy for dyscalculia</strong> and dysgraphia strengthens working memory, logical sequencing, and spatial comprehension without sedatives or pharmaceutical side-effects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5 — CLINICAL TOPICS & KEYWORDS GLOSSARY */}
+      <section className="sec glossary-sec">
+        <div className="wrap">
+          <div className="sec-head reveal">
+            <h2>Clinical Topics &amp; Learning Difficulty Glossary</h2>
+            <p className="lead">
+              Comprehensive overview of learning conditions treated at Speciality Homeopathy:
+            </p>
+          </div>
+          <div className="glossary-grid">
+            <div className="glossary-box">
+              <h4>Dyslexia &amp; Reading Difficulties</h4>
+              <p>Phonological decoding challenges, reading problems, and omitting words in sentences in dyslexic children.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Dyscalculia in Children</h4>
+              <p>Calculation difficulties, weak in mathematics, and poor mathematical skills addressed with cognitive support.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Dysgraphia &amp; Writing Difficulties</h4>
+              <p>Fine motor struggles, mirror image writing, letter reversal, and frequent mistakes in writing.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Slow Learners &amp; Poor Focus</h4>
+              <p>Educational rehabilitation for slow learners with poor concentration, lack of focus, and study fatigue.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Visual Processing Difficulties</h4>
+              <p>Overcoming perceptual letter crowding, tracking fatigue, and difficulty reading sentences fluently.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Specific Learning Disorder (SLD)</h4>
+              <p>Evidence-based homeopathic care for learning disorders across all academic and cognitive domains.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Homeopathy for Dyslexia in India</h4>
+              <p>Over 34 years of clinical experience delivering homeopathic medicine and remedies across India and internationally.</p>
+            </div>
+            <div className="glossary-box">
+              <h4>Educational Rehabilitation</h4>
+              <p>Synergizing homeopathic therapy with school accommodations, remedial tutoring, and parental support.</p>
             </div>
           </div>
         </div>
@@ -460,9 +601,9 @@ export default function DyslexiaPage() {
       {/* CTA */}
       <section className="cta">
         <div className="wrap">
-          <h2 className="reveal d1">Stronger reading, stronger confidence for your child.</h2>
+          <h2 className="reveal d1">Stronger reading, sharper focus &amp; academic confidence.</h2>
           <p className="reveal d1">
-            Book a consultation or share your child's reports securely. We'll listen carefully, be honest about how we can help, and work in step with your child's school and education team.
+            Book a consultation or share your child's educational psychology reports securely with Dr. Ketan Patel. We'll listen carefully, assess their cognitive profile holistically, and work in step with your child's school and educational rehabilitation team.
           </p>
           <div className="cta-row reveal d2">
             <Link className="btn btn-primary" href="/contact">
