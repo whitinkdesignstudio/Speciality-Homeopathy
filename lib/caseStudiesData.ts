@@ -171,7 +171,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       'Above all: maintain immense patience throughout the cyclic phases of neurodevelopmental recovery.',
     ],
     doctorCommentary: 'Early constitutional intervention within the neuroplastic window (under age 3) can reverse secondary neuroinflammatory blockades. When paired with gastrointestinal barrier stabilization (GFCF diet), individualised homeopathic remedies stimulate dormant neurological pathways without sedation.',
-    metaDescription: 'Read the documented case study of a 22-month-old child of a Government of India Research Scientist who fully recovered from ASD with Dr. Ketan Patel’s homeopathy protocol.',
+    metaDescription: 'Documented case study of a 22-month-old child who fully recovered from ASD under Dr. Ketan Patel’s homeopathy protocol. Read the verified clinical timeline.',
     metaKeywords: 'autism cured case, ASD homeopathy case study, research scientist child autism recovery, Dr Ketan Patel cured cases',
   },
   {
@@ -265,7 +265,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
     ],
     doctorCommentary: 'Neuropathic channel blockades combined with autistic traits frequently present with auditory hypersensitivity and sensory overwhelm. Homeopathy works on neuromuscular nerve conductivity and receptor synchronization, enabling expressive speech emergence.',
-    metaDescription: 'Read the documented cured case of Kevin, a 2-year-old from California with genetic neuropathy and ASD who passed his speech evaluation under Dr. Ketan Patel’s care.',
+    metaDescription: 'Documented cured case of Kevin, a 2-year-old with genetic neuropathy and ASD who passed his speech evaluation under Dr. Ketan Patel’s homeopathic care.',
     metaKeywords: 'genetic neuropathy autism case, Dr Ketan Patel USA patient, cured cases autism California, speech evaluation passed autism',
   },
   {
@@ -361,7 +361,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
     ],
     doctorCommentary: 'Channelopathies affecting voltage-gated calcium channels (such as the CACNA1A variant) can induce severe motor restlessness and communicative delay. Constitutional homeopathy targets neuro-signaling efficiency, restoring calmness and organic speech acquisition.',
-    metaDescription: 'Discover the clinical case study of Rizwan, a 3-year-8-month hyperactive ASD child from Mumbai who achieved full speech and developmental recovery under Dr. Ketan Patel.',
+    metaDescription: 'Clinical case study of Rizwan, a 3-year-old hyperactive ASD child from Mumbai who achieved full speech and milestone recovery under Dr. Ketan Patel.',
     metaKeywords: 'cacna1a case study, hyperactive asd cured case, mumbai autism homeopathy, Dr Ketan Patel cacna1a, autism speech recovery',
   },
   {
@@ -467,7 +467,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
     ],
     doctorCommentary: 'Maternal detachment and echolalia represent profound socio-communicative impairment. By clearing neuro-immune dysregulation with deep-acting constitutional remedies, cognitive processing shifts from rote parroting to authentic communicative intent.',
-    metaDescription: 'Read the moving testimonial from a physiotherapist mother whose autistic son completely recovered, mastered Sanskrit slokas, and joined mainstream school under Dr. Ketan Patel.',
+    metaDescription: 'Verified recovery case of an autistic child who completely recovered, learned speech, and joined mainstream school under Dr. Ketan Patel’s clinical care.',
     metaKeywords: 'mother letter autism cured homeopathy, physiotherapist autism testimonial, echolalia cured homeopathy, Dr Ketan Patel autism recovery',
   },
   {
@@ -566,7 +566,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
     ],
     doctorCommentary: 'Genetic syndromes and congenital defects are often deemed unchangeable. While genetic code alterations are inherent, downstream protein expression, neuroplastic pathways, and neuromuscular connectivity can be significantly optimized through individualised constitutional homeopathy.',
-    metaDescription: 'Read Ms. Aggarwal’s powerful account of how her son, diagnosed with an incurable congenital genetic disorder, learned to walk and speak under Dr. Ketan Patel’s care.',
+    metaDescription: 'Documented case of a child with a congenital genetic disorder who learned to walk and speak with Dr. Ketan Patel’s specialized homeopathy treatment.',
     metaKeywords: 'congenital genetic disorder homeopathy, autistic traits recovery, genetic syndrome cured case, Dr Ketan Patel testimonial',
   },
 ];

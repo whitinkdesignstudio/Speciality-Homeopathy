@@ -2,15 +2,56 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 import { CASE_STUDIES } from '../../../lib/caseStudiesData';
+import { SITE_URL } from '@/lib/seo/siteConfig';
+import {
+  getWebPageEntity,
+  getBreadcrumbListEntity,
+  createPageJsonLd,
+} from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
   title: 'Autism & Child Neurology Treatment – Documented Cured Case Studies',
   description:
-    'Read documented clinical case studies and autism recovery stories from Speciality Homeopathy. In-depth reports of children diagnosed with ASD, genetic neuropathy, and CACNA1A treated by Dr. Ketan Patel.',
+    'Read documented clinical case studies and autism recovery stories from Speciality Homeopathy. In-depth reports of children treated by Dr. Ketan Patel.',
   keywords:
-    'autism homeopathy case studies, autism cured cases, autism improvement stories, case studies homeopathy, dr ketan patel case studies',
+    'autism homeopathy case studies, autism cured cases, autism improvement stories, case studies homeopathy, dr ketan patel case studies, child neurology recovery',
   alternates: {
-    canonical: 'https://specialityhomeopathy.com/casestudies',
+    canonical: `${SITE_URL}/casestudies`,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: 'Autism & Child Neurology Treatment – Documented Cured Case Studies',
+    description:
+      'Read documented clinical case studies and autism recovery stories from Speciality Homeopathy. In-depth reports of children treated by Dr. Ketan Patel.',
+    url: `${SITE_URL}/casestudies`,
+    siteName: 'Speciality Homeopathy',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: `${SITE_URL}/images/speciality-homeopathy-logo.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Autism & Child Neurology Treatment – Documented Cured Case Studies',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Autism & Child Neurology Treatment – Documented Cured Case Studies',
+    description:
+      'Read documented clinical case studies and autism recovery stories from Speciality Homeopathy. In-depth reports of children treated by Dr. Ketan Patel.',
+    images: [`${SITE_URL}/images/speciality-homeopathy-logo.png`],
   },
 };
 
@@ -826,9 +867,46 @@ const caseStudyCategories: CaseCategory[] = [
   },
 ];
 
+const canonicalUrl = `${SITE_URL}/casestudies`;
+
+const caseStudiesJsonLd = createPageJsonLd([
+  getWebPageEntity({
+    canonicalUrl,
+    name: 'Autism & Child Neurology Treatment – Documented Cured Case Studies',
+    description:
+      'Read documented clinical case studies and autism recovery stories from Speciality Homeopathy. In-depth reports of children treated by Dr. Ketan Patel.',
+    pageType: 'CollectionPage',
+    breadcrumbId: `${canonicalUrl}#breadcrumb`,
+  }),
+  getBreadcrumbListEntity(canonicalUrl, [
+    { name: 'Home', url: `${SITE_URL}/` },
+    { name: 'Case Studies', url: canonicalUrl },
+  ]),
+  {
+    '@type': 'ItemList',
+    '@id': `${canonicalUrl}#itemlist`,
+    name: 'Documented Cured Autism & Neurological Case Studies',
+    description:
+      'Verified clinical case studies and recovery records of pediatric neurology patients treated with homeopathy by Dr. Ketan Patel.',
+    numberOfItems: CASE_STUDIES.length,
+    itemListElement: CASE_STUDIES.map((c, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: c.title,
+      url: `${SITE_URL}/casestudies/${c.slug}`,
+      description: c.brief,
+      image: `${SITE_URL}${c.image}`,
+    })),
+  },
+]);
+
 export default function CaseStudiesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudiesJsonLd) }}
+      />
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
       {/* PAGE HERO */}
