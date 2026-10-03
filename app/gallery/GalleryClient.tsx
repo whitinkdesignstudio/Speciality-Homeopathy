@@ -12,10 +12,13 @@ interface GalleryItem {
   location: string;
   year: string;
   bentoSpan: 'big' | 'wide' | 'tall' | 'small';
+  imageFit?: 'cover' | 'contain';
+  imagePosition?: string;
+  cardBg?: string;
   highlights: string[];
 }
 
-// ONLY the 6 photos from C:\Users\BAPS\Downloads\p
+// ONLY the 6 photos from C:\Users\BAPS\Downloads\p, with tailored framing
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
@@ -25,7 +28,9 @@ const galleryItems: GalleryItem[] = [
     image: '/images/gallery/WldW7r23S7WSKQ7fQqz4.jpg',
     location: 'SNF Support Center',
     year: 'Clinical Milestone Event',
-    bentoSpan: 'big', // 2 col x 2 row on Bento
+    bentoSpan: 'wide', // 2 cols on Bento for perfect wide landscape view
+    imageFit: 'cover',
+    imagePosition: 'center center',
     highlights: ['Special Needs Support', 'Children Gratitude', 'Family Community'],
   },
   {
@@ -36,7 +41,10 @@ const galleryItems: GalleryItem[] = [
     image: '/images/gallery/41dbsWTIuNTZACE24fLQ.png',
     location: 'Ahmedabad & Global Clinics',
     year: 'Founder Profile',
-    bentoSpan: 'small', // 1 col x 1 row
+    bentoSpan: 'small',
+    imageFit: 'contain', // Clean fit so transparent PNG doesn't crop
+    imagePosition: 'center bottom',
+    cardBg: 'radial-gradient(circle at 50% 30%, #e0f2fe 0%, #f1f5f9 100%)',
     highlights: ['34+ Yrs Experience', 'Pediatric Neurology', 'Founder & Director'],
   },
   {
@@ -47,7 +55,9 @@ const galleryItems: GalleryItem[] = [
     image: '/images/gallery/EsQXeKiO6UeV33E2EuOW.jpg',
     location: 'National Medical Assembly',
     year: 'Honor & Recognition',
-    bentoSpan: 'small', // 1 col x 1 row
+    bentoSpan: 'small',
+    imageFit: 'cover',
+    imagePosition: 'center center',
     highlights: ['Certificate of Honor', 'Research Pioneer', 'National Recognition'],
   },
   {
@@ -58,7 +68,9 @@ const galleryItems: GalleryItem[] = [
     image: '/images/gallery/J2Sf3fI8xb1C58VaRsit.jpg',
     location: 'SNF Families Assembly',
     year: 'Awareness Seminar',
-    bentoSpan: 'wide', // 2 col x 1 row
+    bentoSpan: 'small',
+    imageFit: 'cover',
+    imagePosition: 'center center',
     highlights: ['Parent Empowerment', 'Interactive Workshop', 'Holistic Guidance'],
   },
   {
@@ -69,7 +81,9 @@ const galleryItems: GalleryItem[] = [
     image: '/images/gallery/ZMX7eeNh0482zohHV2dX.jpg',
     location: 'Rehabilitation Care Wing',
     year: 'Pediatric Care',
-    bentoSpan: 'tall', // 1 col x 2 row
+    bentoSpan: 'tall', // 1 col x 2 rows for full vertical portrait
+    imageFit: 'cover',
+    imagePosition: 'center top',
     highlights: ['Cerebral Palsy Care', 'Motor Recovery', 'Compassionate Support'],
   },
   {
@@ -80,7 +94,9 @@ const galleryItems: GalleryItem[] = [
     image: '/images/gallery/nUFO8fLCf9TQxHaifd4y.jpg',
     location: 'Speciality Homeopathy Headquarters',
     year: 'International Consultations',
-    bentoSpan: 'small', // 1 col x 1 row
+    bentoSpan: 'wide', // 2 cols for prominent portrait positioning
+    imageFit: 'cover',
+    imagePosition: 'center 20%', // Centers face properly
     highlights: ['Global Telehealth', 'Complex Case Review', 'International Reach'],
   },
 ];
@@ -180,10 +196,8 @@ export default function GalleryClient() {
         :root {
           --gal-navy: #071838;
           --gal-navy-deep: #030d1f;
-          --gal-navy-card: #0c234b;
           --gal-teal: #0096a6;
           --gal-teal-light: #00b4d8;
-          --gal-teal-glow: rgba(0, 180, 216, 0.35);
           --gal-accent: #0284c7;
           --gal-bg: #f8fafc;
           --gal-text-main: #0f172a;
@@ -318,7 +332,6 @@ export default function GalleryClient() {
           flex-wrap: wrap;
         }
 
-        /* Category pills */
         .category-pills-list {
           display: flex;
           align-items: center;
@@ -374,7 +387,6 @@ export default function GalleryClient() {
           color: #7dd3fc;
         }
 
-        /* Search + Layout switcher */
         .actions-right {
           display: flex;
           align-items: center;
@@ -457,7 +469,7 @@ export default function GalleryClient() {
         .bento-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          grid-auto-rows: 240px;
+          grid-auto-rows: 270px;
           grid-auto-flow: dense;
           gap: 20px;
         }
@@ -505,14 +517,14 @@ export default function GalleryClient() {
           height: 280px;
         }
 
-        /* ── GALLERY CARD: CLEAN PHOTO BY DEFAULT, TEXT APPEARS ONLY ON HOVER ── */
+        /* ── GALLERY CARD: CLEAN WHITE BACKGROUND & PROPER FRAMING ── */
         .gal-card-item {
           position: relative;
           border-radius: var(--gal-radius);
           overflow: hidden;
-          background: #071838;
-          box-shadow: 0 8px 24px -8px rgba(7, 24, 56, 0.1);
-          border: 1px solid rgba(226, 232, 240, 0.85);
+          background: #ffffff;
+          box-shadow: 0 6px 20px -6px rgba(7, 24, 56, 0.08);
+          border: 1px solid rgba(226, 232, 240, 0.9);
           cursor: pointer;
           transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
                       box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
@@ -533,8 +545,8 @@ export default function GalleryClient() {
 
         .gal-card-item:hover {
           transform: translateY(-6px);
-          box-shadow: 0 20px 42px -10px rgba(7, 24, 56, 0.25),
-                      0 0 16px rgba(0, 150, 166, 0.2);
+          box-shadow: 0 18px 38px -10px rgba(7, 24, 56, 0.18),
+                      0 0 16px rgba(0, 150, 166, 0.15);
           border-color: rgba(0, 150, 166, 0.5);
         }
 
@@ -544,29 +556,30 @@ export default function GalleryClient() {
           width: 100%;
           height: 100%;
           overflow: hidden;
+          background: #f8fafc;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .card-img {
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          object-position: center top;
-          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .gal-card-item:hover .card-img {
-          transform: scale(1.06);
-          filter: brightness(1.02);
+          transform: scale(1.05);
         }
 
-        /* ── HOVER OVERLAY: HIDDEN AT REST, REVEALED ON CURSOR HOVER ── */
+        /* ── HOVER OVERLAY: ONLY REVEALED ON HOVER ── */
         .card-hover-overlay {
           position: absolute;
           inset: 0;
           background: linear-gradient(
             180deg,
             rgba(7, 24, 56, 0.3) 0%,
-            rgba(7, 24, 56, 0.65) 45%,
+            rgba(7, 24, 56, 0.7) 45%,
             rgba(3, 13, 31, 0.96) 100%
           );
           opacity: 0;
@@ -614,8 +627,8 @@ export default function GalleryClient() {
           text-transform: uppercase;
           letter-spacing: 0.06em;
           color: #7dd3fc;
-          background: rgba(14, 165, 233, 0.18);
-          border: 1px solid rgba(56, 189, 248, 0.3);
+          background: rgba(14, 165, 233, 0.22);
+          border: 1px solid rgba(56, 189, 248, 0.35);
           padding: 3px 9px;
           border-radius: 999px;
           backdrop-filter: blur(8px);
@@ -625,9 +638,9 @@ export default function GalleryClient() {
           width: 30px;
           height: 30px;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.25);
           backdrop-filter: blur(8px);
-          border: 1px solid rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.35);
           color: #ffffff;
           display: flex;
           align-items: center;
@@ -641,7 +654,6 @@ export default function GalleryClient() {
           transform: scale(1.1);
         }
 
-        /* Small, clean typography inside the hover overlay */
         .hover-bottom-info {
           display: flex;
           flex-direction: column;
@@ -663,8 +675,9 @@ export default function GalleryClient() {
           margin-bottom: 4px;
         }
 
-        .bento-card-big .hover-card-title {
-          font-size: 1.05rem;
+        .bento-card-big .hover-card-title,
+        .bento-card-wide .hover-card-title {
+          font-size: 1.02rem;
         }
 
         .hover-card-desc {
@@ -676,11 +689,6 @@ export default function GalleryClient() {
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
-        }
-
-        .bento-card-big .hover-card-desc,
-        .bento-card-tall .hover-card-desc {
-          -webkit-line-clamp: 3;
         }
 
         /* ── EMPTY STATE ── */
@@ -717,12 +725,12 @@ export default function GalleryClient() {
           cursor: pointer;
         }
 
-        /* ── LIGHTBOX MODAL ── */
+        /* ── LIGHTBOX MODAL: PURE WHITE / LIGHT THEME ── */
         .lightbox-backdrop {
           position: fixed;
           inset: 0;
-          background: rgba(3, 13, 31, 0.92);
-          backdrop-filter: blur(16px);
+          background: rgba(15, 23, 42, 0.7);
+          backdrop-filter: blur(12px);
           z-index: 99999;
           display: flex;
           align-items: center;
@@ -737,8 +745,8 @@ export default function GalleryClient() {
         }
 
         .lightbox-modal-content {
-          background: #071838;
-          border: 1px solid rgba(255, 255, 255, 0.12);
+          background: #ffffff;
+          border: 1px solid rgba(226, 232, 240, 0.9);
           border-radius: 24px;
           overflow: hidden;
           width: 100%;
@@ -746,7 +754,7 @@ export default function GalleryClient() {
           max-height: 92vh;
           display: grid;
           grid-template-columns: 1.35fr 1fr;
-          box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 40px rgba(0, 150, 166, 0.2);
+          box-shadow: 0 30px 70px rgba(15, 23, 42, 0.25), 0 0 30px rgba(0, 150, 166, 0.1);
           position: relative;
           animation: modalScaleUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -754,7 +762,7 @@ export default function GalleryClient() {
         @keyframes modalScaleUp {
           from {
             opacity: 0;
-            transform: scale(0.92) translateY(20px);
+            transform: scale(0.94) translateY(16px);
           }
           to {
             opacity: 1;
@@ -766,13 +774,12 @@ export default function GalleryClient() {
           position: absolute;
           top: 16px;
           right: 16px;
-          width: 40px;
-          height: 40px;
+          width: 38px;
+          height: 38px;
           border-radius: 50%;
-          background: rgba(255, 255, 255, 0.12);
-          backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          color: #ffffff;
+          background: #f1f5f9;
+          border: 1px solid #e2e8f0;
+          color: #334155;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -782,28 +789,33 @@ export default function GalleryClient() {
         }
 
         .modal-close-btn:hover {
-          background: #ef4444;
-          transform: scale(1.1) rotate(90deg);
-          border-color: #ef4444;
+          background: #fee2e2;
+          color: #ef4444;
+          border-color: #fca5a5;
+          transform: scale(1.08) rotate(90deg);
         }
 
+        /* Lightbox Stage (Light Gray/Soft Clean Backdrop) */
         .lightbox-left-stage {
           position: relative;
-          background: #030d1f;
+          background: #f8fafc;
+          border-right: 1px solid #e2e8f0;
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden;
           min-height: 440px;
+          padding: 24px;
         }
 
         .lightbox-main-img {
           width: 100%;
           height: 100%;
-          max-height: 68vh;
+          max-height: 64vh;
           object-fit: contain;
           transition: transform 0.4s ease;
           user-select: none;
+          filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.08));
         }
 
         .lightbox-main-img.zoomed {
@@ -815,75 +827,82 @@ export default function GalleryClient() {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          width: 44px;
-          height: 44px;
+          width: 42px;
+          height: 42px;
           border-radius: 50%;
-          background: rgba(7, 24, 56, 0.8);
-          backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.25);
-          color: #ffffff;
+          background: rgba(255, 255, 255, 0.92);
+          backdrop-filter: blur(8px);
+          border: 1px solid #cbd5e1;
+          color: #071838;
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
           transition: var(--gal-transition);
           z-index: 10;
         }
 
         .nav-arrow:hover {
           background: #0096a6;
-          border-color: #38bdf8;
-          transform: translateY(-50%) scale(1.12);
+          border-color: #0096a6;
+          color: #ffffff;
+          transform: translateY(-50%) scale(1.1);
         }
 
-        .nav-arrow.prev { left: 14px; }
-        .nav-arrow.next { right: 14px; }
+        .nav-arrow.prev { left: 16px; }
+        .nav-arrow.next { right: 16px; }
 
         .zoom-toggle-pill {
           position: absolute;
           bottom: 14px;
           left: 14px;
-          background: rgba(7, 24, 56, 0.8);
+          background: rgba(255, 255, 255, 0.92);
           backdrop-filter: blur(8px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          color: #ffffff;
+          border: 1px solid #cbd5e1;
+          color: #334155;
           font-size: 0.74rem;
           font-weight: 600;
-          padding: 6px 12px;
+          padding: 5px 12px;
           border-radius: 999px;
           cursor: pointer;
           display: flex;
           align-items: center;
           gap: 6px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
           transition: var(--gal-transition);
           z-index: 10;
         }
 
         .zoom-toggle-pill:hover {
           background: #0096a6;
+          color: #ffffff;
+          border-color: #0096a6;
         }
 
         .index-counter-badge {
           position: absolute;
           top: 14px;
           left: 14px;
-          background: rgba(7, 24, 56, 0.8);
+          background: rgba(255, 255, 255, 0.92);
           backdrop-filter: blur(8px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          color: #7dd3fc;
+          border: 1px solid #cbd5e1;
+          color: #0084a6;
           font-size: 0.74rem;
           font-weight: 700;
           padding: 4px 11px;
           border-radius: 999px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
           z-index: 10;
         }
 
+        /* Lightbox Right Panel (White Theme) */
         .lightbox-right-panel {
           padding: 34px 30px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          background: #071838;
+          background: #ffffff;
           overflow-y: auto;
           max-height: 85vh;
         }
@@ -896,11 +915,11 @@ export default function GalleryClient() {
           display: inline-block;
           font-size: 0.72rem;
           font-weight: 700;
-          letter-spacing: 0.08em;
+          letter-spacing: 0.06em;
           text-transform: uppercase;
-          color: #38bdf8;
-          background: rgba(56, 189, 248, 0.12);
-          border: 1px solid rgba(56, 189, 248, 0.3);
+          color: #0284c7;
+          background: #e0f2fe;
+          border: 1px solid #bae6fd;
           padding: 4px 12px;
           border-radius: 999px;
           margin-bottom: 10px;
@@ -910,9 +929,9 @@ export default function GalleryClient() {
           font-family: var(--font-poppins, 'Poppins', sans-serif);
           font-size: 1.35rem;
           font-weight: 700;
-          color: #ffffff;
+          color: #071838;
           line-height: 1.3;
-          margin-bottom: 10px;
+          margin-bottom: 8px;
         }
 
         .panel-location-tag {
@@ -920,13 +939,13 @@ export default function GalleryClient() {
           align-items: center;
           gap: 6px;
           font-size: 0.8rem;
-          color: #94a3b8;
+          color: #64748b;
           margin-bottom: 16px;
         }
 
         .panel-desc {
-          font-size: 0.88rem;
-          color: #cbd5e1;
+          font-size: 0.9rem;
+          color: #334155;
           line-height: 1.65;
           margin-bottom: 22px;
         }
@@ -940,7 +959,7 @@ export default function GalleryClient() {
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.06em;
-          color: #94a3b8;
+          color: #64748b;
           margin-bottom: 8px;
         }
 
@@ -951,9 +970,9 @@ export default function GalleryClient() {
         }
 
         .panel-chip {
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.15);
-          color: #e2e8f0;
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          color: #1e293b;
           font-size: 0.76rem;
           font-weight: 600;
           padding: 5px 12px;
@@ -965,7 +984,7 @@ export default function GalleryClient() {
           flex-direction: column;
           gap: 10px;
           padding-top: 16px;
-          border-top: 1px solid rgba(255, 255, 255, 0.1);
+          border-top: 1px solid #f1f5f9;
         }
 
         .btn-whatsapp-inquire {
@@ -981,13 +1000,13 @@ export default function GalleryClient() {
           font-size: 0.86rem;
           text-decoration: none;
           transition: var(--gal-transition);
-          box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+          box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
         }
 
         .btn-whatsapp-inquire:hover {
           background: #20ba5a;
           transform: translateY(-2px);
-          box-shadow: 0 10px 22px rgba(37, 211, 102, 0.5);
+          box-shadow: 0 10px 22px rgba(37, 211, 102, 0.4);
         }
 
         .btn-consult-modal {
@@ -1003,11 +1022,13 @@ export default function GalleryClient() {
           font-size: 0.86rem;
           text-decoration: none;
           transition: var(--gal-transition);
+          box-shadow: 0 6px 18px rgba(0, 150, 166, 0.25);
         }
 
         .btn-consult-modal:hover {
-          filter: brightness(1.15);
+          filter: brightness(1.1);
           transform: translateY(-2px);
+          box-shadow: 0 10px 22px rgba(0, 150, 166, 0.4);
         }
 
         .modal-aux-buttons {
@@ -1021,7 +1042,7 @@ export default function GalleryClient() {
         .aux-link-btn {
           background: transparent;
           border: none;
-          color: #94a3b8;
+          color: #64748b;
           font-size: 0.76rem;
           cursor: pointer;
           display: flex;
@@ -1031,16 +1052,17 @@ export default function GalleryClient() {
         }
 
         .aux-link-btn:hover {
-          color: #38bdf8;
+          color: #0284c7;
         }
 
+        /* Lightbox Thumbnail Strip (White Theme) */
         .lightbox-thumbnail-strip {
           display: flex;
           gap: 8px;
           overflow-x: auto;
           padding: 12px 16px;
-          background: #030d1f;
-          border-top: 1px solid rgba(255, 255, 255, 0.08);
+          background: #f8fafc;
+          border-top: 1px solid #e2e8f0;
           grid-column: span 2;
         }
 
@@ -1051,20 +1073,21 @@ export default function GalleryClient() {
           border-radius: 7px;
           overflow: hidden;
           cursor: pointer;
-          opacity: 0.45;
-          border: 2px solid transparent;
+          opacity: 0.55;
+          border: 2px solid #cbd5e1;
+          background: #ffffff;
           transition: var(--gal-transition);
         }
 
         .thumb-item:hover {
-          opacity: 0.85;
+          opacity: 0.9;
           transform: translateY(-2px);
         }
 
         .thumb-item.active {
           opacity: 1;
-          border-color: #00b4d8;
-          box-shadow: 0 0 10px rgba(0, 180, 216, 0.6);
+          border-color: #0096a6;
+          box-shadow: 0 0 0 2px rgba(0, 150, 166, 0.25);
         }
 
         .thumb-item img {
@@ -1160,7 +1183,7 @@ export default function GalleryClient() {
         @media (max-width: 1080px) {
           .bento-grid {
             grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: 240px;
+            grid-auto-rows: 250px;
           }
           .bento-card-big {
             grid-column: span 2;
@@ -1422,16 +1445,25 @@ export default function GalleryClient() {
                     }
                   }}
                 >
-                  <div className="card-media-wrap">
+                  <div
+                    className="card-media-wrap"
+                    style={{
+                      background: item.cardBg || '#f8fafc',
+                    }}
+                  >
                     <img
                       src={item.image}
                       alt={item.title}
                       className="card-img"
+                      style={{
+                        objectFit: item.imageFit || 'cover',
+                        objectPosition: item.imagePosition || 'center center',
+                      }}
                       loading="lazy"
                       decoding="async"
                     />
 
-                    {/* HOVER OVERLAY: Text appears smoothly when cursor moves over the card */}
+                    {/* HOVER OVERLAY: Text appears smoothly on cursor hover */}
                     <div className="card-hover-overlay">
                       <div className="card-hover-content">
                         <div className="hover-top-row">
@@ -1472,7 +1504,7 @@ export default function GalleryClient() {
         )}
       </div>
 
-      {/* LIGHTBOX MODAL */}
+      {/* LIGHTBOX MODAL: PURE WHITE / LIGHT THEME */}
       {activeModalItem && (
         <div
           className="lightbox-backdrop"
@@ -1506,7 +1538,7 @@ export default function GalleryClient() {
               </svg>
             </button>
 
-            {/* Left: Image View & Controls */}
+            {/* Left: Image View & Stage (Clean Light Backdrop) */}
             <div className="lightbox-left-stage">
               <span className="index-counter-badge">
                 Photo {currentIndex + 1} of {filteredItems.length}
@@ -1578,7 +1610,7 @@ export default function GalleryClient() {
               </button>
             </div>
 
-            {/* Right: Detailed Metadata & Action CTAs */}
+            {/* Right: Detailed Info Panel (Crisp White Theme) */}
             <div className="lightbox-right-panel">
               <div>
                 <div className="panel-top-meta">
@@ -1627,7 +1659,7 @@ export default function GalleryClient() {
                   className="btn-whatsapp-inquire"
                 >
                   <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.37 7.35 9.1 7.41 8.88 7.65C8.65 7.89 8.02 8.48 8.02 9.7C8.02 10.92 8.91 12.1 9.03 12.26C9.15 12.42 10.74 14.88 13.19 15.94C15.22 16.82 15.63 16.64 16.08 16.6C16.53 16.56 17.53 16.01 17.73 15.43C17.93 14.85 17.87 14.26C17.81 14.16 17.65 14.1 17.41 13.98C17.17 13.86 15.99 13.28 15.77 13.2C15.55 13.12 15.39 13.08 15.23 13.32C15.07 13.56 14.61 14.1 14.47 14.26C14.33 14.42 14.19 14.44 13.95 14.32C13.71 14.2 12.94 13.95 12.02 13.13C11.3 12.49 10.82 11.7 10.68 11.46C10.54 11.22 10.66 11.09 10.78 10.97C10.89 10.86 11.03 10.68 11.15 10.54C11.27 10.4 11.31 10.3 11.39 10.14C11.47 9.98 11.43 9.84 11.37 9.72C11.31 9.6 10.83 8.42 10.63 7.94C10.43 7.46 10.23 7.52 10.07 7.52C9.93 7.52 9.77 7.35 9.53 7.35Z" />
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.37 7.35 9.1 7.41 8.88 7.65C8.65 7.89 8.02 8.48 8.02 9.7C8.02 10.92 8.91 12.1 9.03 12.26C9.15 12.42 10.74 14.88 13.19 15.94C15.22 16.82 15.63 16.64 16.08 16.6C16.53 16.56 17.53 16.01 17.73 15.43C17.93 14.85 17.93 14.36 17.87 14.26C17.81 14.16 17.65 14.1 17.41 13.98C17.17 13.86 15.99 13.28 15.77 13.2C15.55 13.12 15.39 13.08 15.23 13.32C15.07 13.56 14.61 14.1 14.47 14.26C14.33 14.42 14.19 14.44 13.95 14.32C13.71 14.2 12.94 13.95 12.02 13.13C11.3 12.49 10.82 11.7 10.68 11.46C10.54 11.22 10.66 11.09 10.78 10.97C10.89 10.86 11.03 10.68 11.15 10.54C11.27 10.4 11.31 10.3 11.39 10.14C11.47 9.98 11.43 9.84 11.37 9.72C11.31 9.6 10.83 8.42 10.63 7.94C10.43 7.46 10.23 7.52 10.07 7.52C9.93 7.52 9.77 7.35 9.53 7.35Z" />
                   </svg>
                   <span>Inquire on WhatsApp</span>
                 </a>
@@ -1670,7 +1702,7 @@ export default function GalleryClient() {
               </div>
             </div>
 
-            {/* Bottom thumbnail strip for fast jumping */}
+            {/* Bottom thumbnail strip (White Theme) */}
             <div className="lightbox-thumbnail-strip" aria-label="Photo thumbnails">
               {filteredItems.map((thumb) => (
                 <div
