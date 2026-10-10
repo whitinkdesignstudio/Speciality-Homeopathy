@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Poppins, Open_Sans } from 'next/font/google';
 import './globals.css';
@@ -87,16 +88,14 @@ export const metadata: Metadata = {
     apple: [{ url: '/logo.png' }],
     shortcut: '/favicon.ico',
   },
-  // ── SEARCH CONSOLE VERIFICATION ───────────────────────────────────────
-  // TODO: Replace placeholder values with your actual verification codes.
-  // To obtain: Google Search Console → Add Property → HTML Tag method.
-  // verification: {
-  //   google: 'YOUR_GOOGLE_VERIFICATION_CODE',
-  //   other: { 'msvalidate.01': 'YOUR_BING_VERIFICATION_CODE' },
-  // },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || undefined,
+    other: process.env.NEXT_PUBLIC_BING_VERIFICATION ? { 'msvalidate.01': process.env.NEXT_PUBLIC_BING_VERIFICATION } : undefined,
+  },
 };
 
 const schemaMarkup = buildRootLayoutSchema();
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function RootLayout({
   children,
@@ -110,12 +109,27 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
-        {/* ── ANALYTICS ────────────────────────────────────────────────────────
-            TODO: Once you have a GA4 Measurement ID (format: G-XXXXXXXXXX):
-            1. Run: npm install @next/third-parties
-            2. Import: import { GoogleAnalytics } from '@next/third-parties/google'
-            3. Add inside <body>: <GoogleAnalytics gaId="G-XXXXXXXXXX" />
-            ─────────────────────────────────────────────────────────────────── */}
+        {GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <script
+              id="google-analytics"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body>
         <TopProgressBar />
