@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" rx="120" fill="#FBF2E4"/>
+  <circle cx="120" cy="120" r="90" fill="#F8E5C8"/>
+  <!-- Head & Hair -->
+  <circle cx="120" cy="85" r="32" fill="#FFE0BD"/>
+  <path d="M90 80C90 62 104 50 120 50C136 50 150 62 150 80C148 74 138 68 120 68C102 68 92 74 90 80Z" fill="#5D4037"/>
+  <!-- Eyes attentive -->
+  <circle cx="110" cy="86" r="3" fill="#2C3E50"/>
+  <circle cx="130" cy="86" r="3" fill="#2C3E50"/>
+  <path d="M116 99C118 101 122 101 124 99" stroke="#E57373" stroke-width="2" stroke-linecap="round"/>
+  <!-- Torso in Gold sweater -->
+  <path d="M82 170C82 135 100 125 120 125C140 125 158 135 158 170" fill="#C8A96B"/>
+  <!-- Interlocking puzzle piece motif -->
+  <g transform="translate(100, 138) scale(0.65)" fill="#0A1F44">
+    <path d="M20 5h10a4 4 0 0 1 4 4 3 3 0 0 0 6 0 4 4 0 0 1 4-4h10v10a4 4 0 0 1 4 4 3 3 0 0 0 0 6 4 4 0 0 1-4 4v10H44a4 4 0 0 1-4-4 3 3 0 0 0-6 0 4 4 0 0 1-4 4H20v-10a4 4 0 0 1-4-4 3 3 0 0 0 0-6 4 4 0 0 1 4-4Z"/>
+  </g>
+</svg>

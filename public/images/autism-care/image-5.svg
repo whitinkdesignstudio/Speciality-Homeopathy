@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <rect width="200" height="240" fill="none"/>
+  <!-- Gentle supportive figure & gait balance -->
+  <circle cx="100" cy="55" r="24" fill="#BAE0F3"/>
+  <!-- Spine alignment line -->
+  <path d="M100 80V150" stroke="#FAF8F4" stroke-width="6" stroke-linecap="round"/>
+  <!-- Kinetic motion rings for therapy -->
+  <circle cx="100" cy="115" r="42" stroke="#008C8C" stroke-width="3" stroke-dasharray="6 6"/>
+  <circle cx="100" cy="115" r="62" stroke="#C8A96B" stroke-width="2" stroke-dasharray="8 8"/>
+  <!-- Balance arms extending -->
+  <path d="M50 110C75 95 100 100 100 100C100 100 125 95 150 110" stroke="#BAE0F3" stroke-width="6" stroke-linecap="round"/>
+  <!-- Stepping legs with support -->
+  <path d="M100 150L80 205M100 150L120 205" stroke="#FAF8F4" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="80" cy="205" r="7" fill="#C8A96B"/>
+  <circle cx="120" cy="205" r="7" fill="#008C8C"/>
+</svg>

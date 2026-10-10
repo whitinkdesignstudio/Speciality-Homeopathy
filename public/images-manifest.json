@@ -1,0 +1,680 @@
+{
+  "adhd-add": [],
+  "asthma-allergy": [],
+  "atopic-dermatitis": [
+    {
+      "index": 1,
+      "fileName": "image-1.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-1.jpg",
+      "sizeBytes": 66746
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-2.jpg",
+      "sizeBytes": 11109
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-3.jpg",
+      "sizeBytes": 12205
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-4.jpg",
+      "sizeBytes": 13064
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.png",
+      "publicUrl": "/images/atopic-dermatitis/image-5.png",
+      "sizeBytes": 51212
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.png",
+      "publicUrl": "/images/atopic-dermatitis/image-6.png",
+      "sizeBytes": 34132
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.png",
+      "publicUrl": "/images/atopic-dermatitis/image-7.png",
+      "sizeBytes": 66945
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.png",
+      "publicUrl": "/images/atopic-dermatitis/image-8.png",
+      "sizeBytes": 64837
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.png",
+      "publicUrl": "/images/atopic-dermatitis/image-9.png",
+      "sizeBytes": 40143
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.png",
+      "publicUrl": "/images/atopic-dermatitis/image-10.png",
+      "sizeBytes": 29268
+    },
+    {
+      "index": 11,
+      "fileName": "image-11.png",
+      "publicUrl": "/images/atopic-dermatitis/image-11.png",
+      "sizeBytes": 29458
+    },
+    {
+      "index": 12,
+      "fileName": "image-12.png",
+      "publicUrl": "/images/atopic-dermatitis/image-12.png",
+      "sizeBytes": 34881
+    },
+    {
+      "index": 13,
+      "fileName": "image-13.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-13.jpg",
+      "sizeBytes": 16539
+    },
+    {
+      "index": 14,
+      "fileName": "image-14.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-14.jpg",
+      "sizeBytes": 17056
+    },
+    {
+      "index": 15,
+      "fileName": "image-15.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-15.jpg",
+      "sizeBytes": 13003
+    },
+    {
+      "index": 16,
+      "fileName": "image-16.jpg",
+      "publicUrl": "/images/atopic-dermatitis/image-16.jpg",
+      "sizeBytes": 15833
+    }
+  ],
+  "autism-care": [
+    {
+      "index": 1,
+      "fileName": "image-1.png",
+      "publicUrl": "/images/autism-care/image-1.png",
+      "sizeBytes": 167303
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.svg",
+      "publicUrl": "/images/autism-care/image-2.svg",
+      "sizeBytes": 1388
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.svg",
+      "publicUrl": "/images/autism-care/image-3.svg",
+      "sizeBytes": 1057
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.svg",
+      "publicUrl": "/images/autism-care/image-4.svg",
+      "sizeBytes": 923
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.svg",
+      "publicUrl": "/images/autism-care/image-5.svg",
+      "sizeBytes": 977
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.svg",
+      "publicUrl": "/images/autism-care/image-6.svg",
+      "sizeBytes": 879
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.svg",
+      "publicUrl": "/images/autism-care/image-7.svg",
+      "sizeBytes": 758
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.svg",
+      "publicUrl": "/images/autism-care/image-8.svg",
+      "sizeBytes": 822
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.svg",
+      "publicUrl": "/images/autism-care/image-9.svg",
+      "sizeBytes": 816
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.svg",
+      "publicUrl": "/images/autism-care/image-10.svg",
+      "sizeBytes": 718
+    },
+    {
+      "index": 11,
+      "fileName": "image-11.svg",
+      "publicUrl": "/images/autism-care/image-11.svg",
+      "sizeBytes": 737
+    },
+    {
+      "index": 12,
+      "fileName": "image-12.svg",
+      "publicUrl": "/images/autism-care/image-12.svg",
+      "sizeBytes": 705
+    },
+    {
+      "index": 13,
+      "fileName": "image-13.svg",
+      "publicUrl": "/images/autism-care/image-13.svg",
+      "sizeBytes": 724
+    },
+    {
+      "index": 14,
+      "fileName": "image-14.svg",
+      "publicUrl": "/images/autism-care/image-14.svg",
+      "sizeBytes": 1658
+    }
+  ],
+  "cerebral-palsy": [
+    {
+      "index": 1,
+      "fileName": "image-1.jpg",
+      "publicUrl": "/images/cerebral-palsy/image-1.jpg",
+      "sizeBytes": 49473
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.png",
+      "publicUrl": "/images/cerebral-palsy/image-2.png",
+      "sizeBytes": 24901
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.png",
+      "publicUrl": "/images/cerebral-palsy/image-3.png",
+      "sizeBytes": 24405
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.png",
+      "publicUrl": "/images/cerebral-palsy/image-4.png",
+      "sizeBytes": 25866
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.png",
+      "publicUrl": "/images/cerebral-palsy/image-5.png",
+      "sizeBytes": 21281
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.png",
+      "publicUrl": "/images/cerebral-palsy/image-6.png",
+      "sizeBytes": 25067
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.png",
+      "publicUrl": "/images/cerebral-palsy/image-7.png",
+      "sizeBytes": 23483
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.png",
+      "publicUrl": "/images/cerebral-palsy/image-8.png",
+      "sizeBytes": 25363
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.png",
+      "publicUrl": "/images/cerebral-palsy/image-9.png",
+      "sizeBytes": 24684
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.jpg",
+      "publicUrl": "/images/cerebral-palsy/image-10.jpg",
+      "sizeBytes": 44887
+    }
+  ],
+  "child-behavioral-disorder": [],
+  "child-neurological-disorders": [],
+  "developmental-delays": [
+    {
+      "index": 1,
+      "fileName": "image-1.webp",
+      "publicUrl": "/images/developmental-delays/image-1.webp",
+      "sizeBytes": 25566
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.webp",
+      "publicUrl": "/images/developmental-delays/image-2.webp",
+      "sizeBytes": 51622
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.webp",
+      "publicUrl": "/images/developmental-delays/image-3.webp",
+      "sizeBytes": 109366
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.webp",
+      "publicUrl": "/images/developmental-delays/image-4.webp",
+      "sizeBytes": 142158
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.webp",
+      "publicUrl": "/images/developmental-delays/image-5.webp",
+      "sizeBytes": 30896
+    }
+  ],
+  "downs-syndrome": [],
+  "dyslexia": [
+    {
+      "index": 1,
+      "fileName": "image-1.svg",
+      "publicUrl": "/images/dyslexia/image-1.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.svg",
+      "publicUrl": "/images/dyslexia/image-2.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.svg",
+      "publicUrl": "/images/dyslexia/image-3.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.svg",
+      "publicUrl": "/images/dyslexia/image-4.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.svg",
+      "publicUrl": "/images/dyslexia/image-5.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.svg",
+      "publicUrl": "/images/dyslexia/image-6.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.svg",
+      "publicUrl": "/images/dyslexia/image-7.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.svg",
+      "publicUrl": "/images/dyslexia/image-8.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.svg",
+      "publicUrl": "/images/dyslexia/image-9.svg",
+      "sizeBytes": 489
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.svg",
+      "publicUrl": "/images/dyslexia/image-10.svg",
+      "sizeBytes": 489
+    }
+  ],
+  "female-infertility": [],
+  "hair-falling": [],
+  "increase-height": [],
+  "intellectual-disability": [
+    {
+      "index": 1,
+      "fileName": "image-1.webp",
+      "publicUrl": "/images/intellectual-disability/image-1.webp",
+      "sizeBytes": 29976
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.webp",
+      "publicUrl": "/images/intellectual-disability/image-2.webp",
+      "sizeBytes": 19224
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.webp",
+      "publicUrl": "/images/intellectual-disability/image-3.webp",
+      "sizeBytes": 18758
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.webp",
+      "publicUrl": "/images/intellectual-disability/image-4.webp",
+      "sizeBytes": 32820
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.webp",
+      "publicUrl": "/images/intellectual-disability/image-5.webp",
+      "sizeBytes": 29976
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.webp",
+      "publicUrl": "/images/intellectual-disability/image-6.webp",
+      "sizeBytes": 21696
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.webp",
+      "publicUrl": "/images/intellectual-disability/image-7.webp",
+      "sizeBytes": 23582
+    }
+  ],
+  "male-infertility": [],
+  "mdr-tuberculosis": [
+    {
+      "index": 1,
+      "fileName": "image-1.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-1.webp",
+      "sizeBytes": 11906
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-2.webp",
+      "sizeBytes": 11650
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-3.webp",
+      "sizeBytes": 5544
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-4.webp",
+      "sizeBytes": 9700
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-5.webp",
+      "sizeBytes": 13522
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-6.webp",
+      "sizeBytes": 12678
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-7.webp",
+      "sizeBytes": 13320
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-8.webp",
+      "sizeBytes": 12276
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-9.webp",
+      "sizeBytes": 12728
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-10.webp",
+      "sizeBytes": 7194
+    },
+    {
+      "index": 11,
+      "fileName": "image-11.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-11.webp",
+      "sizeBytes": 5646
+    },
+    {
+      "index": 12,
+      "fileName": "image-12.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-12.webp",
+      "sizeBytes": 2994
+    },
+    {
+      "index": 13,
+      "fileName": "image-13.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-13.webp",
+      "sizeBytes": 3398
+    },
+    {
+      "index": 14,
+      "fileName": "image-14.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-14.webp",
+      "sizeBytes": 1444
+    },
+    {
+      "index": 15,
+      "fileName": "image-15.webp",
+      "publicUrl": "/images/mdr-tuberculosis/image-15.webp",
+      "sizeBytes": 3294
+    }
+  ],
+  "mental-retardation": [
+    {
+      "index": 1,
+      "fileName": "image-1.webp",
+      "publicUrl": "/images/mental-retardation/image-1.webp",
+      "sizeBytes": 29976
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.webp",
+      "publicUrl": "/images/mental-retardation/image-2.webp",
+      "sizeBytes": 19224
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.webp",
+      "publicUrl": "/images/mental-retardation/image-3.webp",
+      "sizeBytes": 18758
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.webp",
+      "publicUrl": "/images/mental-retardation/image-4.webp",
+      "sizeBytes": 32820
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.webp",
+      "publicUrl": "/images/mental-retardation/image-5.webp",
+      "sizeBytes": 29976
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.webp",
+      "publicUrl": "/images/mental-retardation/image-6.webp",
+      "sizeBytes": 21696
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.webp",
+      "publicUrl": "/images/mental-retardation/image-7.webp",
+      "sizeBytes": 23582
+    }
+  ],
+  "oligospermia": [
+    {
+      "index": 1,
+      "fileName": "image-1.jpg",
+      "publicUrl": "/images/oligospermia/image-1.jpg",
+      "sizeBytes": 83377
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.jpg",
+      "publicUrl": "/images/oligospermia/image-2.jpg",
+      "sizeBytes": 18727
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.jpg",
+      "publicUrl": "/images/oligospermia/image-3.jpg",
+      "sizeBytes": 14275
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.jpg",
+      "publicUrl": "/images/oligospermia/image-4.jpg",
+      "sizeBytes": 15976
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.jpg",
+      "publicUrl": "/images/oligospermia/image-5.jpg",
+      "sizeBytes": 12312
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.jpg",
+      "publicUrl": "/images/oligospermia/image-6.jpg",
+      "sizeBytes": 61821
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.jpg",
+      "publicUrl": "/images/oligospermia/image-7.jpg",
+      "sizeBytes": 25290
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.jpg",
+      "publicUrl": "/images/oligospermia/image-8.jpg",
+      "sizeBytes": 16395
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.jpg",
+      "publicUrl": "/images/oligospermia/image-9.jpg",
+      "sizeBytes": 31137
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.jpg",
+      "publicUrl": "/images/oligospermia/image-10.jpg",
+      "sizeBytes": 10243
+    },
+    {
+      "index": 11,
+      "fileName": "image-11.jpg",
+      "publicUrl": "/images/oligospermia/image-11.jpg",
+      "sizeBytes": 24280
+    },
+    {
+      "index": 12,
+      "fileName": "image-12.jpg",
+      "publicUrl": "/images/oligospermia/image-12.jpg",
+      "sizeBytes": 24652
+    }
+  ],
+  "prolapsed-vertebral-disc": [],
+  "recurrent-abortions": [
+    {
+      "index": 1,
+      "fileName": "image-1.png",
+      "publicUrl": "/images/recurrent-abortions/image-1.png",
+      "sizeBytes": 2014773
+    },
+    {
+      "index": 2,
+      "fileName": "image-2.png",
+      "publicUrl": "/images/recurrent-abortions/image-2.png",
+      "sizeBytes": 415427
+    },
+    {
+      "index": 3,
+      "fileName": "image-3.png",
+      "publicUrl": "/images/recurrent-abortions/image-3.png",
+      "sizeBytes": 357219
+    },
+    {
+      "index": 4,
+      "fileName": "image-4.png",
+      "publicUrl": "/images/recurrent-abortions/image-4.png",
+      "sizeBytes": 318747
+    },
+    {
+      "index": 5,
+      "fileName": "image-5.png",
+      "publicUrl": "/images/recurrent-abortions/image-5.png",
+      "sizeBytes": 1279881
+    },
+    {
+      "index": 6,
+      "fileName": "image-6.png",
+      "publicUrl": "/images/recurrent-abortions/image-6.png",
+      "sizeBytes": 1829873
+    },
+    {
+      "index": 7,
+      "fileName": "image-7.png",
+      "publicUrl": "/images/recurrent-abortions/image-7.png",
+      "sizeBytes": 1849574
+    },
+    {
+      "index": 8,
+      "fileName": "image-8.png",
+      "publicUrl": "/images/recurrent-abortions/image-8.png",
+      "sizeBytes": 1839831
+    },
+    {
+      "index": 9,
+      "fileName": "image-9.png",
+      "publicUrl": "/images/recurrent-abortions/image-9.png",
+      "sizeBytes": 1662336
+    },
+    {
+      "index": 10,
+      "fileName": "image-10.png",
+      "publicUrl": "/images/recurrent-abortions/image-10.png",
+      "sizeBytes": 1644216
+    },
+    {
+      "index": 11,
+      "fileName": "image-11.webp",
+      "publicUrl": "/images/recurrent-abortions/image-11.webp",
+      "sizeBytes": 157774
+    },
+    {
+      "index": 12,
+      "fileName": "image-12.png",
+      "publicUrl": "/images/recurrent-abortions/image-12.png",
+      "sizeBytes": 1661403
+    }
+  ]
+}

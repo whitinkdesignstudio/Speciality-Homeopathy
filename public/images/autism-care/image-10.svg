@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" rx="20" fill="#FBF2E4"/>
+  <!-- Centering spiral settling into stability -->
+  <circle cx="80" cy="80" r="55" fill="#FDF9F1" stroke="#C8A96B" stroke-width="2" stroke-dasharray="6 4"/>
+  <!-- Inner calm core -->
+  <circle cx="80" cy="80" r="28" fill="#0A1F44"/>
+  <circle cx="80" cy="80" r="16" fill="#008C8C"/>
+  <!-- Grounding anchor base -->
+  <path d="M55 120H105M68 126H92" stroke="#C8A96B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 96V120" stroke="#008C8C" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="80,72 83,78 89,80 83,82 80,88 77,82 71,80 77,78" fill="#FAF8F4"/>
+</svg>

@@ -1,0 +1,3 @@
+  taskkill /F /IM node.exe
+  Remove-Item -Recurse -Force .next
+  npm run dev
