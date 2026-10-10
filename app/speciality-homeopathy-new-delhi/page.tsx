@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-new-delhi');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -112,7 +116,7 @@ const pageStyles = `
     background: #ffffff;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -188,7 +192,7 @@ const pageStyles = `
     color: #334155;
   }
   .facility-chip-card::before {
-    content: "✓";
+    content: "\\2713";
     position: absolute;
     left: 18px;
     color: var(--teal);
@@ -259,19 +263,19 @@ export default function NewDelhiClinicPage() {
     <div className="city-page-wrap">
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* ── HERO BANNER ── */}
+      {/* HERO BANNER */}
       <section className="city-hero">
         <div className="wrap">
           <div className="city-hero-content">
             <h1>New Delhi Autism &amp; <span>Pediatric Neurology Clinic</span></h1>
             <p className="hero-sub">
-              Therapy For Ability (TFA), Rajouri Garden — Integrating Dr. Ketan Patel’s 34+ years of homeopathic pediatric neurology with advanced Sensory Integration &amp; Occupational Therapy.
+              Therapy For Ability (TFA), Rajouri Garden  -  Integrating Dr. Ketan Patel's 34+ years of homeopathic pediatric neurology with advanced Sensory Integration &amp; Occupational Therapy.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── MAIN CONTENT ── */}
+      {/* MAIN CONTENT */}
       <section className="sec sec-white">
         <div className="wrap">
           <div className="clinic-info-card">
@@ -291,7 +295,7 @@ export default function NewDelhiClinicPage() {
               <div className="address-detail-box">
                 <h4>Therapy For Ability (TFA) Details</h4>
                 <div className="address-row">
-                  <strong>Location:</strong> Block JJ 13/26, Basement, Rajouri Garden, Near HDFC Bank &amp; Pizza Hut Delivery, West Delhi, New Delhi – 110027
+                  <strong>Location:</strong> Block JJ 13/26, Basement, Rajouri Garden, Near HDFC Bank &amp; Pizza Hut Delivery, West Delhi, New Delhi - 110027
                 </div>
                 <div className="address-row">
                   <strong>Delhi Clinic Phone:</strong> +91-11-45626933
@@ -320,7 +324,7 @@ export default function NewDelhiClinicPage() {
             </div>
           </div>
 
-          {/* ── FACILITIES ── */}
+          {/* FACILITIES */}
           <h3 style={{ fontSize: '1.6rem', color: '#0F1D3D', marginTop: '48px', marginBottom: '8px' }}>
             Clinical Facilities &amp; Protocols Available in New Delhi
           </h3>
@@ -383,3 +387,4 @@ export default function NewDelhiClinicPage() {
     </div>
   );
 }
+

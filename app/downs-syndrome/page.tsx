@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Down Syndrome Trisomy 21 Homeopathy Treatment & Child Care',
   description: "Learn about Down syndrome, including its causes, characteristics, diagnosis and developmental support, with guidance from Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/downs-syndrome',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/downs-syndrome',
+    title: 'Down Syndrome Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic care for Down Syndrome (Trisomy 21). Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Down Syndrome Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

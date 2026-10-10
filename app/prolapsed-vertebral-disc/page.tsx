@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Prolapsed Vertebral Disc & Chronic Backache Homeopathy Treatment',
   description: "Learn about PIVD, including causes and symptoms, with supportive homeopathic care alongside appropriate medical guidance. Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/prolapsed-vertebral-disc',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/prolapsed-vertebral-disc',
+    title: 'Prolapsed Disc Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic care for prolapsed vertebral disc and chronic back conditions.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Prolapsed Disc Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -39,7 +49,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero â€” 100% full-width banner */
+  /* page hero  -  100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -52,7 +62,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 â€” types (photo-top pillar cards) */
+  /* SECTION 1  -  types (photo-top pillar cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
   .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
   .type-card{position:relative;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 14px 38px -16px rgba(20,50,90,.20);display:flex;flex-direction:column;text-align:center;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
@@ -69,7 +79,7 @@ const pageStyles = `:root{
   .type-body{flex:1;padding:0 30px 34px}
   .type-body p{font-size:.88rem;color:#555;line-height:1.7}
 
-  /* SECTION 2 â€” neuro conditions (dark frosted cards) */
+  /* SECTION 2  -  neuro conditions (dark frosted cards) */
   .neuro{background:var(--blue);color:var(--ivory)}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .eyebrow{color:var(--gold)}
@@ -83,7 +93,7 @@ const pageStyles = `:root{
   .neuro-card h4{color:#fff;font-size:1rem;margin-bottom:8px}
   .neuro-card p{font-size:.82rem;color:rgba(220,240,252,.85);line-height:1.6}
 
-  /* SECTION 3 â€” behaviour (icon list cards) */
+  /* SECTION 3  -  behaviour (icon list cards) */
   .behaviour{background:#fff}
   .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   .beh-card{display:flex;align-items:center;gap:20px;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--ivory);box-shadow:0 10px 24px -16px rgba(10,31,68,.18);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
@@ -134,14 +144,14 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO â€” 100% full-width banner */}
+      {/* PAGE HERO  -  100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <HeroBannerImage src="/images/prolapsed-vertebral-disc/hero-banner.png" alt="Prolapsed Vertebral Disc (PIVD) Treatment Hero Section Banner" />
         </div>
       </section>
 
-      {/* SECTION 1 â€” CAUSES */}
+      {/* SECTION 1  -  CAUSES */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -217,12 +227,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 â€” TREATMENT HIGHLIGHTS */}
+      {/* SECTION 2  -  TREATMENT HIGHLIGHTS */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>What our supportive approach aims for</h2>
-            <p className="lead">Homeopathic treatment aims to reduce pressure on affected nerves while supporting the ligaments and spinal structures â€” selected according to the patient's symptoms and overall condition.</p>
+            <p className="lead">Homeopathic treatment aims to reduce pressure on affected nerves while supporting the ligaments and spinal structures  -  selected according to the patient's symptoms and overall condition.</p>
           </div>
           <div className="neuro-grid">
             <div className="neuro-card reveal d1">
@@ -300,7 +310,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 â€” COMMON SYMPTOMS */}
+      {/* SECTION 3  -  COMMON SYMPTOMS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">

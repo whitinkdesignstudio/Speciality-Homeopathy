@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -53,6 +53,16 @@ export const metadata: Metadata = {
     'Homeopathy for Slow Learners',
     'Homeopathic Care for Learning Disorders',
   ].join(', '),
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/dyslexia',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/dyslexia',
+    title: 'Dyslexia & Learning Disability Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic support for dyslexia, learning disabilities, and slow learners. Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Dyslexia & Learning Disability Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

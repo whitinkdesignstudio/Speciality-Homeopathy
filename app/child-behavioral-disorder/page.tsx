@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Child Behavioral & Hyperactivity Disorder Homeopathy Treatment',
   description: "Learn about child behavioral disorders, PANS, PANDAS and symptoms, with supportive care from Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/child-behavioral-disorder',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/child-behavioral-disorder',
+    title: 'Child Behavioral Disorder Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic care for PANS/PANDAS, ODD, and communicative disorders in children.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Child Behavioral Disorder Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

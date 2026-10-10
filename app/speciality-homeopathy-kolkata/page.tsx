@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-kolkata');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -115,7 +119,7 @@ const pageStyles = `
     background: #f0f8f9;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -347,28 +351,28 @@ export default function KolkataClinicPage() {
             <div className="features-grid">
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Autism &amp; PDD-NOS
+                  Autism &amp; PDD-NOS
                 </h4>
                 <p>Constitutional remedies to improve eye contact, reduce sensory meltdowns, and support natural cognitive processing.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Cerebral Palsy Support
+                  Cerebral Palsy Support
                 </h4>
                 <p>Supportive care addressing muscle spasticity, coordination, motor milestones, and recurrent respiratory infections.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> ADHD &amp; Hyperactivity
+                  ADHD &amp; Hyperactivity
                 </h4>
                 <p>Natural remedies supporting attention span, restlessness, impulse control, and emotional self-regulation.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> North East Courier Care
+                  North East Courier Care
                 </h4>
                 <p>Continuous medicine delivery and monthly WhatsApp progress evaluations for families in remote hill districts.</p>
               </div>
@@ -395,3 +399,4 @@ export default function KolkataClinicPage() {
     </main>
   );
 }
+

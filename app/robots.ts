@@ -64,17 +64,23 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
       // AI Search & Citation Bots (AEO/GEO optimization for clinic discoverability)
+      // Allows public content to be crawled for AI search and citation products.
+      // Private routes (api/, admin/, dashboard/) remain disallowed.
       {
         userAgent: [
-          'GPTBot',
-          'PerplexityBot',
-          'ClaudeBot',
-          'Applebot',
+          'GPTBot',          // OpenAI training crawler
+          'OAI-SearchBot',   // OpenAI SearchGPT search crawler (separate from GPTBot)
+          'PerplexityBot',   // Perplexity AI search
+          'ClaudeBot',       // Anthropic Claude
+          'Applebot',        // Apple Intelligence / Siri Knowledge
+          'DuckAssistBot',   // DuckDuckGo AI Answer
+          'YouBot',          // You.com AI search
         ],
         allow: [
           '/',
           '/_next/static/',
           '/images/',
+          '/llms.txt',
         ],
         disallow: [
           '/api/',

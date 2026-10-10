@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-secunderabad');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -112,7 +116,7 @@ const pageStyles = `
     background: #ffffff;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -348,28 +352,28 @@ export default function SecunderabadClinicPage() {
             <div className="features-grid">
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Speech &amp; Communication
+                  Speech &amp; Communication
                 </h4>
                 <p>Support for cognitive processing, receptive language, verbal imitation, and social engagement.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Behavioral Calming
+                  Behavioral Calming
                 </h4>
                 <p>Gentle non-sedating remedies to reduce hyperactivity, temper tantrums, and aggressive impulses.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Motor Milestone Acceleration
+                  Motor Milestone Acceleration
                 </h4>
                 <p>Complementary constitutional protocols supporting tone balance, motor planning, and gait stabilization.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Distance Telehealth Support
+                  Distance Telehealth Support
                 </h4>
                 <p>Structured video case triage via Zoom/WhatsApp for follow-ups without requiring monthly travel.</p>
               </div>
@@ -396,3 +400,4 @@ export default function SecunderabadClinicPage() {
     </main>
   );
 }
+

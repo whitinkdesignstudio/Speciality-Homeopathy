@@ -1,10 +1,20 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Intellectual Disability Homeopathic Treatment & Support',
   description: "Learn about intellectual disability, developmental signs and related conditions, with supportive care from Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/intellectual-disability',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/intellectual-disability',
+    title: 'Intellectual Disability Homeopathy | Speciality Homeopathy',
+    description: 'Supportive homeopathic care for intellectual disability. Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Intellectual Disability Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -79,7 +89,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 â€” POSSIBLE CAUSES */
+  /* SECTION 1  -  POSSIBLE CAUSES */
   .types{background:#F7F9FB;position:relative;overflow:hidden}
   .types .dotgrid{position:absolute;width:140px;height:100px;background-image:radial-gradient(rgba(10,31,68,.14) 1.4px,transparent 1.4px);background-size:14px 14px;pointer-events:none}
   .types .dotgrid.tl{top:40px;left:0}
@@ -111,7 +121,7 @@ const pageStyles = `:root{
   .types-note p{font-size:.9rem;color:#3d3d3d;margin:0;flex:1}
   .types-note .tn-fly{width:26px;height:26px;color:var(--teal);opacity:.8;flex:0 0 auto}
 
-  /* SECTION 2 â€” RELATED CONDITIONS */
+  /* SECTION 2  -  RELATED CONDITIONS */
   .neuro{background:linear-gradient(180deg,#0A1F44 0%,#0c2450 100%);color:var(--ivory);position:relative;overflow:hidden}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .sec-head h2 .hl{background:linear-gradient(120deg,#9cd4ec,#BAE0F3);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -129,7 +139,7 @@ const pageStyles = `:root{
   .neuro-card .hr{width:30px;height:2px;background:linear-gradient(90deg,#5cc8e8,transparent);margin-bottom:12px}
   .neuro-card p{font-size:.82rem;color:rgba(220,232,245,.78);line-height:1.65}
 
-  /* SECTION 3 â€” SIGNS & DEVELOPMENTAL CONCERNS */
+  /* SECTION 3  -  SIGNS & DEVELOPMENTAL CONCERNS */
   .behaviour{background:linear-gradient(180deg,#0c2450 0%,#0A1F44 100%);color:var(--ivory)}
   .behaviour .sec-head h2{color:#fff}
   .behaviour .sec-head h2 .hl{color:#4fd8c8}
@@ -205,12 +215,12 @@ export default function Page() {
           </div>
           <div className="hero-text">
             <h1 className="reveal d1">Understanding <span className="accent">Intellectual Disability</span></h1>
-            <p className="lead reveal d2">Possible causes, related conditions and the signs families often notice â€” with gentle, supportive homeopathic care alongside your child's medical team.</p>
+            <p className="lead reveal d2">Possible causes, related conditions and the signs families often notice  -  with gentle, supportive homeopathic care alongside your child's medical team.</p>
           </div>
         </div>
       </section>
 
-      {/* SECTION 1 â€” POSSIBLE CAUSES */}
+      {/* SECTION 1  -  POSSIBLE CAUSES */}
       <section className="sec types">
         <div className="dotgrid tl" aria-hidden="true"></div>
         <div className="dotgrid br" aria-hidden="true"></div>
@@ -222,7 +232,7 @@ export default function Page() {
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>Intellectual Disability can arise from <span className="hl">many factors</span></h2>
-            <p className="lead">Healthy brain development depends on how effectively neural connections form and function. Intellectual Disability may be associated with different genetic, developmental, medical, nutritional or environmental factors â€” every child's picture is unique.</p>
+            <p className="lead">Healthy brain development depends on how effectively neural connections form and function. Intellectual Disability may be associated with different genetic, developmental, medical, nutritional or environmental factors  -  every child's picture is unique.</p>
           </div>
           <div className="type-grid">
             <div className="type-card reveal d1">
@@ -281,12 +291,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 â€” RELATED CONDITIONS */}
+      {/* SECTION 2  -  RELATED CONDITIONS */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>Conditions often seen alongside<br /><span className="hl">Intellectual Disability</span></h2>
-            <p className="lead">Children with additional conditions may require coordinated care from multiple healthcare professionals. Our supportive role is to walk alongside that care â€” never to replace it.</p>
+            <p className="lead">Children with additional conditions may require coordinated care from multiple healthcare professionals. Our supportive role is to walk alongside that care  -  never to replace it.</p>
           </div>
           <div className="neuro-grid">
             <div className="neuro-card reveal d1">
@@ -346,7 +356,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 â€” SIGNS & DEVELOPMENTAL CONCERNS */}
+      {/* SECTION 3  -  SIGNS & DEVELOPMENTAL CONCERNS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">

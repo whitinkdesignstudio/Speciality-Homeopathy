@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,6 +8,16 @@ export const metadata: Metadata = {
     'Explore specialized homeopathic treatment programs for autism, pediatric neurology, genetic disorders, and chronic conditions by Dr. Ketan Patel.',
   keywords:
     'homeopathy treatments, pediatric neurology care, autism care protocol, genetic disorders homeopathy, chronic disease clinic',
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/treatments',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/treatments',
+    title: 'All Homeopathy Treatments | Speciality Homeopathy',
+    description: 'Browse all homeopathic treatment areas: Autism, Cerebral Palsy, ADHD, Infertility, Eczema & more. Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'All Homeopathy Treatments | Speciality Homeopathy' }],
+  },
 };
 
 const treatmentAreas = [

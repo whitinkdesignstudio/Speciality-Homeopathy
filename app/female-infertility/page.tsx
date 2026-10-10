@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Female Infertility & PCOS Treatment with Homeopathy',
   description: "Learn about female infertility, PCOS, PCOD and common causes, with supportive homeopathic care alongside your gynecologist or fertility specialist.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/female-infertility',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/female-infertility',
+    title: 'Female Infertility Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic treatment for female infertility and recurrent pregnancy loss.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Female Infertility Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -30,7 +40,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero â€” 100% full-width banner */
+  /* page hero  -  100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -198,7 +208,7 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO â€” 100% full-width banner */}
+      {/* PAGE HERO  -  100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <HeroBannerImage src="/images/female-infertility/hero-banner.png" alt="Female Infertility Treatment Hero Section Banner" />
@@ -322,7 +332,7 @@ export default function Page() {
                   </svg>
                 </div>
                 <h5>Oligospermia</h5>
-                <p>Low sperm count â€” <Link href="/treatments/oligospermia" style={{ color: 'var(--teal)', textDecoration: 'underline' }}>read more</Link>.</p>
+                <p>Low sperm count  -  <Link href="/treatments/oligospermia" style={{ color: 'var(--teal)', textDecoration: 'underline' }}>read more</Link>.</p>
               </div>
 
               <div className="mini-card reveal d2">
@@ -503,7 +513,7 @@ export default function Page() {
             <Link className="btn btn-primary" href="/contact">Book a Consultation</Link>
           </div>
           <p className="prose reveal d3" style={{ marginTop: '20px', fontSize: '.82rem', color: '#666' }}>
-            Success rate and treatment-effectiveness claims referenced on this page are the clinic's own and are not established by high-quality scientific evidence. Female infertility needs proper evaluation with a gynecologist or fertility specialist â€” homeopathic support is offered alongside, never as a replacement for, that care.
+            Success rate and treatment-effectiveness claims referenced on this page are the clinic's own and are not established by high-quality scientific evidence. Female infertility needs proper evaluation with a gynecologist or fertility specialist  -  homeopathic support is offered alongside, never as a replacement for, that care.
           </p>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'ADHD Treatment with Homeopathy for Children & Better Focus',
   description: "Learn about ADHD and ADD in children, including signs, symptoms, assessment and personalised supportive care with Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/adhd-add',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/adhd-add',
+    title: 'ADHD & ADD Homeopathy Treatment | Speciality Homeopathy',
+    description: 'Homeopathic care for ADHD, ADD, and child focusing disorders. Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'ADHD & ADD Homeopathy Treatment | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

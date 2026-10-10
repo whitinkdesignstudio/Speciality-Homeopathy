@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-chennai');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -112,7 +116,7 @@ const pageStyles = `
     background: #ffffff;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -347,28 +351,28 @@ export default function ChennaiClinicPage() {
             <div className="features-grid">
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Autism Spectrum Disorders
+                  Autism Spectrum Disorders
                 </h4>
                 <p>Supportive therapies focusing on social reciprocity, pointing, expressive vocalizations, and reduced meltdowns.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Developmental Delay &amp; GDD
+                  Developmental Delay &amp; GDD
                 </h4>
                 <p>Constitutional medicines encouraging cognitive milestone achievement, fine motor grasp, and environmental awareness.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Sleep Architecture &amp; Digestion
+                  Sleep Architecture &amp; Digestion
                 </h4>
                 <p>Restoring natural circadian sleep cycles, soothing digestive colic, and improving food tolerance in sensory eaters.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Tamil Nadu Doorstep Dispatch
+                  Tamil Nadu Doorstep Dispatch
                 </h4>
                 <p>Direct courier delivery of dispensed remedies to homes in Chennai, Coimbatore, Madurai, Salem, and Trichy.</p>
               </div>
@@ -395,3 +399,4 @@ export default function ChennaiClinicPage() {
     </main>
   );
 }
+

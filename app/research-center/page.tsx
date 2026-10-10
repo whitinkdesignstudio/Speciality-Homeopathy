@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: 'Research Center | Specialist Homeopathy Research & Treatment',
   description: 'Explore Speciality Homeopathy’s research on homeopathic medicines for autism, tuberculosis, and pediatric conditions, led by Dr. Ketan Patel since 1992.',
   keywords: 'homeopathy research India, case documentation homeopathy, Dr. Ketan Patel research, homeopathic TB treatment research, autism homeopathy case studies',
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/research-center',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/research-center',
+    title: 'Research Centre | Speciality Homeopathy',
+    description: 'Speciality Homeopathy Research Centre — clinical documentation and homeopathic research by Dr. Ketan Patel.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Research Centre | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

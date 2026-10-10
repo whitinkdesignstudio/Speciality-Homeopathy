@@ -1,10 +1,20 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Oligospermia Treatment for Low Sperm Count & Motility',
   description: "Learn about oligospermia, low sperm count, male infertility and associated conditions, with supportive care from Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/oligospermia',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/oligospermia',
+    title: 'Oligospermia Homeopathy Treatment | Speciality Homeopathy',
+    description: 'Constitutional homeopathic care for oligospermia and low sperm count.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Oligospermia Homeopathy Treatment | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -323,7 +333,7 @@ export default function Page() {
     <div className="glance2-grid">
       <div className="glance2-card reveal d1">
         <img src="/images/oligospermia/image-2.jpg" alt="Normal sperm count illustration" loading="lazy" decoding="async" />
-        <div className="glance2-body"><h4>Normal Sperm Count</h4><p>20â€“120 million sperm per millilitre of semen.</p></div>
+        <div className="glance2-body"><h4>Normal Sperm Count</h4><p>20- 120 million sperm per millilitre of semen.</p></div>
       </div>
       <div className="glance2-card reveal d2">
         <img src="/images/oligospermia/image-3.jpg" alt="Oligospermia illustration" loading="lazy" decoding="async" />
@@ -399,7 +409,7 @@ export default function Page() {
         <div className="aims-mini-txt">
           <div className="mi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
           <h5>Treatment Duration</h5>
-          <p>Treatment generally takes <mark>7â€“9 months</mark>, with improvements expected during this period.*</p>
+          <p>Treatment generally takes <mark>7- 9 months</mark>, with improvements expected during this period.*</p>
         </div>
         <div className="aims-mini-media"><img src="/images/oligospermia/image-8.jpg" alt="Calendar showing 7 to 9 months treatment duration" loading="lazy" decoding="async" /></div>
       </div>
@@ -492,7 +502,7 @@ export default function Page() {
   <div className="wrap" style={({"maxWidth":"1040px"} as React.CSSProperties)}>
     <div className="sec-head reveal">
       <h2>Individualised, hormone-free support</h2>
-      <p className="lead">Our approach focuses on addressing the root cause and supporting your body's natural potential â€“ without relying on hormones.</p>
+      <p className="lead">Our approach focuses on addressing the root cause and supporting your body's natural potential - without relying on hormones.</p>
     </div>
 
     <div className="approach-card reveal d1">

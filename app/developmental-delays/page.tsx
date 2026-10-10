@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: 'Global Developmental Delays Homeopathic Treatment & Care',
   description:
     'Supportive homeopathic care for children with developmental delays, speech delays, and motor milestones. Consult our specialist in Ahmedabad.',
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/developmental-delays',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/developmental-delays',
+    title: 'Developmental Delays Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic care for developmental delays, speech delay, and global developmental delay.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Developmental Delays Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -111,7 +121,7 @@ const pageStyles = `:root{
     .hero-content h1{font-size:30px;}
   }
 
-  /* ===================== AT A GLANCE (Section 2 â€” dark) ===================== */
+  /* ===================== AT A GLANCE (Section 2  -  dark) ===================== */
   .glance-section{padding:100px 24px 90px;background:radial-gradient(ellipse at top, #14294f 0%, var(--navy-dark) 60%);}
   .glance-eyebrow{
     display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;
@@ -252,7 +262,7 @@ export default function Page() {
         <div className="info-icon">
           <svg viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
         </div>
-        <p>Supportive &amp; complementary care â€” never a replacement for your child's medical team.</p>
+        <p>Supportive &amp; complementary care  -  never a replacement for your child's medical team.</p>
       </div>
     </div>
     <div className="hero-image-wrap">
@@ -344,7 +354,7 @@ export default function Page() {
 </section>
 
 {/*  ============================================================  */}
-{/*  SECTION 4 : CTA â€” LET'S TALK  */}
+{/*  SECTION 4 : CTA  -  LET'S TALK  */}
 {/*  ============================================================  */}
 <section className="cta-section">
   <div className="cta-panel">

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Male Infertility, Low Sperm Count & Motility Treatment',
   description: "Learn about male infertility, low sperm count, motility and semen quality, with supportive care from Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/male-infertility',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/male-infertility',
+    title: 'Male Infertility Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic treatment for male infertility and oligospermia. Dr. Ketan Patel.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Male Infertility Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -39,7 +49,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero â€” 100% full-width banner */
+  /* page hero  -  100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -52,7 +62,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 â€” types (pillar-style white cards) */
+  /* SECTION 1  -  types (pillar-style white cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
   .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
   .type-card{position:relative;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 14px 38px -16px rgba(20,50,90,.20);display:flex;flex-direction:column;min-height:380px;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
@@ -69,7 +79,7 @@ const pageStyles = `:root{
   .type-img-wrap{position:relative;margin:0 18px 18px;flex:1}
   .type-img-ph{width:100%;height:100%;min-height:180px;border-radius:20px;object-fit:cover}
 
-  /* SECTION 2 â€” neuro conditions (dark frosted cards) */
+  /* SECTION 2  -  neuro conditions (dark frosted cards) */
   .neuro{background:var(--blue);color:var(--ivory)}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .eyebrow{color:var(--gold)}
@@ -82,7 +92,7 @@ const pageStyles = `:root{
   .neuro-card h4{color:#fff;font-size:.96rem;margin-bottom:8px}
   .neuro-card p{font-size:.8rem;color:rgba(220,240,252,.85);line-height:1.6}
 
-  /* SECTION 3 â€” behaviour (icon list cards) */
+  /* SECTION 3  -  behaviour (icon list cards) */
   .behaviour{background:#fff}
   .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
   .beh-card{display:flex;align-items:center;gap:22px;padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--ivory);box-shadow:0 10px 24px -16px rgba(10,31,68,.18);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
@@ -134,14 +144,14 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO â€” 100% full-width banner */}
+      {/* PAGE HERO  -  100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <HeroBannerImage src="/images/male-infertility/hero-banner.png" alt="Male Infertility Treatment Hero Section Banner" />
         </div>
       </section>
 
-      {/* SECTION 1 â€” UNDERSTANDING MALE INFERTILITY */}
+      {/* SECTION 1  -  UNDERSTANDING MALE INFERTILITY */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -182,7 +192,7 @@ export default function Page() {
                 <h3>Asthenozoospermia</h3>
               </div>
               <div className="type-body">
-                <p>Refers to poor sperm motility â€” reduced movement ability that can affect fertilisation.</p>
+                <p>Refers to poor sperm motility  -  reduced movement ability that can affect fertilisation.</p>
               </div>
               <div className="type-img-wrap">
                 <img className="type-img-ph"
@@ -217,12 +227,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 â€” CONDITIONS TREATED */}
+      {/* SECTION 2  -  CONDITIONS TREATED */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>What our approach addresses</h2>
-            <p className="lead">Treatment focuses on improving sperm production, supporting hormonal balance, and improving overall semen quality â€” individualised to the patient's condition.</p>
+            <p className="lead">Treatment focuses on improving sperm production, supporting hormonal balance, and improving overall semen quality  -  individualised to the patient's condition.</p>
           </div>
           <div className="neuro-grid">
             <div className="neuro-card reveal d1">
@@ -308,7 +318,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 â€” TREATMENT HIGHLIGHTS */}
+      {/* SECTION 3  -  TREATMENT HIGHLIGHTS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">

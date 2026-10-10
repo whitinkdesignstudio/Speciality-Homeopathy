@@ -1,10 +1,20 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Chronic Atopic Dermatitis Eczema Homeopathy Treatment',
   description: "Learn about atopic dermatitis, including causes, types and common symptoms, with supportive care alongside your dermatologist. Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/atopic-dermatitis',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/atopic-dermatitis',
+    title: 'Atopic Dermatitis & Chronic Eczema Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic treatment for atopic dermatitis and chronic eczema. Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Atopic Dermatitis & Chronic Eczema Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

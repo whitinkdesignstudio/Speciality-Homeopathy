@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: 'Our Experts | Top Homeopathic Physicians for Child Neurology',
   description: 'Meet our experienced autism specialist doctors, Dr. Ketan Patel, Dr. Kamal Patel and Dr. Bhakti Batavia, serving families across India.',
   keywords: 'autism specialist doctor, autism expert India, autism doctors, Dr. Ketan Patel team, pediatric homeopathy doctors',
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/our-experts',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/our-experts',
+    title: 'Our Expert Homeopathic Doctors | Speciality Homeopathy',
+    description: 'Meet Dr. Ketan Patel, Dr. Kamal Patel and Dr. Bhakti Batavia — experienced homeopathic physicians specialising in autism, child neurology, and chronic conditions.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Our Expert Doctors — Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

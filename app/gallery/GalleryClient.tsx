@@ -19,7 +19,7 @@ interface GalleryItem {
   highlights: string[];
 }
 
-// ONLY the 6 photos from C:\Users\BAPS\Downloads\p, with tailored framing
+// ONLY the 6 photos with tailored framing so every subject is fully visible without cropping
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
@@ -49,6 +49,20 @@ const galleryItems: GalleryItem[] = [
     highlights: ['34+ Yrs Experience', 'Pediatric Neurology', 'Founder & Director'],
   },
   {
+    id: 6,
+    category: 'Clinical Leadership',
+    title: 'Executive Clinical Guidance & Global Case Consultations',
+    desc: 'Leading case discussions, clinical second opinions, and tele-homeopathy strategies for families across the UK, USA, UAE, and Europe seeking expert neurological homeopathic care.',
+    image: '/images/gallery/nUFO8fLCf9TQxHaifd4y.jpg',
+    location: 'Speciality Homeopathy Headquarters',
+    year: 'International Consultations',
+    bentoSpan: 'tall',
+    imageFit: 'cover',
+    imagePosition: 'center top',
+    cardBg: 'radial-gradient(circle at 50% 25%, rgba(191, 219, 254, 0.8) 0%, rgba(248, 250, 252, 0.9) 35%, rgba(226, 232, 240, 0.9) 100%)',
+    highlights: ['Global Telehealth', 'Complex Case Review', 'International Reach'],
+  },
+  {
     id: 3,
     category: 'Awards & Honors',
     title: 'Clinical Excellence & Scientific Research Felicitation',
@@ -58,21 +72,8 @@ const galleryItems: GalleryItem[] = [
     year: 'Honor & Recognition',
     bentoSpan: 'small',
     imageFit: 'cover',
-    imagePosition: 'center center',
+    imagePosition: 'center 20%',
     highlights: ['Certificate of Honor', 'Research Pioneer', 'National Recognition'],
-  },
-  {
-    id: 4,
-    category: 'Seminars & Events',
-    title: 'SNF Interactive Parent-Child Empowerment Workshop',
-    desc: 'Engaging interactive awareness workshop guiding parents on gentle constitutional homeopathic management, cognitive stimulation routines, and speech-communication milestones.',
-    image: '/images/gallery/J2Sf3fI8xb1C58VaRsit.jpg',
-    location: 'SNF Families Assembly',
-    year: 'Awareness Seminar',
-    bentoSpan: 'small',
-    imageFit: 'cover',
-    imagePosition: 'center center',
-    highlights: ['Parent Empowerment', 'Interactive Workshop', 'Holistic Guidance'],
   },
   {
     id: 5,
@@ -88,18 +89,17 @@ const galleryItems: GalleryItem[] = [
     highlights: ['Cerebral Palsy Care', 'Motor Recovery', 'Compassionate Support'],
   },
   {
-    id: 6,
-    category: 'Clinical Leadership',
-    title: 'Executive Clinical Guidance & Global Case Consultations',
-    desc: 'Leading case discussions, clinical second opinions, and tele-homeopathy strategies for families across the UK, USA, UAE, and Europe seeking expert neurological homeopathic care.',
-    image: '/images/gallery/nUFO8fLCf9TQxHaifd4y.jpg',
-    location: 'Speciality Homeopathy Headquarters',
-    year: 'International Consultations',
-    bentoSpan: 'wide',
-    imageFit: 'contain',
+    id: 4,
+    category: 'Seminars & Events',
+    title: 'SNF Interactive Parent-Child Empowerment Workshop',
+    desc: 'Engaging interactive awareness workshop guiding parents on gentle constitutional homeopathic management, cognitive stimulation routines, and speech-communication milestones.',
+    image: '/images/gallery/J2Sf3fI8xb1C58VaRsit.jpg',
+    location: 'SNF Families Assembly',
+    year: 'Awareness Seminar',
+    bentoSpan: 'small',
+    imageFit: 'cover',
     imagePosition: 'center center',
-    cardBg: 'radial-gradient(circle at 50% 25%, rgba(191, 219, 254, 0.8) 0%, rgba(248, 250, 252, 0.9) 35%, rgba(226, 232, 240, 0.9) 100%)',
-    highlights: ['Global Telehealth', 'Complex Case Review', 'International Reach'],
+    highlights: ['Parent Empowerment', 'Interactive Workshop', 'Holistic Guidance'],
   },
 ];
 
@@ -391,6 +391,7 @@ export default function GalleryClient() {
                       style={{
                         objectFit: item.imageFit || 'cover',
                         objectPosition: item.imagePosition || 'center center',
+                        padding: item.imageFit === 'contain' ? '14px 16px 0' : '0',
                       }}
                       loading="lazy"
                       decoding="async"

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Increase Height Naturally with Safe Homeopathy Treatment',
   description: "Learn about short stature and height growth in children, including possible causes and supportive care with Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/increase-height',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/increase-height',
+    title: 'Increase Height Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic support for height growth in children and adolescents.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Increase Height Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -39,7 +49,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero â€” 100% full-width banner */
+  /* page hero  -  100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -56,7 +66,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 â€” types (pillar-style white cards) */
+  /* SECTION 1  -  types (pillar-style white cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
   .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px;padding-top:76px}
   .type-card-outer{position:relative}
@@ -81,7 +91,7 @@ const pageStyles = `:root{
   .type-body{flex:1;padding:12px 30px 34px;text-align:center}
   .type-body p{font-size:.88rem;color:#555;line-height:1.7}
 
-  /* SECTION 2 â€” neuro conditions (dark frosted cards) */
+  /* SECTION 2  -  neuro conditions (dark frosted cards) */
   .neuro{background:var(--blue);color:var(--ivory)}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .eyebrow{color:var(--gold)}
@@ -94,7 +104,7 @@ const pageStyles = `:root{
   .neuro-underline{width:32px;height:2.5px;background:#5b9bd5;border-radius:3px;margin:0 auto 12px}
   .neuro-card p{font-size:.82rem;color:rgba(220,240,252,.85);line-height:1.6;text-align:center}
 
-  /* SECTION 3 â€” behaviour / who may benefit */
+  /* SECTION 3  -  behaviour / who may benefit */
   .behaviour{background:#fff;overflow:visible}
   .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:50px 44px;padding:0 6px}
   .beh-outer{position:relative}
@@ -152,19 +162,19 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO â€” 100% full-width banner */}
+      {/* PAGE HERO  -  100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <HeroBannerImage src="/images/increase-height/hero-banner.png" alt="Increase Height Treatment Hero Section Banner" />
         </div>
       </section>
 
-      {/* SECTION 1 â€” CAUSES OF SHORT HEIGHT */}
+      {/* SECTION 1  -  CAUSES OF SHORT HEIGHT */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>What can affect a child's growth</h2>
-            <p className="lead">Short stature can occur due to several reasons â€” most often a combination of genetic, hormonal and nutritional factors.</p>
+            <p className="lead">Short stature can occur due to several reasons  -  most often a combination of genetic, hormonal and nutritional factors.</p>
           </div>
           <div className="type-grid">
             <div className="type-card-outer reveal d1">
@@ -233,7 +243,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 â€” ABOUT THE TREATMENT */}
+      {/* SECTION 2  -  ABOUT THE TREATMENT */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -280,7 +290,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 â€” WHO MAY BENEFIT / TREATMENT HIGHLIGHTS */}
+      {/* SECTION 3  -  WHO MAY BENEFIT / TREATMENT HIGHLIGHTS */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">

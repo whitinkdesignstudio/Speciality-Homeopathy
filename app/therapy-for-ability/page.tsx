@@ -1,4 +1,17 @@
-'use client';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Therapy for Ability | Speciality Homeopathy',
+  description: 'Speciality Homeopathy Therapy for Ability program — supportive developmental care for children with special needs alongside constitutional homeopathy.',
+  alternates: { canonical: 'https://specialityhomeopathy.com/therapy-for-ability' },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/therapy-for-ability',
+    title: 'Therapy for Ability | Speciality Homeopathy',
+    description: 'Speciality Homeopathy Therapy for Ability program — supportive developmental care for children with special needs alongside constitutional homeopathy.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Therapy for Ability | Speciality Homeopathy' }],
+  },
+};
 
 import React from 'react';
 import Link from 'next/link';

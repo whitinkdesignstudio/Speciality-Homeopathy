@@ -244,3 +244,69 @@ export function createPageJsonLd(entities: Record<string, any>[]) {
   };
 }
 
+/**
+ * FAQPage Entity
+ *
+ * Generates valid FAQPage JSON-LD for rich result eligibility.
+ * Use on treatment/condition pages that include a visible FAQ section.
+ *
+ * Google eligibility requirements:
+ *  - Questions and answers must be visible on the page (not hidden behind accordions at render time).
+ *  - Do not mark up FAQs that are hidden from the user.
+ *  - One FAQPage per page — do not include multiple FAQPage entities.
+ *
+ * @param canonicalUrl - The canonical URL of the page containing the FAQ section
+ * @param faqs - Array of {question, answer} pairs visible on the page
+ */
+export function getFAQPageEntity(
+  canonicalUrl: string,
+  faqs: { question: string; answer: string }[]
+) {
+  return {
+    '@type': 'FAQPage',
+    '@id': `${canonicalUrl}#faqpage`,
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
+/**
+ * MedicalCondition Entity
+ *
+ * Use on condition/treatment pages that describe a specific medical condition.
+ * Only use when the page genuinely covers the named condition.
+ *
+ * @param params - Condition parameters
+ */
+export function getMedicalConditionEntity({
+  canonicalUrl,
+  name,
+  description,
+  alternateName,
+  code,
+}: {
+  canonicalUrl: string;
+  name: string;
+  description: string;
+  alternateName?: string[];
+  code?: string; // ICD-10 or similar code if known
+}) {
+  return {
+    '@type': 'MedicalCondition',
+    '@id': `${canonicalUrl}#condition`,
+    name,
+    description,
+    ...(alternateName ? { alternateName } : {}),
+    ...(code ? { code: { '@type': 'MedicalCode', codeValue: code, codingSystem: 'ICD-10' } } : {}),
+    relevantSpecialty: {
+      '@type': 'MedicalSpecialty',
+      name: 'Homeopathic',
+    },
+  };
+}

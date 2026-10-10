@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Chronic Asthma & Allergic Bronchitis Homeopathy Treatment',
   description: "Learn about asthma and allergies, including symptoms, causes, triggers and diagnosis, with supportive care from Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/asthma-allergy',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/asthma-allergy',
+    title: 'Asthma & Allergy Homeopathy | Speciality Homeopathy',
+    description: 'Constitutional homeopathic treatment for chronic asthma and allergies. Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Asthma & Allergy Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

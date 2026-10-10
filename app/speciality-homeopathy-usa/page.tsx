@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-usa');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -112,7 +116,7 @@ const pageStyles = `
     background: #ffffff;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -352,7 +356,7 @@ export default function UsaClinicPage() {
               Diagnosed with Autism Spectrum Disorder and severe hyperactivity in California, Kevin&apos;s parents sought
               constitutional homeopathic guidance from Dr. Ketan Patel after multiple conventional interventions plateaued.
               Through individualised Avogadro potencies and remote milestone tracking, Kevin exhibited remarkable progress in
-              speech emergence, reduced sensory overload, and sustained attention span—documented across multiple years of developmental therapy.
+              speech emergence, reduced sensory overload, and sustained attention span - documented across multiple years of developmental therapy.
             </p>
           </div>
 
@@ -368,28 +372,28 @@ export default function UsaClinicPage() {
             <div className="features-grid">
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Autism &amp; Genetic Conditions
+                  Autism &amp; Genetic Conditions
                 </h4>
                 <p>Supportive care for ASD, PDD-NOS, CACNA1A gene mutation, fragile X, and rare microdeletion syndromes.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Pre-Consultation Case Analysis
+                  Pre-Consultation Case Analysis
                 </h4>
                 <p>Detailed advance evaluation of IEP reports, developmental neuropsych evaluations, and exome sequencing data.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> International Doorstep Delivery
+                  International Doorstep Delivery
                 </h4>
                 <p>Remedies dispatched in medical-grade shock-proof packaging with full customs declaration documentation.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Ongoing Progress Reviews
+                  Ongoing Progress Reviews
                 </h4>
                 <p>Scheduled 4 to 6-week milestone evaluations via Zoom and responsive WhatsApp messaging for day-to-day queries.</p>
               </div>
@@ -416,3 +420,4 @@ export default function UsaClinicPage() {
     </main>
   );
 }
+

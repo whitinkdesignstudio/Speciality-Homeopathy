@@ -1,4 +1,8 @@
-'use client';
+import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-mumbai');
+
 
 import React from 'react';
 import Link from 'next/link';

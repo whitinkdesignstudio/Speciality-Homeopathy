@@ -491,7 +491,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     dateISO: '2022-12-04',
     tags: ['Autism', 'Congenital Disorder', 'Genetic Birth Defect', 'Testimonial', 'Cured Cases'],
     image: '/images/autism-care/beh-5-anxious-girl.png',
-    brief: '“Sorry Ms. Aggarwal, we cannot help you,” said one of India’s top doctors when her son was 8 months old. Predicted to never walk or speak, the boy is today walking, speaking, and studying in a normal school.',
+    brief: '"Sorry Ms. Aggarwal, we cannot help you," said one of India’s top doctors when her son was 8 months old. Predicted to never walk or speak, the boy is today walking, speaking, and studying in a normal school.',
     stats: [
       { label: 'Initial Prognosis', value: 'Permanent Disability' },
       { label: 'Age at Homeopathy', value: '3 Years' },
@@ -540,9 +540,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     fullStorySections: [
       {
-        heading: '“Sorry Ms. Aggarwal, We Cannot Help You”',
+        heading: '"Sorry Ms. Aggarwal, We Cannot Help You"',
         paragraphs: [
-          '“Sorry Ms. Aggarwal, we cannot help you,” said one of the topmost doctors in India. Those words still echo in my ears.',
+          '"Sorry Ms. Aggarwal, we cannot help you," said one of the topmost doctors in India. Those words still echo in my ears.',
           'My story begins with my special child born with a genetic disorder. He was just 8 months old when we discovered this condition. Our lives took a 360-degree turn when we were told our son would never be normal—that he would never be able to walk, speak, or play like a normal kid, and would remain entirely dependent.',
           'As a mother, I refused to surrender hope. I continued therapies relentlessly until he was 3 years old. I even had to endure therapists asking: "Ma’am, why are you still hopeful for such a case?" For everyone else, my child was merely a hopeless clinical case, not a precious human being. Despite years of therapy, he was not recovering at all: still completely non-verbal, without social skills, and with no command following or recognition.',
         ],

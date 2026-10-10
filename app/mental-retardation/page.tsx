@@ -1,10 +1,20 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Intellectual Disability & Mental Disorder Homeopathy Treatment',
   description: "Learn about intellectual disability, its possible causes, developmental signs and supportive care with Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/mental-retardation',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/mental-retardation',
+    title: 'Intellectual Disability Homeopathy | Speciality Homeopathy',
+    description: 'Supportive constitutional homeopathy for intellectual disability and developmental conditions.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Intellectual Disability Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

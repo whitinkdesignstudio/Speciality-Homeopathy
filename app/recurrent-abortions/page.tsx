@@ -5,6 +5,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Recurrent Abortion Prevention & Homeopathy Treatment',
   description: "",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/recurrent-abortions',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/recurrent-abortions',
+    title: 'Recurrent Abortions Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic care for recurrent miscarriages and pregnancy loss. Dr. Ketan Patel.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Recurrent Abortions Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -360,7 +370,7 @@ const pageStyles = `:root{
   .cond-arc-left{ left:-210px; top:260px; }
   .cond-arc-right{ right:-210px; top:260px; }
 
-  /* baby hammock â€” dead center, cropped to a clean centered square so it reads
+  /* baby hammock  -  dead center, cropped to a clean centered square so it reads
      like a contained photo rather than a wide stretched banner */
   .center-baby{
     position:absolute;
@@ -567,7 +577,7 @@ export default function Page() {
       </div>
     </div>
     <div className="hero-image-wrap">
-      {/*  PLACEHOLDER: Hero photo â€” mother holding baby on bed  */}
+      {/*  PLACEHOLDER: Hero photo  -  mother holding baby on bed  */}
 <img src="/images/recurrent-abortions/image-1.png" alt="Mother smiling with baby on bed" style={({"position":"absolute","inset":"0","width":"100%","height":"100%","objectFit":"cover"} as React.CSSProperties)} loading="lazy" decoding="async" />
     </div>
   </div>
@@ -786,7 +796,7 @@ export default function Page() {
 </section>
 
 {/*  ============================================================  */}
-{/*  SECTION 5 : CTA â€” JOURNEY  */}
+{/*  SECTION 5 : CTA  -  JOURNEY  */}
 {/*  ============================================================  */}
 <section className="cta-section">
   <div className="cta-panel">

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Child Neurological Disorders Homeopathy Treatment & Care',
   description: "Dr. Ketan Patel,Ahmedabad,offers supportive care for children with developmental,genetic and neurological conditions,working alongside their medical team.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/child-neurological-disorders',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/child-neurological-disorders',
+    title: 'Child Neurological Disorders Homeopathy | Speciality Homeopathy',
+    description: 'Homeopathic care for genetic, chromosomal, and neurological conditions in children.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Child Neurological Disorders Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

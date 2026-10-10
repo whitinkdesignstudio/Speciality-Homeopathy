@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Cerebral Palsy Spastic Diplegia & Quadriplegia Treatment',
   description: "Learn about Cerebral Palsy, including its types, causes and symptoms, with supportive homeopathic care alongside your child’s medical and therapy team.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/cerebral-palsy',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/cerebral-palsy',
+    title: 'Cerebral Palsy Homeopathy | Speciality Homeopathy',
+    description: 'Supportive homeopathic care for Cerebral Palsy and motor delays. Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Cerebral Palsy Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

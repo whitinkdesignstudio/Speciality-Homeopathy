@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import HeroBannerImage from '@/components/HeroBannerImage';
 import Link from 'next/link';
 import React from 'react';
@@ -6,6 +6,16 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Hair Fall, Baldness & Alopecia Areata Homeopathy Treatment',
   description: "Learn about hair fall, baldness and Alopecia Areata, including causes and supportive care options. Dr. Ketan Patel, Vastrapur, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/hair-falling',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/hair-falling',
+    title: 'Hair Loss Homeopathy Treatment | Speciality Homeopathy',
+    description: 'Constitutional homeopathic treatment for hair falling and alopecia.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'Hair Loss Homeopathy Treatment | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{
@@ -39,7 +49,7 @@ const pageStyles = `:root{
   .btn-ghost{background:rgba(255,255,255,.35);color:var(--blue);border-color:rgba(10,31,68,.3);backdrop-filter:blur(6px)}
   .btn-ghost:hover{background:rgba(255,255,255,.55);transform:translateY(-2px)}
 
-  /* page hero â€” 100% full-width banner */
+  /* page hero  -  100% full-width banner */
   .page-hero{position:relative;width:100%;margin:0;padding:0;overflow:hidden;background:#eef6fc}
   .hero-banner-full{width:100%;margin:0;padding:0}
   .hero-banner-full img{width:100%;height:auto;display:block}
@@ -54,7 +64,7 @@ const pageStyles = `:root{
   .reveal{opacity:1;transform:none}
   .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 
-  /* SECTION 1 â€” types (left content / right photo cards) */
+  /* SECTION 1  -  types (left content / right photo cards) */
   .types{background:linear-gradient(160deg,#def0fa 0%,#e8f5fc 40%,#cfe8f5 100%)}
   .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
   .type-card{position:relative;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 38px -16px rgba(20,50,90,.20);display:flex;flex-direction:row;align-items:stretch;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
@@ -78,7 +88,7 @@ const pageStyles = `:root{
     .type-photo{flex:0 0 auto;min-height:170px}
   }
 
-  /* SECTION 2 â€” neuro conditions (dark frosted cards) */
+  /* SECTION 2  -  neuro conditions (dark frosted cards) */
   .neuro{background:var(--blue);color:var(--ivory)}
   .neuro .sec-head h2{color:var(--ivory)}
   .neuro .eyebrow{color:var(--gold)}
@@ -97,7 +107,7 @@ const pageStyles = `:root{
     .neuro-card{flex-direction:column;align-items:center;text-align:center;gap:16px}
   }
 
-  /* SECTION 3 â€” behaviour (icon list cards) */
+  /* SECTION 3  -  behaviour (icon list cards) */
   .behaviour{background:#fff}
   .beh-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
   .beh-card{display:flex;align-items:flex-start;gap:18px;padding:22px 20px;border:1px solid var(--line);border-radius:16px;background:var(--ivory);box-shadow:0 10px 24px -16px rgba(10,31,68,.18);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
@@ -152,19 +162,19 @@ export default function Page() {
     <>
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
-      {/* PAGE HERO â€” 100% full-width banner */}
+      {/* PAGE HERO  -  100% full-width banner */}
       <section className="page-hero" id="top">
         <div className="hero-banner-full">
           <HeroBannerImage src="/images/hair-falling/hero-banner.png" alt="Hair Falling &amp; Baldness (Alopecia Areata) Care Hero Section Banner" />
         </div>
       </section>
 
-      {/* SECTION 1 â€” COMMON CAUSES */}
+      {/* SECTION 1  -  COMMON CAUSES */}
       <section className="sec types">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>What contributes to hair loss</h2>
-            <p className="lead">Hair fall can occur due to several factors â€” genetic, hormonal, environmental and lifestyle-related.</p>
+            <p className="lead">Hair fall can occur due to several factors  -  genetic, hormonal, environmental and lifestyle-related.</p>
           </div>
           <div className="type-grid">
             <div className="type-card reveal d1">
@@ -221,7 +231,7 @@ export default function Page() {
                   </div>
                 </div>
                 <h3>Hormonal Imbalance</h3>
-                <p>Hormonal shifts â€” including after illness, childbirth or thyroid changes â€” can contribute to hair fall.</p>
+                <p>Hormonal shifts  -  including after illness, childbirth or thyroid changes  -  can contribute to hair fall.</p>
               </div>
               <div className="type-photo">
                 <img src="https://static.wixstatic.com/media/66422a_41a4521fcafa4596a6b572d48db8a905~mv2.png"
@@ -237,7 +247,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 2 â€” HOMEOPATHIC REMEDIES */}
+      {/* SECTION 2  -  HOMEOPATHIC REMEDIES */}
       <section className="sec neuro">
         <div className="wrap">
           <div className="sec-head reveal">
@@ -292,12 +302,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SECTION 3 â€” CONDITIONS COVERED */}
+      {/* SECTION 3  -  CONDITIONS COVERED */}
       <section className="sec behaviour">
         <div className="wrap">
           <div className="sec-head reveal">
             <h2>Different patterns of hair loss we support</h2>
-            <p className="lead">An individualised, holistic approach focused on the underlying cause â€” suitable for a range of hair and scalp concerns.</p>
+            <p className="lead">An individualised, holistic approach focused on the underlying cause  -  suitable for a range of hair and scalp concerns.</p>
           </div>
           <div className="beh-grid">
             <div className="beh-card reveal d1">

@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-hyderabad');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -115,7 +119,7 @@ const pageStyles = `
     background: #f0f8f9;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -381,28 +385,28 @@ export default function HyderabadClinicPage() {
             <div className="features-grid">
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Non-Verbal Autism
+                  Non-Verbal Autism
                 </h4>
                 <p>Support for expressive speech initiation, eye-to-eye contact, receptive comprehension, and reduction in echolalia.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Sensory Integration Support
+                  Sensory Integration Support
                 </h4>
                 <p>Gentle calming remedies for tactile hypersensitivity, vestibular instability, auditory distress, and toe-walking.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Sleep &amp; Gut Regulation
+                  Sleep &amp; Gut Regulation
                 </h4>
                 <p>Constitutional correction for chronic night awakenings, digestive bloating, food selectivity, and chronic constipation.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Telangana District Courier
+                  Telangana District Courier
                 </h4>
                 <p>Reliable monthly medicine courier dispatch across Hyderabad, Secunderabad, Warangal, Nizamabad, and Karimnagar.</p>
               </div>
@@ -429,3 +433,4 @@ export default function HyderabadClinicPage() {
     </main>
   );
 }
+

@@ -1,11 +1,25 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
+import { getFAQPageEntity, getMedicalConditionEntity, createPageJsonLd } from '@/lib/seo/schema';
+
+const SITE_URL = 'https://specialityhomeopathy.com';
 
 export const metadata: Metadata = {
   title: 'Autism Homeopathy, Treatment & Care in India | Dr. Ketan Patel',
   description:
     'Comprehensive homeopathy for autism (ASD) in children & teens. Pediatric care for PANS/PANDAS, behavioural disorders & individualized support across India.',
+  alternates: {
+    canonical: `${SITE_URL}/autism-care`,
+  },
+  openGraph: {
+    type: 'website',
+    url: `${SITE_URL}/autism-care`,
+    title: 'Autism Homeopathy Treatment & Care in India | Dr. Ketan Patel',
+    description:
+      'Comprehensive homeopathic care for Autism Spectrum Disorder (ASD) in children & teens. PANS/PANDAS, behavioural disorders, constitutional remedies — Dr. Ketan Patel, Ahmedabad.',
+    images: [{ url: `${SITE_URL}/images/og-default.jpg`, width: 1200, height: 630, alt: 'Autism Homeopathy Care — Dr. Ketan Patel, Speciality Homeopathy' }],
+  },
   keywords: [
     'Autism',
     'Autism Spectrum Disorder (ASD)',
@@ -238,9 +252,47 @@ const pageStyles = `
   }
 `;
 
+const AUTISM_FAQS = [
+  {
+    question: 'What is Autism Spectrum Disorder (ASD)?',
+    answer: 'Autism Spectrum Disorder (ASD) is a neurodevelopmental condition affecting social communication, sensory processing, and behaviour. It appears on a spectrum — presentations range from mild sensory differences to profound autism with non-verbal communication challenges. Early identification and a supportive, multi-disciplinary approach are important for developmental progress.',
+  },
+  {
+    question: 'How does homeopathy help children with autism?',
+    answer: 'At Speciality Homeopathy, constitutional homeopathic remedies are used to support the individual child\'s overall wellbeing — including sleep, sensory tolerance, gut health, and emotional regulation. Homeopathy is offered as complementary, supportive care alongside your pediatric neurology team, not as a standalone replacement for established assessments or therapies.',
+  },
+  {
+    question: 'Can homeopathy cure autism?',
+    answer: 'Autism is a neurodevelopmental spectrum — not a disease to be "cured". Homeopathic care at Speciality Homeopathy is designed to support the child\'s quality of life, reduce associated discomforts (such as sleep disruption, sensory overload, and gut issues), and complement other developmental interventions. Individual outcomes vary significantly. No guarantee of outcome is made or implied.',
+  },
+  {
+    question: 'What is PANS/PANDAS and how is it different from autism?',
+    answer: 'PANS (Pediatric Acute-onset Neuropsychiatric Syndrome) and PANDAS involve sudden-onset neuropsychiatric symptoms, often triggered by an infection, that can mimic or co-occur with autism traits. Unlike ASD, PANS/PANDAS may have an acute onset and a relapsing-remitting course. A thorough medical evaluation by a pediatric neurologist is essential to differentiate these conditions.',
+  },
+  {
+    question: 'At what age should a child be assessed for autism?',
+    answer: 'Developmental screening can begin as early as 18–24 months. If parents notice speech delay, limited eye contact, lack of response to name, or restricted play patterns before age 3, a formal developmental assessment by a qualified pediatric neurologist, developmental paediatrician, or child psychologist is recommended without delay. Early assessment opens access to appropriate support.',
+  },
+];
+
+const autismJsonLd = createPageJsonLd([
+  getFAQPageEntity(`${SITE_URL}/autism-care`, AUTISM_FAQS),
+  getMedicalConditionEntity({
+    canonicalUrl: `${SITE_URL}/autism-care`,
+    name: 'Autism Spectrum Disorder',
+    description: 'Autism Spectrum Disorder (ASD) is a neurodevelopmental condition affecting social communication, behaviour, and sensory processing across a wide spectrum of presentations.',
+    alternateName: ['ASD', 'Autism', 'Autistic Spectrum Disorder'],
+    code: 'F84.0',
+  }),
+]);
+
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(autismJsonLd) }}
+      />
       <style dangerouslySetInnerHTML={{ __html: pageStyles }} />
 
       {/* PAGE HERO */}

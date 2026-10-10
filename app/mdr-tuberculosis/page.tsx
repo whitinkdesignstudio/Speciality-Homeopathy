@@ -1,10 +1,20 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
   title: 'MDR Tuberculosis Treatment with Homeopathy for TB Patients',
   description: "Learn about MDR tuberculosis, its types, causes and symptoms, with supportive care alongside your TB specialist. Dr. Ketan Patel, Ahmedabad.",
+  alternates: {
+    canonical: 'https://specialityhomeopathy.com/mdr-tuberculosis',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://specialityhomeopathy.com/mdr-tuberculosis',
+    title: 'MDR Tuberculosis Homeopathy | Speciality Homeopathy',
+    description: 'Supportive constitutional homeopathy for MDR Tuberculosis cases.',
+    images: [{ url: 'https://specialityhomeopathy.com/images/og-default.jpg', width: 1200, height: 630, alt: 'MDR Tuberculosis Homeopathy | Speciality Homeopathy' }],
+  },
 };
 
 const pageStyles = `:root{

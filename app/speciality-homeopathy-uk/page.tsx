@@ -1,4 +1,8 @@
-'use client';
+﻿import type { Metadata } from 'next';
+import { buildCityMetadata } from '@/lib/seo/cityMetadata';
+
+export const metadata: Metadata = buildCityMetadata('speciality-homeopathy-uk');
+
 
 import React from 'react';
 import Link from 'next/link';
@@ -50,7 +54,7 @@ const pageStyles = `
     padding: 0 24px;
   }
 
-  /* ── LUXURY HERO ── */
+  /* LUXURY HERO */
   .city-hero {
     position: relative;
     background: linear-gradient(135deg, #cdeaf8 0%, #b3def4 40%, #95cde8 100%);
@@ -104,7 +108,7 @@ const pageStyles = `
     margin-bottom: 30px;
   }
 
-  /* ── SECTION SHELL ── */
+  /* SECTION SHELL */
   .sec {
     padding: 64px 0;
   }
@@ -112,7 +116,7 @@ const pageStyles = `
     background: #ffffff;
   }
 
-  /* ── CLINIC CARD ── */
+  /* CLINIC CARD */
   .clinic-info-card {
     background: #ffffff;
     border-radius: 20px;
@@ -336,28 +340,28 @@ export default function UkClinicPage() {
             <div className="features-grid">
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> CACNA1A &amp; Genetic Syndromes
+                  CACNA1A &amp; Genetic Syndromes
                 </h4>
                 <p>Supportive care for episodic ataxia, hemiplegic migraine, motor challenges, and genetic channelopathies.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> ASD &amp; Pathological Demand Avoidance
+                  ASD &amp; Pathological Demand Avoidance
                 </h4>
                 <p>Targeted constitutional remedies addressing anxiety-driven avoidance, sensory distress, and expressive speech.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> European Dispatch Clearance
+                  European Dispatch Clearance
                 </h4>
                 <p>Medical declaration and batch testing certificates to facilitate swift customs delivery to UK &amp; EU addresses.</p>
               </div>
 
               <div className="feature-item">
                 <h4>
-                  <span style={{ color: 'var(--teal)' }}>●</span> Multi-Disciplinary Integration
+                  Multi-Disciplinary Integration
                 </h4>
                 <p>Designed to run safely alongside NHS pediatric neurology, speech therapy, and private occupational therapy.</p>
               </div>
@@ -384,3 +388,4 @@ export default function UkClinicPage() {
     </main>
   );
 }
+

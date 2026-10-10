@@ -274,7 +274,7 @@
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 270px;
+  grid-auto-rows: 285px;
   grid-auto-flow: dense;
   gap: 20px;
 }
@@ -307,7 +307,7 @@
 }
 
 .regular-grid .gal-card-item {
-  height: 300px;
+  height: 310px;
 }
 
 /* Masonry Feed */
@@ -319,7 +319,7 @@
 .masonry-grid .gal-card-item {
   break-inside: avoid;
   margin-bottom: 20px;
-  height: 280px;
+  height: 290px;
 }
 
 /* ── GALLERY CARD ── */
@@ -371,12 +371,6 @@
   width: 100%;
   height: 100%;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.bento-card-wide .card-img,
-.bento-card-big .card-img {
-  object-fit: contain;
-  object-position: center center;
 }
 
 .gal-card-item:hover .card-img {
